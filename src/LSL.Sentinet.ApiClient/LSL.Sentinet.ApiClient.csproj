@@ -1,0 +1,96 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net451;netstandard2.0</TargetFrameworks>
+    <IsPackable>true</IsPackable>
+    <Version>1.0.0</Version>
+    <PackageVersion>1.0.0</PackageVersion>
+    <PackageTags>api;client;sentinet;api-client</PackageTags>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
+    <PackageDescription>DESCRIPTION HERE.</PackageDescription>
+    <RepositoryUrl>https://github.com/alunacjones/LSL.SentinetApiClient</RepositoryUrl>
+    <Authors>alunacjones</Authors>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' != 'net451'">
+    <PackageReference Include="Microsoft.Extensions.Options" Version="7.0.0" />
+    <PackageReference Include="System.Linq.Async" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net451'">
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web" />
+    <Compile Remove="DependencyInjection/**" />
+    <None Include="DependencyInjection/**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="LSL.NSwag.CommonTypes" Version="1.0.5" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0"
+      Condition="'$(TargetFramework)' != 'net451'" />
+    <PackageReference Include="NSwag.MSBuild" Version="14.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+  </ItemGroup>
+
+  <Target Name="NSwag" BeforeTargets="BeforeBuild">
+    <!-- <Exec
+      ConsoleToMSBuild="true"
+      ContinueOnError="false"
+      WorkingDirectory="../../build/fixSwagger"
+      Command="npm install">
+      <Output TaskParameter="ExitCode" PropertyName="NpmInstallExitCode" />
+      <Output TaskParameter="ConsoleOutput" PropertyName="NpmInstallOutput" />
+    </Exec>
+
+    <Message Text="$(NpmInstallOutput)" Condition="'$(NpmInstallExitCode)' == '0'" Importance="high" />
+    <Error Text="$(NpmInstallOutput)" Condition="'$(NpmInstallExitCode)' != '0'" />
+
+    <Exec
+      ConsoleToMSBuild="true"
+      ContinueOnError="false"
+      WorkingDirectory="../../build/fixSwagger"
+      Command="npm run dev">
+      <Output TaskParameter="ExitCode" PropertyName="NpmExitCode" />
+      <Output TaskParameter="ConsoleOutput" PropertyName="NpmOutput" />
+    </Exec>
+    
+    <Message Text="$(NpmOutput)" Condition="'$(NpmExitCode)' == '0'" Importance="high" />
+    <Error Text="$(NpmOutput)" Condition="'$(NpmExitCode)' != '0'" /> -->
+
+    <!-- <Exec
+      ConsoleToMSBuild="true"
+      ContinueOnError="true"
+      Command="$(NSwagExe_Net60) run nswag.json /variables:Configuration=$(Configuration)">
+      <Output TaskParameter="ExitCode" PropertyName="NSwagExitCode" />
+      <Output TaskParameter="ConsoleOutput" PropertyName="NSwagOutput" />
+    </Exec>
+
+    <Message Text="$(NSwagOutput)" Condition="'$(NSwagExitCode)' == '0'" Importance="low" />
+    <Error Text="$(NSwagOutput)" Condition="'$(NSwagExitCode)' != '0'" />   -->
+  </Target>
+
+  <ItemGroup>
+    <None Include="..\..\readme.md" Pack="true" PackagePath="" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <ReadMeContents>
+      $([System.IO.File]::ReadAllText('$(MSBuildProjectDirectory)\..\..\readme.md').TrimEnd())</ReadMeContents>
+  </PropertyGroup>
+
+  <Target Name="CheckNugetSettings" BeforeTargets="BeforeBuild">
+    <Warning Text="Package tags have not been set" Condition="'$(PackageTags)' == 'TAGS-HERE'" />
+    <Warning Text="Package description has not been set"
+      Condition="$(PackageDescription.StartsWith('DESCRIPTION HERE'))" />
+    <Warning Text="readme.md file has no documentation"
+      Condition="$(ReadMeContents.Contains('Provide documentation here'))" />
+  </Target>
+</Project>

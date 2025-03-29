@@ -1,0 +1,9 @@
+{
+    "$schema": "./fixes-schema.json",
+    "setAdditionalPropertiesToFalse": true,
+    "fixNonRequiredProperties": true,
+    "fixOperationIds": true,
+    "fixBrokenPatterns": true,
+    "removeInvalidStringConstraints": true,
+    "ensureRequestBodiesAreRequired": true
+}

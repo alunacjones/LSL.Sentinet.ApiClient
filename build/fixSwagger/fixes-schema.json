@@ -1,0 +1,282 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "$ref": "#/definitions/Root",
+    "definitions": {
+        "Root": {
+            "type": "object",
+            "properties": {
+                "$schema": {
+                    "type": "string"
+                },
+                "removeInvalidStringConstraints": {
+                    "title": "Remove invalid string constraints",
+                    "type": "boolean",
+                    "description": "Removes string constraints on properties that would result in `ComponentModel` annotation issues"
+                },
+                "fixBrokenPatterns": {
+                    "title": "Fix Broken Patterns",
+                    "description": "Fixes any regex patterns that look to only be being applied to a single character",
+                    "type": "boolean"
+                },
+                "setAdditionalPropertiesToFalse": {
+                    "title": "Set Additional Properties To False",
+                    "description": "Ensures that all object definitions have no additional properties",
+                    "type": "boolean"
+                },
+                "fixNonRequiredProperties": {
+                    "title": "Fix Non-Required Properties",
+                    "description": "Sets a property's `nullable` field to `true` if it is not required",
+                    "type": "boolean"
+                },
+                "fixOperationIds": {
+                    "title": "Fix Operation Ids",
+                    "description": "Remove's invalid characters from `operationId`'s",
+                    "type": "boolean"
+                },
+                "ensureRequestBodiesAreRequired": {
+                    "title": "Ensure request bodies are required",
+                    "type": "boolean"
+                },
+                "components": {
+                    "$ref": "#/definitions/Components"
+                },
+                "responses": {
+                    "$ref": "#/definitions/Responses"
+                },
+                "parameters": {
+                    "$ref": "#/definitions/Parameters"
+                }
+            },
+            "additionalProperties": false
+        },
+        "Parameters": {
+            "type": "object",
+            "properties": {
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "uniqueItems": true,
+                        "$ref": "#/definitions/Parameter"
+                    }
+                }
+            }
+        },
+        "CreateParameter": {
+            "properties": {
+                "path": {
+                    "$ref": "#/definitions/NonEmptyStringProperty"
+                },
+                "method": {
+                    "$ref": "#/definitions/Method"
+                },
+                "create": {
+                    "type": "object",
+                    "$ref": "https://schemas.sourcemeta.com/openapi/v3.0/schema.json#/definitions/Parameter"
+                }
+            },
+            "required": ["path", "method", "create"]
+        },
+        "NonEmptyStringProperty": {
+            "type": "string",
+            "minLength": 1
+        },
+        "MergeParameter": {
+            "properties": {
+                "path": {
+                    "$ref": "#/definitions/NonEmptyStringProperty"
+                },
+                "method": {
+                    "$ref": "#/definitions/Method"
+                },
+                "name": {
+                    "$ref": "#/definitions/NonEmptyStringProperty"
+                },
+                "merge": {
+                    "type": "object"
+                }                
+            },
+            "required": ["path", "name", "method", "merge"]
+        },
+        "Parameter": {
+            "oneOf": [
+                { "$ref": "#/definitions/CreateParameter", "additionalProperties": false },
+                { "$ref": "#/definitions/MergeParameter", "additionalProperties": false }
+            ]
+        },
+        "Responses": {
+            "type": "object",
+            "properties": {
+                "items": {
+                    "uniqueItems": true,
+                    "type": "array",
+                    "items": {
+                        "uniqueItems": true,
+                        "$ref": "#/definitions/Response"
+                    }
+                }
+            },
+            "additionalProperties": false
+        },
+        "Method": {
+            "type": "string",
+            "enum": [
+                "get",
+                "put",
+                "post",
+                "delete",
+                "options",
+                "head",
+                "patch",
+                "trace",
+                "*"
+            ]
+        },
+        "Response": {
+            "type": "object",
+            "required": [
+                "path",
+                "method",
+                "actions"
+            ],
+            "properties": {
+                "path": {
+                    "$ref": "#/definitions/NonEmptyStringProperty"
+                },
+                "method": {
+                    "$ref": "#/definitions/Method"
+                },
+                "actions": {
+                    "type": "array",
+                    "items": {
+                        "uniqueItems": true,
+                        "oneOf": [
+                            {
+                                "$ref": "#/definitions/CopyPathAction"
+                            },
+                            {
+                                "$ref": "#/definitions/CreatePathAction"
+                            }
+                        ]
+                    }
+                }
+            },
+            "additionalProperties": false
+        },
+        "CreatePathAction": {
+            "type": "object",
+            "required": [
+                "responseTypes",
+                "value",
+                "type",
+                "response"
+            ],
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "create"
+                    ]
+                },
+                "description": {
+                    "type": "string"
+                },
+                "response": {
+                    "type": "string"
+                },
+                "responseTypes": {
+                    "type": "array",
+                    "items": {
+                        "uniqueItems": true,
+                        "$ref": "#/definitions/ResponseType"
+                    }
+                },
+                "value": {
+                    "type": "object",
+                    "$ref": "https://schemas.sourcemeta.com/openapi/v3.0/schema.json#/definitions/MediaType"
+                }
+            }
+        },
+        "ResponseType": {
+            "type": "string",
+            "examples": [
+                "application/json",
+                "text/plain",
+                "text/json"
+            ]
+        },
+        "CopyPathAction": {
+            "type": "object",
+            "required": [
+                "copyFrom",
+                "copyTo",
+                "type"
+            ],
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "copy"
+                    ]
+                },
+                "copyFrom": {
+                    "type": "string"
+                },
+                "copyTo": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false
+        },
+        "Components": {
+            "type": "object",
+            "required": [
+                "items"
+            ],
+            "properties": {
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "uniqueItems": true,
+                        "$ref": "#/definitions/Component"
+                    }
+                },
+                "componentJsonPath": {
+                    "title": "Component json path",
+                    "description": "The base path to query components in the `openApi` file. Defaults to `$.components.schemas`",
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false
+        },
+        "Component": {
+            "type": "object",
+            "required": [
+                "name",
+                "merge"
+            ],
+            "properties": {
+                "name": {
+                    "$ref": "#/definitions/NonEmptyStringProperty",
+                    "title": "Name",
+                    "description": "The name of the component. A '*' can be used to apply changes to all components"
+                },
+                "description": {
+                    "title": "Description",
+                    "description": "A description for the component",
+                    "type": [
+                        "string",
+                        "array"
+                    ],
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "merge": {
+                    "$ref": "https://json-schema.org/draft-07/schema#",
+                    "description": "An Open API component definition to merge (or add) to the original component definitions"
+                }
+            },
+            "additionalProperties": false
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "fixswagger",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "node index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "deepmerge": "^4.3.1",
+        "jsonpath": "^1.1.1",
+        "yaml": "^2.7.0"
+    }
+}

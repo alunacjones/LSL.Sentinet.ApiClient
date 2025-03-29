@@ -1,0 +1,27 @@
+{
+    "runtime": "Net60",
+    "documentGenerator": {
+      "fromDocument": {
+        "json": "swagger.json"
+      }
+    },  
+    "codeGenerators": {
+      "openApiToCSharpClient": {      
+        "clientBaseClass": null,
+        "generateClientClasses": true,
+        "generateClientInterfaces": true,
+        "clientBaseInterface": "LSL.NSwag.CommonTypes.Client.INSwagClient",
+        "injectHttpClient": true,
+        "useBaseUrl": false,
+        "disposeHttpClient": false,
+        "output": "ApiClient.g.cs",
+        "contractsOutputFilePath": "Contracts.g.cs",
+        "generateExceptionClasses": false,
+        "exceptionClass": "LSL.NSwag.CommonTypes.Client.SwaggerException",
+        "namespace": "LSL.Sentinet.ApiClient",
+        "generateOptionalParameters": true,
+        "className": "SentinetApi{controller}Client"        
+      }
+    }
+  }
+  
