@@ -1,8 +1,9 @@
 using System;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using LSL.Sentinet.ApiClient.DependencyInjection;
 using LSL.Sentinet.ApiClient;
+using Microsoft.Extensions.DependencyInjection.Extensions;
+using LSL.Sentinet.ApiClient.DependencyInjection.Facades;
 
 #pragma warning disable IDE0130 // Namespace does not match folder structure
 namespace Microsoft.Extensions.DependencyInjection
@@ -22,7 +23,8 @@ namespace Microsoft.Extensions.DependencyInjection
         public static IServiceCollection AddSentinetApiClient(this IServiceCollection source, Action<SentineApiOptions> optionsConfigurator)
         {
             source.Configure(optionsConfigurator)
-                .AddTransient<SentinetApiMessageHandler>()
+                .FluentTryAddTransient<SentinetApiMessageHandler>()
+                .FluentTryAddSingleton<IFoldersFacade, FoldersFacade>()
                 .AddHttpClient<ISentinetApiClient, SentinetApiClient>()
                 .ConfigureHttpClient();
 

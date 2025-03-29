@@ -152,7 +152,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<File> CreateMessageContentWithResultAsync(int messageId, MessageVersion2 messageVersion, object body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<File> CreateMessageContentWithResultAsync(int messageId, MessageVersion messageVersion, object body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -328,7 +328,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<object> GenerateSecretAsync(Type type, int length, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<object> GenerateSecretAsync(Type2 type, int length, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -600,7 +600,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<CustomAttributeType>> GetCustomAttributeTypesAsync(EntityType2 entityType, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<CustomAttributeType>> GetCustomAttributeTypesAsync(EntityType entityType, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -608,7 +608,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task CreateOrUpdateOrDeleteCustomAttributeTypesAsync(EntityType3 entityType, System.Collections.Generic.IEnumerable<CustomAttributeType> body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task CreateOrUpdateOrDeleteCustomAttributeTypesAsync(EntityType entityType, System.Collections.Generic.IEnumerable<CustomAttributeType> body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -616,7 +616,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<CustomAttributeType>> CreateOrUpdateOrDeleteCustomAttributeTypesWithResultAsync(EntityType4 entityType, System.Collections.Generic.IEnumerable<CustomAttributeType> body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<CustomAttributeType>> CreateOrUpdateOrDeleteCustomAttributeTypesWithResultAsync(EntityType entityType, System.Collections.Generic.IEnumerable<CustomAttributeType> body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -904,7 +904,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<MetadataInfo> ImportMetadataFromMexEndpointAsync(Serializer2 serializer, bool transformToDocumentStyle, ClientEndpointConfiguration body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<MetadataInfo> ImportMetadataFromMexEndpointAsync(Serializer serializer, bool transformToDocumentStyle, ClientEndpointConfiguration body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -912,7 +912,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<MetadataInfo> ImportMetadataFromStringAsync(Serializer3 serializer, bool transformToDocumentStyle, object body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<MetadataInfo> ImportMetadataFromStringAsync(Serializer serializer, bool transformToDocumentStyle, object body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -920,7 +920,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<MetadataInfo> ImportMetadataFromFilesAsync(Serializer4 serializer, bool transformToDocumentStyle, object body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<MetadataInfo> ImportMetadataFromFilesAsync(Serializer serializer, bool transformToDocumentStyle, object body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -1296,7 +1296,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ChangeRecord>> GetChangeRecordsByFolderIdAsync(System.DateTimeOffset startTime, System.Collections.Generic.IEnumerable<Anonymous> entityTypes, ChangeTypes changeTypes, string searchTerm, System.DateTimeOffset? endTime = null, int? folderId = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ChangeRecord>> GetChangeRecordsByFolderIdAsync(System.DateTimeOffset startTime, System.Collections.Generic.IEnumerable<EntityType> entityTypes, ChangeTypes changeTypes, string searchTerm, System.DateTimeOffset? endTime = null, int? folderId = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -1304,7 +1304,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ChangeRecord>> GetChangeRecordsByEntityIdAsync(int entityId, EntityType5 entityType, System.DateTimeOffset startTime, ChangeTypes2 changeTypes, string searchTerm, System.DateTimeOffset? endTime = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ChangeRecord>> GetChangeRecordsByEntityIdAsync(int entityId, EntityType entityType, System.DateTimeOffset startTime, ChangeTypes changeTypes, string searchTerm, System.DateTimeOffset? endTime = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -1608,7 +1608,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task MoveFolderEntityAsync(int entityId, EntityType6 entityType, int? targetFolderId = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task MoveFolderEntityAsync(int entityId, Entities entityType, int? targetFolderId = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -1616,7 +1616,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task MoveFolderEntitiesAsync(Entities2 entities, int? sourceFolderId = null, int? targetFolderId = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task MoveFolderEntitiesAsync(Entities entities, int? sourceFolderId = null, int? targetFolderId = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -1752,7 +1752,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<ServiceVersionDefinition> CreateOrUpdateServiceVersionWithResultAsync(bool replaceDuplicateActions, BaseAddressCollisionAction2 baseAddressCollisionAction, ServiceVersionDefinition body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ServiceVersionDefinition> CreateOrUpdateServiceVersionWithResultAsync(bool replaceDuplicateActions, BaseAddressCollisionAction baseAddressCollisionAction, ServiceVersionDefinition body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -1760,7 +1760,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<object> CreateServiceVersionFromMetadataAsync(int fileId, ErrorTolerance errorTolerance, Serializer5 serializer, bool wrappedParameters, ServiceVersionImportDetails body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<object> CreateServiceVersionFromMetadataAsync(int fileId, ErrorTolerance errorTolerance, Serializer serializer, bool wrappedParameters, ServiceVersionImportDetails body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -1768,7 +1768,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<ServiceVersionDefinition> CreateServiceVersionFromMetadataWithResultAsync(int fileId, ErrorTolerance2 errorTolerance, Serializer6 serializer, bool wrappedParameters, ServiceVersionImportDetails body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ServiceVersionDefinition> CreateServiceVersionFromMetadataWithResultAsync(int fileId, ErrorTolerance errorTolerance, Serializer serializer, bool wrappedParameters, ServiceVersionImportDetails body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -1776,7 +1776,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<ServiceVersionDefinition> UpdateServiceVersionFromMetadataWithResultAsync(int fileId, ErrorTolerance3 errorTolerance, Serializer7 serializer, bool wrappedParameters, ServiceVersionUpdateDetails body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ServiceVersionDefinition> UpdateServiceVersionFromMetadataWithResultAsync(int fileId, ErrorTolerance errorTolerance, Serializer serializer, bool wrappedParameters, ServiceVersionUpdateDetails body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -1792,7 +1792,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<ServiceVersionDefinition> CreateServiceVersionFromSwaggerWithResultAsync(int fileId, int serviceId, Status3 status, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ServiceVersionDefinition> CreateServiceVersionFromSwaggerWithResultAsync(int fileId, int serviceId, Status2 status, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -3358,7 +3358,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<File> CreateMessageContentWithResultAsync(int messageId, MessageVersion2 messageVersion, object body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<File> CreateMessageContentWithResultAsync(int messageId, MessageVersion messageVersion, object body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             if (messageId == null)
                 throw new System.ArgumentNullException("messageId");
@@ -5154,7 +5154,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<object> GenerateSecretAsync(Type type, int length, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<object> GenerateSecretAsync(Type2 type, int length, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             if (type == null)
                 throw new System.ArgumentNullException("type");
@@ -7882,7 +7882,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<CustomAttributeType>> GetCustomAttributeTypesAsync(EntityType2 entityType, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<CustomAttributeType>> GetCustomAttributeTypesAsync(EntityType entityType, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             if (entityType == null)
                 throw new System.ArgumentNullException("entityType");
@@ -7962,7 +7962,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task CreateOrUpdateOrDeleteCustomAttributeTypesAsync(EntityType3 entityType, System.Collections.Generic.IEnumerable<CustomAttributeType> body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task CreateOrUpdateOrDeleteCustomAttributeTypesAsync(EntityType entityType, System.Collections.Generic.IEnumerable<CustomAttributeType> body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             if (entityType == null)
                 throw new System.ArgumentNullException("entityType");
@@ -8043,7 +8043,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<CustomAttributeType>> CreateOrUpdateOrDeleteCustomAttributeTypesWithResultAsync(EntityType4 entityType, System.Collections.Generic.IEnumerable<CustomAttributeType> body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<CustomAttributeType>> CreateOrUpdateOrDeleteCustomAttributeTypesWithResultAsync(EntityType entityType, System.Collections.Generic.IEnumerable<CustomAttributeType> body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             if (entityType == null)
                 throw new System.ArgumentNullException("entityType");
@@ -10897,7 +10897,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<MetadataInfo> ImportMetadataFromMexEndpointAsync(Serializer2 serializer, bool transformToDocumentStyle, ClientEndpointConfiguration body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<MetadataInfo> ImportMetadataFromMexEndpointAsync(Serializer serializer, bool transformToDocumentStyle, ClientEndpointConfiguration body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             if (serializer == null)
                 throw new System.ArgumentNullException("serializer");
@@ -10988,7 +10988,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<MetadataInfo> ImportMetadataFromStringAsync(Serializer3 serializer, bool transformToDocumentStyle, object body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<MetadataInfo> ImportMetadataFromStringAsync(Serializer serializer, bool transformToDocumentStyle, object body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             if (serializer == null)
                 throw new System.ArgumentNullException("serializer");
@@ -11079,7 +11079,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<MetadataInfo> ImportMetadataFromFilesAsync(Serializer4 serializer, bool transformToDocumentStyle, object body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<MetadataInfo> ImportMetadataFromFilesAsync(Serializer serializer, bool transformToDocumentStyle, object body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             if (serializer == null)
                 throw new System.ArgumentNullException("serializer");
@@ -14882,7 +14882,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ChangeRecord>> GetChangeRecordsByFolderIdAsync(System.DateTimeOffset startTime, System.Collections.Generic.IEnumerable<Anonymous> entityTypes, ChangeTypes changeTypes, string searchTerm, System.DateTimeOffset? endTime = null, int? folderId = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ChangeRecord>> GetChangeRecordsByFolderIdAsync(System.DateTimeOffset startTime, System.Collections.Generic.IEnumerable<EntityType> entityTypes, ChangeTypes changeTypes, string searchTerm, System.DateTimeOffset? endTime = null, int? folderId = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             if (startTime == null)
                 throw new System.ArgumentNullException("startTime");
@@ -14982,7 +14982,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ChangeRecord>> GetChangeRecordsByEntityIdAsync(int entityId, EntityType5 entityType, System.DateTimeOffset startTime, ChangeTypes2 changeTypes, string searchTerm, System.DateTimeOffset? endTime = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ChangeRecord>> GetChangeRecordsByEntityIdAsync(int entityId, EntityType entityType, System.DateTimeOffset startTime, ChangeTypes changeTypes, string searchTerm, System.DateTimeOffset? endTime = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             if (entityId == null)
                 throw new System.ArgumentNullException("entityId");
@@ -18008,7 +18008,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task MoveFolderEntityAsync(int entityId, EntityType6 entityType, int? targetFolderId = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task MoveFolderEntityAsync(int entityId, Entities entityType, int? targetFolderId = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             if (entityId == null)
                 throw new System.ArgumentNullException("entityId");
@@ -18091,7 +18091,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task MoveFolderEntitiesAsync(Entities2 entities, int? sourceFolderId = null, int? targetFolderId = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task MoveFolderEntitiesAsync(Entities entities, int? sourceFolderId = null, int? targetFolderId = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             if (entities == null)
                 throw new System.ArgumentNullException("entities");
@@ -19467,7 +19467,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<ServiceVersionDefinition> CreateOrUpdateServiceVersionWithResultAsync(bool replaceDuplicateActions, BaseAddressCollisionAction2 baseAddressCollisionAction, ServiceVersionDefinition body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<ServiceVersionDefinition> CreateOrUpdateServiceVersionWithResultAsync(bool replaceDuplicateActions, BaseAddressCollisionAction baseAddressCollisionAction, ServiceVersionDefinition body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             if (replaceDuplicateActions == null)
                 throw new System.ArgumentNullException("replaceDuplicateActions");
@@ -19558,7 +19558,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<object> CreateServiceVersionFromMetadataAsync(int fileId, ErrorTolerance errorTolerance, Serializer5 serializer, bool wrappedParameters, ServiceVersionImportDetails body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<object> CreateServiceVersionFromMetadataAsync(int fileId, ErrorTolerance errorTolerance, Serializer serializer, bool wrappedParameters, ServiceVersionImportDetails body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             if (fileId == null)
                 throw new System.ArgumentNullException("fileId");
@@ -19657,7 +19657,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<ServiceVersionDefinition> CreateServiceVersionFromMetadataWithResultAsync(int fileId, ErrorTolerance2 errorTolerance, Serializer6 serializer, bool wrappedParameters, ServiceVersionImportDetails body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<ServiceVersionDefinition> CreateServiceVersionFromMetadataWithResultAsync(int fileId, ErrorTolerance errorTolerance, Serializer serializer, bool wrappedParameters, ServiceVersionImportDetails body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             if (fileId == null)
                 throw new System.ArgumentNullException("fileId");
@@ -19756,7 +19756,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<ServiceVersionDefinition> UpdateServiceVersionFromMetadataWithResultAsync(int fileId, ErrorTolerance3 errorTolerance, Serializer7 serializer, bool wrappedParameters, ServiceVersionUpdateDetails body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<ServiceVersionDefinition> UpdateServiceVersionFromMetadataWithResultAsync(int fileId, ErrorTolerance errorTolerance, Serializer serializer, bool wrappedParameters, ServiceVersionUpdateDetails body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             if (fileId == null)
                 throw new System.ArgumentNullException("fileId");
@@ -19944,7 +19944,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<ServiceVersionDefinition> CreateServiceVersionFromSwaggerWithResultAsync(int fileId, int serviceId, Status3 status, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<ServiceVersionDefinition> CreateServiceVersionFromSwaggerWithResultAsync(int fileId, int serviceId, Status2 status, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             if (fileId == null)
                 throw new System.ArgumentNullException("fileId");
@@ -22870,10 +22870,10 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class Certificate : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("FriendlyName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("FriendlyName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FriendlyName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Expiration", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
@@ -22887,8 +22887,8 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
@@ -22904,20 +22904,20 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ServiceAgreementDefinition : ServiceAgreement
     {
-        [Newtonsoft.Json.JsonProperty("TimeZoneOffset", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("TimeZoneOffset", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string TimeZoneOffset { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Metrics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Metrics", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<ServiceAgreementMetric> Metrics { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Rules", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Rules", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<AuthorizationRuleAssignment> Rules { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Properties", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Properties", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<Property> Properties { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
@@ -22933,28 +22933,28 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ServiceAgreementMetric
     {
-        [Newtonsoft.Json.JsonProperty("ServiceAgreementId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ServiceAgreementId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ServiceAgreementId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ServiceAgreementId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Metric", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Metric", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ServiceAgreementMetricMetric? Metric { get; set; }
+        public Metric Metric { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Min", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public double? Min { get; set; }
+        [Newtonsoft.Json.JsonProperty("Min", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public double Min { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Max", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public double? Max { get; set; }
+        [Newtonsoft.Json.JsonProperty("Max", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public double Max { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TimeUnit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("TimeUnit", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ServiceAgreementMetricTimeUnit? TimeUnit { get; set; }
+        public TimeUnit TimeUnit { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TimeValue", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TimeValue { get; set; }
+        [Newtonsoft.Json.JsonProperty("TimeValue", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TimeValue { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
@@ -22970,72 +22970,72 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AuthorizationRuleAssignment : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("RuleId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? RuleId { get; set; }
+        [Newtonsoft.Json.JsonProperty("RuleId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int RuleId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("RuleName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("RuleName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string RuleName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("GroupId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? GroupId { get; set; }
+        [Newtonsoft.Json.JsonProperty("GroupId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int GroupId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("GroupName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("GroupName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string GroupName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("RuleExpression", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("RuleExpression", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AuthorizationExpressionBase RuleExpression { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ServiceId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ServiceId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ServiceId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ServiceName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ServiceName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public AuthorizationRuleAssignmentKind? Kind { get; set; }
+        public Kind Kind { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceVersionId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ServiceVersionId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ServiceVersionId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ServiceVersionId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceVersionName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ServiceVersionName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ServiceVersionName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("VersionNumber", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? VersionNumber { get; set; }
+        [Newtonsoft.Json.JsonProperty("VersionNumber", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int VersionNumber { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Version", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Version", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Version { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EndpointId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? EndpointId { get; set; }
+        [Newtonsoft.Json.JsonProperty("EndpointId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int EndpointId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EndpointName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("EndpointName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string EndpointName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ContractId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ContractId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ContractId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ContractId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ContractName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ContractName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ContractName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("OperationId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? OperationId { get; set; }
+        [Newtonsoft.Json.JsonProperty("OperationId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int OperationId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("OperationName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("OperationName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string OperationName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Priority", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Priority { get; set; }
+        [Newtonsoft.Json.JsonProperty("Priority", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Priority { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Action", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Action", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public AuthorizationRuleAssignmentAction? Action { get; set; }
+        public Action Action { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceAgreementId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ServiceAgreementId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ServiceAgreementId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ServiceAgreementId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceAgreementName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ServiceAgreementName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ServiceAgreementName { get; set; }
 
     }
@@ -23043,24 +23043,24 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class Property
     {
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("PropertyType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("PropertyType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public PropertyType? PropertyType { get; set; }
+        public PropertyType PropertyType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Value", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Value", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Value { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FileId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? FileId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FileId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int FileId { get; set; }
 
         [Newtonsoft.Json.JsonProperty("FileKey", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid FileKey { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
@@ -23076,7 +23076,7 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AuthorizationExpressionBase
     {
-        [Newtonsoft.Json.JsonProperty("Title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Title", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Title { get; set; }
 
     }
@@ -23084,18 +23084,18 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ServiceAgreement : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int FolderId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ServiceAgreementStatus? Status { get; set; }
+        public Status3 Status { get; set; }
 
         [Newtonsoft.Json.JsonProperty("StartDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset StartDateTime { get; set; }
@@ -23103,7 +23103,7 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("EndDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset EndDateTime { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TimeZoneId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("TimeZoneId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string TimeZoneId { get; set; }
 
     }
@@ -23111,25 +23111,25 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ServiceAgreementsSummary
     {
-        [Newtonsoft.Json.JsonProperty("DraftServiceAgreements", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? DraftServiceAgreements { get; set; }
+        [Newtonsoft.Json.JsonProperty("DraftServiceAgreements", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int DraftServiceAgreements { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ActiveServiceAgreements", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ActiveServiceAgreements { get; set; }
+        [Newtonsoft.Json.JsonProperty("ActiveServiceAgreements", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ActiveServiceAgreements { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("RetiredServiceAgreements", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? RetiredServiceAgreements { get; set; }
+        [Newtonsoft.Json.JsonProperty("RetiredServiceAgreements", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int RetiredServiceAgreements { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EffectiveServiceAgreements", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? EffectiveServiceAgreements { get; set; }
+        [Newtonsoft.Json.JsonProperty("EffectiveServiceAgreements", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int EffectiveServiceAgreements { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TotalServiceVersions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TotalServiceVersions { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalServiceVersions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TotalServiceVersions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EffectiveServiceVersions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? EffectiveServiceVersions { get; set; }
+        [Newtonsoft.Json.JsonProperty("EffectiveServiceVersions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int EffectiveServiceVersions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TimeZones", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("TimeZones", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<TimeZoneInfo> TimeZones { get; set; }
 
     }
@@ -23137,17 +23137,17 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class TimeZoneInfo
     {
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("UtcOffset", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("UtcOffset", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string UtcOffset { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("References", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? References { get; set; }
+        [Newtonsoft.Json.JsonProperty("References", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int References { get; set; }
 
     }
 
@@ -23157,15 +23157,15 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("T", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset T { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("C", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? C { get; set; }
+        [Newtonsoft.Json.JsonProperty("C", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int C { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Unit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Unit", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ServiceAgreementViolationSummaryUnit? Unit { get; set; }
+        public TimeUnit Unit { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Time", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Time { get; set; }
+        [Newtonsoft.Json.JsonProperty("Time", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Time { get; set; }
 
     }
 
@@ -23178,51 +23178,51 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("EndDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset EndDateTime { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Metrics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Metrics", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<int> Metrics { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int FolderId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TimeZoneId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("TimeZoneId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string TimeZoneId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TimeUnit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("TimeUnit", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ServiceAgreementViolationSummaryRequestTimeUnit? TimeUnit { get; set; }
+        public TimeUnit TimeUnit { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TimeResolution", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TimeResolution { get; set; }
+        [Newtonsoft.Json.JsonProperty("TimeResolution", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TimeResolution { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ServiceAgreementViolation
     {
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MetricId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? MetricId { get; set; }
+        [Newtonsoft.Json.JsonProperty("MetricId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int MetricId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MetricType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("MetricType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ServiceAgreementViolationMetricType? MetricType { get; set; }
+        public Metric MetricType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SlaId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? SlaId { get; set; }
+        [Newtonsoft.Json.JsonProperty("SlaId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int SlaId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SlaName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SlaName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string SlaName { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Time", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset Time { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("InitVal", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public double? InitVal { get; set; }
+        [Newtonsoft.Json.JsonProperty("InitVal", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public double InitVal { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("CurVal", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public double? CurVal { get; set; }
+        [Newtonsoft.Json.JsonProperty("CurVal", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public double CurVal { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset Created { get; set; }
@@ -23241,84 +23241,84 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("EndDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset EndDateTime { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Metrics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Metrics", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<int> Metrics { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int FolderId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TimeZoneId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("TimeZoneId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string TimeZoneId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ServiceAgreementViolationsRequestSortField? SortField { get; set; }
+        public ServiceAgreementViolationsRequestSortField SortField { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ServiceAgreementViolationsRequestSortOrder? SortOrder { get; set; }
+        public SortOrder SortOrder { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class MetricReadingSummary
     {
-        [Newtonsoft.Json.JsonProperty("MetricId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? MetricId { get; set; }
+        [Newtonsoft.Json.JsonProperty("MetricId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int MetricId { get; set; }
 
         [Newtonsoft.Json.JsonProperty("T", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset T { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Min", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public double? Min { get; set; }
+        [Newtonsoft.Json.JsonProperty("Min", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public double Min { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Max", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public double? Max { get; set; }
+        [Newtonsoft.Json.JsonProperty("Max", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public double Max { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Avg", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public double? Avg { get; set; }
+        [Newtonsoft.Json.JsonProperty("Avg", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public double Avg { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class MetricReading
     {
-        [Newtonsoft.Json.JsonProperty("MetricId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? MetricId { get; set; }
+        [Newtonsoft.Json.JsonProperty("MetricId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int MetricId { get; set; }
 
         [Newtonsoft.Json.JsonProperty("T", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset T { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("V", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public double? V { get; set; }
+        [Newtonsoft.Json.JsonProperty("V", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public double V { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ServiceAgreementSearchResult : SearchResult
     {
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ServiceAgreementSearchResultStatus? Status { get; set; }
+        public Status3 Status { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class SearchResult
     {
-        [Newtonsoft.Json.JsonProperty("FolderName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("FolderName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FolderName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FolderRoute", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("FolderRoute", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FolderRoute { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
     }
@@ -23326,17 +23326,17 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ServiceAgreementSearchQuery : SearchQuery
     {
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ServiceAgreementSearchQueryStatus? Status { get; set; }
+        public Status3 Status { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceVersionName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ServiceVersionName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ServiceVersionName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceVersionId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ServiceVersionId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ServiceVersionId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ServiceVersionId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Keywords", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Keywords { get; set; }
 
     }
@@ -23344,16 +23344,16 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class SearchQuery
     {
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int FolderId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
     }
@@ -23361,13 +23361,13 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class StaticResponseConfiguration
     {
-        [Newtonsoft.Json.JsonProperty("ServiceVersionId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ServiceVersionId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ServiceVersionId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ServiceVersionId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Operations", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Operations", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<int> Operations { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Responses", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Responses", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<MessageSample> Responses { get; set; }
 
     }
@@ -23375,42 +23375,42 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class MessageSample
     {
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("OperationId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? OperationId { get; set; }
+        [Newtonsoft.Json.JsonProperty("OperationId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int OperationId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MessageId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? MessageId { get; set; }
+        [Newtonsoft.Json.JsonProperty("MessageId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int MessageId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("RepeatCount", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? RepeatCount { get; set; }
+        [Newtonsoft.Json.JsonProperty("RepeatCount", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int RepeatCount { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Delay", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Delay { get; set; }
+        [Newtonsoft.Json.JsonProperty("Delay", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Delay { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Priority", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Priority { get; set; }
+        [Newtonsoft.Json.JsonProperty("Priority", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Priority { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Version", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Version", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public MessageSampleVersion? Version { get; set; }
+        public MessageVersion Version { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ContentType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ContentType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ContentType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("StatusCode", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? StatusCode { get; set; }
+        [Newtonsoft.Json.JsonProperty("StatusCode", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int StatusCode { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("HttpHeaders", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("HttpHeaders", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<TransportHeader> HttpHeaders { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FileId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? FileId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FileId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int FileId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
@@ -23426,13 +23426,13 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class TransportHeader
     {
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Value", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Value", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Value { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("VariableName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("VariableName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string VariableName { get; set; }
 
     }
@@ -23443,11 +23443,11 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Content", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public byte[] Content { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ContentType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ContentType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public FileContentType? ContentType { get; set; }
+        public FileContentType ContentType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FileName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("FileName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FileName { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Expired", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
@@ -23458,36 +23458,36 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class MessageContent
     {
-        [Newtonsoft.Json.JsonProperty("Content", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Content", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Content { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FileId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? FileId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FileId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int FileId { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class MessageGenerationSettings
     {
-        [Newtonsoft.Json.JsonProperty("EnvelopeVersion", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("EnvelopeVersion", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public MessageGenerationSettingsEnvelopeVersion? EnvelopeVersion { get; set; }
+        public MessageVersion EnvelopeVersion { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ArraySize", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ArraySize { get; set; }
+        [Newtonsoft.Json.JsonProperty("ArraySize", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ArraySize { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MaximumLevels", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? MaximumLevels { get; set; }
+        [Newtonsoft.Json.JsonProperty("MaximumLevels", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int MaximumLevels { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class MessageSchema
     {
-        [Newtonsoft.Json.JsonProperty("RootElement", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("RootElement", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public XmlQualifiedName RootElement { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Schemas", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Schemas", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<System.Collections.Generic.ICollection<object>> Schemas { get; set; }
 
     }
@@ -23495,10 +23495,10 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class XmlQualifiedName
     {
-        [Newtonsoft.Json.JsonProperty("name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ns", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ns", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Ns { get; set; }
 
     }
@@ -23506,16 +23506,16 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class MessagePipeline
     {
-        [Newtonsoft.Json.JsonProperty("InboundRequest", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("InboundRequest", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public MessagePipelineComponentBase InboundRequest { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("InboundResponse", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("InboundResponse", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public MessagePipelineComponentBase InboundResponse { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("OutboundRequest", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("OutboundRequest", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public MessagePipelineComponentBase OutboundRequest { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("OutboundResponse", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("OutboundResponse", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public MessagePipelineComponentBase OutboundResponse { get; set; }
 
     }
@@ -23529,19 +23529,19 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class DependencyPackage
     {
-        [Newtonsoft.Json.JsonProperty("Dependencies", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Dependencies", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<Dependency> Dependencies { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Repository", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Repository", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public FolderSubtree Repository { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("RouterTypes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("RouterTypes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<Subtree> RouterTypes { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Products", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Products", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<Subtree> Products { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("CustomAttributeTypes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("CustomAttributeTypes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<Subtree> CustomAttributeTypes { get; set; }
 
     }
@@ -23549,21 +23549,21 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class Dependency
     {
-        [Newtonsoft.Json.JsonProperty("PrimaryEntity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("PrimaryEntity", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public LocalIdentifier PrimaryEntity { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ForeignEntity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ForeignEntity", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public LocalIdentifier ForeignEntity { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("DependencyType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("DependencyType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public DependencyType? DependencyType { get; set; }
+        public DependencyType DependencyType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ReferenceType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ReferenceType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public DependencyReferenceType? ReferenceType { get; set; }
+        public ReferenceType ReferenceType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
     }
@@ -23571,37 +23571,37 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class FolderSubtree : Subtree
     {
-        [Newtonsoft.Json.JsonProperty("Folders", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Folders", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<FolderSubtree> Folders { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Services", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Services", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<ServiceSubtree> Services { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Nodes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Nodes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<NodeSubtree> Nodes { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Bindings", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Bindings", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<BindingSubtree> Bindings { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Rules", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Rules", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<Subtree> Rules { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AuthorizationGroups", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("AuthorizationGroups", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<Subtree> AuthorizationGroups { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Users", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Users", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<Subtree> Users { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceAgreements", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ServiceAgreements", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<Subtree> ServiceAgreements { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Behaviors", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Behaviors", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<BehaviorSubtree> Behaviors { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("CustomEntities", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("CustomEntities", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<Subtree> CustomEntities { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Identities", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Identities", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<IdentitySubtree> Identities { get; set; }
 
     }
@@ -23609,10 +23609,10 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class Subtree
     {
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
     }
@@ -23620,26 +23620,26 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class LocalIdentifier
     {
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EntityType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("EntityType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public LocalIdentifierEntityType? EntityType { get; set; }
+        public EntityType EntityType { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ServiceSubtree : Subtree
     {
-        [Newtonsoft.Json.JsonProperty("IsVirtual", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsVirtual { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsVirtual", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsVirtual { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ServiceSubtreeKind? Kind { get; set; }
+        public Kind Kind { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceVersions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ServiceVersions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<ServiceVersionSubtree> ServiceVersions { get; set; }
 
     }
@@ -23647,20 +23647,20 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class NodeSubtree
     {
-        [Newtonsoft.Json.JsonProperty("NodeType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("NodeType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public NodeSubtreeNodeType? NodeType { get; set; }
+        public NodeType NodeType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("BaseAddresses", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("BaseAddresses", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<Subtree> BaseAddresses { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Identities", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Identities", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<IdentitySubtree> Identities { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
     }
@@ -23668,13 +23668,13 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class BindingSubtree
     {
-        [Newtonsoft.Json.JsonProperty("Capabilities", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Capabilities", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Capabilities { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
     }
@@ -23682,14 +23682,14 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class BehaviorSubtree
     {
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public BehaviorSubtreeKind? Kind { get; set; }
+        public Kind2 Kind { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
     }
@@ -23697,14 +23697,14 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class IdentitySubtree
     {
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public IdentitySubtreeKind? Kind { get; set; }
+        public Kind3 Kind { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
     }
@@ -23712,24 +23712,24 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ServiceVersionSubtree : Subtree
     {
-        [Newtonsoft.Json.JsonProperty("Version", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Version", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Version { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("VersionNumber", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? VersionNumber { get; set; }
+        [Newtonsoft.Json.JsonProperty("VersionNumber", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int VersionNumber { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ServiceVersionSubtreeStatus? Status { get; set; }
+        public Status2 Status { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ServiceVersionSubtreeKind? Kind { get; set; }
+        public Kind Kind { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Contracts", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Contracts", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<ContractSubtree> Contracts { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EndpointGroups", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("EndpointGroups", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<EndpointGroupSubtree> EndpointGroups { get; set; }
 
     }
@@ -23737,16 +23737,16 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ContractSubtree
     {
-        [Newtonsoft.Json.JsonProperty("Operations", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Operations", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<OperationSubtree> Operations { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Endpoints", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Endpoints", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<EndpointSubtree> Endpoints { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
     }
@@ -23754,13 +23754,13 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class EndpointGroupSubtree
     {
-        [Newtonsoft.Json.JsonProperty("Endpoints", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Endpoints", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<EndpointSubtree> Endpoints { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
     }
@@ -23768,23 +23768,23 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class OperationSubtree
     {
-        [Newtonsoft.Json.JsonProperty("Messages", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Messages", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<MessageSubtree> Messages { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ExchangePattern", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ExchangePattern", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public OperationSubtreeExchangePattern? ExchangePattern { get; set; }
+        public ExchangePattern ExchangePattern { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsDeprecated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsDeprecated { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsDeprecated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsDeprecated { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsPublished", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsPublished { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsPublished", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsPublished { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
     }
@@ -23792,16 +23792,16 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class EndpointSubtree
     {
-        [Newtonsoft.Json.JsonProperty("Identities", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Identities", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<IdentitySubtree> Identities { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("PhysicalAddress", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("PhysicalAddress", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string PhysicalAddress { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
     }
@@ -23809,20 +23809,20 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class MessageSubtree
     {
-        [Newtonsoft.Json.JsonProperty("Headers", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Headers", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<Subtree> Headers { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Direction", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Direction", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public MessageSubtreeDirection? Direction { get; set; }
+        public Direction Direction { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("HttpMethod", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("HttpMethod", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string HttpMethod { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
     }
@@ -23836,7 +23836,7 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class MarshalByRefObject
     {
-        [Newtonsoft.Json.JsonProperty("__identity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("__identity", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public object __identity { get; set; }
 
     }
@@ -23844,19 +23844,19 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class RepositoryPackageInfo
     {
-        [Newtonsoft.Json.JsonProperty("FileId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? FileId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FileId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int FileId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Version", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Version", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Version { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Entities", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Entities", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<EntityInfo> Entities { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("UnresolvedKeys", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("UnresolvedKeys", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<GlobalIdentifier> UnresolvedKeys { get; set; }
 
     }
@@ -23864,21 +23864,21 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class EntityInfo
     {
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EntityType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("EntityType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public EntityInfoEntityType? EntityType { get; set; }
+        public EntityType EntityType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int FolderId { get; set; }
 
     }
 
@@ -23888,41 +23888,41 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Requirements", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Requirements", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Requirements { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EntityType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("EntityType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public GlobalIdentifierEntityType? EntityType { get; set; }
+        public EntityType EntityType { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class RepositoryPackageImportParameters
     {
-        [Newtonsoft.Json.JsonProperty("FileId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? FileId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FileId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int FileId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ImportedEntities", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ImportedEntities", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<LocalIdentifier> ImportedEntities { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Mappings", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Mappings", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<KeyMapping> Mappings { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("VerifyOnly", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? VerifyOnly { get; set; }
+        [Newtonsoft.Json.JsonProperty("VerifyOnly", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool VerifyOnly { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class KeyMapping
     {
-        [Newtonsoft.Json.JsonProperty("EntityType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("EntityType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public KeyMappingEntityType? EntityType { get; set; }
+        public EntityType EntityType { get; set; }
 
         [Newtonsoft.Json.JsonProperty("FromKey", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid FromKey { get; set; }
@@ -23935,10 +23935,10 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class SystemInfo
     {
-        [Newtonsoft.Json.JsonProperty("UserInfo", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("UserInfo", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public UserAuthorizationInfo UserInfo { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Settings", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Settings", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public ConfigurationSettings Settings { get; set; }
 
     }
@@ -23946,68 +23946,68 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class UserAuthorizationInfo
     {
-        [Newtonsoft.Json.JsonProperty("UserId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? UserId { get; set; }
+        [Newtonsoft.Json.JsonProperty("UserId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int UserId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FullName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("FullName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FullName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int FolderId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Permission", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Permission", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public UserAuthorizationInfoPermission? Permission { get; set; }
+        public Permission Permission { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("RepositoryPermissions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("RepositoryPermissions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string RepositoryPermissions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IdentityKind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("IdentityKind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public UserAuthorizationInfoIdentityKind? IdentityKind { get; set; }
+        public Kind3 IdentityKind { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ConsumerId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ConsumerId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ConsumerId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ConsumerId { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ConfigurationSettings
     {
-        [Newtonsoft.Json.JsonProperty("ReportingTimeZoneId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ReportingTimeZoneId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ReportingTimeZoneId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ReportingTimeZoneName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ReportingTimeZoneName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ReportingTimeZoneName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ReportingTimeZoneOffset", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ReportingTimeZoneOffset", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ReportingTimeZoneOffset { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("DatabaseVersion", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("DatabaseVersion", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string DatabaseVersion { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("RepositoryVersion", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("RepositoryVersion", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string RepositoryVersion { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("UserClaimType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("UserClaimType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string UserClaimType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("UserClaimIssuer", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("UserClaimIssuer", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string UserClaimIssuer { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsFullTextEnabled", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsFullTextEnabled { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsFullTextEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsFullTextEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("License", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("License", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public LicenseInfo License { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SwaggerViewerUrl", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SwaggerViewerUrl", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string SwaggerViewerUrl { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("DocumentationUrl", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("DocumentationUrl", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string DocumentationUrl { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("DeveloperPortal", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("DeveloperPortal", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public PortalSettings DeveloperPortal { get; set; }
 
     }
@@ -24018,15 +24018,15 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Expiration", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset Expiration { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Type", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public LicenseInfoType? Type { get; set; }
+        public LicenseInfoType Type { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Features", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Features", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public LicenseInfoFeatures? Features { get; set; }
+        public LicenseInfoFeatures Features { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
     }
@@ -24034,11 +24034,11 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class PortalSettings
     {
-        [Newtonsoft.Json.JsonProperty("AccessKeyLength", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? AccessKeyLength { get; set; }
+        [Newtonsoft.Json.JsonProperty("AccessKeyLength", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int AccessKeyLength { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AccessKeyLifetime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? AccessKeyLifetime { get; set; }
+        [Newtonsoft.Json.JsonProperty("AccessKeyLifetime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int AccessKeyLifetime { get; set; }
 
     }
 
@@ -24048,23 +24048,23 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("RawData", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public byte[] RawData { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Subject", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Subject", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Subject { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Issuer", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Issuer", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Issuer { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Thumbprint", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Thumbprint", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Thumbprint { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SerialNumber", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SerialNumber", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string SerialNumber { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("PublicData", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("PublicData", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string PublicData { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("HasPrivateKey", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? HasPrivateKey { get; set; }
+        [Newtonsoft.Json.JsonProperty("HasPrivateKey", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool HasPrivateKey { get; set; }
 
         [Newtonsoft.Json.JsonProperty("ValidFrom", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset ValidFrom { get; set; }
@@ -24072,22 +24072,22 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("ValidTo", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset ValidTo { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ContentType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ContentType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public CertificateInfoContentType? ContentType { get; set; }
+        public CertificateInfoContentType ContentType { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class MatchRelativeUriResult
     {
-        [Newtonsoft.Json.JsonProperty("IsMatched", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsMatched { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsMatched", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsMatched { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("BoundVariables", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("BoundVariables", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public object BoundVariables { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("BoundUri", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("BoundUri", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string BoundUri { get; set; }
 
     }
@@ -24095,28 +24095,28 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class LiquidTemplateParameters
     {
-        [Newtonsoft.Json.JsonProperty("Template", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Template", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Template { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Content", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Content", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Content { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ContentType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ContentType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public LiquidTemplateParametersContentType? ContentType { get; set; }
+        public LiquidTemplateParametersContentType ContentType { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class CodeCompilationParameters
     {
-        [Newtonsoft.Json.JsonProperty("References", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("References", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string References { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Imports", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Imports", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Imports { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Function", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Function", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Function { get; set; }
 
     }
@@ -24124,10 +24124,10 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class LogOnCredentials
     {
-        [Newtonsoft.Json.JsonProperty("UserName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("UserName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string UserName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Password", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Password", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Password { get; set; }
 
     }
@@ -24135,17 +24135,17 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ProductDefinition : Product
     {
-        [Newtonsoft.Json.JsonProperty("ServiceVersions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ServiceVersions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<ProductServiceVersion> ServiceVersions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Properties", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Properties", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<Property> Properties { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("References", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("References", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<EntityReference> References { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
@@ -24161,37 +24161,37 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ProductServiceVersion
     {
-        [Newtonsoft.Json.JsonProperty("ServiceVersionId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ServiceVersionId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ServiceVersionId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ServiceVersionId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ProductId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ProductId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ProductId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ProductId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Version", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Version", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Version { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("VersionNumber", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? VersionNumber { get; set; }
+        [Newtonsoft.Json.JsonProperty("VersionNumber", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int VersionNumber { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FriendlyName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("FriendlyName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FriendlyName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ProductServiceVersionStatus? Status { get; set; }
+        public Status2 Status { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ServiceId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ServiceId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ServiceId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ServiceName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ServiceName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ProductServiceVersionKind? Kind { get; set; }
+        public Kind Kind { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
@@ -24207,35 +24207,35 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class EntityReference
     {
-        [Newtonsoft.Json.JsonProperty("PrimaryEntityId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? PrimaryEntityId { get; set; }
+        [Newtonsoft.Json.JsonProperty("PrimaryEntityId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int PrimaryEntityId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("PrimaryEntityType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("PrimaryEntityType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public EntityReferencePrimaryEntityType? PrimaryEntityType { get; set; }
+        public EntityType PrimaryEntityType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("PrimaryEntityName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("PrimaryEntityName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string PrimaryEntityName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ForeignEntityId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ForeignEntityId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ForeignEntityId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ForeignEntityId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ForeignEntityType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ForeignEntityType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public EntityReferenceForeignEntityType? ForeignEntityType { get; set; }
+        public EntityType ForeignEntityType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ForeignEntityName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ForeignEntityName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ForeignEntityName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ReferenceType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ReferenceType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public EntityReferenceReferenceType? ReferenceType { get; set; }
+        public ReferenceType ReferenceType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
@@ -24251,35 +24251,35 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class Product : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ProductStatus? Status { get; set; }
+        public Status2 Status { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsPrivate", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsPrivate { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsPrivate", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsPrivate { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsApprovalRequired", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsApprovalRequired { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsApprovalRequired", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsApprovalRequired { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsSubscriptionRequired", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsSubscriptionRequired { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsSubscriptionRequired", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsSubscriptionRequired { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SubscriptionLifetime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? SubscriptionLifetime { get; set; }
+        [Newtonsoft.Json.JsonProperty("SubscriptionLifetime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int SubscriptionLifetime { get; set; }
 
         [Newtonsoft.Json.JsonProperty("LastUpdate", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset LastUpdate { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceVersionCount", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ServiceVersionCount { get; set; }
+        [Newtonsoft.Json.JsonProperty("ServiceVersionCount", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ServiceVersionCount { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("CustomAttributes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("CustomAttributes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public object CustomAttributes { get; set; }
 
     }
@@ -24290,51 +24290,51 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ProductSearchQueryStatus? Status { get; set; }
+        public Status2 Status { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsPrivate", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsPrivate { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsPrivate", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsPrivate { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsApprovalRequired", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsApprovalRequired { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsApprovalRequired", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsApprovalRequired { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsSubscriptionRequired", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsSubscriptionRequired { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsSubscriptionRequired", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsSubscriptionRequired { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Keywords", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Keywords { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ProductSearchQuerySortField? SortField { get; set; }
+        public ProductSearchQuerySortField SortField { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ProductSearchQuerySortOrder? SortOrder { get; set; }
+        public SortOrder SortOrder { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IncludeDescription", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IncludeDescription { get; set; }
+        [Newtonsoft.Json.JsonProperty("IncludeDescription", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IncludeDescription { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class Consumer : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsEnabled { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("CustomAttributes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("CustomAttributes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public object CustomAttributes { get; set; }
 
     }
@@ -24345,30 +24345,30 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsEnabled { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ConsumerSearchQuerySortField? SortField { get; set; }
+        public ConsumerSearchQuerySortField SortField { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ConsumerSearchQuerySortOrder? SortOrder { get; set; }
+        public SortOrder SortOrder { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class SubscriptionDefinition : Subscription
     {
-        [Newtonsoft.Json.JsonProperty("Applications", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Applications", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<Application> Applications { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
@@ -24384,19 +24384,19 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class Application : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SubscriptionId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? SubscriptionId { get; set; }
+        [Newtonsoft.Json.JsonProperty("SubscriptionId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int SubscriptionId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AccessKey1", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("AccessKey1", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string AccessKey1 { get; set; }
 
         [Newtonsoft.Json.JsonProperty("AccessKey1Expiration", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset AccessKey1Expiration { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AccessKey2", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("AccessKey2", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string AccessKey2 { get; set; }
 
         [Newtonsoft.Json.JsonProperty("AccessKey2Expiration", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
@@ -24407,32 +24407,32 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class Subscription : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ProductId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ProductId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ProductId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ProductId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ProductName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ProductName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ProductName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ConsumerId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ConsumerId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ConsumerId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ConsumerId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ConsumerName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ConsumerName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ConsumerName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public SubscriptionStatus? Status { get; set; }
+        public Status Status { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Expiration", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset Expiration { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ApplicationCount", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ApplicationCount { get; set; }
+        [Newtonsoft.Json.JsonProperty("ApplicationCount", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ApplicationCount { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("CustomAttributes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("CustomAttributes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public object CustomAttributes { get; set; }
 
     }
@@ -24443,24 +24443,24 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ProductId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ProductId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ProductId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ProductId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ProductName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ProductName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ProductName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ConsumerId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ConsumerId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ConsumerId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ConsumerId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ConsumerName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ConsumerName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ConsumerName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public SubscriptionSearchQueryStatus? Status { get; set; }
+        public Status Status { get; set; }
 
         [Newtonsoft.Json.JsonProperty("ExpirationFrom", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset ExpirationFrom { get; set; }
@@ -24474,13 +24474,13 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("CreatedTo", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset CreatedTo { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public SubscriptionSearchQuerySortField? SortField { get; set; }
+        public SubscriptionSearchQuerySortField SortField { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public SubscriptionSearchQuerySortOrder? SortOrder { get; set; }
+        public SortOrder SortOrder { get; set; }
 
     }
 
@@ -24490,28 +24490,28 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AccessKey", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("AccessKey", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string AccessKey { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SubscriptionId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? SubscriptionId { get; set; }
+        [Newtonsoft.Json.JsonProperty("SubscriptionId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int SubscriptionId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SubscriptionName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SubscriptionName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string SubscriptionName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ProductId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ProductId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ProductId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ProductId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ProductName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ProductName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ProductName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ConsumerId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ConsumerId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ConsumerId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ConsumerId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ConsumerName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ConsumerName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ConsumerName { get; set; }
 
         [Newtonsoft.Json.JsonProperty("AccessKeyExpirationFrom", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
@@ -24520,32 +24520,32 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("AccessKeyExpirationTo", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset AccessKeyExpirationTo { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ApplicationSearchQuerySortField? SortField { get; set; }
+        public ApplicationSearchQuerySortField SortField { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ApplicationSearchQuerySortOrder? SortOrder { get; set; }
+        public SortOrder SortOrder { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class PortalSummary
     {
-        [Newtonsoft.Json.JsonProperty("Products", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Products", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public ProductsSummary Products { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Consumers", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Consumers", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public ConsumersSummary Consumers { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Users", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Users", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public PortalUsersSummary Users { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Subscriptions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Subscriptions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public SubscriptionsSummary Subscriptions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceVersions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ServiceVersions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public ServiceVersionsSummary ServiceVersions { get; set; }
 
     }
@@ -24553,129 +24553,129 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ProductsSummary
     {
-        [Newtonsoft.Json.JsonProperty("DraftProducts", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? DraftProducts { get; set; }
+        [Newtonsoft.Json.JsonProperty("DraftProducts", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int DraftProducts { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ActiveProducts", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ActiveProducts { get; set; }
+        [Newtonsoft.Json.JsonProperty("ActiveProducts", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ActiveProducts { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ObsoleteProducts", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ObsoleteProducts { get; set; }
+        [Newtonsoft.Json.JsonProperty("ObsoleteProducts", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ObsoleteProducts { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("RetiredProducts", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? RetiredProducts { get; set; }
+        [Newtonsoft.Json.JsonProperty("RetiredProducts", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int RetiredProducts { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TotalProducts", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TotalProducts { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalProducts", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TotalProducts { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("PrivateProducts", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? PrivateProducts { get; set; }
+        [Newtonsoft.Json.JsonProperty("PrivateProducts", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int PrivateProducts { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ProductsThatRequireSubscription", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ProductsThatRequireSubscription { get; set; }
+        [Newtonsoft.Json.JsonProperty("ProductsThatRequireSubscription", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ProductsThatRequireSubscription { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ProductsThatRequireApproval", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ProductsThatRequireApproval { get; set; }
+        [Newtonsoft.Json.JsonProperty("ProductsThatRequireApproval", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ProductsThatRequireApproval { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ConsumersSummary
     {
-        [Newtonsoft.Json.JsonProperty("TotalConsumers", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TotalConsumers { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalConsumers", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TotalConsumers { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EnabledConsumers", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? EnabledConsumers { get; set; }
+        [Newtonsoft.Json.JsonProperty("EnabledConsumers", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int EnabledConsumers { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class PortalUsersSummary
     {
-        [Newtonsoft.Json.JsonProperty("TotalUsers", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TotalUsers { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalUsers", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TotalUsers { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EnabledUsers", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? EnabledUsers { get; set; }
+        [Newtonsoft.Json.JsonProperty("EnabledUsers", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int EnabledUsers { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AdministratorUsers", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? AdministratorUsers { get; set; }
+        [Newtonsoft.Json.JsonProperty("AdministratorUsers", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int AdministratorUsers { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ReadWriteUsers", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ReadWriteUsers { get; set; }
+        [Newtonsoft.Json.JsonProperty("ReadWriteUsers", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ReadWriteUsers { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ReadOnlyUsers", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ReadOnlyUsers { get; set; }
+        [Newtonsoft.Json.JsonProperty("ReadOnlyUsers", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ReadOnlyUsers { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class SubscriptionsSummary
     {
-        [Newtonsoft.Json.JsonProperty("RequestedSubscriptions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? RequestedSubscriptions { get; set; }
+        [Newtonsoft.Json.JsonProperty("RequestedSubscriptions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int RequestedSubscriptions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ActivatedSubscriptions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ActivatedSubscriptions { get; set; }
+        [Newtonsoft.Json.JsonProperty("ActivatedSubscriptions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ActivatedSubscriptions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("DeactivatedSubscriptions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? DeactivatedSubscriptions { get; set; }
+        [Newtonsoft.Json.JsonProperty("DeactivatedSubscriptions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int DeactivatedSubscriptions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ExpiredSubscriptions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ExpiredSubscriptions { get; set; }
+        [Newtonsoft.Json.JsonProperty("ExpiredSubscriptions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ExpiredSubscriptions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TotalSubscriptions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TotalSubscriptions { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalSubscriptions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TotalSubscriptions { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ServiceVersionsSummary
     {
-        [Newtonsoft.Json.JsonProperty("SoapServiceVersions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? SoapServiceVersions { get; set; }
+        [Newtonsoft.Json.JsonProperty("SoapServiceVersions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int SoapServiceVersions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("HostedServiceVersions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? HostedServiceVersions { get; set; }
+        [Newtonsoft.Json.JsonProperty("HostedServiceVersions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int HostedServiceVersions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("DraftServiceVersions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? DraftServiceVersions { get; set; }
+        [Newtonsoft.Json.JsonProperty("DraftServiceVersions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int DraftServiceVersions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ActiveServiceVersions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ActiveServiceVersions { get; set; }
+        [Newtonsoft.Json.JsonProperty("ActiveServiceVersions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ActiveServiceVersions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ObsoleteServiceVersions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ObsoleteServiceVersions { get; set; }
+        [Newtonsoft.Json.JsonProperty("ObsoleteServiceVersions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ObsoleteServiceVersions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("RetiredServiceVersions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? RetiredServiceVersions { get; set; }
+        [Newtonsoft.Json.JsonProperty("RetiredServiceVersions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int RetiredServiceVersions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TotalServiceVersions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TotalServiceVersions { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalServiceVersions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TotalServiceVersions { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class PolicyDescription
     {
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Namespace", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Namespace", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Namespace { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public PolicyDescriptionKind? Kind { get; set; }
+        public PolicyDescriptionKind Kind { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Transport", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Transport", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public TransportDescriptionBase Transport { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Soap", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Soap", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public SoapDescription Soap { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("PreviousConfiguration", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("PreviousConfiguration", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string PreviousConfiguration { get; set; }
 
     }
@@ -24689,46 +24689,46 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class SoapDescription
     {
-        [Newtonsoft.Json.JsonProperty("Version", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Version", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public SoapDescriptionVersion? Version { get; set; }
+        public SoapDescriptionVersion Version { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SecurityMode", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SecurityMode", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public SoapDescriptionSecurityMode? SecurityMode { get; set; }
+        public SoapDescriptionSecurityMode SecurityMode { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MessageSecurity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("MessageSecurity", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public SoapDescriptionMessageSecurity? MessageSecurity { get; set; }
+        public SoapDescriptionMessageSecurity MessageSecurity { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("UseContext", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? UseContext { get; set; }
+        [Newtonsoft.Json.JsonProperty("UseContext", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool UseContext { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EstablishSecurityContext", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? EstablishSecurityContext { get; set; }
+        [Newtonsoft.Json.JsonProperty("EstablishSecurityContext", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool EstablishSecurityContext { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ReliableSession", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ReliableSession", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public SoapDescriptionReliableSession? ReliableSession { get; set; }
+        public SoapDescriptionReliableSession ReliableSession { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("UseTransactions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? UseTransactions { get; set; }
+        [Newtonsoft.Json.JsonProperty("UseTransactions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool UseTransactions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("UseOasisProtocols", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? UseOasisProtocols { get; set; }
+        [Newtonsoft.Json.JsonProperty("UseOasisProtocols", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool UseOasisProtocols { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class SecurityRole : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Permissions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Permissions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Permissions { get; set; }
 
     }
@@ -24736,49 +24736,49 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class CustomAttributeType : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("DisplayName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("DisplayName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string DisplayName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EntityType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("EntityType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public CustomAttributeTypeEntityType? EntityType { get; set; }
+        public EntityType EntityType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("DataType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("DataType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public CustomAttributeTypeDataType? DataType { get; set; }
+        public CustomAttributeTypeDataType DataType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MaxLength", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? MaxLength { get; set; }
+        [Newtonsoft.Json.JsonProperty("MaxLength", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int MaxLength { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsRequired", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsRequired { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsRequired", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsRequired { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("PortalVisibility", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("PortalVisibility", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public CustomAttributeTypePortalVisibility? PortalVisibility { get; set; }
+        public CustomAttributeTypePortalVisibility PortalVisibility { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Position", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Position { get; set; }
+        [Newtonsoft.Json.JsonProperty("Position", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Position { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class VirtualizationProfile : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceKind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ServiceKind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public VirtualizationProfileServiceKind? ServiceKind { get; set; }
+        public Kind ServiceKind { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsDefault", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsDefault { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsDefault", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsDefault { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Settings", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Settings", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public VirtualizationSettings Settings { get; set; }
 
     }
@@ -24786,35 +24786,35 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class VirtualizationSettings
     {
-        [Newtonsoft.Json.JsonProperty("Activate", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? Activate { get; set; }
+        [Newtonsoft.Json.JsonProperty("Activate", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool Activate { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceNamePrefix", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ServiceNamePrefix", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ServiceNamePrefix { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceNameSuffix", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ServiceNameSuffix", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ServiceNameSuffix { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MonitoringProfile", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("MonitoringProfile", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public VirtualizationSettingsMonitoringProfile? MonitoringProfile { get; set; }
+        public VirtualizationSettingsMonitoringProfile MonitoringProfile { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MessageProcessing", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("MessageProcessing", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public MessagePipeline MessageProcessing { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Addresses", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Addresses", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<DefaultNodeAddress> Addresses { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Rules", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Rules", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<DefaultAuthorizationRule> Rules { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceVersionSettings", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ServiceVersionSettings", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public ServiceVersionSettings ServiceVersionSettings { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("BehaviorId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? BehaviorId { get; set; }
+        [Newtonsoft.Json.JsonProperty("BehaviorId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int BehaviorId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("BehaviorName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("BehaviorName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string BehaviorName { get; set; }
 
     }
@@ -24831,29 +24831,29 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("PolicyKey", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid PolicyKey { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("NodeId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? NodeId { get; set; }
+        [Newtonsoft.Json.JsonProperty("NodeId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int NodeId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("PolicyId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? PolicyId { get; set; }
+        [Newtonsoft.Json.JsonProperty("PolicyId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int PolicyId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Address", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Address", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Address { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("NodeName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("NodeName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string NodeName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("NodeFolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? NodeFolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("NodeFolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int NodeFolderId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("PolicyName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("PolicyName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string PolicyName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("PolicyFolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? PolicyFolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("PolicyFolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int PolicyFolderId { get; set; }
 
     }
 
@@ -24863,80 +24863,80 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Priority", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Priority { get; set; }
+        [Newtonsoft.Json.JsonProperty("Priority", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Priority { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Action", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Action", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public DefaultAuthorizationRuleAction? Action { get; set; }
+        public Action Action { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int FolderId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsGroup", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsGroup { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsGroup", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsGroup { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ServiceVersionSettings
     {
-        [Newtonsoft.Json.JsonProperty("TransitWindows", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? TransitWindows { get; set; }
+        [Newtonsoft.Json.JsonProperty("TransitWindows", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool TransitWindows { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TransitUserName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? TransitUserName { get; set; }
+        [Newtonsoft.Json.JsonProperty("TransitUserName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool TransitUserName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("UserNameAuth", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("UserNameAuth", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ServiceVersionSettingsUserNameAuth? UserNameAuth { get; set; }
+        public ServiceVersionSettingsUserNameAuth UserNameAuth { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MapX509", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? MapX509 { get; set; }
+        [Newtonsoft.Json.JsonProperty("MapX509", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool MapX509 { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MapSaml", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? MapSaml { get; set; }
+        [Newtonsoft.Json.JsonProperty("MapSaml", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool MapSaml { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AzureDiscovery", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? AzureDiscovery { get; set; }
+        [Newtonsoft.Json.JsonProperty("AzureDiscovery", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool AzureDiscovery { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SyncProcessing", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? SyncProcessing { get; set; }
+        [Newtonsoft.Json.JsonProperty("SyncProcessing", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool SyncProcessing { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("UseInternalSTS", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? UseInternalSTS { get; set; }
+        [Newtonsoft.Json.JsonProperty("UseInternalSTS", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool UseInternalSTS { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("InternalStsSettings", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("InternalStsSettings", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public SecurityTokenServiceSettings InternalStsSettings { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TransitRequestHeaders", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("TransitRequestHeaders", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string TransitRequestHeaders { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TransitResponseHeaders", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("TransitResponseHeaders", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string TransitResponseHeaders { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ErrorsHandling", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ErrorsHandling", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public WebErrorsHandling ErrorsHandling { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Cors", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Cors", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public CorsSettings Cors { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Diagnostics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Diagnostics", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public DiagnosticSettings Diagnostics { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("RequestMimeTypes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("RequestMimeTypes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> RequestMimeTypes { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ResponseMimeTypes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ResponseMimeTypes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> ResponseMimeTypes { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MonitoringFilters", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("MonitoringFilters", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<MonitoringFilterBase> MonitoringFilters { get; set; }
 
     }
@@ -24944,14 +24944,14 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class SecurityTokenServiceSettings
     {
-        [Newtonsoft.Json.JsonProperty("JwtSigningAlgorithm", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("JwtSigningAlgorithm", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public SecurityTokenServiceSettingsJwtSigningAlgorithm? JwtSigningAlgorithm { get; set; }
+        public SecurityTokenServiceSettingsJwtSigningAlgorithm JwtSigningAlgorithm { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TokenLifetime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("TokenLifetime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string TokenLifetime { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SigningSecret", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SigningSecret", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string SigningSecret { get; set; }
 
     }
@@ -24959,32 +24959,32 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class WebErrorsHandling
     {
-        [Newtonsoft.Json.JsonProperty("AccessDeniedStatusCode", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? AccessDeniedStatusCode { get; set; }
+        [Newtonsoft.Json.JsonProperty("AccessDeniedStatusCode", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int AccessDeniedStatusCode { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AccessDeniedMessage", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("AccessDeniedMessage", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string AccessDeniedMessage { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("InvalidRequestStatusCode", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? InvalidRequestStatusCode { get; set; }
+        [Newtonsoft.Json.JsonProperty("InvalidRequestStatusCode", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int InvalidRequestStatusCode { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("InvalidRequestMessage", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("InvalidRequestMessage", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string InvalidRequestMessage { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("InternalErrorStatusCode", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? InternalErrorStatusCode { get; set; }
+        [Newtonsoft.Json.JsonProperty("InternalErrorStatusCode", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int InternalErrorStatusCode { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MessageContentFormat", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("MessageContentFormat", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public WebErrorsHandlingMessageContentFormat? MessageContentFormat { get; set; }
+        public WebErrorsHandlingMessageContentFormat MessageContentFormat { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FaultStatusCodes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("FaultStatusCodes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FaultStatusCodes { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FaultExpression", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("FaultExpression", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AuthorizationExpressionBase FaultExpression { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ErrorHandlerFullyQualifiedTypeName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ErrorHandlerFullyQualifiedTypeName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ErrorHandlerFullyQualifiedTypeName { get; set; }
 
     }
@@ -24992,37 +24992,37 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class CorsSettings
     {
-        [Newtonsoft.Json.JsonProperty("AllowedOrigins", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("AllowedOrigins", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string AllowedOrigins { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AllowedMethods", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("AllowedMethods", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string AllowedMethods { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AllowedHeaders", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("AllowedHeaders", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string AllowedHeaders { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ExposedHeaders", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ExposedHeaders", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ExposedHeaders { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AllowCredentials", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? AllowCredentials { get; set; }
+        [Newtonsoft.Json.JsonProperty("AllowCredentials", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool AllowCredentials { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("PreflightMaxAge", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? PreflightMaxAge { get; set; }
+        [Newtonsoft.Json.JsonProperty("PreflightMaxAge", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int PreflightMaxAge { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class DiagnosticSettings
     {
-        [Newtonsoft.Json.JsonProperty("AuthorizationTraceEnabled", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? AuthorizationTraceEnabled { get; set; }
+        [Newtonsoft.Json.JsonProperty("AuthorizationTraceEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool AuthorizationTraceEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MessagePipelineTraceEnabled", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? MessagePipelineTraceEnabled { get; set; }
+        [Newtonsoft.Json.JsonProperty("MessagePipelineTraceEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool MessagePipelineTraceEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("OAuthTraceEnabled", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? OAuthTraceEnabled { get; set; }
+        [Newtonsoft.Json.JsonProperty("OAuthTraceEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool OAuthTraceEnabled { get; set; }
 
     }
 
@@ -25035,44 +25035,44 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class BehaviorSearchResult : SearchResult
     {
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public BehaviorSearchResultKind? Kind { get; set; }
+        public Kind2 Kind { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class BehaviorSearchQuery : SearchQuery
     {
-        [Newtonsoft.Json.JsonProperty("Configuration", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Configuration", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Configuration { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public BehaviorSearchQueryKind? Kind { get; set; }
+        public Kind2 Kind { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class NodeDefinition : Node
     {
-        [Newtonsoft.Json.JsonProperty("IsPopulated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsPopulated { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsPopulated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsPopulated { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("BaseAddresses", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("BaseAddresses", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<NodeAddress> BaseAddresses { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Identities", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Identities", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<IdentityDefinitionBase> Identities { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TrustedIssuers", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("TrustedIssuers", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<Issuer> TrustedIssuers { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Instances", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Instances", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<NodeInstance> Instances { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
@@ -25088,21 +25088,21 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class NodeAddress
     {
-        [Newtonsoft.Json.JsonProperty("NodeId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? NodeId { get; set; }
+        [Newtonsoft.Json.JsonProperty("NodeId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int NodeId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Address", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Address", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Address { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public NodeAddressKind? Kind { get; set; }
+        public Kind4 Kind { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Configuration", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Configuration", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AzureSecurityConfiguration Configuration { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
@@ -25118,27 +25118,27 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class IdentityDefinitionBase
     {
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public IdentityDefinitionBaseKind? Kind { get; set; }
+        public Kind3 Kind { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FriendlyName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("FriendlyName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FriendlyName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsPublic", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsPublic { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsPublic", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsPublic { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int FolderId { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Expired", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset Expired { get; set; }
@@ -25154,23 +25154,23 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class Issuer
     {
-        [Newtonsoft.Json.JsonProperty("FriendlyName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("FriendlyName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FriendlyName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IssuerName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("IssuerName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string IssuerName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Thumbprint", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Thumbprint", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Thumbprint { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Certificate", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public byte[] Certificate { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("NodeId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? NodeId { get; set; }
+        [Newtonsoft.Json.JsonProperty("NodeId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int NodeId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
@@ -25186,37 +25186,37 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class NodeInstance
     {
-        [Newtonsoft.Json.JsonProperty("NodeId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? NodeId { get; set; }
+        [Newtonsoft.Json.JsonProperty("NodeId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int NodeId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
         [Newtonsoft.Json.JsonProperty("LastHeartbeat", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset LastHeartbeat { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("LastReportedStatus", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("LastReportedStatus", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public NodeInstanceLastReportedStatus? LastReportedStatus { get; set; }
+        public LastReportedStatus LastReportedStatus { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public NodeInstanceStatus? Status { get; set; }
+        public LastReportedStatus Status { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MachineName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("MachineName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string MachineName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ClientAddress", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ClientAddress", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ClientAddress { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("RuntimeVersion", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("RuntimeVersion", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string RuntimeVersion { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Information", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Information", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Information { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
@@ -25232,36 +25232,36 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class NodeSettings
     {
-        [Newtonsoft.Json.JsonProperty("ClientAddressHeaderName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ClientAddressHeaderName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ClientAddressHeaderName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ClientAddressOptions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ClientAddressOptions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public NodeSettingsClientAddressOptions? ClientAddressOptions { get; set; }
+        public NodeSettingsClientAddressOptions ClientAddressOptions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ChangeMode", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ChangeMode", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public NodeSettingsChangeMode? ChangeMode { get; set; }
+        public NodeSettingsChangeMode ChangeMode { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AzureSecurityConfiguration
     {
-        [Newtonsoft.Json.JsonProperty("CredentialType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("CredentialType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public AzureSecurityConfigurationCredentialType? CredentialType { get; set; }
+        public AzureSecurityConfigurationCredentialType CredentialType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SharedSecret", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SharedSecret", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AzureSharedSecret SharedSecret { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SharedAccessSignature", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SharedAccessSignature", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AzureSharedAccessSignature SharedAccessSignature { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Credential", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Credential", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AzureNetworkCredential Credential { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("StsUri", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("StsUri", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string StsUri { get; set; }
 
     }
@@ -25269,10 +25269,10 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AzureSharedSecret
     {
-        [Newtonsoft.Json.JsonProperty("IssuerName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("IssuerName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string IssuerName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IssuerSecret", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("IssuerSecret", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string IssuerSecret { get; set; }
 
     }
@@ -25280,10 +25280,10 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AzureSharedAccessSignature
     {
-        [Newtonsoft.Json.JsonProperty("KeyName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("KeyName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string KeyName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SharedAccessKey", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SharedAccessKey", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string SharedAccessKey { get; set; }
 
     }
@@ -25291,13 +25291,13 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AzureNetworkCredential
     {
-        [Newtonsoft.Json.JsonProperty("UserName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("UserName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string UserName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Password", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Password", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Password { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Domain", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Domain", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Domain { get; set; }
 
     }
@@ -25305,26 +25305,26 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class Node : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int FolderId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsEnabled { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("NodeType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("NodeType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public NodeType? NodeType { get; set; }
+        public NodeType NodeType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("HeartbeatInterval", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("HeartbeatInterval", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string HeartbeatInterval { get; set; }
 
         [Newtonsoft.Json.JsonProperty("LastUpdate", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset LastUpdate { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Settings", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Settings", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public NodeSettings Settings { get; set; }
 
     }
@@ -25332,31 +25332,31 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class NodesSummary
     {
-        [Newtonsoft.Json.JsonProperty("IdleInstances", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? IdleInstances { get; set; }
+        [Newtonsoft.Json.JsonProperty("IdleInstances", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int IdleInstances { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("NormalInstances", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? NormalInstances { get; set; }
+        [Newtonsoft.Json.JsonProperty("NormalInstances", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int NormalInstances { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("WarningInstances", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? WarningInstances { get; set; }
+        [Newtonsoft.Json.JsonProperty("WarningInstances", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int WarningInstances { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ErrorInstances", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ErrorInstances { get; set; }
+        [Newtonsoft.Json.JsonProperty("ErrorInstances", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ErrorInstances { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TotalNodes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TotalNodes { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalNodes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TotalNodes { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EnabledNodes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? EnabledNodes { get; set; }
+        [Newtonsoft.Json.JsonProperty("EnabledNodes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int EnabledNodes { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TotalServiceVersions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TotalServiceVersions { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalServiceVersions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TotalServiceVersions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("HostedServiceVersions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? HostedServiceVersions { get; set; }
+        [Newtonsoft.Json.JsonProperty("HostedServiceVersions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int HostedServiceVersions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Schemes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Schemes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<SchemeSummary> Schemes { get; set; }
 
     }
@@ -25364,29 +25364,29 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class SchemeSummary
     {
-        [Newtonsoft.Json.JsonProperty("Scheme", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Scheme", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Scheme { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public SchemeSummaryKind? Kind { get; set; }
+        public Kind4 Kind { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TotalEndpoints", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TotalEndpoints { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalEndpoints", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TotalEndpoints { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("HostedEndpoints", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? HostedEndpoints { get; set; }
+        [Newtonsoft.Json.JsonProperty("HostedEndpoints", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int HostedEndpoints { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class NodeSearchQuery : SearchQuery
     {
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public NodeSearchQueryStatus? Status { get; set; }
+        public LastReportedStatus Status { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("BaseAddress", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("BaseAddress", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string BaseAddress { get; set; }
 
     }
@@ -25394,13 +25394,13 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class RouterType : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FullyQualifiedTypeName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("FullyQualifiedTypeName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FullyQualifiedTypeName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Configuration", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Configuration", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Configuration { get; set; }
 
     }
@@ -25408,16 +25408,16 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ExpressionType : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FullyQualifiedTypeName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("FullyQualifiedTypeName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FullyQualifiedTypeName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsSingleCall", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsSingleCall { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsSingleCall", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsSingleCall { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Configuration", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Configuration", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Configuration { get; set; }
 
     }
@@ -25425,37 +25425,37 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ComponentType : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FullyQualifiedTypeName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("FullyQualifiedTypeName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FullyQualifiedTypeName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsSingleCall", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsSingleCall { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsSingleCall", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsSingleCall { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Configuration", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Configuration", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Configuration { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AllowedPositions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("AllowedPositions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ComponentTypeAllowedPositions? AllowedPositions { get; set; }
+        public ComponentTypeAllowedPositions AllowedPositions { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class MetadataInfo
     {
-        [Newtonsoft.Json.JsonProperty("FileId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? FileId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FileId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int FileId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Contracts", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Contracts", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<ContractInfo> Contracts { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Services", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Services", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<ServiceInfo> Services { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Errors", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Errors", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<ErrorInfo> Errors { get; set; }
 
     }
@@ -25463,10 +25463,10 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ContractInfo
     {
-        [Newtonsoft.Json.JsonProperty("QName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("QName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public XmlQualifiedName QName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Operations", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Operations", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<OperationInfo> Operations { get; set; }
 
     }
@@ -25474,10 +25474,10 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ServiceInfo
     {
-        [Newtonsoft.Json.JsonProperty("QName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("QName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public XmlQualifiedName QName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Endpoints", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Endpoints", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<EndpointInfo> Endpoints { get; set; }
 
     }
@@ -25485,10 +25485,10 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ErrorInfo
     {
-        [Newtonsoft.Json.JsonProperty("IsWarning", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsWarning { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsWarning", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsWarning { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Message", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Message", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Message { get; set; }
 
     }
@@ -25496,25 +25496,25 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class OperationInfo
     {
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ExchangePattern", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ExchangePattern", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public OperationInfoExchangePattern? ExchangePattern { get; set; }
+        public ExchangePattern ExchangePattern { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class EndpointInfo
     {
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Address", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Address", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Address { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ContractQName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ContractQName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public XmlQualifiedName ContractQName { get; set; }
 
     }
@@ -25522,13 +25522,13 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ClientEndpointConfiguration
     {
-        [Newtonsoft.Json.JsonProperty("Address", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Address", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Address { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("BindingConfiguration", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("BindingConfiguration", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string BindingConfiguration { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ClientIdentities", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ClientIdentities", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<IdentityDefinitionBase> ClientIdentities { get; set; }
 
     }
@@ -25536,19 +25536,19 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class RestMetadataInfo
     {
-        [Newtonsoft.Json.JsonProperty("FileId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? FileId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FileId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int FileId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ServiceName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ServiceName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Operations", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Operations", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<RestOperationInfo> Operations { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Endpoints", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Endpoints", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<RestEndpointInfo> Endpoints { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Errors", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Errors", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<ErrorInfo> Errors { get; set; }
 
     }
@@ -25556,10 +25556,10 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class RestOperationInfo
     {
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("HttpMethod", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("HttpMethod", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string HttpMethod { get; set; }
 
     }
@@ -25567,10 +25567,10 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class RestEndpointInfo
     {
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Address", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Address", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Address { get; set; }
 
     }
@@ -25578,11 +25578,11 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AuthorizationRuleDefinition : AuthorizationRule
     {
-        [Newtonsoft.Json.JsonProperty("Properties", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Properties", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<Property> Properties { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
@@ -25598,16 +25598,16 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AuthorizationRule : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int FolderId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Expression", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Expression", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AuthorizationExpressionBase Expression { get; set; }
 
     }
@@ -25615,10 +25615,10 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AuthorizationClaimType : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("ClaimType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ClaimType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ClaimType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
     }
@@ -25626,20 +25626,20 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AuthorizationRulesSummary
     {
-        [Newtonsoft.Json.JsonProperty("TotalRules", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TotalRules { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalRules", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TotalRules { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ReferencedRules", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ReferencedRules { get; set; }
+        [Newtonsoft.Json.JsonProperty("ReferencedRules", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ReferencedRules { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TotalReferences", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TotalReferences { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalReferences", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TotalReferences { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TotalServiceVersions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TotalServiceVersions { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalServiceVersions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TotalServiceVersions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("HostedServiceVersions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? HostedServiceVersions { get; set; }
+        [Newtonsoft.Json.JsonProperty("HostedServiceVersions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int HostedServiceVersions { get; set; }
 
     }
 
@@ -25652,10 +25652,10 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AuthorizationRuleSearchQuery : SearchQuery
     {
-        [Newtonsoft.Json.JsonProperty("Expression", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Expression", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Expression { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Keywords", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Keywords { get; set; }
 
     }
@@ -25663,14 +25663,14 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AuthorizationGroupDefinition : AuthorizationGroup
     {
-        [Newtonsoft.Json.JsonProperty("Members", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Members", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<AuthorizationGroupMember> Members { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Properties", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Properties", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<Property> Properties { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
@@ -25686,29 +25686,29 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AuthorizationGroupMember
     {
-        [Newtonsoft.Json.JsonProperty("GroupId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? GroupId { get; set; }
+        [Newtonsoft.Json.JsonProperty("GroupId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int GroupId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MemberRuleId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? MemberRuleId { get; set; }
+        [Newtonsoft.Json.JsonProperty("MemberRuleId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int MemberRuleId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MemberRuleName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("MemberRuleName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string MemberRuleName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MemberRuleExpression", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("MemberRuleExpression", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AuthorizationExpressionBase MemberRuleExpression { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MemberGroupId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? MemberGroupId { get; set; }
+        [Newtonsoft.Json.JsonProperty("MemberGroupId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int MemberGroupId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MemberGroupName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("MemberGroupName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string MemberGroupName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Priority", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Priority { get; set; }
+        [Newtonsoft.Json.JsonProperty("Priority", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Priority { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
@@ -25724,13 +25724,13 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AuthorizationGroup : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int FolderId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
     }
@@ -25738,20 +25738,20 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AuthorizationGroupsSummary
     {
-        [Newtonsoft.Json.JsonProperty("TotalGroups", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TotalGroups { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalGroups", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TotalGroups { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ReferencedGroups", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ReferencedGroups { get; set; }
+        [Newtonsoft.Json.JsonProperty("ReferencedGroups", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ReferencedGroups { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TotalReferences", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TotalReferences { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalReferences", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TotalReferences { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TotalServiceVersions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TotalServiceVersions { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalServiceVersions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TotalServiceVersions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("HostedServiceVersions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? HostedServiceVersions { get; set; }
+        [Newtonsoft.Json.JsonProperty("HostedServiceVersions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int HostedServiceVersions { get; set; }
 
     }
 
@@ -25764,7 +25764,7 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AuthorizationGroupSearchQuery : SearchQuery
     {
-        [Newtonsoft.Json.JsonProperty("Keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Keywords", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Keywords { get; set; }
 
     }
@@ -25772,14 +25772,14 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class CustomEntityDefinition : CustomEntity
     {
-        [Newtonsoft.Json.JsonProperty("Properties", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Properties", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<Property> Properties { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("References", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("References", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<EntityReference> References { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
@@ -25795,13 +25795,13 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class CustomEntity : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int FolderId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FriendlyName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("FriendlyName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FriendlyName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
     }
@@ -25809,15 +25809,15 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class CustomEntitiesSummary
     {
-        [Newtonsoft.Json.JsonProperty("TotalEntities", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TotalEntities { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalEntities", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TotalEntities { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class CustomEntitySearchQuery : SearchQuery
     {
-        [Newtonsoft.Json.JsonProperty("Keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Keywords", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Keywords { get; set; }
 
     }
@@ -25825,16 +25825,16 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ExtensibilityTypes
     {
-        [Newtonsoft.Json.JsonProperty("ExpressionTypes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ExpressionTypes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<ExpressionType> ExpressionTypes { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("RouterTypes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("RouterTypes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<RouterType> RouterTypes { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ComponentTypes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ComponentTypes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<ComponentType> ComponentTypes { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AlertHandlerTypes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("AlertHandlerTypes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<AlertHandlerType> AlertHandlerTypes { get; set; }
 
     }
@@ -25842,13 +25842,13 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AlertHandlerType : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FullyQualifiedTypeName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("FullyQualifiedTypeName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FullyQualifiedTypeName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Configuration", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Configuration", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Configuration { get; set; }
 
     }
@@ -25859,41 +25859,41 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Time", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset Time { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("CntS", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? CntS { get; set; }
+        [Newtonsoft.Json.JsonProperty("CntS", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long CntS { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("CntF", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? CntF { get; set; }
+        [Newtonsoft.Json.JsonProperty("CntF", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long CntF { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("CntE", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? CntE { get; set; }
+        [Newtonsoft.Json.JsonProperty("CntE", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long CntE { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MaxD", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? MaxD { get; set; }
+        [Newtonsoft.Json.JsonProperty("MaxD", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int MaxD { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MinD", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? MinD { get; set; }
+        [Newtonsoft.Json.JsonProperty("MinD", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int MinD { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SumD", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? SumD { get; set; }
+        [Newtonsoft.Json.JsonProperty("SumD", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long SumD { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MaxS", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? MaxS { get; set; }
+        [Newtonsoft.Json.JsonProperty("MaxS", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long MaxS { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ReqB", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ReqB { get; set; }
+        [Newtonsoft.Json.JsonProperty("ReqB", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long ReqB { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ResB", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ResB { get; set; }
+        [Newtonsoft.Json.JsonProperty("ResB", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long ResB { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class TransactionSummaryRequest
     {
-        [Newtonsoft.Json.JsonProperty("Type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Type", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public TransactionSummaryRequestType? Type { get; set; }
+        public Type Type { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Start", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset Start { get; set; }
@@ -25901,127 +25901,127 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("End", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset End { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Res", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Res { get; set; }
+        [Newtonsoft.Json.JsonProperty("Res", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Res { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Unit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Unit", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public TransactionSummaryRequestUnit? Unit { get; set; }
+        public TimeUnit Unit { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("NodeId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? NodeId { get; set; }
+        [Newtonsoft.Json.JsonProperty("NodeId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int NodeId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("NodeInstanceId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? NodeInstanceId { get; set; }
+        [Newtonsoft.Json.JsonProperty("NodeInstanceId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int NodeInstanceId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SvcId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? SvcId { get; set; }
+        [Newtonsoft.Json.JsonProperty("SvcId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int SvcId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("OpId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? OpId { get; set; }
+        [Newtonsoft.Json.JsonProperty("OpId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int OpId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int FolderId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsVirtual", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsVirtual { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsVirtual", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsVirtual { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AppId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? AppId { get; set; }
+        [Newtonsoft.Json.JsonProperty("AppId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int AppId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SubId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? SubId { get; set; }
+        [Newtonsoft.Json.JsonProperty("SubId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int SubId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ProductId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ProductId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ProductId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ProductId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ConsumerId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ConsumerId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ConsumerId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ConsumerId { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class MonitoringTransactionHeader
     {
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Type", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public MonitoringTransactionHeaderType? Type { get; set; }
+        public Type Type { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Time", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset Time { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("OpName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("OpName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string OpName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("InEpId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? InEpId { get; set; }
+        [Newtonsoft.Json.JsonProperty("InEpId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int InEpId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("InEpName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("InEpName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string InEpName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("InEpAdd", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("InEpAdd", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string InEpAdd { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("InSvcId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? InSvcId { get; set; }
+        [Newtonsoft.Json.JsonProperty("InSvcId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int InSvcId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("InSvcNum", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? InSvcNum { get; set; }
+        [Newtonsoft.Json.JsonProperty("InSvcNum", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int InSvcNum { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("InSvcVerName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("InSvcVerName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string InSvcVerName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("InSvcName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("InSvcName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string InSvcName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("InIp", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("InIp", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string InIp { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("OutEpId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? OutEpId { get; set; }
+        [Newtonsoft.Json.JsonProperty("OutEpId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int OutEpId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("OutEpName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("OutEpName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string OutEpName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("OutEpAdd", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("OutEpAdd", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string OutEpAdd { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("OutSvcId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? OutSvcId { get; set; }
+        [Newtonsoft.Json.JsonProperty("OutSvcId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int OutSvcId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("OutSvcNum", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? OutSvcNum { get; set; }
+        [Newtonsoft.Json.JsonProperty("OutSvcNum", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int OutSvcNum { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("OutSvcVerName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("OutSvcVerName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string OutSvcVerName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("OutSvcName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("OutSvcName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string OutSvcName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Duration", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Duration { get; set; }
+        [Newtonsoft.Json.JsonProperty("Duration", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Duration { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public MonitoringTransactionHeaderStatus? Status { get; set; }
+        public Status4 Status { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Error", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Error", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Error { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("HttpStatusCode", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? HttpStatusCode { get; set; }
+        [Newtonsoft.Json.JsonProperty("HttpStatusCode", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int HttpStatusCode { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class TransactionHeadersRequest
     {
-        [Newtonsoft.Json.JsonProperty("TransactionType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("TransactionType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public TransactionHeadersRequestTransactionType? TransactionType { get; set; }
+        public Type TransactionType { get; set; }
 
         [Newtonsoft.Json.JsonProperty("TransactionId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid TransactionId { get; set; }
@@ -26032,255 +26032,255 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("EndTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset EndTime { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("NodeId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? NodeId { get; set; }
+        [Newtonsoft.Json.JsonProperty("NodeId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int NodeId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("NodeInstanceId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? NodeInstanceId { get; set; }
+        [Newtonsoft.Json.JsonProperty("NodeInstanceId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int NodeInstanceId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("InboundServiceVersionId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? InboundServiceVersionId { get; set; }
+        [Newtonsoft.Json.JsonProperty("InboundServiceVersionId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int InboundServiceVersionId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("InboundEndpointId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? InboundEndpointId { get; set; }
+        [Newtonsoft.Json.JsonProperty("InboundEndpointId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int InboundEndpointId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("OperationId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? OperationId { get; set; }
+        [Newtonsoft.Json.JsonProperty("OperationId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int OperationId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int FolderId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsVirtual", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsVirtual { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsVirtual", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsVirtual { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AuthId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? AuthId { get; set; }
+        [Newtonsoft.Json.JsonProperty("AuthId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int AuthId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AuthorizationGroupId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? AuthorizationGroupId { get; set; }
+        [Newtonsoft.Json.JsonProperty("AuthorizationGroupId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int AuthorizationGroupId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Action", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Action", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Action { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ClientAddress", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ClientAddress", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ClientAddress { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("RequestContent", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("RequestContent", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string RequestContent { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ResponseContent", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ResponseContent", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ResponseContent { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("PropertyName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("PropertyName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string PropertyName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("PropertyValue", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("PropertyValue", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string PropertyValue { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public TransactionHeadersRequestStatus? Status { get; set; }
+        public Status4 Status { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AppId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? AppId { get; set; }
+        [Newtonsoft.Json.JsonProperty("AppId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int AppId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SubId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? SubId { get; set; }
+        [Newtonsoft.Json.JsonProperty("SubId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int SubId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ProductId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ProductId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ProductId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ProductId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ConsumerId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ConsumerId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ConsumerId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ConsumerId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public TransactionHeadersRequestSortField? SortField { get; set; }
+        public TransactionHeadersRequestSortField SortField { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public TransactionHeadersRequestSortOrder? SortOrder { get; set; }
+        public SortOrder SortOrder { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class MonitoringTransactionDetails
     {
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("TransactionId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid TransactionId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ExchangeId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ExchangeId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ExchangeId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TransactionType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("TransactionType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public MonitoringTransactionDetailsTransactionType? TransactionType { get; set; }
+        public Type TransactionType { get; set; }
 
         [Newtonsoft.Json.JsonProperty("StartDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset StartDateTime { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("NodeId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? NodeId { get; set; }
+        [Newtonsoft.Json.JsonProperty("NodeId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int NodeId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("NodeName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("NodeName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string NodeName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("NodeInstanceId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? NodeInstanceId { get; set; }
+        [Newtonsoft.Json.JsonProperty("NodeInstanceId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int NodeInstanceId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("NodeInstanceName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("NodeInstanceName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string NodeInstanceName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("NodeInstanceMachineName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("NodeInstanceMachineName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string NodeInstanceMachineName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("NodeInstanceClientAddress", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("NodeInstanceClientAddress", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string NodeInstanceClientAddress { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("RequestAction", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("RequestAction", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string RequestAction { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("OperationId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? OperationId { get; set; }
+        [Newtonsoft.Json.JsonProperty("OperationId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int OperationId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("OperationName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("OperationName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string OperationName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ContractId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ContractId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ContractId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ContractId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ContractQName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ContractQName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public XmlQualifiedName ContractQName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("InboundEndpointId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? InboundEndpointId { get; set; }
+        [Newtonsoft.Json.JsonProperty("InboundEndpointId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int InboundEndpointId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("InboundEndpointName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("InboundEndpointName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string InboundEndpointName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("InboundPhysicalAddress", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("InboundPhysicalAddress", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string InboundPhysicalAddress { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("InboundLogicalAddress", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("InboundLogicalAddress", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string InboundLogicalAddress { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("InboundServiceVersionId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? InboundServiceVersionId { get; set; }
+        [Newtonsoft.Json.JsonProperty("InboundServiceVersionId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int InboundServiceVersionId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("InboundServiceVersionNumber", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? InboundServiceVersionNumber { get; set; }
+        [Newtonsoft.Json.JsonProperty("InboundServiceVersionNumber", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int InboundServiceVersionNumber { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("InboundServiceVersionVersion", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("InboundServiceVersionVersion", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string InboundServiceVersionVersion { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("InboundServiceVersionName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("InboundServiceVersionName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string InboundServiceVersionName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("InboundServiceId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? InboundServiceId { get; set; }
+        [Newtonsoft.Json.JsonProperty("InboundServiceId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int InboundServiceId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("InboundServiceName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("InboundServiceName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string InboundServiceName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("OutboundEndpointId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? OutboundEndpointId { get; set; }
+        [Newtonsoft.Json.JsonProperty("OutboundEndpointId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int OutboundEndpointId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("OutboundEndpointName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("OutboundEndpointName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string OutboundEndpointName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("OutboundPhysicalAddress", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("OutboundPhysicalAddress", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string OutboundPhysicalAddress { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("OutboundServiceVersionId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? OutboundServiceVersionId { get; set; }
+        [Newtonsoft.Json.JsonProperty("OutboundServiceVersionId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int OutboundServiceVersionId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("OutboundServiceVersionNumber", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? OutboundServiceVersionNumber { get; set; }
+        [Newtonsoft.Json.JsonProperty("OutboundServiceVersionNumber", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int OutboundServiceVersionNumber { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("OutboundServiceVersionVersion", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("OutboundServiceVersionVersion", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string OutboundServiceVersionVersion { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("OutboundServiceVersionName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("OutboundServiceVersionName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string OutboundServiceVersionName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("OutboundServiceId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? OutboundServiceId { get; set; }
+        [Newtonsoft.Json.JsonProperty("OutboundServiceId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int OutboundServiceId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("OutboundServiceName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("OutboundServiceName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string OutboundServiceName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Duration", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Duration { get; set; }
+        [Newtonsoft.Json.JsonProperty("Duration", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Duration { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("RequestSize", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? RequestSize { get; set; }
+        [Newtonsoft.Json.JsonProperty("RequestSize", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long RequestSize { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ResponseSize", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ResponseSize { get; set; }
+        [Newtonsoft.Json.JsonProperty("ResponseSize", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long ResponseSize { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IdentityClaims", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("IdentityClaims", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string IdentityClaims { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ClientAddress", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ClientAddress", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ClientAddress { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("HttpStatusCode", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? HttpStatusCode { get; set; }
+        [Newtonsoft.Json.JsonProperty("HttpStatusCode", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int HttpStatusCode { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public MonitoringTransactionDetailsStatus? Status { get; set; }
+        public Status4 Status { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FaultReason", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("FaultReason", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FaultReason { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FaultDetail", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("FaultDetail", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FaultDetail { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AuthId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? AuthId { get; set; }
+        [Newtonsoft.Json.JsonProperty("AuthId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int AuthId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AuthName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("AuthName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string AuthName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsDenied", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsDenied { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsDenied", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsDenied { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public MonitoringTransactionDetailsKind? Kind { get; set; }
+        public Kind Kind { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ApplicationId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ApplicationId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ApplicationId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ApplicationId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ApplicationName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ApplicationName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ApplicationName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SubscriptionId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? SubscriptionId { get; set; }
+        [Newtonsoft.Json.JsonProperty("SubscriptionId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int SubscriptionId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SubscriptionName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SubscriptionName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string SubscriptionName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ProductId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ProductId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ProductId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ProductId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ProductName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ProductName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ProductName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ConsumerId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ConsumerId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ConsumerId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ConsumerId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ConsumerName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ConsumerName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ConsumerName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Records", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Records", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<MonitoringRecord> Records { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Properties", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Properties", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<MonitoringTransactionProperty> Properties { get; set; }
 
     }
@@ -26288,8 +26288,8 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class MonitoringRecord
     {
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset Created { get; set; }
@@ -26297,58 +26297,58 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset Updated { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ExchId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ExchId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ExchId { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Time", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset Time { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Point", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Point", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public MonitoringRecordPoint? Point { get; set; }
+        public Point Point { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("NodeId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? NodeId { get; set; }
+        [Newtonsoft.Json.JsonProperty("NodeId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int NodeId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EpId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? EpId { get; set; }
+        [Newtonsoft.Json.JsonProperty("EpId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int EpId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Fault", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? Fault { get; set; }
+        [Newtonsoft.Json.JsonProperty("Fault", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool Fault { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Size", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? Size { get; set; }
+        [Newtonsoft.Json.JsonProperty("Size", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long Size { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Message", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Message", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Message { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TransportData", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("TransportData", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string TransportData { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsOutbound", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsOutbound { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsOutbound", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsOutbound { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class MonitoringTransactionProperty
     {
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("TranId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid TranId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ExchId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ExchId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ExchId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EpId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? EpId { get; set; }
+        [Newtonsoft.Json.JsonProperty("EpId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int EpId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Value", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Value", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Value { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Time", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
@@ -26359,8 +26359,8 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class MonitoringActivity
     {
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset Created { get; set; }
@@ -26368,47 +26368,47 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset Updated { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("NodeId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? NodeId { get; set; }
+        [Newtonsoft.Json.JsonProperty("NodeId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int NodeId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("NodeName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("NodeName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string NodeName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("InId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? InId { get; set; }
+        [Newtonsoft.Json.JsonProperty("InId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int InId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("NodeInstanceName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("NodeInstanceName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string NodeInstanceName { get; set; }
 
         [Newtonsoft.Json.JsonProperty("TranId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid TranId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ExchId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ExchId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ExchId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SvcId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? SvcId { get; set; }
+        [Newtonsoft.Json.JsonProperty("SvcId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int SvcId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceVersionName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ServiceVersionName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ServiceVersionName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EpId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? EpId { get; set; }
+        [Newtonsoft.Json.JsonProperty("EpId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int EpId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EndpointName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("EndpointName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string EndpointName { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Time", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset Time { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Severity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Severity", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public MonitoringActivitySeverity? Severity { get; set; }
+        public Severity Severity { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Message", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Message", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Message { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Details", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Details", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Details { get; set; }
 
     }
@@ -26425,45 +26425,45 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("TransactionId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid TransactionId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MinimumSeverity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("MinimumSeverity", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public MonitoringActivitiesRequestMinimumSeverity? MinimumSeverity { get; set; }
+        public Severity MinimumSeverity { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("NodeId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? NodeId { get; set; }
+        [Newtonsoft.Json.JsonProperty("NodeId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int NodeId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("NodeInstanceId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? NodeInstanceId { get; set; }
+        [Newtonsoft.Json.JsonProperty("NodeInstanceId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int NodeInstanceId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceVersionId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ServiceVersionId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ServiceVersionId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ServiceVersionId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public MonitoringActivitiesRequestSortField? SortField { get; set; }
+        public MonitoringActivitiesRequestSortField SortField { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public MonitoringActivitiesRequestSortOrder? SortOrder { get; set; }
+        public SortOrder SortOrder { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ActivityMessage", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ActivityMessage", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ActivityMessage { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IgnoreTransactionActivities", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IgnoreTransactionActivities { get; set; }
+        [Newtonsoft.Json.JsonProperty("IgnoreTransactionActivities", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IgnoreTransactionActivities { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class MonitoringTransactionTrace
     {
-        [Newtonsoft.Json.JsonProperty("AuthorizationTrace", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("AuthorizationTrace", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string AuthorizationTrace { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MessageProcessingTrace", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("MessageProcessingTrace", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string MessageProcessingTrace { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("OAuthTrace", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("OAuthTrace", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string OAuthTrace { get; set; }
 
     }
@@ -26471,59 +26471,59 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ServiceVersionUsageSummary
     {
-        [Newtonsoft.Json.JsonProperty("ServiceVersionId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ServiceVersionId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ServiceVersionId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ServiceVersionId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FriendlyName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("FriendlyName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FriendlyName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Version", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Version", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Version { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("VersionNumber", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? VersionNumber { get; set; }
+        [Newtonsoft.Json.JsonProperty("VersionNumber", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int VersionNumber { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ServiceName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ServiceName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ServiceVersionUsageSummaryKind? Kind { get; set; }
+        public Kind Kind { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsDeleted", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsDeleted { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsDeleted", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsDeleted { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TotalCount", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? TotalCount { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalCount", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long TotalCount { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FailureCount", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? FailureCount { get; set; }
+        [Newtonsoft.Json.JsonProperty("FailureCount", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long FailureCount { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ExceptionCount", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ExceptionCount { get; set; }
+        [Newtonsoft.Json.JsonProperty("ExceptionCount", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long ExceptionCount { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AverageDuration", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? AverageDuration { get; set; }
+        [Newtonsoft.Json.JsonProperty("AverageDuration", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long AverageDuration { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AverageBytes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? AverageBytes { get; set; }
+        [Newtonsoft.Json.JsonProperty("AverageBytes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long AverageBytes { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ServiceVersionUsageSummaryRequest : UsageSummaryRequest
     {
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int FolderId { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class UsageSummaryRequest
     {
-        [Newtonsoft.Json.JsonProperty("ReportType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ReportType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public UsageSummaryRequestReportType? ReportType { get; set; }
+        public UsageSummaryRequestReportType ReportType { get; set; }
 
         [Newtonsoft.Json.JsonProperty("StartDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset StartDateTime { get; set; }
@@ -26531,62 +26531,62 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("EndDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset EndDateTime { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceVersionId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ServiceVersionId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ServiceVersionId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ServiceVersionId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AuthorizationRuleId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? AuthorizationRuleId { get; set; }
+        [Newtonsoft.Json.JsonProperty("AuthorizationRuleId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int AuthorizationRuleId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ApplicationId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ApplicationId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ApplicationId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ApplicationId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SubscriptionId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? SubscriptionId { get; set; }
+        [Newtonsoft.Json.JsonProperty("SubscriptionId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int SubscriptionId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ProductId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ProductId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ProductId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ProductId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ConsumerId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ConsumerId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ConsumerId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ConsumerId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TopCount", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TopCount { get; set; }
+        [Newtonsoft.Json.JsonProperty("TopCount", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TopCount { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Options", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Options", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public UsageSummaryRequestOptions? Options { get; set; }
+        public UsageSummaryRequestOptions Options { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class OperationUsageSummary
     {
-        [Newtonsoft.Json.JsonProperty("OperationId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? OperationId { get; set; }
+        [Newtonsoft.Json.JsonProperty("OperationId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int OperationId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("OperationName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("OperationName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string OperationName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ContractName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ContractName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ContractName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsDeleted", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsDeleted { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsDeleted", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsDeleted { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TotalCount", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? TotalCount { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalCount", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long TotalCount { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FailureCount", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? FailureCount { get; set; }
+        [Newtonsoft.Json.JsonProperty("FailureCount", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long FailureCount { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ExceptionCount", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ExceptionCount { get; set; }
+        [Newtonsoft.Json.JsonProperty("ExceptionCount", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long ExceptionCount { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AverageDuration", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? AverageDuration { get; set; }
+        [Newtonsoft.Json.JsonProperty("AverageDuration", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long AverageDuration { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AverageBytes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? AverageBytes { get; set; }
+        [Newtonsoft.Json.JsonProperty("AverageBytes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long AverageBytes { get; set; }
 
     }
 
@@ -26599,121 +26599,121 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ProductUsageSummary
     {
-        [Newtonsoft.Json.JsonProperty("ProductId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ProductId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ProductId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ProductId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ProductName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ProductName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ProductName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsDeleted", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsDeleted { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsDeleted", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsDeleted { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TotalCount", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? TotalCount { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalCount", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long TotalCount { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FailureCount", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? FailureCount { get; set; }
+        [Newtonsoft.Json.JsonProperty("FailureCount", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long FailureCount { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ExceptionCount", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ExceptionCount { get; set; }
+        [Newtonsoft.Json.JsonProperty("ExceptionCount", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long ExceptionCount { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AverageDuration", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? AverageDuration { get; set; }
+        [Newtonsoft.Json.JsonProperty("AverageDuration", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long AverageDuration { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AverageBytes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? AverageBytes { get; set; }
+        [Newtonsoft.Json.JsonProperty("AverageBytes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long AverageBytes { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ConsumerUsageSummary
     {
-        [Newtonsoft.Json.JsonProperty("ConsumerId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ConsumerId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ConsumerId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ConsumerId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ConsumerName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ConsumerName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ConsumerName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsDeleted", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsDeleted { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsDeleted", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsDeleted { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TotalCount", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? TotalCount { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalCount", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long TotalCount { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FailureCount", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? FailureCount { get; set; }
+        [Newtonsoft.Json.JsonProperty("FailureCount", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long FailureCount { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ExceptionCount", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ExceptionCount { get; set; }
+        [Newtonsoft.Json.JsonProperty("ExceptionCount", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long ExceptionCount { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AverageDuration", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? AverageDuration { get; set; }
+        [Newtonsoft.Json.JsonProperty("AverageDuration", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long AverageDuration { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AverageBytes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? AverageBytes { get; set; }
+        [Newtonsoft.Json.JsonProperty("AverageBytes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long AverageBytes { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class SubscriptionUsageSummary
     {
-        [Newtonsoft.Json.JsonProperty("SubscriptionId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? SubscriptionId { get; set; }
+        [Newtonsoft.Json.JsonProperty("SubscriptionId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int SubscriptionId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SubscriptionName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SubscriptionName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string SubscriptionName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ProductId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ProductId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ProductId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ProductId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ProductName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ProductName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ProductName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ConsumerId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ConsumerId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ConsumerId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ConsumerId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ConsumerName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ConsumerName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ConsumerName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsDeleted", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsDeleted { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsDeleted", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsDeleted { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TotalCount", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? TotalCount { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalCount", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long TotalCount { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FailureCount", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? FailureCount { get; set; }
+        [Newtonsoft.Json.JsonProperty("FailureCount", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long FailureCount { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ExceptionCount", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ExceptionCount { get; set; }
+        [Newtonsoft.Json.JsonProperty("ExceptionCount", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long ExceptionCount { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AverageDuration", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? AverageDuration { get; set; }
+        [Newtonsoft.Json.JsonProperty("AverageDuration", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long AverageDuration { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AverageBytes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? AverageBytes { get; set; }
+        [Newtonsoft.Json.JsonProperty("AverageBytes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long AverageBytes { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ChangeSet
     {
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("UserId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? UserId { get; set; }
+        [Newtonsoft.Json.JsonProperty("UserId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int UserId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("UserName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("UserName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string UserName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IdentityName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("IdentityName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string IdentityName { get; set; }
 
     }
@@ -26721,7 +26721,7 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ChangeSetDefinition : ChangeSet
     {
-        [Newtonsoft.Json.JsonProperty("Records", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Records", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<ChangeRecord> Records { get; set; }
 
     }
@@ -26729,46 +26729,46 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ChangeRecord
     {
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ChangeSetId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ChangeSetId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ChangeSetId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ChangeSetId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EntityName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("EntityName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string EntityName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EntityId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? EntityId { get; set; }
+        [Newtonsoft.Json.JsonProperty("EntityId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int EntityId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EntityType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("EntityType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ChangeRecordEntityType? EntityType { get; set; }
+        public EntityType EntityType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MajorEntityId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? MajorEntityId { get; set; }
+        [Newtonsoft.Json.JsonProperty("MajorEntityId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int MajorEntityId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MajorEntityType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("MajorEntityType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ChangeRecordMajorEntityType? MajorEntityType { get; set; }
+        public EntityType MajorEntityType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MajorEntityName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("MajorEntityName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string MajorEntityName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ChangeType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ChangeType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ChangeRecordChangeType? ChangeType { get; set; }
+        public ChangeTypes ChangeType { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("UserId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? UserId { get; set; }
+        [Newtonsoft.Json.JsonProperty("UserId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int UserId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("UserName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("UserName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string UserName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IdentityName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("IdentityName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string IdentityName { get; set; }
 
     }
@@ -26776,7 +26776,7 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ChangeRecordDefinition : ChangeRecord
     {
-        [Newtonsoft.Json.JsonProperty("Fields", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Fields", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<ChangeField> Fields { get; set; }
 
     }
@@ -26784,19 +26784,19 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ChangeField
     {
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ChangeRecordId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ChangeRecordId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ChangeRecordId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ChangeRecordId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FieldName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("FieldName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FieldName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("PreviousValue", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("PreviousValue", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string PreviousValue { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("NewValue", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("NewValue", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string NewValue { get; set; }
 
     }
@@ -26804,13 +26804,13 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class UserSession
     {
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("UserId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? UserId { get; set; }
+        [Newtonsoft.Json.JsonProperty("UserId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int UserId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("UserFullName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("UserFullName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string UserFullName { get; set; }
 
         [Newtonsoft.Json.JsonProperty("StartDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
@@ -26819,13 +26819,13 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("EndDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset EndDateTime { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Duration", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Duration", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Duration { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IdentityName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("IdentityName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string IdentityName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ClientAddress", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ClientAddress", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ClientAddress { get; set; }
 
     }
@@ -26839,36 +26839,36 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("EndDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset EndDateTime { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("UserId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? UserId { get; set; }
+        [Newtonsoft.Json.JsonProperty("UserId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int UserId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int FolderId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IdentityName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("IdentityName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string IdentityName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ClientAddress", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ClientAddress", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ClientAddress { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public UserSessionsRequestSortField? SortField { get; set; }
+        public UserSessionsRequestSortField SortField { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public UserSessionsRequestSortOrder? SortOrder { get; set; }
+        public SortOrder SortOrder { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class UserDefinition : User
     {
-        [Newtonsoft.Json.JsonProperty("Identities", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Identities", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<IdentityDefinitionBase> Identities { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
@@ -26884,77 +26884,77 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class User : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int FolderId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ConsumerId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ConsumerId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ConsumerId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ConsumerId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ConsumerName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ConsumerName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ConsumerName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FullName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("FullName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FullName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Email", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Email", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Email { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SecurityRoleId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? SecurityRoleId { get; set; }
+        [Newtonsoft.Json.JsonProperty("SecurityRoleId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int SecurityRoleId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SecurityRoleName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SecurityRoleName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string SecurityRoleName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Permission", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Permission", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public UserPermission? Permission { get; set; }
+        public Permission Permission { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsEnabled { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsEnabled { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class SecurityRoleSummary
     {
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TotalUsers", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TotalUsers { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalUsers", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TotalUsers { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EnabledUsers", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? EnabledUsers { get; set; }
+        [Newtonsoft.Json.JsonProperty("EnabledUsers", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int EnabledUsers { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class UserSearchResult : SearchResult
     {
-        [Newtonsoft.Json.JsonProperty("SecurityRoleId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? SecurityRoleId { get; set; }
+        [Newtonsoft.Json.JsonProperty("SecurityRoleId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int SecurityRoleId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SecurityRoleName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SecurityRoleName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string SecurityRoleName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsEnabled { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsEnabled { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class UserSearchQuery : SearchQuery
     {
-        [Newtonsoft.Json.JsonProperty("SecurityRoleId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? SecurityRoleId { get; set; }
+        [Newtonsoft.Json.JsonProperty("SecurityRoleId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int SecurityRoleId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Identity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Identity", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Identity { get; set; }
 
     }
@@ -26965,39 +26965,39 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FullName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("FullName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FullName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ConsumerId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ConsumerId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ConsumerId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ConsumerId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ConsumerName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ConsumerName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ConsumerName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Permission", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Permission", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ConsumerUserSearchQueryPermission? Permission { get; set; }
+        public Permission Permission { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Identity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Identity", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Identity { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsEnabled { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ConsumerUserSearchQuerySortField? SortField { get; set; }
+        public ConsumerUserSearchQuerySortField SortField { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ConsumerUserSearchQuerySortOrder? SortOrder { get; set; }
+        public SortOrder SortOrder { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AlertSourceType : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
     }
@@ -27005,7 +27005,7 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AlertGroup : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
     }
@@ -27013,74 +27013,74 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AlertType : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SourceId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? SourceId { get; set; }
+        [Newtonsoft.Json.JsonProperty("SourceId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int SourceId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IntervalUnit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("IntervalUnit", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public AlertTypeIntervalUnit? IntervalUnit { get; set; }
+        public TimeUnit IntervalUnit { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Interval", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Interval { get; set; }
+        [Newtonsoft.Json.JsonProperty("Interval", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Interval { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsEnabled { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Configuration", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Configuration", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Configuration { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("HandlersCount", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? HandlersCount { get; set; }
+        [Newtonsoft.Json.JsonProperty("HandlersCount", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int HandlersCount { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AlertTypesRequest
     {
-        [Newtonsoft.Json.JsonProperty("ServiceAgreementId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ServiceAgreementId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ServiceAgreementId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ServiceAgreementId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AlertSourceTypeId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? AlertSourceTypeId { get; set; }
+        [Newtonsoft.Json.JsonProperty("AlertSourceTypeId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int AlertSourceTypeId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AlertGroupId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? AlertGroupId { get; set; }
+        [Newtonsoft.Json.JsonProperty("AlertGroupId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int AlertGroupId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsEnabled { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int FolderId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EntityId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? EntityId { get; set; }
+        [Newtonsoft.Json.JsonProperty("EntityId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int EntityId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EntityType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("EntityType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public AlertTypesRequestEntityType? EntityType { get; set; }
+        public EntityType EntityType { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AlertTypeDefinition : AlertType
     {
-        [Newtonsoft.Json.JsonProperty("ServiceAgreements", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ServiceAgreements", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<ServiceAgreementAlertType> ServiceAgreements { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AlertHandlers", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("AlertHandlers", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<AlertHandler> AlertHandlers { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ChangeEntities", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ChangeEntities", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<ChangeEntityAlertType> ChangeEntities { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ChangeFolders", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ChangeFolders", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<ChangeFolderAlertType> ChangeFolders { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
@@ -27096,20 +27096,20 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ServiceAgreementAlertType
     {
-        [Newtonsoft.Json.JsonProperty("AlertTypeId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? AlertTypeId { get; set; }
+        [Newtonsoft.Json.JsonProperty("AlertTypeId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int AlertTypeId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AlertSubtype", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("AlertSubtype", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string AlertSubtype { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceAgreementId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ServiceAgreementId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ServiceAgreementId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ServiceAgreementId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceAgreementMetricId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ServiceAgreementMetricId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ServiceAgreementMetricId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ServiceAgreementMetricId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
@@ -27125,36 +27125,36 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AlertHandler
     {
-        [Newtonsoft.Json.JsonProperty("AlertGroupId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? AlertGroupId { get; set; }
+        [Newtonsoft.Json.JsonProperty("AlertGroupId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int AlertGroupId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AlertTypeId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? AlertTypeId { get; set; }
+        [Newtonsoft.Json.JsonProperty("AlertTypeId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int AlertTypeId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AlertSubtype", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("AlertSubtype", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string AlertSubtype { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AlertHandlerTypeId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? AlertHandlerTypeId { get; set; }
+        [Newtonsoft.Json.JsonProperty("AlertHandlerTypeId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int AlertHandlerTypeId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Configuration", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Configuration", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Configuration { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsEnabled { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IntervalUnit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("IntervalUnit", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public AlertHandlerIntervalUnit? IntervalUnit { get; set; }
+        public TimeUnit IntervalUnit { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Interval", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Interval { get; set; }
+        [Newtonsoft.Json.JsonProperty("Interval", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Interval { get; set; }
 
         [Newtonsoft.Json.JsonProperty("LastExecutionTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset LastExecutionTime { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
@@ -27170,18 +27170,18 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ChangeEntityAlertType
     {
-        [Newtonsoft.Json.JsonProperty("AlertTypeId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? AlertTypeId { get; set; }
+        [Newtonsoft.Json.JsonProperty("AlertTypeId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int AlertTypeId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EntityId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? EntityId { get; set; }
+        [Newtonsoft.Json.JsonProperty("EntityId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int EntityId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EntityType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("EntityType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ChangeEntityAlertTypeEntityType? EntityType { get; set; }
+        public EntityType EntityType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
@@ -27197,21 +27197,21 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ChangeFolderAlertType
     {
-        [Newtonsoft.Json.JsonProperty("AlertTypeId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? AlertTypeId { get; set; }
+        [Newtonsoft.Json.JsonProperty("AlertTypeId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int AlertTypeId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int FolderId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EntityTypes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore, ItemConverterType = typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public System.Collections.Generic.ICollection<EntityTypes> EntityTypes { get; set; }
+        [Newtonsoft.Json.JsonProperty("EntityTypes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore, ItemConverterType = typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
+        public System.Collections.Generic.ICollection<EntityType> EntityTypes { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ChangeTypes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ChangeTypes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ChangeFolderAlertTypeChangeTypes? ChangeTypes { get; set; }
+        public ChangeTypes ChangeTypes { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
@@ -27227,14 +27227,14 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AlertGroupDefinition : AlertGroup
     {
-        [Newtonsoft.Json.JsonProperty("AlertTypes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("AlertTypes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<AlertType> AlertTypes { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AlertHandlers", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("AlertHandlers", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<AlertHandler> AlertHandlers { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
@@ -27253,11 +27253,11 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Time", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset Time { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Total", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? Total { get; set; }
+        [Newtonsoft.Json.JsonProperty("Total", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long Total { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Observed", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? Observed { get; set; }
+        [Newtonsoft.Json.JsonProperty("Observed", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long Observed { get; set; }
 
     }
 
@@ -27270,21 +27270,21 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("End", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset End { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Res", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Res { get; set; }
+        [Newtonsoft.Json.JsonProperty("Res", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Res { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Unit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Unit", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public AlertSummaryRequestUnit? Unit { get; set; }
+        public TimeUnit Unit { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AlertTypeId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? AlertTypeId { get; set; }
+        [Newtonsoft.Json.JsonProperty("AlertTypeId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int AlertTypeId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AlertSourceTypeId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? AlertSourceTypeId { get; set; }
+        [Newtonsoft.Json.JsonProperty("AlertSourceTypeId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int AlertSourceTypeId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AlertGroupId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? AlertGroupId { get; set; }
+        [Newtonsoft.Json.JsonProperty("AlertGroupId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int AlertGroupId { get; set; }
 
     }
 
@@ -27294,28 +27294,28 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Time", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset Time { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TypeId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TypeId { get; set; }
+        [Newtonsoft.Json.JsonProperty("TypeId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TypeId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Subtype", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Subtype", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Subtype { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Text", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Text", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Text { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Data", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Data", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<DataProperty> Data { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Observed", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? Observed { get; set; }
+        [Newtonsoft.Json.JsonProperty("Observed", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool Observed { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AlertTypeName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("AlertTypeName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string AlertTypeName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AlertSourceTypeId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? AlertSourceTypeId { get; set; }
+        [Newtonsoft.Json.JsonProperty("AlertSourceTypeId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int AlertSourceTypeId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AlertSourceTypeName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("AlertSourceTypeName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string AlertSourceTypeName { get; set; }
 
     }
@@ -27323,10 +27323,10 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class DataProperty
     {
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Value", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Value", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Value { get; set; }
 
     }
@@ -27340,41 +27340,41 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("EndTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset EndTime { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AlertTypeId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? AlertTypeId { get; set; }
+        [Newtonsoft.Json.JsonProperty("AlertTypeId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int AlertTypeId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AlertSourceTypeId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? AlertSourceTypeId { get; set; }
+        [Newtonsoft.Json.JsonProperty("AlertSourceTypeId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int AlertSourceTypeId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AlertGroupId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? AlertGroupId { get; set; }
+        [Newtonsoft.Json.JsonProperty("AlertGroupId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int AlertGroupId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsObserved", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsObserved { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsObserved", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsObserved { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public AlertRequestSortField? SortField { get; set; }
+        public AlertRequestSortField SortField { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public AlertRequestSortOrder? SortOrder { get; set; }
+        public SortOrder SortOrder { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class PortalNotificationConfiguration
     {
-        [Newtonsoft.Json.JsonProperty("EnabledAlertHandlers", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("EnabledAlertHandlers", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<System.Guid> EnabledAlertHandlers { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ToAddresses", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ToAddresses", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ToAddresses { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SecurityRoles", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SecurityRoles", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<int> SecurityRoles { get; set; }
 
     }
@@ -27382,51 +27382,51 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class Folder : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int FolderId { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class FolderSummary
     {
-        [Newtonsoft.Json.JsonProperty("Folder", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Folder", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public Folder Folder { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Rules", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Rules", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AuthorizationRulesSummary Rules { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AuthorizationGroups", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("AuthorizationGroups", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AuthorizationGroupsSummary AuthorizationGroups { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Bindings", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Bindings", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public BindingsSummary Bindings { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Behaviors", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Behaviors", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public BehaviorsSummary Behaviors { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Nodes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Nodes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public NodesSummary Nodes { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Services", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Services", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public ServicesSummary Services { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceAgreements", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ServiceAgreements", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public ServiceAgreementsSummary ServiceAgreements { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Users", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Users", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<SecurityRoleSummary> Users { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("CustomEntities", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("CustomEntities", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public CustomEntitiesSummary CustomEntities { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Identities", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Identities", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public IdentitiesSummary Identities { get; set; }
 
     }
@@ -27434,101 +27434,101 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class BindingsSummary
     {
-        [Newtonsoft.Json.JsonProperty("TotalBindings", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TotalBindings { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalBindings", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TotalBindings { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ReferencedBindings", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ReferencedBindings { get; set; }
+        [Newtonsoft.Json.JsonProperty("ReferencedBindings", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ReferencedBindings { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TotalReferences", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TotalReferences { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalReferences", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TotalReferences { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("HostedReferences", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? HostedReferences { get; set; }
+        [Newtonsoft.Json.JsonProperty("HostedReferences", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int HostedReferences { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TotalServiceVersions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TotalServiceVersions { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalServiceVersions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TotalServiceVersions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("HostedServiceVersions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? HostedServiceVersions { get; set; }
+        [Newtonsoft.Json.JsonProperty("HostedServiceVersions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int HostedServiceVersions { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class BehaviorsSummary
     {
-        [Newtonsoft.Json.JsonProperty("TotalBehaviors", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TotalBehaviors { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalBehaviors", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TotalBehaviors { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceBehaviors", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ServiceBehaviors { get; set; }
+        [Newtonsoft.Json.JsonProperty("ServiceBehaviors", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ServiceBehaviors { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ReferencedBehaviors", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ReferencedBehaviors { get; set; }
+        [Newtonsoft.Json.JsonProperty("ReferencedBehaviors", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ReferencedBehaviors { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TotalReferences", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TotalReferences { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalReferences", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TotalReferences { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("HostedReferences", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? HostedReferences { get; set; }
+        [Newtonsoft.Json.JsonProperty("HostedReferences", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int HostedReferences { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TotalServiceVersions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TotalServiceVersions { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalServiceVersions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TotalServiceVersions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("HostedServiceVersions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? HostedServiceVersions { get; set; }
+        [Newtonsoft.Json.JsonProperty("HostedServiceVersions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int HostedServiceVersions { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ServicesSummary
     {
-        [Newtonsoft.Json.JsonProperty("TotalServices", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TotalServices { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalServices", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TotalServices { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("VirtualServices", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? VirtualServices { get; set; }
+        [Newtonsoft.Json.JsonProperty("VirtualServices", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int VirtualServices { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SoapServices", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? SoapServices { get; set; }
+        [Newtonsoft.Json.JsonProperty("SoapServices", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int SoapServices { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("DraftServiceVersions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? DraftServiceVersions { get; set; }
+        [Newtonsoft.Json.JsonProperty("DraftServiceVersions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int DraftServiceVersions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ActiveServiceVersions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ActiveServiceVersions { get; set; }
+        [Newtonsoft.Json.JsonProperty("ActiveServiceVersions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ActiveServiceVersions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ObsoleteServiceVersions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ObsoleteServiceVersions { get; set; }
+        [Newtonsoft.Json.JsonProperty("ObsoleteServiceVersions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ObsoleteServiceVersions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("RetiredServiceVersions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? RetiredServiceVersions { get; set; }
+        [Newtonsoft.Json.JsonProperty("RetiredServiceVersions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int RetiredServiceVersions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TotalServiceVersions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TotalServiceVersions { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalServiceVersions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TotalServiceVersions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("VirtualServiceVersions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? VirtualServiceVersions { get; set; }
+        [Newtonsoft.Json.JsonProperty("VirtualServiceVersions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int VirtualServiceVersions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceVersionsThatRequireAccessKey", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ServiceVersionsThatRequireAccessKey { get; set; }
+        [Newtonsoft.Json.JsonProperty("ServiceVersionsThatRequireAccessKey", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ServiceVersionsThatRequireAccessKey { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SoapServiceVersions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? SoapServiceVersions { get; set; }
+        [Newtonsoft.Json.JsonProperty("SoapServiceVersions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int SoapServiceVersions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("VirtualizedServiceVersions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? VirtualizedServiceVersions { get; set; }
+        [Newtonsoft.Json.JsonProperty("VirtualizedServiceVersions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int VirtualizedServiceVersions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("HostedServiceVersions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? HostedServiceVersions { get; set; }
+        [Newtonsoft.Json.JsonProperty("HostedServiceVersions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int HostedServiceVersions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TotalNodes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TotalNodes { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalNodes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TotalNodes { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("HostingNodes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? HostingNodes { get; set; }
+        [Newtonsoft.Json.JsonProperty("HostingNodes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int HostingNodes { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Schemes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Schemes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<SchemeSummary> Schemes { get; set; }
 
     }
@@ -27536,25 +27536,25 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class IdentitiesSummary
     {
-        [Newtonsoft.Json.JsonProperty("TotalIdentities", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TotalIdentities { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalIdentities", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TotalIdentities { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ReferencedIdentities", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ReferencedIdentities { get; set; }
+        [Newtonsoft.Json.JsonProperty("ReferencedIdentities", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ReferencedIdentities { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TotalReferences", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TotalReferences { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalReferences", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TotalReferences { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("HostedReferences", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? HostedReferences { get; set; }
+        [Newtonsoft.Json.JsonProperty("HostedReferences", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int HostedReferences { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TotalServiceVersions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TotalServiceVersions { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalServiceVersions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TotalServiceVersions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("HostedServiceVersions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? HostedServiceVersions { get; set; }
+        [Newtonsoft.Json.JsonProperty("HostedServiceVersions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int HostedServiceVersions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IdentityKinds", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("IdentityKinds", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<IdentityKindSummary> IdentityKinds { get; set; }
 
     }
@@ -27562,29 +27562,29 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class IdentityKindSummary
     {
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public IdentityKindSummaryKind? Kind { get; set; }
+        public Kind3 Kind { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TotalIdentities", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TotalIdentities { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalIdentities", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TotalIdentities { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ServiceDefinition : Service
     {
-        [Newtonsoft.Json.JsonProperty("Properties", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Properties", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<Property> Properties { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceVersions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ServiceVersions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<ServiceVersionSummary> ServiceVersions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("References", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("References", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<EntityReference> References { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
@@ -27600,92 +27600,92 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ServiceVersionSummary
     {
-        [Newtonsoft.Json.JsonProperty("ServiceVersionId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ServiceVersionId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ServiceVersionId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ServiceVersionId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FriendlyName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("FriendlyName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FriendlyName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Version", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Version", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Version { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("VersionNumber", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? VersionNumber { get; set; }
+        [Newtonsoft.Json.JsonProperty("VersionNumber", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int VersionNumber { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ServiceVersionSummaryStatus? Status { get; set; }
+        public Status2 Status { get; set; }
 
         [Newtonsoft.Json.JsonProperty("LastUpdate", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset LastUpdate { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TotalOperations", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TotalOperations { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalOperations", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TotalOperations { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TotalContracts", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TotalContracts { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalContracts", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TotalContracts { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TotalEndpoints", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TotalEndpoints { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalEndpoints", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TotalEndpoints { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("HostedEndpoints", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? HostedEndpoints { get; set; }
+        [Newtonsoft.Json.JsonProperty("HostedEndpoints", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int HostedEndpoints { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TotalNodes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TotalNodes { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalNodes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TotalNodes { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("HostingNodes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? HostingNodes { get; set; }
+        [Newtonsoft.Json.JsonProperty("HostingNodes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int HostingNodes { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TotalVirtualizations", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TotalVirtualizations { get; set; }
+        [Newtonsoft.Json.JsonProperty("TotalVirtualizations", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TotalVirtualizations { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class Service : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsVirtual", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsVirtual { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsVirtual", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsVirtual { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ServiceKind? Kind { get; set; }
+        public Kind Kind { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int FolderId { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ServiceSearchResult : SearchResult
     {
-        [Newtonsoft.Json.JsonProperty("IsVirtual", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsVirtual { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsVirtual", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsVirtual { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ServiceSearchResultKind? Kind { get; set; }
+        public Kind Kind { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ServiceSearchQuery : SearchQuery
     {
-        [Newtonsoft.Json.JsonProperty("IsVirtual", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsVirtual { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsVirtual", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsVirtual { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ServiceSearchQueryKind? Kind { get; set; }
+        public Kind Kind { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Keywords", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Keywords { get; set; }
 
     }
@@ -27693,29 +27693,29 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ServiceVersionDefinition : ServiceVersion
     {
-        [Newtonsoft.Json.JsonProperty("IsPopulated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsPopulated { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsPopulated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsPopulated { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Behavior", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Behavior", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public Behavior Behavior { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Contracts", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Contracts", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<ContractDefinition> Contracts { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EndpointGroups", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("EndpointGroups", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<EndpointGroupDefinition> EndpointGroups { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Nodes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Nodes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<NodeDefinition> Nodes { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Properties", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Properties", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<Property> Properties { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("References", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("References", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<EntityReference> References { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
@@ -27731,26 +27731,26 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class Behavior : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int FolderId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FriendlyName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("FriendlyName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FriendlyName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsPrivate", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsPrivate { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsPrivate", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsPrivate { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public BehaviorKind? Kind { get; set; }
+        public Kind2 Kind { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Configuration", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Configuration", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Configuration { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Xml", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Xml", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<System.Collections.Generic.ICollection<object>> Xml { get; set; }
 
     }
@@ -27758,43 +27758,43 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ContractDefinition
     {
-        [Newtonsoft.Json.JsonProperty("IsPopulated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsPopulated { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsPopulated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsPopulated { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Operations", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Operations", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<OperationDefinition> Operations { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Endpoints", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Endpoints", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<EndpointDefinition> Endpoints { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceVersionId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ServiceVersionId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ServiceVersionId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ServiceVersionId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Namespace", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Namespace", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Namespace { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsEnabled { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsPublished", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsPublished { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsPublished", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsPublished { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ProtectionLevel", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ProtectionLevel", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ContractDefinitionProtectionLevel? ProtectionLevel { get; set; }
+        public ProtectionLevel ProtectionLevel { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SessionMode", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SessionMode", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ContractDefinitionSessionMode? SessionMode { get; set; }
+        public ContractDefinitionSessionMode SessionMode { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
@@ -27810,29 +27810,29 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class EndpointGroupDefinition
     {
-        [Newtonsoft.Json.JsonProperty("IsPopulated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsPopulated { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsPopulated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsPopulated { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Endpoints", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Endpoints", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<EndpointDefinition> Endpoints { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Router", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Router", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public RouterType Router { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceVersionId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ServiceVersionId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ServiceVersionId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ServiceVersionId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ContractId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ContractId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ContractId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ContractId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("RouterId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? RouterId { get; set; }
+        [Newtonsoft.Json.JsonProperty("RouterId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int RouterId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("RouterConfiguration", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("RouterConfiguration", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string RouterConfiguration { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
@@ -27848,21 +27848,21 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class OperationDefinition : Operation
     {
-        [Newtonsoft.Json.JsonProperty("IsPopulated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsPopulated { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsPopulated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsPopulated { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Messages", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Messages", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<MessageDefinition> Messages { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Properties", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Properties", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<Property> Properties { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public OperationDefinitionKind? Kind { get; set; }
+        public Kind Kind { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
@@ -27878,29 +27878,29 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class EndpointDefinition : Endpoint
     {
-        [Newtonsoft.Json.JsonProperty("IsPopulated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsPopulated { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsPopulated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsPopulated { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("NodeName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("NodeName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string NodeName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Binding", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Binding", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public Binding Binding { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Behavior", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Behavior", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public Behavior Behavior { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Identities", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Identities", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<IdentityDefinitionBase> Identities { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("DownstreamEndpointIdentities", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("DownstreamEndpointIdentities", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<IdentityDefinitionBase> DownstreamEndpointIdentities { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Properties", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Properties", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<Property> Properties { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
@@ -27916,47 +27916,47 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class MessageDefinition
     {
-        [Newtonsoft.Json.JsonProperty("IsPopulated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsPopulated { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsPopulated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsPopulated { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Headers", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Headers", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<MessageHeaderDefinition> Headers { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("OperationId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? OperationId { get; set; }
+        [Newtonsoft.Json.JsonProperty("OperationId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int OperationId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Direction", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Direction", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public MessageDefinitionDirection? Direction { get; set; }
+        public Direction Direction { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Action", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Action", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Action { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Namespace", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Namespace", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Namespace { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Settings", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Settings", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public MessageSettings Settings { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("BodyProtectionLevel", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("BodyProtectionLevel", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public MessageDefinitionBodyProtectionLevel? BodyProtectionLevel { get; set; }
+        public ProtectionLevel BodyProtectionLevel { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("DownstreamMessageId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? DownstreamMessageId { get; set; }
+        [Newtonsoft.Json.JsonProperty("DownstreamMessageId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int DownstreamMessageId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TemplateFileId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TemplateFileId { get; set; }
+        [Newtonsoft.Json.JsonProperty("TemplateFileId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int TemplateFileId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TemplateMessageVersion", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("TemplateMessageVersion", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public MessageDefinitionTemplateMessageVersion? TemplateMessageVersion { get; set; }
+        public MessageVersion TemplateMessageVersion { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
@@ -27972,31 +27972,31 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class Binding : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int FolderId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FriendlyName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("FriendlyName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FriendlyName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Namespace", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Namespace", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Namespace { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsPrivate", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsPrivate { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsPrivate", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsPrivate { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Configuration", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Configuration", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Configuration { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Capabilities", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Capabilities", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Capabilities { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Xml", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Xml", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<System.Collections.Generic.ICollection<object>> Xml { get; set; }
 
     }
@@ -28004,27 +28004,27 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class MessageHeaderDefinition
     {
-        [Newtonsoft.Json.JsonProperty("IsPopulated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsPopulated { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsPopulated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsPopulated { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MessageId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? MessageId { get; set; }
+        [Newtonsoft.Json.JsonProperty("MessageId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int MessageId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Namespace", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Namespace", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Namespace { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ProtectionLevel", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ProtectionLevel", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public MessageHeaderDefinitionProtectionLevel? ProtectionLevel { get; set; }
+        public ProtectionLevel ProtectionLevel { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("DownstreamHeaderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? DownstreamHeaderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("DownstreamHeaderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int DownstreamHeaderId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Id { get; set; }
+        [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int Id { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Key { get; set; }
@@ -28040,29 +28040,29 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class MessageSettings
     {
-        [Newtonsoft.Json.JsonProperty("HttpMethod", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("HttpMethod", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string HttpMethod { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("UriTemplate", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("UriTemplate", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string UriTemplate { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("PreserveTrailingSlash", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? PreserveTrailingSlash { get; set; }
+        [Newtonsoft.Json.JsonProperty("PreserveTrailingSlash", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool PreserveTrailingSlash { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("UnknownQueryParameterAction", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("UnknownQueryParameterAction", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public MessageSettingsUnknownQueryParameterAction? UnknownQueryParameterAction { get; set; }
+        public MessageSettingsUnknownQueryParameterAction UnknownQueryParameterAction { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Parameters", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Parameters", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<MessageParameter> Parameters { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("RequestMimeTypes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("RequestMimeTypes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> RequestMimeTypes { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ResponseMimeTypes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ResponseMimeTypes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> ResponseMimeTypes { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Responses", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Responses", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<ResponseMessage> Responses { get; set; }
 
     }
@@ -28070,96 +28070,96 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class MessageParameter
     {
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("VariableName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("VariableName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string VariableName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Location", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Location", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public MessageParameterLocation? Location { get; set; }
+        public MessageParameterLocation Location { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("DataType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("DataType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public MessageParameterDataType? DataType { get; set; }
+        public DataType DataType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ArrayFormat", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ArrayFormat", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public MessageParameterArrayFormat? ArrayFormat { get; set; }
+        public ArrayFormat ArrayFormat { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ArrayItem", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ArrayItem", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public Parameter ArrayItem { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("DataFormat", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("DataFormat", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string DataFormat { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Schema", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Schema", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Schema { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsRequired", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsRequired { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsRequired", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsRequired { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsEmptyValueAllowed", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsEmptyValueAllowed { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsEmptyValueAllowed", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsEmptyValueAllowed { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("DefaultValue", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("DefaultValue", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string DefaultValue { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Values", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Values", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> Values { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MaximumValue", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public double? MaximumValue { get; set; }
+        [Newtonsoft.Json.JsonProperty("MaximumValue", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public double MaximumValue { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsExclusiveMaximum", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsExclusiveMaximum { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsExclusiveMaximum", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsExclusiveMaximum { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MinimumValue", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public double? MinimumValue { get; set; }
+        [Newtonsoft.Json.JsonProperty("MinimumValue", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public double MinimumValue { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsExclusiveMinimum", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsExclusiveMinimum { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsExclusiveMinimum", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsExclusiveMinimum { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MaximumLength", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? MaximumLength { get; set; }
+        [Newtonsoft.Json.JsonProperty("MaximumLength", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int MaximumLength { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MinimumLength", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? MinimumLength { get; set; }
+        [Newtonsoft.Json.JsonProperty("MinimumLength", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int MinimumLength { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Pattern", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Pattern", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Pattern { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ArrayMaximumItems", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ArrayMaximumItems { get; set; }
+        [Newtonsoft.Json.JsonProperty("ArrayMaximumItems", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ArrayMaximumItems { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ArrayMinimumItems", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ArrayMinimumItems { get; set; }
+        [Newtonsoft.Json.JsonProperty("ArrayMinimumItems", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ArrayMinimumItems { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsArrayUnique", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsArrayUnique { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsArrayUnique", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsArrayUnique { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MultipleOf", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public double? MultipleOf { get; set; }
+        [Newtonsoft.Json.JsonProperty("MultipleOf", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public double MultipleOf { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ResponseMessage
     {
-        [Newtonsoft.Json.JsonProperty("StatusCode", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("StatusCode", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string StatusCode { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Schema", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Schema", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Schema { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Headers", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Headers", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<ResponseMessageHeader> Headers { get; set; }
 
     }
@@ -28167,302 +28167,302 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class Parameter
     {
-        [Newtonsoft.Json.JsonProperty("DataType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("DataType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ParameterDataType? DataType { get; set; }
+        public DataType DataType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ArrayFormat", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ArrayFormat", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ParameterArrayFormat? ArrayFormat { get; set; }
+        public ArrayFormat ArrayFormat { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ArrayItem", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ArrayItem", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public Parameter ArrayItem { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("DataFormat", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("DataFormat", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string DataFormat { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Schema", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Schema", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Schema { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsRequired", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsRequired { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsRequired", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsRequired { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsEmptyValueAllowed", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsEmptyValueAllowed { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsEmptyValueAllowed", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsEmptyValueAllowed { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("DefaultValue", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("DefaultValue", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string DefaultValue { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Values", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Values", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> Values { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MaximumValue", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public double? MaximumValue { get; set; }
+        [Newtonsoft.Json.JsonProperty("MaximumValue", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public double MaximumValue { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsExclusiveMaximum", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsExclusiveMaximum { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsExclusiveMaximum", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsExclusiveMaximum { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MinimumValue", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public double? MinimumValue { get; set; }
+        [Newtonsoft.Json.JsonProperty("MinimumValue", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public double MinimumValue { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsExclusiveMinimum", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsExclusiveMinimum { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsExclusiveMinimum", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsExclusiveMinimum { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MaximumLength", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? MaximumLength { get; set; }
+        [Newtonsoft.Json.JsonProperty("MaximumLength", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int MaximumLength { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MinimumLength", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? MinimumLength { get; set; }
+        [Newtonsoft.Json.JsonProperty("MinimumLength", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int MinimumLength { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Pattern", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Pattern", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Pattern { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ArrayMaximumItems", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ArrayMaximumItems { get; set; }
+        [Newtonsoft.Json.JsonProperty("ArrayMaximumItems", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ArrayMaximumItems { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ArrayMinimumItems", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ArrayMinimumItems { get; set; }
+        [Newtonsoft.Json.JsonProperty("ArrayMinimumItems", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ArrayMinimumItems { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsArrayUnique", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsArrayUnique { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsArrayUnique", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsArrayUnique { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MultipleOf", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public double? MultipleOf { get; set; }
+        [Newtonsoft.Json.JsonProperty("MultipleOf", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public double MultipleOf { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ResponseMessageHeader
     {
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("DataType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("DataType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ResponseMessageHeaderDataType? DataType { get; set; }
+        public DataType DataType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ArrayFormat", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ArrayFormat", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ResponseMessageHeaderArrayFormat? ArrayFormat { get; set; }
+        public ArrayFormat ArrayFormat { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ArrayItem", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ArrayItem", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public Parameter ArrayItem { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("DataFormat", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("DataFormat", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string DataFormat { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Schema", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Schema", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Schema { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsRequired", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsRequired { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsRequired", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsRequired { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsEmptyValueAllowed", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsEmptyValueAllowed { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsEmptyValueAllowed", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsEmptyValueAllowed { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("DefaultValue", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("DefaultValue", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string DefaultValue { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Values", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Values", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> Values { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MaximumValue", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public double? MaximumValue { get; set; }
+        [Newtonsoft.Json.JsonProperty("MaximumValue", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public double MaximumValue { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsExclusiveMaximum", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsExclusiveMaximum { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsExclusiveMaximum", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsExclusiveMaximum { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MinimumValue", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public double? MinimumValue { get; set; }
+        [Newtonsoft.Json.JsonProperty("MinimumValue", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public double MinimumValue { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsExclusiveMinimum", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsExclusiveMinimum { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsExclusiveMinimum", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsExclusiveMinimum { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MaximumLength", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? MaximumLength { get; set; }
+        [Newtonsoft.Json.JsonProperty("MaximumLength", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int MaximumLength { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MinimumLength", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? MinimumLength { get; set; }
+        [Newtonsoft.Json.JsonProperty("MinimumLength", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int MinimumLength { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Pattern", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Pattern", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Pattern { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ArrayMaximumItems", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ArrayMaximumItems { get; set; }
+        [Newtonsoft.Json.JsonProperty("ArrayMaximumItems", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ArrayMaximumItems { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ArrayMinimumItems", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ArrayMinimumItems { get; set; }
+        [Newtonsoft.Json.JsonProperty("ArrayMinimumItems", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ArrayMinimumItems { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsArrayUnique", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsArrayUnique { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsArrayUnique", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsArrayUnique { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MultipleOf", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public double? MultipleOf { get; set; }
+        [Newtonsoft.Json.JsonProperty("MultipleOf", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public double MultipleOf { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ServiceVersion : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("ServiceId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ServiceId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ServiceId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ServiceId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Version", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Version", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Version { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("VersionNumber", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? VersionNumber { get; set; }
+        [Newtonsoft.Json.JsonProperty("VersionNumber", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int VersionNumber { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FriendlyName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("FriendlyName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FriendlyName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Namespace", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Namespace", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Namespace { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ServiceVersionStatus? Status { get; set; }
+        public Status2 Status { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsEnabled { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsEnabled { get; set; }
 
         [Newtonsoft.Json.JsonProperty("LastUpdate", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset LastUpdate { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("BaseAddress", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("BaseAddress", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string BaseAddress { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("BehaviorId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? BehaviorId { get; set; }
+        [Newtonsoft.Json.JsonProperty("BehaviorId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int BehaviorId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Settings", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Settings", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public ServiceVersionSettings Settings { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MessageProcessing", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("MessageProcessing", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public MessagePipeline MessageProcessing { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsSchemaFirst", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsSchemaFirst { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsSchemaFirst", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsSchemaFirst { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsAccessKeyRequired", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsAccessKeyRequired { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsAccessKeyRequired", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsAccessKeyRequired { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ServiceVersionImportDetails
     {
-        [Newtonsoft.Json.JsonProperty("ServiceId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ServiceId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ServiceId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ServiceId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("QName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("QName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public XmlQualifiedName QName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ServiceVersionImportDetailsStatus? Status { get; set; }
+        public Status2 Status { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Endpoints", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Endpoints", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> Endpoints { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Contracts", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Contracts", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<XmlQualifiedName> Contracts { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsSchemaFirst", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsSchemaFirst { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsSchemaFirst", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsSchemaFirst { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ServiceVersionUpdateDetails
     {
-        [Newtonsoft.Json.JsonProperty("ServiceVersionId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ServiceVersionId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ServiceVersionId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ServiceVersionId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("QName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("QName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public XmlQualifiedName QName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Endpoints", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Endpoints", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> Endpoints { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Contracts", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Contracts", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<XmlQualifiedName> Contracts { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Options", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Options", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ServiceVersionUpdateDetailsOptions? Options { get; set; }
+        public Options Options { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ServiceVersionSearchResult : SearchResult
     {
-        [Newtonsoft.Json.JsonProperty("ServiceId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ServiceId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ServiceId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ServiceId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ServiceName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ServiceName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsVirtual", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsVirtual { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsVirtual", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsVirtual { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ServiceVersionSearchResultKind? Kind { get; set; }
+        public Kind Kind { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("VersionNumber", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? VersionNumber { get; set; }
+        [Newtonsoft.Json.JsonProperty("VersionNumber", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int VersionNumber { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ServiceVersionSearchResultStatus? Status { get; set; }
+        public Status2 Status { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ServiceVersionSearchQuery : SearchQuery
     {
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ServiceVersionSearchQueryKind? Kind { get; set; }
+        public Kind Kind { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Keywords", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Keywords { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ServiceName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ServiceName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsVirtual", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsVirtual { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsVirtual", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsVirtual { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("VersionNumber", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? VersionNumber { get; set; }
+        [Newtonsoft.Json.JsonProperty("VersionNumber", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int VersionNumber { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ServiceVersionSearchQueryStatus? Status { get; set; }
+        public Status2 Status { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class VirtualizationRequest
     {
-        [Newtonsoft.Json.JsonProperty("ServiceVersionId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ServiceVersionId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ServiceVersionId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ServiceVersionId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Profile", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Profile", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public VirtualizationProfile Profile { get; set; }
 
     }
@@ -28470,34 +28470,34 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class DataSchema : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("SchemaType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("SchemaType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public DataSchemaSchemaType? SchemaType { get; set; }
+        public DataSchemaSchemaType SchemaType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceVersionId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ServiceVersionId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ServiceVersionId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ServiceVersionId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Namespace", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Namespace", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Namespace { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Json", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Json", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Json { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Xsd", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Xsd", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<System.Collections.Generic.ICollection<object>> Xsd { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsPopulated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsPopulated { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsPopulated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsPopulated { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class QualifiedName
     {
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Namespace", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Namespace", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Namespace { get; set; }
 
     }
@@ -28505,52 +28505,52 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class Operation : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("ContractId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ContractId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ContractId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ContractId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ExchangePattern", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ExchangePattern", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public OperationExchangePattern? ExchangePattern { get; set; }
+        public ExchangePattern ExchangePattern { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ProtectionLevel", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ProtectionLevel", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public OperationProtectionLevel? ProtectionLevel { get; set; }
+        public ProtectionLevel ProtectionLevel { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsEnabled { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsPublished", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsPublished { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsPublished", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsPublished { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsDeprecated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsDeprecated { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsDeprecated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsDeprecated { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsStatic", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsStatic { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsStatic", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsStatic { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsSessionTerminating", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsSessionTerminating { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsSessionTerminating", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsSessionTerminating { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsSessionInitiating", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsSessionInitiating { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsSessionInitiating", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsSessionInitiating { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TransactionFlow", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("TransactionFlow", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public OperationTransactionFlow? TransactionFlow { get; set; }
+        public OperationTransactionFlow TransactionFlow { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("DownstreamOperationId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? DownstreamOperationId { get; set; }
+        [Newtonsoft.Json.JsonProperty("DownstreamOperationId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int DownstreamOperationId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("DownstreamContractId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? DownstreamContractId { get; set; }
+        [Newtonsoft.Json.JsonProperty("DownstreamContractId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int DownstreamContractId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MessageProcessing", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("MessageProcessing", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public MessagePipeline MessageProcessing { get; set; }
 
     }
@@ -28558,115 +28558,115 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class Endpoint : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("ContractId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ContractId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ContractId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ContractId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("BindingId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? BindingId { get; set; }
+        [Newtonsoft.Json.JsonProperty("BindingId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int BindingId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("BehaviorId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? BehaviorId { get; set; }
+        [Newtonsoft.Json.JsonProperty("BehaviorId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int BehaviorId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("LogicalAddress", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("LogicalAddress", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string LogicalAddress { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("PhysicalAddress", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("PhysicalAddress", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string PhysicalAddress { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("NodeId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? NodeId { get; set; }
+        [Newtonsoft.Json.JsonProperty("NodeId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int NodeId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("NodeAddressId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? NodeAddressId { get; set; }
+        [Newtonsoft.Json.JsonProperty("NodeAddressId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int NodeAddressId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("DownstreamEndpointId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? DownstreamEndpointId { get; set; }
+        [Newtonsoft.Json.JsonProperty("DownstreamEndpointId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int DownstreamEndpointId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EndpointGroupId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? EndpointGroupId { get; set; }
+        [Newtonsoft.Json.JsonProperty("EndpointGroupId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int EndpointGroupId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsEnabled { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsPublished", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsPublished { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsPublished", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsPublished { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsOutbound", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsOutbound { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsOutbound", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsOutbound { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsSync", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsSync { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsSync", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsSync { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MonType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("MonType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public EndpointMonType? MonType { get; set; }
+        public EndpointMonType MonType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("RecPoints", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("RecPoints", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public EndpointRecPoints? RecPoints { get; set; }
+        public Point RecPoints { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class EndpointSummary
     {
-        [Newtonsoft.Json.JsonProperty("EndpointId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? EndpointId { get; set; }
+        [Newtonsoft.Json.JsonProperty("EndpointId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int EndpointId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EndpointName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("EndpointName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string EndpointName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("PhysicalAddress", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("PhysicalAddress", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string PhysicalAddress { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsEnabled { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ServiceId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ServiceId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ServiceId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ServiceName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ServiceName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceVersionId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ServiceVersionId { get; set; }
+        [Newtonsoft.Json.JsonProperty("ServiceVersionId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ServiceVersionId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceVersionNumber", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ServiceVersionNumber { get; set; }
+        [Newtonsoft.Json.JsonProperty("ServiceVersionNumber", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int ServiceVersionNumber { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceVersionVersion", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ServiceVersionVersion", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ServiceVersionVersion { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceVersionName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ServiceVersionName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ServiceVersionName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public EndpointSummaryKind? Kind { get; set; }
+        public Kind Kind { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("BindingId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? BindingId { get; set; }
+        [Newtonsoft.Json.JsonProperty("BindingId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int BindingId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("BindingName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("BindingName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string BindingName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AddressKind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("AddressKind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public EndpointSummaryAddressKind? AddressKind { get; set; }
+        public Kind4 AddressKind { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class EndpointSearchResult : EndpointSearchBase
     {
-        [Newtonsoft.Json.JsonProperty("EndpointId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? EndpointId { get; set; }
+        [Newtonsoft.Json.JsonProperty("EndpointId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int EndpointId { get; set; }
 
         [Newtonsoft.Json.JsonProperty("ServiceVersionLastUpdate", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset ServiceVersionLastUpdate { get; set; }
@@ -28679,20 +28679,20 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("ServiceKey", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid ServiceKey { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServicePathAndName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ServicePathAndName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ServicePathAndName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsVirtual", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsVirtual { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsVirtual", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsVirtual { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("VersionNumber", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? VersionNumber { get; set; }
+        [Newtonsoft.Json.JsonProperty("VersionNumber", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int VersionNumber { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceVersionStatus", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ServiceVersionStatus", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public EndpointSearchBaseServiceVersionStatus? ServiceVersionStatus { get; set; }
+        public Status2 ServiceVersionStatus { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceVersionQName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ServiceVersionQName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public XmlQualifiedName ServiceVersionQName { get; set; }
 
         [Newtonsoft.Json.JsonProperty("ServiceVersionKey", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
@@ -28701,46 +28701,46 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("ContractKey", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid ContractKey { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ContractQName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("ContractQName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public XmlQualifiedName ContractQName { get; set; }
 
         [Newtonsoft.Json.JsonProperty("NodeKey", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid NodeKey { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("NodePathAndName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("NodePathAndName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string NodePathAndName { get; set; }
 
         [Newtonsoft.Json.JsonProperty("EndpointKey", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid EndpointKey { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EndpointName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("EndpointName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string EndpointName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("LogicalAddress", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("LogicalAddress", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string LogicalAddress { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("PhysicalAddress", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("PhysicalAddress", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string PhysicalAddress { get; set; }
 
         [Newtonsoft.Json.JsonProperty("BindingKey", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid BindingKey { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("BindingPathAndName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("BindingPathAndName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string BindingPathAndName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IsHosted", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsHosted { get; set; }
+        [Newtonsoft.Json.JsonProperty("IsHosted", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool IsHosted { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public EndpointSearchBaseKind? Kind { get; set; }
+        public Kind Kind { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class EndpointSearchQuery : EndpointSearchBase
     {
-        [Newtonsoft.Json.JsonProperty("Keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Keywords", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Keywords { get; set; }
 
     }
@@ -28748,7 +28748,7 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class BindingSearchResult : SearchResult
     {
-        [Newtonsoft.Json.JsonProperty("Capabilities", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Capabilities", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Capabilities { get; set; }
 
     }
@@ -28756,7 +28756,7 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class BindingSearchQuery : SearchQuery
     {
-        [Newtonsoft.Json.JsonProperty("Configuration", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Configuration", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Configuration { get; set; }
 
     }
@@ -28764,18 +28764,18 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class IdentitySearchResult : SearchResult
     {
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public IdentitySearchResultKind? Kind { get; set; }
+        public Kind3 Kind { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class IdentitySearchQuery : SearchQuery
     {
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public IdentitySearchQueryKind? Kind { get; set; }
+        public Kind3 Kind { get; set; }
 
     }
 
@@ -28804,18 +28804,6 @@ namespace LSL.Sentinet.ApiClient
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum SortField
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"StartDateTime")]
-        StartDateTime = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Value")]
-        Value = 1,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public enum SortOrder
     {
 
@@ -28832,21 +28820,6 @@ namespace LSL.Sentinet.ApiClient
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public enum MessageVersion
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"None")]
-        None = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Soap11")]
-        Soap11 = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Soap12")]
-        Soap12 = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum MessageVersion2
     {
 
         [System.Runtime.Serialization.EnumMember(Value = @"None")]
@@ -29038,24 +29011,6 @@ namespace LSL.Sentinet.ApiClient
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum Type
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Password")]
-        Password = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Binary")]
-        Binary = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Token")]
-        Token = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Captcha")]
-        Captcha = 3,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public enum Status
     {
 
@@ -29067,537 +29022,6 @@ namespace LSL.Sentinet.ApiClient
 
         [System.Runtime.Serialization.EnumMember(Value = @"Deactivated")]
         Deactivated = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum EntityType2
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Unknown")]
-        Unknown = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Node")]
-        Node = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Binding")]
-        Binding = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Behavior")]
-        Behavior = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Service")]
-        Service = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceVersion")]
-        ServiceVersion = 5,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Contract")]
-        Contract = 6,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Endpoint")]
-        Endpoint = 7,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Operation")]
-        Operation = 8,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreement")]
-        ServiceAgreement = 9,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationRule")]
-        AuthorizationRule = 10,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"User")]
-        User = 11,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertSourceType")]
-        AlertSourceType = 12,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertType")]
-        AlertType = 13,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertGroup")]
-        AlertGroup = 14,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertHandlerType")]
-        AlertHandlerType = 15,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertHandler")]
-        AlertHandler = 16,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"RouterType")]
-        RouterType = 17,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ExpressionType")]
-        ExpressionType = 18,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Folder")]
-        Folder = 19,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"File")]
-        File = 20,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Message")]
-        Message = 21,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MessageHeader")]
-        MessageHeader = 22,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"NodeAddress")]
-        NodeAddress = 23,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationClaimType")]
-        AuthorizationClaimType = 24,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreementAlertType")]
-        ServiceAgreementAlertType = 25,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Alert")]
-        Alert = 26,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Property")]
-        Property = 27,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"NodeInstance")]
-        NodeInstance = 28,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringRecord")]
-        MonitoringRecord = 29,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringActivity")]
-        MonitoringActivity = 30,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringTransaction")]
-        MonitoringTransaction = 31,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Issuer")]
-        Issuer = 32,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"EndpointGroup")]
-        EndpointGroup = 33,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Identity")]
-        Identity = 34,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MessageSample")]
-        MessageSample = 35,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MetadataSection")]
-        MetadataSection = 36,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreementMetric")]
-        ServiceAgreementMetric = 37,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationRuleAssignment")]
-        AuthorizationRuleAssignment = 38,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ChangeEntityAlertType")]
-        ChangeEntityAlertType = 39,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ChangeFolderAlertType")]
-        ChangeFolderAlertType = 40,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"DataSchema")]
-        DataSchema = 41,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Custom")]
-        Custom = 42,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Reference")]
-        Reference = 43,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ComponentType")]
-        ComponentType = 44,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Product")]
-        Product = 45,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Consumer")]
-        Consumer = 46,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Subscription")]
-        Subscription = 47,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Application")]
-        Application = 48,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ProductServiceVersion")]
-        ProductServiceVersion = 49,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"SecurityRole")]
-        SecurityRole = 50,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"CustomAttributeType")]
-        CustomAttributeType = 51,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"VirtualizationProfile")]
-        VirtualizationProfile = 52,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroup")]
-        AuthorizationGroup = 53,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroupMember")]
-        AuthorizationGroupMember = 54,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringFilterType")]
-        MonitoringFilterType = 55,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Certificate")]
-        Certificate = 56,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum EntityType3
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Unknown")]
-        Unknown = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Node")]
-        Node = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Binding")]
-        Binding = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Behavior")]
-        Behavior = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Service")]
-        Service = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceVersion")]
-        ServiceVersion = 5,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Contract")]
-        Contract = 6,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Endpoint")]
-        Endpoint = 7,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Operation")]
-        Operation = 8,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreement")]
-        ServiceAgreement = 9,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationRule")]
-        AuthorizationRule = 10,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"User")]
-        User = 11,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertSourceType")]
-        AlertSourceType = 12,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertType")]
-        AlertType = 13,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertGroup")]
-        AlertGroup = 14,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertHandlerType")]
-        AlertHandlerType = 15,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertHandler")]
-        AlertHandler = 16,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"RouterType")]
-        RouterType = 17,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ExpressionType")]
-        ExpressionType = 18,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Folder")]
-        Folder = 19,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"File")]
-        File = 20,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Message")]
-        Message = 21,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MessageHeader")]
-        MessageHeader = 22,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"NodeAddress")]
-        NodeAddress = 23,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationClaimType")]
-        AuthorizationClaimType = 24,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreementAlertType")]
-        ServiceAgreementAlertType = 25,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Alert")]
-        Alert = 26,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Property")]
-        Property = 27,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"NodeInstance")]
-        NodeInstance = 28,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringRecord")]
-        MonitoringRecord = 29,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringActivity")]
-        MonitoringActivity = 30,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringTransaction")]
-        MonitoringTransaction = 31,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Issuer")]
-        Issuer = 32,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"EndpointGroup")]
-        EndpointGroup = 33,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Identity")]
-        Identity = 34,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MessageSample")]
-        MessageSample = 35,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MetadataSection")]
-        MetadataSection = 36,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreementMetric")]
-        ServiceAgreementMetric = 37,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationRuleAssignment")]
-        AuthorizationRuleAssignment = 38,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ChangeEntityAlertType")]
-        ChangeEntityAlertType = 39,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ChangeFolderAlertType")]
-        ChangeFolderAlertType = 40,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"DataSchema")]
-        DataSchema = 41,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Custom")]
-        Custom = 42,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Reference")]
-        Reference = 43,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ComponentType")]
-        ComponentType = 44,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Product")]
-        Product = 45,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Consumer")]
-        Consumer = 46,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Subscription")]
-        Subscription = 47,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Application")]
-        Application = 48,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ProductServiceVersion")]
-        ProductServiceVersion = 49,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"SecurityRole")]
-        SecurityRole = 50,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"CustomAttributeType")]
-        CustomAttributeType = 51,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"VirtualizationProfile")]
-        VirtualizationProfile = 52,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroup")]
-        AuthorizationGroup = 53,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroupMember")]
-        AuthorizationGroupMember = 54,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringFilterType")]
-        MonitoringFilterType = 55,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Certificate")]
-        Certificate = 56,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum EntityType4
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Unknown")]
-        Unknown = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Node")]
-        Node = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Binding")]
-        Binding = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Behavior")]
-        Behavior = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Service")]
-        Service = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceVersion")]
-        ServiceVersion = 5,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Contract")]
-        Contract = 6,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Endpoint")]
-        Endpoint = 7,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Operation")]
-        Operation = 8,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreement")]
-        ServiceAgreement = 9,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationRule")]
-        AuthorizationRule = 10,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"User")]
-        User = 11,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertSourceType")]
-        AlertSourceType = 12,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertType")]
-        AlertType = 13,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertGroup")]
-        AlertGroup = 14,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertHandlerType")]
-        AlertHandlerType = 15,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertHandler")]
-        AlertHandler = 16,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"RouterType")]
-        RouterType = 17,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ExpressionType")]
-        ExpressionType = 18,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Folder")]
-        Folder = 19,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"File")]
-        File = 20,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Message")]
-        Message = 21,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MessageHeader")]
-        MessageHeader = 22,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"NodeAddress")]
-        NodeAddress = 23,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationClaimType")]
-        AuthorizationClaimType = 24,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreementAlertType")]
-        ServiceAgreementAlertType = 25,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Alert")]
-        Alert = 26,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Property")]
-        Property = 27,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"NodeInstance")]
-        NodeInstance = 28,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringRecord")]
-        MonitoringRecord = 29,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringActivity")]
-        MonitoringActivity = 30,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringTransaction")]
-        MonitoringTransaction = 31,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Issuer")]
-        Issuer = 32,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"EndpointGroup")]
-        EndpointGroup = 33,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Identity")]
-        Identity = 34,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MessageSample")]
-        MessageSample = 35,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MetadataSection")]
-        MetadataSection = 36,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreementMetric")]
-        ServiceAgreementMetric = 37,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationRuleAssignment")]
-        AuthorizationRuleAssignment = 38,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ChangeEntityAlertType")]
-        ChangeEntityAlertType = 39,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ChangeFolderAlertType")]
-        ChangeFolderAlertType = 40,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"DataSchema")]
-        DataSchema = 41,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Custom")]
-        Custom = 42,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Reference")]
-        Reference = 43,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ComponentType")]
-        ComponentType = 44,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Product")]
-        Product = 45,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Consumer")]
-        Consumer = 46,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Subscription")]
-        Subscription = 47,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Application")]
-        Application = 48,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ProductServiceVersion")]
-        ProductServiceVersion = 49,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"SecurityRole")]
-        SecurityRole = 50,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"CustomAttributeType")]
-        CustomAttributeType = 51,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"VirtualizationProfile")]
-        VirtualizationProfile = 52,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroup")]
-        AuthorizationGroup = 53,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroupMember")]
-        AuthorizationGroupMember = 54,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringFilterType")]
-        MonitoringFilterType = 55,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Certificate")]
-        Certificate = 56,
 
     }
 
@@ -29620,436 +29044,7 @@ namespace LSL.Sentinet.ApiClient
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum Serializer2
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Auto")]
-        Auto = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"DataContractSerializer")]
-        DataContractSerializer = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"XmlSerializer")]
-        XmlSerializer = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"SoapSerializer")]
-        SoapSerializer = 3,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum Serializer3
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Auto")]
-        Auto = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"DataContractSerializer")]
-        DataContractSerializer = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"XmlSerializer")]
-        XmlSerializer = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"SoapSerializer")]
-        SoapSerializer = 3,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum Serializer4
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Auto")]
-        Auto = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"DataContractSerializer")]
-        DataContractSerializer = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"XmlSerializer")]
-        XmlSerializer = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"SoapSerializer")]
-        SoapSerializer = 3,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum Anonymous
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Unknown")]
-        Unknown = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Node")]
-        Node = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Binding")]
-        Binding = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Behavior")]
-        Behavior = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Service")]
-        Service = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceVersion")]
-        ServiceVersion = 5,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Contract")]
-        Contract = 6,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Endpoint")]
-        Endpoint = 7,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Operation")]
-        Operation = 8,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreement")]
-        ServiceAgreement = 9,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationRule")]
-        AuthorizationRule = 10,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"User")]
-        User = 11,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertSourceType")]
-        AlertSourceType = 12,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertType")]
-        AlertType = 13,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertGroup")]
-        AlertGroup = 14,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertHandlerType")]
-        AlertHandlerType = 15,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertHandler")]
-        AlertHandler = 16,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"RouterType")]
-        RouterType = 17,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ExpressionType")]
-        ExpressionType = 18,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Folder")]
-        Folder = 19,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"File")]
-        File = 20,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Message")]
-        Message = 21,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MessageHeader")]
-        MessageHeader = 22,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"NodeAddress")]
-        NodeAddress = 23,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationClaimType")]
-        AuthorizationClaimType = 24,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreementAlertType")]
-        ServiceAgreementAlertType = 25,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Alert")]
-        Alert = 26,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Property")]
-        Property = 27,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"NodeInstance")]
-        NodeInstance = 28,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringRecord")]
-        MonitoringRecord = 29,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringActivity")]
-        MonitoringActivity = 30,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringTransaction")]
-        MonitoringTransaction = 31,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Issuer")]
-        Issuer = 32,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"EndpointGroup")]
-        EndpointGroup = 33,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Identity")]
-        Identity = 34,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MessageSample")]
-        MessageSample = 35,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MetadataSection")]
-        MetadataSection = 36,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreementMetric")]
-        ServiceAgreementMetric = 37,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationRuleAssignment")]
-        AuthorizationRuleAssignment = 38,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ChangeEntityAlertType")]
-        ChangeEntityAlertType = 39,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ChangeFolderAlertType")]
-        ChangeFolderAlertType = 40,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"DataSchema")]
-        DataSchema = 41,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Custom")]
-        Custom = 42,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Reference")]
-        Reference = 43,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ComponentType")]
-        ComponentType = 44,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Product")]
-        Product = 45,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Consumer")]
-        Consumer = 46,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Subscription")]
-        Subscription = 47,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Application")]
-        Application = 48,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ProductServiceVersion")]
-        ProductServiceVersion = 49,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"SecurityRole")]
-        SecurityRole = 50,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"CustomAttributeType")]
-        CustomAttributeType = 51,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"VirtualizationProfile")]
-        VirtualizationProfile = 52,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroup")]
-        AuthorizationGroup = 53,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroupMember")]
-        AuthorizationGroupMember = 54,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringFilterType")]
-        MonitoringFilterType = 55,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Certificate")]
-        Certificate = 56,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public enum ChangeTypes
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"None")]
-        None = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Created")]
-        Created = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Updated")]
-        Updated = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Deleted")]
-        Deleted = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"All")]
-        All = 4,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum EntityType5
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Unknown")]
-        Unknown = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Node")]
-        Node = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Binding")]
-        Binding = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Behavior")]
-        Behavior = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Service")]
-        Service = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceVersion")]
-        ServiceVersion = 5,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Contract")]
-        Contract = 6,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Endpoint")]
-        Endpoint = 7,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Operation")]
-        Operation = 8,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreement")]
-        ServiceAgreement = 9,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationRule")]
-        AuthorizationRule = 10,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"User")]
-        User = 11,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertSourceType")]
-        AlertSourceType = 12,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertType")]
-        AlertType = 13,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertGroup")]
-        AlertGroup = 14,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertHandlerType")]
-        AlertHandlerType = 15,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertHandler")]
-        AlertHandler = 16,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"RouterType")]
-        RouterType = 17,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ExpressionType")]
-        ExpressionType = 18,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Folder")]
-        Folder = 19,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"File")]
-        File = 20,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Message")]
-        Message = 21,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MessageHeader")]
-        MessageHeader = 22,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"NodeAddress")]
-        NodeAddress = 23,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationClaimType")]
-        AuthorizationClaimType = 24,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreementAlertType")]
-        ServiceAgreementAlertType = 25,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Alert")]
-        Alert = 26,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Property")]
-        Property = 27,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"NodeInstance")]
-        NodeInstance = 28,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringRecord")]
-        MonitoringRecord = 29,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringActivity")]
-        MonitoringActivity = 30,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringTransaction")]
-        MonitoringTransaction = 31,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Issuer")]
-        Issuer = 32,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"EndpointGroup")]
-        EndpointGroup = 33,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Identity")]
-        Identity = 34,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MessageSample")]
-        MessageSample = 35,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MetadataSection")]
-        MetadataSection = 36,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreementMetric")]
-        ServiceAgreementMetric = 37,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationRuleAssignment")]
-        AuthorizationRuleAssignment = 38,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ChangeEntityAlertType")]
-        ChangeEntityAlertType = 39,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ChangeFolderAlertType")]
-        ChangeFolderAlertType = 40,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"DataSchema")]
-        DataSchema = 41,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Custom")]
-        Custom = 42,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Reference")]
-        Reference = 43,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ComponentType")]
-        ComponentType = 44,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Product")]
-        Product = 45,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Consumer")]
-        Consumer = 46,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Subscription")]
-        Subscription = 47,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Application")]
-        Application = 48,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ProductServiceVersion")]
-        ProductServiceVersion = 49,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"SecurityRole")]
-        SecurityRole = 50,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"CustomAttributeType")]
-        CustomAttributeType = 51,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"VirtualizationProfile")]
-        VirtualizationProfile = 52,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroup")]
-        AuthorizationGroup = 53,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroupMember")]
-        AuthorizationGroupMember = 54,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringFilterType")]
-        MonitoringFilterType = 55,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Certificate")]
-        Certificate = 56,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ChangeTypes2
     {
 
         [System.Runtime.Serialization.EnumMember(Value = @"None")]
@@ -30127,136 +29122,7 @@ namespace LSL.Sentinet.ApiClient
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum EntityType6
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"None")]
-        None = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Folder")]
-        Folder = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Binding")]
-        Binding = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"PhysicalService")]
-        PhysicalService = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"VirtualService")]
-        VirtualService = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Service")]
-        Service = 5,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Node")]
-        Node = 6,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Rule")]
-        Rule = 7,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"User")]
-        User = 8,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreement")]
-        ServiceAgreement = 9,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"EndpointBehavior")]
-        EndpointBehavior = 10,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceBehavior")]
-        ServiceBehavior = 11,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Behavior")]
-        Behavior = 12,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Custom")]
-        Custom = 13,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Identity")]
-        Identity = 14,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroup")]
-        AuthorizationGroup = 15,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"All")]
-        All = 16,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum Entities2
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"None")]
-        None = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Folder")]
-        Folder = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Binding")]
-        Binding = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"PhysicalService")]
-        PhysicalService = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"VirtualService")]
-        VirtualService = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Service")]
-        Service = 5,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Node")]
-        Node = 6,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Rule")]
-        Rule = 7,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"User")]
-        User = 8,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreement")]
-        ServiceAgreement = 9,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"EndpointBehavior")]
-        EndpointBehavior = 10,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceBehavior")]
-        ServiceBehavior = 11,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Behavior")]
-        Behavior = 12,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Custom")]
-        Custom = 13,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Identity")]
-        Identity = 14,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroup")]
-        AuthorizationGroup = 15,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"All")]
-        All = 16,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public enum BaseAddressCollisionAction
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Throw")]
-        Throw = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Disable")]
-        Disable = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Retire")]
-        Retire = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum BaseAddressCollisionAction2
     {
 
         [System.Runtime.Serialization.EnumMember(Value = @"Throw")]
@@ -30286,109 +29152,7 @@ namespace LSL.Sentinet.ApiClient
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum Serializer5
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Auto")]
-        Auto = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"DataContractSerializer")]
-        DataContractSerializer = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"XmlSerializer")]
-        XmlSerializer = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"SoapSerializer")]
-        SoapSerializer = 3,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ErrorTolerance2
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"IgnoreErrors")]
-        IgnoreErrors = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"IgnoreWarnings")]
-        IgnoreWarnings = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"IgnoreNone")]
-        IgnoreNone = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum Serializer6
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Auto")]
-        Auto = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"DataContractSerializer")]
-        DataContractSerializer = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"XmlSerializer")]
-        XmlSerializer = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"SoapSerializer")]
-        SoapSerializer = 3,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ErrorTolerance3
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"IgnoreErrors")]
-        IgnoreErrors = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"IgnoreWarnings")]
-        IgnoreWarnings = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"IgnoreNone")]
-        IgnoreNone = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum Serializer7
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Auto")]
-        Auto = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"DataContractSerializer")]
-        DataContractSerializer = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"XmlSerializer")]
-        XmlSerializer = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"SoapSerializer")]
-        SoapSerializer = 3,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public enum Status2
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Draft")]
-        Draft = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Active")]
-        Active = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Obsolete")]
-        Obsolete = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Retired")]
-        Retired = 3,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum Status3
     {
 
         [System.Runtime.Serialization.EnumMember(Value = @"Draft")]
@@ -30418,7 +29182,7 @@ namespace LSL.Sentinet.ApiClient
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ServiceAgreementMetricMetric
+    public enum Metric
     {
 
         [System.Runtime.Serialization.EnumMember(Value = @"TotalCount")]
@@ -30466,31 +29230,7 @@ namespace LSL.Sentinet.ApiClient
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ServiceAgreementMetricTimeUnit
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Second")]
-        Second = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Minute")]
-        Minute = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Hour")]
-        Hour = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Day")]
-        Day = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Month")]
-        Month = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Year")]
-        Year = 5,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum AuthorizationRuleAssignmentKind
+    public enum Kind
     {
 
         [System.Runtime.Serialization.EnumMember(Value = @"Soap")]
@@ -30505,7 +29245,7 @@ namespace LSL.Sentinet.ApiClient
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum AuthorizationRuleAssignmentAction
+    public enum Action
     {
 
         [System.Runtime.Serialization.EnumMember(Value = @"None")]
@@ -30516,6 +29256,366 @@ namespace LSL.Sentinet.ApiClient
 
         [System.Runtime.Serialization.EnumMember(Value = @"Deny")]
         Deny = 2,
+
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public enum Status3
+    {
+
+        [System.Runtime.Serialization.EnumMember(Value = @"Draft")]
+        Draft = 0,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"Active")]
+        Active = 1,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"Retired")]
+        Retired = 2,
+
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public enum ReferenceType
+    {
+
+        [System.Runtime.Serialization.EnumMember(Value = @"DependsOn")]
+        DependsOn = 0,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"Contains")]
+        Contains = 1,
+
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public enum NodeType
+    {
+
+        [System.Runtime.Serialization.EnumMember(Value = @"IisMixedTransportsMode")]
+        IisMixedTransportsMode = 0,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"IisAspNetCompatibilityMode")]
+        IisAspNetCompatibilityMode = 1,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"SelfHosted")]
+        SelfHosted = 2,
+
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public enum Kind2
+    {
+
+        [System.Runtime.Serialization.EnumMember(Value = @"Endpoint")]
+        Endpoint = 0,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"Service")]
+        Service = 1,
+
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public enum Kind3
+    {
+
+        [System.Runtime.Serialization.EnumMember(Value = @"X509Certificate")]
+        X509Certificate = 0,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"Windows")]
+        Windows = 1,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"UserNamePassword")]
+        UserNamePassword = 2,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"UserPrincipalName")]
+        UserPrincipalName = 3,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"ServicePrincipalName")]
+        ServicePrincipalName = 4,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"Digest")]
+        Digest = 5,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"UserNamePasswordHash")]
+        UserNamePasswordHash = 6,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"WindowsNoPassword")]
+        WindowsNoPassword = 7,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"AzureCredentials")]
+        AzureCredentials = 8,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"DnsName")]
+        DnsName = 9,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"X509CertificateFederation")]
+        X509CertificateFederation = 10,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"WindowsGroup")]
+        WindowsGroup = 11,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"Claim")]
+        Claim = 12,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"X509CertificateThumbprint")]
+        X509CertificateThumbprint = 13,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"OAuthClientCredentials")]
+        OAuthClientCredentials = 14,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"OAuthServiceCredentials")]
+        OAuthServiceCredentials = 15,
+
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public enum ExchangePattern
+    {
+
+        [System.Runtime.Serialization.EnumMember(Value = @"Send")]
+        Send = 0,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"RequestResponse")]
+        RequestResponse = 1,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"SolicitResponse")]
+        SolicitResponse = 2,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"Receive")]
+        Receive = 3,
+
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public enum Direction
+    {
+
+        [System.Runtime.Serialization.EnumMember(Value = @"Input")]
+        Input = 0,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"Output")]
+        Output = 1,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"Fault")]
+        Fault = 2,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"GenericFault")]
+        GenericFault = 3,
+
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public enum Permission
+    {
+
+        [System.Runtime.Serialization.EnumMember(Value = @"None")]
+        None = 0,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"ReadOnly")]
+        ReadOnly = 1,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"ReadWrite")]
+        ReadWrite = 2,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"Administrator")]
+        Administrator = 3,
+
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public enum Kind4
+    {
+
+        [System.Runtime.Serialization.EnumMember(Value = @"Physical")]
+        Physical = 0,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"AzureServiceBus")]
+        AzureServiceBus = 1,
+
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public enum LastReportedStatus
+    {
+
+        [System.Runtime.Serialization.EnumMember(Value = @"Idle")]
+        Idle = 0,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"Normal")]
+        Normal = 1,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"Warnings")]
+        Warnings = 2,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"Errors")]
+        Errors = 3,
+
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public enum Type
+    {
+
+        [System.Runtime.Serialization.EnumMember(Value = @"I")]
+        I = 0,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"O")]
+        O = 1,
+
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public enum Status4
+    {
+
+        [System.Runtime.Serialization.EnumMember(Value = @"I")]
+        I = 0,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"S")]
+        S = 1,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"F")]
+        F = 2,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"E")]
+        E = 3,
+
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public enum Point
+    {
+
+        [System.Runtime.Serialization.EnumMember(Value = @"None")]
+        None = 0,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"ReqT")]
+        ReqT = 1,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"ReqS")]
+        ReqS = 2,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"ResS")]
+        ResS = 3,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"ResT")]
+        ResT = 4,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"Claims")]
+        Claims = 5,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"All")]
+        All = 6,
+
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public enum Severity
+    {
+
+        [System.Runtime.Serialization.EnumMember(Value = @"E")]
+        E = 0,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"W")]
+        W = 1,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"I")]
+        I = 2,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"T")]
+        T = 3,
+
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public enum ProtectionLevel
+    {
+
+        [System.Runtime.Serialization.EnumMember(Value = @"None")]
+        None = 0,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"Sign")]
+        Sign = 1,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"EncryptAndSign")]
+        EncryptAndSign = 2,
+
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public enum DataType
+    {
+
+        [System.Runtime.Serialization.EnumMember(Value = @"String")]
+        String = 0,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"Number")]
+        Number = 1,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"Integer")]
+        Integer = 2,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"Boolean")]
+        Boolean = 3,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"Array")]
+        Array = 4,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"File")]
+        File = 5,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"Complex")]
+        Complex = 6,
+
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public enum ArrayFormat
+    {
+
+        [System.Runtime.Serialization.EnumMember(Value = @"CommaSeparated")]
+        CommaSeparated = 0,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"SpaceSeparated")]
+        SpaceSeparated = 1,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"TabSeparated")]
+        TabSeparated = 2,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"PipeSeparated")]
+        PipeSeparated = 3,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"Multiple")]
+        Multiple = 4,
+
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public enum SortField
+    {
+
+        [System.Runtime.Serialization.EnumMember(Value = @"StartDateTime")]
+        StartDateTime = 0,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"Value")]
+        Value = 1,
+
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public enum Type2
+    {
+
+        [System.Runtime.Serialization.EnumMember(Value = @"Password")]
+        Password = 0,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"Binary")]
+        Binary = 1,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"Token")]
+        Token = 2,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"Captcha")]
+        Captcha = 3,
 
     }
 
@@ -30534,117 +29634,6 @@ namespace LSL.Sentinet.ApiClient
 
         [System.Runtime.Serialization.EnumMember(Value = @"Keyword")]
         Keyword = 3,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ServiceAgreementStatus
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Draft")]
-        Draft = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Active")]
-        Active = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Retired")]
-        Retired = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ServiceAgreementViolationSummaryUnit
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Second")]
-        Second = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Minute")]
-        Minute = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Hour")]
-        Hour = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Day")]
-        Day = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Month")]
-        Month = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Year")]
-        Year = 5,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ServiceAgreementViolationSummaryRequestTimeUnit
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Second")]
-        Second = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Minute")]
-        Minute = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Hour")]
-        Hour = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Day")]
-        Day = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Month")]
-        Month = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Year")]
-        Year = 5,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ServiceAgreementViolationMetricType
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"TotalCount")]
-        TotalCount = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"SuccessCount")]
-        SuccessCount = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"FaultCount")]
-        FaultCount = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"FaultPercent")]
-        FaultPercent = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AverageDuration")]
-        AverageDuration = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MaximumDuration")]
-        MaximumDuration = 5,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AverageSize")]
-        AverageSize = 6,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MaximumSize")]
-        MaximumSize = 7,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"TotalBytes")]
-        TotalBytes = 8,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"RequestedBytes")]
-        RequestedBytes = 9,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"RespondedBytes")]
-        RespondedBytes = 10,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"RespondedBytesPercent")]
-        RespondedBytesPercent = 11,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ExceptionCount")]
-        ExceptionCount = 12,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ExceptionPercent")]
-        ExceptionPercent = 13,
 
     }
 
@@ -30669,66 +29658,6 @@ namespace LSL.Sentinet.ApiClient
 
         [System.Runtime.Serialization.EnumMember(Value = @"Created")]
         Created = 5,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ServiceAgreementViolationsRequestSortOrder
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"None")]
-        None = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Ascending")]
-        Ascending = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Descending")]
-        Descending = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ServiceAgreementSearchResultStatus
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Draft")]
-        Draft = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Active")]
-        Active = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Retired")]
-        Retired = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ServiceAgreementSearchQueryStatus
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Draft")]
-        Draft = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Active")]
-        Active = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Retired")]
-        Retired = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum MessageSampleVersion
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"None")]
-        None = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Soap11")]
-        Soap11 = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Soap12")]
-        Soap12 = 2,
 
     }
 
@@ -30760,21 +29689,6 @@ namespace LSL.Sentinet.ApiClient
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum MessageGenerationSettingsEnvelopeVersion
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"None")]
-        None = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Soap11")]
-        Soap11 = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Soap12")]
-        Soap12 = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public enum DependencyType
     {
 
@@ -30783,963 +29697,6 @@ namespace LSL.Sentinet.ApiClient
 
         [System.Runtime.Serialization.EnumMember(Value = @"Declarative")]
         Declarative = 1,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum DependencyReferenceType
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"DependsOn")]
-        DependsOn = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Contains")]
-        Contains = 1,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum LocalIdentifierEntityType
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Unknown")]
-        Unknown = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Node")]
-        Node = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Binding")]
-        Binding = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Behavior")]
-        Behavior = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Service")]
-        Service = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceVersion")]
-        ServiceVersion = 5,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Contract")]
-        Contract = 6,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Endpoint")]
-        Endpoint = 7,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Operation")]
-        Operation = 8,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreement")]
-        ServiceAgreement = 9,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationRule")]
-        AuthorizationRule = 10,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"User")]
-        User = 11,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertSourceType")]
-        AlertSourceType = 12,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertType")]
-        AlertType = 13,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertGroup")]
-        AlertGroup = 14,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertHandlerType")]
-        AlertHandlerType = 15,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertHandler")]
-        AlertHandler = 16,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"RouterType")]
-        RouterType = 17,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ExpressionType")]
-        ExpressionType = 18,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Folder")]
-        Folder = 19,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"File")]
-        File = 20,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Message")]
-        Message = 21,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MessageHeader")]
-        MessageHeader = 22,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"NodeAddress")]
-        NodeAddress = 23,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationClaimType")]
-        AuthorizationClaimType = 24,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreementAlertType")]
-        ServiceAgreementAlertType = 25,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Alert")]
-        Alert = 26,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Property")]
-        Property = 27,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"NodeInstance")]
-        NodeInstance = 28,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringRecord")]
-        MonitoringRecord = 29,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringActivity")]
-        MonitoringActivity = 30,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringTransaction")]
-        MonitoringTransaction = 31,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Issuer")]
-        Issuer = 32,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"EndpointGroup")]
-        EndpointGroup = 33,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Identity")]
-        Identity = 34,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MessageSample")]
-        MessageSample = 35,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MetadataSection")]
-        MetadataSection = 36,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreementMetric")]
-        ServiceAgreementMetric = 37,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationRuleAssignment")]
-        AuthorizationRuleAssignment = 38,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ChangeEntityAlertType")]
-        ChangeEntityAlertType = 39,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ChangeFolderAlertType")]
-        ChangeFolderAlertType = 40,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"DataSchema")]
-        DataSchema = 41,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Custom")]
-        Custom = 42,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Reference")]
-        Reference = 43,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ComponentType")]
-        ComponentType = 44,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Product")]
-        Product = 45,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Consumer")]
-        Consumer = 46,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Subscription")]
-        Subscription = 47,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Application")]
-        Application = 48,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ProductServiceVersion")]
-        ProductServiceVersion = 49,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"SecurityRole")]
-        SecurityRole = 50,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"CustomAttributeType")]
-        CustomAttributeType = 51,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"VirtualizationProfile")]
-        VirtualizationProfile = 52,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroup")]
-        AuthorizationGroup = 53,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroupMember")]
-        AuthorizationGroupMember = 54,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringFilterType")]
-        MonitoringFilterType = 55,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Certificate")]
-        Certificate = 56,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ServiceSubtreeKind
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Soap")]
-        Soap = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Rest")]
-        Rest = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"OpenData")]
-        OpenData = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum NodeSubtreeNodeType
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"IisMixedTransportsMode")]
-        IisMixedTransportsMode = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"IisAspNetCompatibilityMode")]
-        IisAspNetCompatibilityMode = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"SelfHosted")]
-        SelfHosted = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum BehaviorSubtreeKind
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Endpoint")]
-        Endpoint = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Service")]
-        Service = 1,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum IdentitySubtreeKind
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"X509Certificate")]
-        X509Certificate = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Windows")]
-        Windows = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"UserNamePassword")]
-        UserNamePassword = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"UserPrincipalName")]
-        UserPrincipalName = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServicePrincipalName")]
-        ServicePrincipalName = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Digest")]
-        Digest = 5,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"UserNamePasswordHash")]
-        UserNamePasswordHash = 6,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"WindowsNoPassword")]
-        WindowsNoPassword = 7,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AzureCredentials")]
-        AzureCredentials = 8,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"DnsName")]
-        DnsName = 9,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"X509CertificateFederation")]
-        X509CertificateFederation = 10,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"WindowsGroup")]
-        WindowsGroup = 11,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Claim")]
-        Claim = 12,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"X509CertificateThumbprint")]
-        X509CertificateThumbprint = 13,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"OAuthClientCredentials")]
-        OAuthClientCredentials = 14,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"OAuthServiceCredentials")]
-        OAuthServiceCredentials = 15,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ServiceVersionSubtreeStatus
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Draft")]
-        Draft = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Active")]
-        Active = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Obsolete")]
-        Obsolete = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Retired")]
-        Retired = 3,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ServiceVersionSubtreeKind
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Soap")]
-        Soap = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Rest")]
-        Rest = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"OpenData")]
-        OpenData = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum OperationSubtreeExchangePattern
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Send")]
-        Send = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"RequestResponse")]
-        RequestResponse = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"SolicitResponse")]
-        SolicitResponse = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Receive")]
-        Receive = 3,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum MessageSubtreeDirection
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Input")]
-        Input = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Output")]
-        Output = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Fault")]
-        Fault = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"GenericFault")]
-        GenericFault = 3,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum EntityInfoEntityType
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Unknown")]
-        Unknown = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Node")]
-        Node = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Binding")]
-        Binding = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Behavior")]
-        Behavior = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Service")]
-        Service = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceVersion")]
-        ServiceVersion = 5,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Contract")]
-        Contract = 6,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Endpoint")]
-        Endpoint = 7,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Operation")]
-        Operation = 8,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreement")]
-        ServiceAgreement = 9,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationRule")]
-        AuthorizationRule = 10,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"User")]
-        User = 11,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertSourceType")]
-        AlertSourceType = 12,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertType")]
-        AlertType = 13,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertGroup")]
-        AlertGroup = 14,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertHandlerType")]
-        AlertHandlerType = 15,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertHandler")]
-        AlertHandler = 16,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"RouterType")]
-        RouterType = 17,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ExpressionType")]
-        ExpressionType = 18,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Folder")]
-        Folder = 19,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"File")]
-        File = 20,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Message")]
-        Message = 21,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MessageHeader")]
-        MessageHeader = 22,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"NodeAddress")]
-        NodeAddress = 23,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationClaimType")]
-        AuthorizationClaimType = 24,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreementAlertType")]
-        ServiceAgreementAlertType = 25,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Alert")]
-        Alert = 26,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Property")]
-        Property = 27,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"NodeInstance")]
-        NodeInstance = 28,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringRecord")]
-        MonitoringRecord = 29,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringActivity")]
-        MonitoringActivity = 30,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringTransaction")]
-        MonitoringTransaction = 31,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Issuer")]
-        Issuer = 32,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"EndpointGroup")]
-        EndpointGroup = 33,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Identity")]
-        Identity = 34,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MessageSample")]
-        MessageSample = 35,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MetadataSection")]
-        MetadataSection = 36,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreementMetric")]
-        ServiceAgreementMetric = 37,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationRuleAssignment")]
-        AuthorizationRuleAssignment = 38,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ChangeEntityAlertType")]
-        ChangeEntityAlertType = 39,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ChangeFolderAlertType")]
-        ChangeFolderAlertType = 40,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"DataSchema")]
-        DataSchema = 41,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Custom")]
-        Custom = 42,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Reference")]
-        Reference = 43,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ComponentType")]
-        ComponentType = 44,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Product")]
-        Product = 45,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Consumer")]
-        Consumer = 46,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Subscription")]
-        Subscription = 47,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Application")]
-        Application = 48,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ProductServiceVersion")]
-        ProductServiceVersion = 49,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"SecurityRole")]
-        SecurityRole = 50,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"CustomAttributeType")]
-        CustomAttributeType = 51,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"VirtualizationProfile")]
-        VirtualizationProfile = 52,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroup")]
-        AuthorizationGroup = 53,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroupMember")]
-        AuthorizationGroupMember = 54,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringFilterType")]
-        MonitoringFilterType = 55,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Certificate")]
-        Certificate = 56,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum GlobalIdentifierEntityType
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Unknown")]
-        Unknown = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Node")]
-        Node = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Binding")]
-        Binding = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Behavior")]
-        Behavior = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Service")]
-        Service = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceVersion")]
-        ServiceVersion = 5,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Contract")]
-        Contract = 6,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Endpoint")]
-        Endpoint = 7,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Operation")]
-        Operation = 8,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreement")]
-        ServiceAgreement = 9,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationRule")]
-        AuthorizationRule = 10,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"User")]
-        User = 11,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertSourceType")]
-        AlertSourceType = 12,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertType")]
-        AlertType = 13,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertGroup")]
-        AlertGroup = 14,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertHandlerType")]
-        AlertHandlerType = 15,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertHandler")]
-        AlertHandler = 16,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"RouterType")]
-        RouterType = 17,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ExpressionType")]
-        ExpressionType = 18,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Folder")]
-        Folder = 19,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"File")]
-        File = 20,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Message")]
-        Message = 21,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MessageHeader")]
-        MessageHeader = 22,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"NodeAddress")]
-        NodeAddress = 23,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationClaimType")]
-        AuthorizationClaimType = 24,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreementAlertType")]
-        ServiceAgreementAlertType = 25,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Alert")]
-        Alert = 26,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Property")]
-        Property = 27,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"NodeInstance")]
-        NodeInstance = 28,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringRecord")]
-        MonitoringRecord = 29,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringActivity")]
-        MonitoringActivity = 30,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringTransaction")]
-        MonitoringTransaction = 31,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Issuer")]
-        Issuer = 32,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"EndpointGroup")]
-        EndpointGroup = 33,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Identity")]
-        Identity = 34,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MessageSample")]
-        MessageSample = 35,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MetadataSection")]
-        MetadataSection = 36,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreementMetric")]
-        ServiceAgreementMetric = 37,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationRuleAssignment")]
-        AuthorizationRuleAssignment = 38,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ChangeEntityAlertType")]
-        ChangeEntityAlertType = 39,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ChangeFolderAlertType")]
-        ChangeFolderAlertType = 40,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"DataSchema")]
-        DataSchema = 41,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Custom")]
-        Custom = 42,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Reference")]
-        Reference = 43,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ComponentType")]
-        ComponentType = 44,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Product")]
-        Product = 45,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Consumer")]
-        Consumer = 46,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Subscription")]
-        Subscription = 47,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Application")]
-        Application = 48,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ProductServiceVersion")]
-        ProductServiceVersion = 49,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"SecurityRole")]
-        SecurityRole = 50,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"CustomAttributeType")]
-        CustomAttributeType = 51,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"VirtualizationProfile")]
-        VirtualizationProfile = 52,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroup")]
-        AuthorizationGroup = 53,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroupMember")]
-        AuthorizationGroupMember = 54,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringFilterType")]
-        MonitoringFilterType = 55,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Certificate")]
-        Certificate = 56,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum KeyMappingEntityType
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Unknown")]
-        Unknown = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Node")]
-        Node = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Binding")]
-        Binding = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Behavior")]
-        Behavior = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Service")]
-        Service = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceVersion")]
-        ServiceVersion = 5,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Contract")]
-        Contract = 6,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Endpoint")]
-        Endpoint = 7,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Operation")]
-        Operation = 8,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreement")]
-        ServiceAgreement = 9,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationRule")]
-        AuthorizationRule = 10,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"User")]
-        User = 11,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertSourceType")]
-        AlertSourceType = 12,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertType")]
-        AlertType = 13,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertGroup")]
-        AlertGroup = 14,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertHandlerType")]
-        AlertHandlerType = 15,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertHandler")]
-        AlertHandler = 16,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"RouterType")]
-        RouterType = 17,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ExpressionType")]
-        ExpressionType = 18,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Folder")]
-        Folder = 19,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"File")]
-        File = 20,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Message")]
-        Message = 21,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MessageHeader")]
-        MessageHeader = 22,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"NodeAddress")]
-        NodeAddress = 23,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationClaimType")]
-        AuthorizationClaimType = 24,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreementAlertType")]
-        ServiceAgreementAlertType = 25,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Alert")]
-        Alert = 26,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Property")]
-        Property = 27,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"NodeInstance")]
-        NodeInstance = 28,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringRecord")]
-        MonitoringRecord = 29,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringActivity")]
-        MonitoringActivity = 30,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringTransaction")]
-        MonitoringTransaction = 31,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Issuer")]
-        Issuer = 32,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"EndpointGroup")]
-        EndpointGroup = 33,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Identity")]
-        Identity = 34,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MessageSample")]
-        MessageSample = 35,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MetadataSection")]
-        MetadataSection = 36,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreementMetric")]
-        ServiceAgreementMetric = 37,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationRuleAssignment")]
-        AuthorizationRuleAssignment = 38,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ChangeEntityAlertType")]
-        ChangeEntityAlertType = 39,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ChangeFolderAlertType")]
-        ChangeFolderAlertType = 40,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"DataSchema")]
-        DataSchema = 41,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Custom")]
-        Custom = 42,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Reference")]
-        Reference = 43,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ComponentType")]
-        ComponentType = 44,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Product")]
-        Product = 45,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Consumer")]
-        Consumer = 46,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Subscription")]
-        Subscription = 47,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Application")]
-        Application = 48,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ProductServiceVersion")]
-        ProductServiceVersion = 49,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"SecurityRole")]
-        SecurityRole = 50,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"CustomAttributeType")]
-        CustomAttributeType = 51,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"VirtualizationProfile")]
-        VirtualizationProfile = 52,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroup")]
-        AuthorizationGroup = 53,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroupMember")]
-        AuthorizationGroupMember = 54,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringFilterType")]
-        MonitoringFilterType = 55,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Certificate")]
-        Certificate = 56,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum UserAuthorizationInfoPermission
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"None")]
-        None = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ReadOnly")]
-        ReadOnly = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ReadWrite")]
-        ReadWrite = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Administrator")]
-        Administrator = 3,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum UserAuthorizationInfoIdentityKind
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"X509Certificate")]
-        X509Certificate = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Windows")]
-        Windows = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"UserNamePassword")]
-        UserNamePassword = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"UserPrincipalName")]
-        UserPrincipalName = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServicePrincipalName")]
-        ServicePrincipalName = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Digest")]
-        Digest = 5,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"UserNamePasswordHash")]
-        UserNamePasswordHash = 6,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"WindowsNoPassword")]
-        WindowsNoPassword = 7,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AzureCredentials")]
-        AzureCredentials = 8,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"DnsName")]
-        DnsName = 9,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"X509CertificateFederation")]
-        X509CertificateFederation = 10,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"WindowsGroup")]
-        WindowsGroup = 11,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Claim")]
-        Claim = 12,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"X509CertificateThumbprint")]
-        X509CertificateThumbprint = 13,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"OAuthClientCredentials")]
-        OAuthClientCredentials = 14,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"OAuthServiceCredentials")]
-        OAuthServiceCredentials = 15,
 
     }
 
@@ -31810,441 +29767,6 @@ namespace LSL.Sentinet.ApiClient
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ProductServiceVersionStatus
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Draft")]
-        Draft = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Active")]
-        Active = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Obsolete")]
-        Obsolete = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Retired")]
-        Retired = 3,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ProductServiceVersionKind
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Soap")]
-        Soap = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Rest")]
-        Rest = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"OpenData")]
-        OpenData = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum EntityReferencePrimaryEntityType
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Unknown")]
-        Unknown = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Node")]
-        Node = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Binding")]
-        Binding = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Behavior")]
-        Behavior = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Service")]
-        Service = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceVersion")]
-        ServiceVersion = 5,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Contract")]
-        Contract = 6,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Endpoint")]
-        Endpoint = 7,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Operation")]
-        Operation = 8,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreement")]
-        ServiceAgreement = 9,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationRule")]
-        AuthorizationRule = 10,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"User")]
-        User = 11,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertSourceType")]
-        AlertSourceType = 12,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertType")]
-        AlertType = 13,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertGroup")]
-        AlertGroup = 14,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertHandlerType")]
-        AlertHandlerType = 15,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertHandler")]
-        AlertHandler = 16,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"RouterType")]
-        RouterType = 17,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ExpressionType")]
-        ExpressionType = 18,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Folder")]
-        Folder = 19,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"File")]
-        File = 20,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Message")]
-        Message = 21,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MessageHeader")]
-        MessageHeader = 22,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"NodeAddress")]
-        NodeAddress = 23,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationClaimType")]
-        AuthorizationClaimType = 24,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreementAlertType")]
-        ServiceAgreementAlertType = 25,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Alert")]
-        Alert = 26,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Property")]
-        Property = 27,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"NodeInstance")]
-        NodeInstance = 28,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringRecord")]
-        MonitoringRecord = 29,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringActivity")]
-        MonitoringActivity = 30,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringTransaction")]
-        MonitoringTransaction = 31,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Issuer")]
-        Issuer = 32,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"EndpointGroup")]
-        EndpointGroup = 33,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Identity")]
-        Identity = 34,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MessageSample")]
-        MessageSample = 35,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MetadataSection")]
-        MetadataSection = 36,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreementMetric")]
-        ServiceAgreementMetric = 37,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationRuleAssignment")]
-        AuthorizationRuleAssignment = 38,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ChangeEntityAlertType")]
-        ChangeEntityAlertType = 39,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ChangeFolderAlertType")]
-        ChangeFolderAlertType = 40,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"DataSchema")]
-        DataSchema = 41,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Custom")]
-        Custom = 42,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Reference")]
-        Reference = 43,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ComponentType")]
-        ComponentType = 44,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Product")]
-        Product = 45,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Consumer")]
-        Consumer = 46,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Subscription")]
-        Subscription = 47,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Application")]
-        Application = 48,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ProductServiceVersion")]
-        ProductServiceVersion = 49,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"SecurityRole")]
-        SecurityRole = 50,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"CustomAttributeType")]
-        CustomAttributeType = 51,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"VirtualizationProfile")]
-        VirtualizationProfile = 52,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroup")]
-        AuthorizationGroup = 53,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroupMember")]
-        AuthorizationGroupMember = 54,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringFilterType")]
-        MonitoringFilterType = 55,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Certificate")]
-        Certificate = 56,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum EntityReferenceForeignEntityType
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Unknown")]
-        Unknown = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Node")]
-        Node = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Binding")]
-        Binding = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Behavior")]
-        Behavior = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Service")]
-        Service = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceVersion")]
-        ServiceVersion = 5,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Contract")]
-        Contract = 6,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Endpoint")]
-        Endpoint = 7,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Operation")]
-        Operation = 8,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreement")]
-        ServiceAgreement = 9,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationRule")]
-        AuthorizationRule = 10,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"User")]
-        User = 11,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertSourceType")]
-        AlertSourceType = 12,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertType")]
-        AlertType = 13,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertGroup")]
-        AlertGroup = 14,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertHandlerType")]
-        AlertHandlerType = 15,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertHandler")]
-        AlertHandler = 16,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"RouterType")]
-        RouterType = 17,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ExpressionType")]
-        ExpressionType = 18,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Folder")]
-        Folder = 19,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"File")]
-        File = 20,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Message")]
-        Message = 21,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MessageHeader")]
-        MessageHeader = 22,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"NodeAddress")]
-        NodeAddress = 23,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationClaimType")]
-        AuthorizationClaimType = 24,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreementAlertType")]
-        ServiceAgreementAlertType = 25,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Alert")]
-        Alert = 26,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Property")]
-        Property = 27,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"NodeInstance")]
-        NodeInstance = 28,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringRecord")]
-        MonitoringRecord = 29,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringActivity")]
-        MonitoringActivity = 30,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringTransaction")]
-        MonitoringTransaction = 31,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Issuer")]
-        Issuer = 32,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"EndpointGroup")]
-        EndpointGroup = 33,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Identity")]
-        Identity = 34,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MessageSample")]
-        MessageSample = 35,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MetadataSection")]
-        MetadataSection = 36,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreementMetric")]
-        ServiceAgreementMetric = 37,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationRuleAssignment")]
-        AuthorizationRuleAssignment = 38,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ChangeEntityAlertType")]
-        ChangeEntityAlertType = 39,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ChangeFolderAlertType")]
-        ChangeFolderAlertType = 40,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"DataSchema")]
-        DataSchema = 41,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Custom")]
-        Custom = 42,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Reference")]
-        Reference = 43,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ComponentType")]
-        ComponentType = 44,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Product")]
-        Product = 45,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Consumer")]
-        Consumer = 46,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Subscription")]
-        Subscription = 47,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Application")]
-        Application = 48,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ProductServiceVersion")]
-        ProductServiceVersion = 49,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"SecurityRole")]
-        SecurityRole = 50,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"CustomAttributeType")]
-        CustomAttributeType = 51,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"VirtualizationProfile")]
-        VirtualizationProfile = 52,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroup")]
-        AuthorizationGroup = 53,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroupMember")]
-        AuthorizationGroupMember = 54,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringFilterType")]
-        MonitoringFilterType = 55,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Certificate")]
-        Certificate = 56,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum EntityReferenceReferenceType
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"DependsOn")]
-        DependsOn = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Contains")]
-        Contains = 1,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ProductStatus
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Draft")]
-        Draft = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Active")]
-        Active = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Obsolete")]
-        Obsolete = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Retired")]
-        Retired = 3,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ProductSearchQueryStatus
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Draft")]
-        Draft = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Active")]
-        Active = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Obsolete")]
-        Obsolete = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Retired")]
-        Retired = 3,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public enum ProductSearchQuerySortField
     {
 
@@ -32272,21 +29794,6 @@ namespace LSL.Sentinet.ApiClient
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ProductSearchQuerySortOrder
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"None")]
-        None = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Ascending")]
-        Ascending = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Descending")]
-        Descending = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public enum ConsumerSearchQuerySortField
     {
 
@@ -32298,51 +29805,6 @@ namespace LSL.Sentinet.ApiClient
 
         [System.Runtime.Serialization.EnumMember(Value = @"Created")]
         Created = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ConsumerSearchQuerySortOrder
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"None")]
-        None = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Ascending")]
-        Ascending = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Descending")]
-        Descending = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum SubscriptionStatus
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Requested")]
-        Requested = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Activated")]
-        Activated = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Deactivated")]
-        Deactivated = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum SubscriptionSearchQueryStatus
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Requested")]
-        Requested = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Activated")]
-        Activated = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Deactivated")]
-        Deactivated = 2,
 
     }
 
@@ -32371,21 +29833,6 @@ namespace LSL.Sentinet.ApiClient
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum SubscriptionSearchQuerySortOrder
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"None")]
-        None = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Ascending")]
-        Ascending = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Descending")]
-        Descending = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public enum ApplicationSearchQuerySortField
     {
 
@@ -32400,21 +29847,6 @@ namespace LSL.Sentinet.ApiClient
 
         [System.Runtime.Serialization.EnumMember(Value = @"Created")]
         Created = 3,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ApplicationSearchQuerySortOrder
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"None")]
-        None = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Ascending")]
-        Ascending = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Descending")]
-        Descending = 2,
 
     }
 
@@ -32500,183 +29932,6 @@ namespace LSL.Sentinet.ApiClient
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum CustomAttributeTypeEntityType
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Unknown")]
-        Unknown = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Node")]
-        Node = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Binding")]
-        Binding = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Behavior")]
-        Behavior = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Service")]
-        Service = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceVersion")]
-        ServiceVersion = 5,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Contract")]
-        Contract = 6,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Endpoint")]
-        Endpoint = 7,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Operation")]
-        Operation = 8,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreement")]
-        ServiceAgreement = 9,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationRule")]
-        AuthorizationRule = 10,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"User")]
-        User = 11,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertSourceType")]
-        AlertSourceType = 12,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertType")]
-        AlertType = 13,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertGroup")]
-        AlertGroup = 14,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertHandlerType")]
-        AlertHandlerType = 15,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertHandler")]
-        AlertHandler = 16,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"RouterType")]
-        RouterType = 17,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ExpressionType")]
-        ExpressionType = 18,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Folder")]
-        Folder = 19,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"File")]
-        File = 20,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Message")]
-        Message = 21,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MessageHeader")]
-        MessageHeader = 22,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"NodeAddress")]
-        NodeAddress = 23,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationClaimType")]
-        AuthorizationClaimType = 24,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreementAlertType")]
-        ServiceAgreementAlertType = 25,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Alert")]
-        Alert = 26,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Property")]
-        Property = 27,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"NodeInstance")]
-        NodeInstance = 28,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringRecord")]
-        MonitoringRecord = 29,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringActivity")]
-        MonitoringActivity = 30,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringTransaction")]
-        MonitoringTransaction = 31,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Issuer")]
-        Issuer = 32,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"EndpointGroup")]
-        EndpointGroup = 33,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Identity")]
-        Identity = 34,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MessageSample")]
-        MessageSample = 35,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MetadataSection")]
-        MetadataSection = 36,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreementMetric")]
-        ServiceAgreementMetric = 37,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationRuleAssignment")]
-        AuthorizationRuleAssignment = 38,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ChangeEntityAlertType")]
-        ChangeEntityAlertType = 39,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ChangeFolderAlertType")]
-        ChangeFolderAlertType = 40,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"DataSchema")]
-        DataSchema = 41,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Custom")]
-        Custom = 42,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Reference")]
-        Reference = 43,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ComponentType")]
-        ComponentType = 44,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Product")]
-        Product = 45,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Consumer")]
-        Consumer = 46,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Subscription")]
-        Subscription = 47,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Application")]
-        Application = 48,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ProductServiceVersion")]
-        ProductServiceVersion = 49,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"SecurityRole")]
-        SecurityRole = 50,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"CustomAttributeType")]
-        CustomAttributeType = 51,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"VirtualizationProfile")]
-        VirtualizationProfile = 52,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroup")]
-        AuthorizationGroup = 53,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroupMember")]
-        AuthorizationGroupMember = 54,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringFilterType")]
-        MonitoringFilterType = 55,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Certificate")]
-        Certificate = 56,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public enum CustomAttributeTypeDataType
     {
 
@@ -32716,21 +29971,6 @@ namespace LSL.Sentinet.ApiClient
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum VirtualizationProfileServiceKind
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Soap")]
-        Soap = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Rest")]
-        Rest = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"OpenData")]
-        OpenData = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public enum VirtualizationSettingsMonitoringProfile
     {
 
@@ -32745,21 +29985,6 @@ namespace LSL.Sentinet.ApiClient
 
         [System.Runtime.Serialization.EnumMember(Value = @"Full")]
         Full = 3,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum DefaultAuthorizationRuleAction
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"None")]
-        None = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Permit")]
-        Permit = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Deny")]
-        Deny = 2,
 
     }
 
@@ -32805,132 +30030,6 @@ namespace LSL.Sentinet.ApiClient
 
         [System.Runtime.Serialization.EnumMember(Value = @"Text")]
         Text = 3,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum BehaviorSearchResultKind
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Endpoint")]
-        Endpoint = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Service")]
-        Service = 1,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum BehaviorSearchQueryKind
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Endpoint")]
-        Endpoint = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Service")]
-        Service = 1,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum NodeAddressKind
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Physical")]
-        Physical = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AzureServiceBus")]
-        AzureServiceBus = 1,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum IdentityDefinitionBaseKind
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"X509Certificate")]
-        X509Certificate = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Windows")]
-        Windows = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"UserNamePassword")]
-        UserNamePassword = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"UserPrincipalName")]
-        UserPrincipalName = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServicePrincipalName")]
-        ServicePrincipalName = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Digest")]
-        Digest = 5,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"UserNamePasswordHash")]
-        UserNamePasswordHash = 6,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"WindowsNoPassword")]
-        WindowsNoPassword = 7,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AzureCredentials")]
-        AzureCredentials = 8,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"DnsName")]
-        DnsName = 9,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"X509CertificateFederation")]
-        X509CertificateFederation = 10,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"WindowsGroup")]
-        WindowsGroup = 11,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Claim")]
-        Claim = 12,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"X509CertificateThumbprint")]
-        X509CertificateThumbprint = 13,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"OAuthClientCredentials")]
-        OAuthClientCredentials = 14,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"OAuthServiceCredentials")]
-        OAuthServiceCredentials = 15,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum NodeInstanceLastReportedStatus
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Idle")]
-        Idle = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Normal")]
-        Normal = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Warnings")]
-        Warnings = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Errors")]
-        Errors = 3,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum NodeInstanceStatus
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Idle")]
-        Idle = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Normal")]
-        Normal = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Warnings")]
-        Warnings = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Errors")]
-        Errors = 3,
 
     }
 
@@ -32986,51 +30085,6 @@ namespace LSL.Sentinet.ApiClient
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum NodeType
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"IisMixedTransportsMode")]
-        IisMixedTransportsMode = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"IisAspNetCompatibilityMode")]
-        IisAspNetCompatibilityMode = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"SelfHosted")]
-        SelfHosted = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum SchemeSummaryKind
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Physical")]
-        Physical = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AzureServiceBus")]
-        AzureServiceBus = 1,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum NodeSearchQueryStatus
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Idle")]
-        Idle = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Normal")]
-        Normal = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Warnings")]
-        Warnings = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Errors")]
-        Errors = 3,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public enum ComponentTypeAllowedPositions
     {
 
@@ -33051,120 +30105,6 @@ namespace LSL.Sentinet.ApiClient
 
         [System.Runtime.Serialization.EnumMember(Value = @"All")]
         All = 5,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum OperationInfoExchangePattern
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Send")]
-        Send = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"RequestResponse")]
-        RequestResponse = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"SolicitResponse")]
-        SolicitResponse = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Receive")]
-        Receive = 3,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum TransactionSummaryRequestType
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"I")]
-        I = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"O")]
-        O = 1,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum TransactionSummaryRequestUnit
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Second")]
-        Second = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Minute")]
-        Minute = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Hour")]
-        Hour = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Day")]
-        Day = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Month")]
-        Month = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Year")]
-        Year = 5,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum MonitoringTransactionHeaderType
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"I")]
-        I = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"O")]
-        O = 1,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum MonitoringTransactionHeaderStatus
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"I")]
-        I = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"S")]
-        S = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"F")]
-        F = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"E")]
-        E = 3,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum TransactionHeadersRequestTransactionType
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"I")]
-        I = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"O")]
-        O = 1,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum TransactionHeadersRequestStatus
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"I")]
-        I = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"S")]
-        S = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"F")]
-        F = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"E")]
-        E = 3,
 
     }
 
@@ -33220,129 +30160,6 @@ namespace LSL.Sentinet.ApiClient
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum TransactionHeadersRequestSortOrder
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"None")]
-        None = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Ascending")]
-        Ascending = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Descending")]
-        Descending = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum MonitoringTransactionDetailsTransactionType
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"I")]
-        I = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"O")]
-        O = 1,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum MonitoringTransactionDetailsStatus
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"I")]
-        I = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"S")]
-        S = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"F")]
-        F = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"E")]
-        E = 3,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum MonitoringTransactionDetailsKind
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Soap")]
-        Soap = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Rest")]
-        Rest = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"OpenData")]
-        OpenData = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum MonitoringRecordPoint
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"None")]
-        None = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ReqT")]
-        ReqT = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ReqS")]
-        ReqS = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ResS")]
-        ResS = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ResT")]
-        ResT = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Claims")]
-        Claims = 5,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"All")]
-        All = 6,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum MonitoringActivitySeverity
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"E")]
-        E = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"W")]
-        W = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"I")]
-        I = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"T")]
-        T = 3,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum MonitoringActivitiesRequestMinimumSeverity
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"E")]
-        E = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"W")]
-        W = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"I")]
-        I = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"T")]
-        T = 3,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public enum MonitoringActivitiesRequestSortField
     {
 
@@ -33369,36 +30186,6 @@ namespace LSL.Sentinet.ApiClient
 
         [System.Runtime.Serialization.EnumMember(Value = @"ActivityMessage")]
         ActivityMessage = 7,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum MonitoringActivitiesRequestSortOrder
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"None")]
-        None = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Ascending")]
-        Ascending = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Descending")]
-        Descending = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ServiceVersionUsageSummaryKind
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Soap")]
-        Soap = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Rest")]
-        Rest = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"OpenData")]
-        OpenData = 2,
 
     }
 
@@ -33466,381 +30253,6 @@ namespace LSL.Sentinet.ApiClient
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ChangeRecordEntityType
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Unknown")]
-        Unknown = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Node")]
-        Node = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Binding")]
-        Binding = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Behavior")]
-        Behavior = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Service")]
-        Service = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceVersion")]
-        ServiceVersion = 5,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Contract")]
-        Contract = 6,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Endpoint")]
-        Endpoint = 7,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Operation")]
-        Operation = 8,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreement")]
-        ServiceAgreement = 9,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationRule")]
-        AuthorizationRule = 10,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"User")]
-        User = 11,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertSourceType")]
-        AlertSourceType = 12,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertType")]
-        AlertType = 13,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertGroup")]
-        AlertGroup = 14,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertHandlerType")]
-        AlertHandlerType = 15,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertHandler")]
-        AlertHandler = 16,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"RouterType")]
-        RouterType = 17,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ExpressionType")]
-        ExpressionType = 18,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Folder")]
-        Folder = 19,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"File")]
-        File = 20,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Message")]
-        Message = 21,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MessageHeader")]
-        MessageHeader = 22,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"NodeAddress")]
-        NodeAddress = 23,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationClaimType")]
-        AuthorizationClaimType = 24,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreementAlertType")]
-        ServiceAgreementAlertType = 25,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Alert")]
-        Alert = 26,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Property")]
-        Property = 27,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"NodeInstance")]
-        NodeInstance = 28,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringRecord")]
-        MonitoringRecord = 29,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringActivity")]
-        MonitoringActivity = 30,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringTransaction")]
-        MonitoringTransaction = 31,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Issuer")]
-        Issuer = 32,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"EndpointGroup")]
-        EndpointGroup = 33,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Identity")]
-        Identity = 34,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MessageSample")]
-        MessageSample = 35,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MetadataSection")]
-        MetadataSection = 36,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreementMetric")]
-        ServiceAgreementMetric = 37,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationRuleAssignment")]
-        AuthorizationRuleAssignment = 38,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ChangeEntityAlertType")]
-        ChangeEntityAlertType = 39,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ChangeFolderAlertType")]
-        ChangeFolderAlertType = 40,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"DataSchema")]
-        DataSchema = 41,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Custom")]
-        Custom = 42,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Reference")]
-        Reference = 43,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ComponentType")]
-        ComponentType = 44,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Product")]
-        Product = 45,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Consumer")]
-        Consumer = 46,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Subscription")]
-        Subscription = 47,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Application")]
-        Application = 48,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ProductServiceVersion")]
-        ProductServiceVersion = 49,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"SecurityRole")]
-        SecurityRole = 50,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"CustomAttributeType")]
-        CustomAttributeType = 51,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"VirtualizationProfile")]
-        VirtualizationProfile = 52,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroup")]
-        AuthorizationGroup = 53,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroupMember")]
-        AuthorizationGroupMember = 54,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringFilterType")]
-        MonitoringFilterType = 55,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Certificate")]
-        Certificate = 56,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ChangeRecordMajorEntityType
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Unknown")]
-        Unknown = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Node")]
-        Node = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Binding")]
-        Binding = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Behavior")]
-        Behavior = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Service")]
-        Service = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceVersion")]
-        ServiceVersion = 5,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Contract")]
-        Contract = 6,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Endpoint")]
-        Endpoint = 7,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Operation")]
-        Operation = 8,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreement")]
-        ServiceAgreement = 9,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationRule")]
-        AuthorizationRule = 10,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"User")]
-        User = 11,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertSourceType")]
-        AlertSourceType = 12,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertType")]
-        AlertType = 13,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertGroup")]
-        AlertGroup = 14,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertHandlerType")]
-        AlertHandlerType = 15,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertHandler")]
-        AlertHandler = 16,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"RouterType")]
-        RouterType = 17,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ExpressionType")]
-        ExpressionType = 18,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Folder")]
-        Folder = 19,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"File")]
-        File = 20,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Message")]
-        Message = 21,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MessageHeader")]
-        MessageHeader = 22,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"NodeAddress")]
-        NodeAddress = 23,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationClaimType")]
-        AuthorizationClaimType = 24,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreementAlertType")]
-        ServiceAgreementAlertType = 25,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Alert")]
-        Alert = 26,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Property")]
-        Property = 27,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"NodeInstance")]
-        NodeInstance = 28,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringRecord")]
-        MonitoringRecord = 29,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringActivity")]
-        MonitoringActivity = 30,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringTransaction")]
-        MonitoringTransaction = 31,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Issuer")]
-        Issuer = 32,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"EndpointGroup")]
-        EndpointGroup = 33,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Identity")]
-        Identity = 34,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MessageSample")]
-        MessageSample = 35,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MetadataSection")]
-        MetadataSection = 36,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreementMetric")]
-        ServiceAgreementMetric = 37,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationRuleAssignment")]
-        AuthorizationRuleAssignment = 38,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ChangeEntityAlertType")]
-        ChangeEntityAlertType = 39,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ChangeFolderAlertType")]
-        ChangeFolderAlertType = 40,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"DataSchema")]
-        DataSchema = 41,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Custom")]
-        Custom = 42,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Reference")]
-        Reference = 43,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ComponentType")]
-        ComponentType = 44,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Product")]
-        Product = 45,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Consumer")]
-        Consumer = 46,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Subscription")]
-        Subscription = 47,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Application")]
-        Application = 48,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ProductServiceVersion")]
-        ProductServiceVersion = 49,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"SecurityRole")]
-        SecurityRole = 50,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"CustomAttributeType")]
-        CustomAttributeType = 51,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"VirtualizationProfile")]
-        VirtualizationProfile = 52,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroup")]
-        AuthorizationGroup = 53,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroupMember")]
-        AuthorizationGroupMember = 54,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringFilterType")]
-        MonitoringFilterType = 55,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Certificate")]
-        Certificate = 56,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ChangeRecordChangeType
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"None")]
-        None = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Created")]
-        Created = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Updated")]
-        Updated = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Deleted")]
-        Deleted = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"All")]
-        All = 4,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public enum UserSessionsRequestSortField
     {
 
@@ -33861,57 +30273,6 @@ namespace LSL.Sentinet.ApiClient
 
         [System.Runtime.Serialization.EnumMember(Value = @"ClientAddress")]
         ClientAddress = 5,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum UserSessionsRequestSortOrder
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"None")]
-        None = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Ascending")]
-        Ascending = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Descending")]
-        Descending = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum UserPermission
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"None")]
-        None = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ReadOnly")]
-        ReadOnly = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ReadWrite")]
-        ReadWrite = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Administrator")]
-        Administrator = 3,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ConsumerUserSearchQueryPermission
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"None")]
-        None = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ReadOnly")]
-        ReadOnly = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ReadWrite")]
-        ReadWrite = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Administrator")]
-        Administrator = 3,
 
     }
 
@@ -33943,645 +30304,6 @@ namespace LSL.Sentinet.ApiClient
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ConsumerUserSearchQuerySortOrder
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"None")]
-        None = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Ascending")]
-        Ascending = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Descending")]
-        Descending = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum AlertTypeIntervalUnit
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Second")]
-        Second = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Minute")]
-        Minute = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Hour")]
-        Hour = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Day")]
-        Day = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Month")]
-        Month = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Year")]
-        Year = 5,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum AlertTypesRequestEntityType
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Unknown")]
-        Unknown = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Node")]
-        Node = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Binding")]
-        Binding = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Behavior")]
-        Behavior = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Service")]
-        Service = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceVersion")]
-        ServiceVersion = 5,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Contract")]
-        Contract = 6,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Endpoint")]
-        Endpoint = 7,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Operation")]
-        Operation = 8,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreement")]
-        ServiceAgreement = 9,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationRule")]
-        AuthorizationRule = 10,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"User")]
-        User = 11,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertSourceType")]
-        AlertSourceType = 12,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertType")]
-        AlertType = 13,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertGroup")]
-        AlertGroup = 14,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertHandlerType")]
-        AlertHandlerType = 15,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertHandler")]
-        AlertHandler = 16,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"RouterType")]
-        RouterType = 17,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ExpressionType")]
-        ExpressionType = 18,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Folder")]
-        Folder = 19,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"File")]
-        File = 20,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Message")]
-        Message = 21,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MessageHeader")]
-        MessageHeader = 22,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"NodeAddress")]
-        NodeAddress = 23,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationClaimType")]
-        AuthorizationClaimType = 24,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreementAlertType")]
-        ServiceAgreementAlertType = 25,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Alert")]
-        Alert = 26,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Property")]
-        Property = 27,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"NodeInstance")]
-        NodeInstance = 28,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringRecord")]
-        MonitoringRecord = 29,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringActivity")]
-        MonitoringActivity = 30,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringTransaction")]
-        MonitoringTransaction = 31,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Issuer")]
-        Issuer = 32,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"EndpointGroup")]
-        EndpointGroup = 33,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Identity")]
-        Identity = 34,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MessageSample")]
-        MessageSample = 35,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MetadataSection")]
-        MetadataSection = 36,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreementMetric")]
-        ServiceAgreementMetric = 37,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationRuleAssignment")]
-        AuthorizationRuleAssignment = 38,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ChangeEntityAlertType")]
-        ChangeEntityAlertType = 39,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ChangeFolderAlertType")]
-        ChangeFolderAlertType = 40,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"DataSchema")]
-        DataSchema = 41,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Custom")]
-        Custom = 42,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Reference")]
-        Reference = 43,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ComponentType")]
-        ComponentType = 44,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Product")]
-        Product = 45,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Consumer")]
-        Consumer = 46,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Subscription")]
-        Subscription = 47,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Application")]
-        Application = 48,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ProductServiceVersion")]
-        ProductServiceVersion = 49,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"SecurityRole")]
-        SecurityRole = 50,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"CustomAttributeType")]
-        CustomAttributeType = 51,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"VirtualizationProfile")]
-        VirtualizationProfile = 52,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroup")]
-        AuthorizationGroup = 53,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroupMember")]
-        AuthorizationGroupMember = 54,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringFilterType")]
-        MonitoringFilterType = 55,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Certificate")]
-        Certificate = 56,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum AlertHandlerIntervalUnit
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Second")]
-        Second = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Minute")]
-        Minute = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Hour")]
-        Hour = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Day")]
-        Day = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Month")]
-        Month = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Year")]
-        Year = 5,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ChangeEntityAlertTypeEntityType
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Unknown")]
-        Unknown = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Node")]
-        Node = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Binding")]
-        Binding = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Behavior")]
-        Behavior = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Service")]
-        Service = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceVersion")]
-        ServiceVersion = 5,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Contract")]
-        Contract = 6,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Endpoint")]
-        Endpoint = 7,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Operation")]
-        Operation = 8,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreement")]
-        ServiceAgreement = 9,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationRule")]
-        AuthorizationRule = 10,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"User")]
-        User = 11,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertSourceType")]
-        AlertSourceType = 12,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertType")]
-        AlertType = 13,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertGroup")]
-        AlertGroup = 14,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertHandlerType")]
-        AlertHandlerType = 15,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertHandler")]
-        AlertHandler = 16,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"RouterType")]
-        RouterType = 17,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ExpressionType")]
-        ExpressionType = 18,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Folder")]
-        Folder = 19,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"File")]
-        File = 20,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Message")]
-        Message = 21,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MessageHeader")]
-        MessageHeader = 22,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"NodeAddress")]
-        NodeAddress = 23,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationClaimType")]
-        AuthorizationClaimType = 24,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreementAlertType")]
-        ServiceAgreementAlertType = 25,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Alert")]
-        Alert = 26,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Property")]
-        Property = 27,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"NodeInstance")]
-        NodeInstance = 28,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringRecord")]
-        MonitoringRecord = 29,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringActivity")]
-        MonitoringActivity = 30,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringTransaction")]
-        MonitoringTransaction = 31,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Issuer")]
-        Issuer = 32,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"EndpointGroup")]
-        EndpointGroup = 33,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Identity")]
-        Identity = 34,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MessageSample")]
-        MessageSample = 35,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MetadataSection")]
-        MetadataSection = 36,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreementMetric")]
-        ServiceAgreementMetric = 37,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationRuleAssignment")]
-        AuthorizationRuleAssignment = 38,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ChangeEntityAlertType")]
-        ChangeEntityAlertType = 39,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ChangeFolderAlertType")]
-        ChangeFolderAlertType = 40,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"DataSchema")]
-        DataSchema = 41,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Custom")]
-        Custom = 42,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Reference")]
-        Reference = 43,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ComponentType")]
-        ComponentType = 44,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Product")]
-        Product = 45,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Consumer")]
-        Consumer = 46,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Subscription")]
-        Subscription = 47,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Application")]
-        Application = 48,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ProductServiceVersion")]
-        ProductServiceVersion = 49,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"SecurityRole")]
-        SecurityRole = 50,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"CustomAttributeType")]
-        CustomAttributeType = 51,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"VirtualizationProfile")]
-        VirtualizationProfile = 52,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroup")]
-        AuthorizationGroup = 53,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroupMember")]
-        AuthorizationGroupMember = 54,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringFilterType")]
-        MonitoringFilterType = 55,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Certificate")]
-        Certificate = 56,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum EntityTypes
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Unknown")]
-        Unknown = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Node")]
-        Node = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Binding")]
-        Binding = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Behavior")]
-        Behavior = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Service")]
-        Service = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceVersion")]
-        ServiceVersion = 5,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Contract")]
-        Contract = 6,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Endpoint")]
-        Endpoint = 7,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Operation")]
-        Operation = 8,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreement")]
-        ServiceAgreement = 9,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationRule")]
-        AuthorizationRule = 10,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"User")]
-        User = 11,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertSourceType")]
-        AlertSourceType = 12,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertType")]
-        AlertType = 13,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertGroup")]
-        AlertGroup = 14,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertHandlerType")]
-        AlertHandlerType = 15,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AlertHandler")]
-        AlertHandler = 16,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"RouterType")]
-        RouterType = 17,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ExpressionType")]
-        ExpressionType = 18,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Folder")]
-        Folder = 19,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"File")]
-        File = 20,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Message")]
-        Message = 21,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MessageHeader")]
-        MessageHeader = 22,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"NodeAddress")]
-        NodeAddress = 23,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationClaimType")]
-        AuthorizationClaimType = 24,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreementAlertType")]
-        ServiceAgreementAlertType = 25,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Alert")]
-        Alert = 26,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Property")]
-        Property = 27,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"NodeInstance")]
-        NodeInstance = 28,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringRecord")]
-        MonitoringRecord = 29,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringActivity")]
-        MonitoringActivity = 30,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringTransaction")]
-        MonitoringTransaction = 31,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Issuer")]
-        Issuer = 32,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"EndpointGroup")]
-        EndpointGroup = 33,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Identity")]
-        Identity = 34,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MessageSample")]
-        MessageSample = 35,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MetadataSection")]
-        MetadataSection = 36,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServiceAgreementMetric")]
-        ServiceAgreementMetric = 37,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationRuleAssignment")]
-        AuthorizationRuleAssignment = 38,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ChangeEntityAlertType")]
-        ChangeEntityAlertType = 39,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ChangeFolderAlertType")]
-        ChangeFolderAlertType = 40,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"DataSchema")]
-        DataSchema = 41,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Custom")]
-        Custom = 42,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Reference")]
-        Reference = 43,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ComponentType")]
-        ComponentType = 44,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Product")]
-        Product = 45,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Consumer")]
-        Consumer = 46,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Subscription")]
-        Subscription = 47,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Application")]
-        Application = 48,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ProductServiceVersion")]
-        ProductServiceVersion = 49,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"SecurityRole")]
-        SecurityRole = 50,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"CustomAttributeType")]
-        CustomAttributeType = 51,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"VirtualizationProfile")]
-        VirtualizationProfile = 52,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroup")]
-        AuthorizationGroup = 53,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AuthorizationGroupMember")]
-        AuthorizationGroupMember = 54,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"MonitoringFilterType")]
-        MonitoringFilterType = 55,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Certificate")]
-        Certificate = 56,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ChangeFolderAlertTypeChangeTypes
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"None")]
-        None = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Created")]
-        Created = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Updated")]
-        Updated = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Deleted")]
-        Deleted = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"All")]
-        All = 4,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum AlertSummaryRequestUnit
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Second")]
-        Second = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Minute")]
-        Minute = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Hour")]
-        Hour = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Day")]
-        Day = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Month")]
-        Month = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Year")]
-        Year = 5,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public enum AlertRequestSortField
     {
 
@@ -34603,165 +30325,6 @@ namespace LSL.Sentinet.ApiClient
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum AlertRequestSortOrder
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"None")]
-        None = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Ascending")]
-        Ascending = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Descending")]
-        Descending = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum IdentityKindSummaryKind
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"X509Certificate")]
-        X509Certificate = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Windows")]
-        Windows = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"UserNamePassword")]
-        UserNamePassword = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"UserPrincipalName")]
-        UserPrincipalName = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServicePrincipalName")]
-        ServicePrincipalName = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Digest")]
-        Digest = 5,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"UserNamePasswordHash")]
-        UserNamePasswordHash = 6,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"WindowsNoPassword")]
-        WindowsNoPassword = 7,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AzureCredentials")]
-        AzureCredentials = 8,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"DnsName")]
-        DnsName = 9,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"X509CertificateFederation")]
-        X509CertificateFederation = 10,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"WindowsGroup")]
-        WindowsGroup = 11,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Claim")]
-        Claim = 12,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"X509CertificateThumbprint")]
-        X509CertificateThumbprint = 13,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"OAuthClientCredentials")]
-        OAuthClientCredentials = 14,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"OAuthServiceCredentials")]
-        OAuthServiceCredentials = 15,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ServiceVersionSummaryStatus
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Draft")]
-        Draft = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Active")]
-        Active = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Obsolete")]
-        Obsolete = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Retired")]
-        Retired = 3,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ServiceKind
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Soap")]
-        Soap = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Rest")]
-        Rest = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"OpenData")]
-        OpenData = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ServiceSearchResultKind
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Soap")]
-        Soap = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Rest")]
-        Rest = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"OpenData")]
-        OpenData = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ServiceSearchQueryKind
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Soap")]
-        Soap = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Rest")]
-        Rest = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"OpenData")]
-        OpenData = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum BehaviorKind
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Endpoint")]
-        Endpoint = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Service")]
-        Service = 1,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ContractDefinitionProtectionLevel
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"None")]
-        None = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Sign")]
-        Sign = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"EncryptAndSign")]
-        EncryptAndSign = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public enum ContractDefinitionSessionMode
     {
 
@@ -34773,84 +30336,6 @@ namespace LSL.Sentinet.ApiClient
 
         [System.Runtime.Serialization.EnumMember(Value = @"NotAllowed")]
         NotAllowed = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum OperationDefinitionKind
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Soap")]
-        Soap = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Rest")]
-        Rest = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"OpenData")]
-        OpenData = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum MessageDefinitionDirection
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Input")]
-        Input = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Output")]
-        Output = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Fault")]
-        Fault = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"GenericFault")]
-        GenericFault = 3,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum MessageDefinitionBodyProtectionLevel
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"None")]
-        None = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Sign")]
-        Sign = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"EncryptAndSign")]
-        EncryptAndSign = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum MessageDefinitionTemplateMessageVersion
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"None")]
-        None = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Soap11")]
-        Soap11 = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Soap12")]
-        Soap12 = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum MessageHeaderDefinitionProtectionLevel
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"None")]
-        None = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Sign")]
-        Sign = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"EncryptAndSign")]
-        EncryptAndSign = 2,
 
     }
 
@@ -34894,264 +30379,6 @@ namespace LSL.Sentinet.ApiClient
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum MessageParameterDataType
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"String")]
-        String = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Number")]
-        Number = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Integer")]
-        Integer = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Boolean")]
-        Boolean = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Array")]
-        Array = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"File")]
-        File = 5,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Complex")]
-        Complex = 6,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum MessageParameterArrayFormat
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"CommaSeparated")]
-        CommaSeparated = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"SpaceSeparated")]
-        SpaceSeparated = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"TabSeparated")]
-        TabSeparated = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"PipeSeparated")]
-        PipeSeparated = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Multiple")]
-        Multiple = 4,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ParameterDataType
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"String")]
-        String = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Number")]
-        Number = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Integer")]
-        Integer = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Boolean")]
-        Boolean = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Array")]
-        Array = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"File")]
-        File = 5,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Complex")]
-        Complex = 6,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ParameterArrayFormat
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"CommaSeparated")]
-        CommaSeparated = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"SpaceSeparated")]
-        SpaceSeparated = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"TabSeparated")]
-        TabSeparated = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"PipeSeparated")]
-        PipeSeparated = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Multiple")]
-        Multiple = 4,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ResponseMessageHeaderDataType
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"String")]
-        String = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Number")]
-        Number = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Integer")]
-        Integer = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Boolean")]
-        Boolean = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Array")]
-        Array = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"File")]
-        File = 5,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Complex")]
-        Complex = 6,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ResponseMessageHeaderArrayFormat
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"CommaSeparated")]
-        CommaSeparated = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"SpaceSeparated")]
-        SpaceSeparated = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"TabSeparated")]
-        TabSeparated = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"PipeSeparated")]
-        PipeSeparated = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Multiple")]
-        Multiple = 4,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ServiceVersionStatus
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Draft")]
-        Draft = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Active")]
-        Active = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Obsolete")]
-        Obsolete = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Retired")]
-        Retired = 3,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ServiceVersionImportDetailsStatus
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Draft")]
-        Draft = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Active")]
-        Active = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Obsolete")]
-        Obsolete = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Retired")]
-        Retired = 3,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ServiceVersionUpdateDetailsOptions
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"None")]
-        None = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ProtectExistingEndpoints")]
-        ProtectExistingEndpoints = 1,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ServiceVersionSearchResultKind
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Soap")]
-        Soap = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Rest")]
-        Rest = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"OpenData")]
-        OpenData = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ServiceVersionSearchResultStatus
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Draft")]
-        Draft = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Active")]
-        Active = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Obsolete")]
-        Obsolete = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Retired")]
-        Retired = 3,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ServiceVersionSearchQueryKind
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Soap")]
-        Soap = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Rest")]
-        Rest = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"OpenData")]
-        OpenData = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum ServiceVersionSearchQueryStatus
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Draft")]
-        Draft = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Active")]
-        Active = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Obsolete")]
-        Obsolete = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Retired")]
-        Retired = 3,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public enum DataSchemaSchemaType
     {
 
@@ -35160,39 +30387,6 @@ namespace LSL.Sentinet.ApiClient
 
         [System.Runtime.Serialization.EnumMember(Value = @"JsonSchema")]
         JsonSchema = 1,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum OperationExchangePattern
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Send")]
-        Send = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"RequestResponse")]
-        RequestResponse = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"SolicitResponse")]
-        SolicitResponse = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Receive")]
-        Receive = 3,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum OperationProtectionLevel
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"None")]
-        None = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Sign")]
-        Sign = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"EncryptAndSign")]
-        EncryptAndSign = 2,
 
     }
 
@@ -35223,201 +30417,6 @@ namespace LSL.Sentinet.ApiClient
 
         [System.Runtime.Serialization.EnumMember(Value = @"A")]
         A = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum EndpointRecPoints
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"None")]
-        None = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ReqT")]
-        ReqT = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ReqS")]
-        ReqS = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ResS")]
-        ResS = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ResT")]
-        ResT = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Claims")]
-        Claims = 5,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"All")]
-        All = 6,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum EndpointSummaryKind
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Soap")]
-        Soap = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Rest")]
-        Rest = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"OpenData")]
-        OpenData = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum EndpointSummaryAddressKind
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Physical")]
-        Physical = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AzureServiceBus")]
-        AzureServiceBus = 1,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum EndpointSearchBaseServiceVersionStatus
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Draft")]
-        Draft = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Active")]
-        Active = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Obsolete")]
-        Obsolete = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Retired")]
-        Retired = 3,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum EndpointSearchBaseKind
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Soap")]
-        Soap = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Rest")]
-        Rest = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"OpenData")]
-        OpenData = 2,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum IdentitySearchResultKind
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"X509Certificate")]
-        X509Certificate = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Windows")]
-        Windows = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"UserNamePassword")]
-        UserNamePassword = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"UserPrincipalName")]
-        UserPrincipalName = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServicePrincipalName")]
-        ServicePrincipalName = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Digest")]
-        Digest = 5,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"UserNamePasswordHash")]
-        UserNamePasswordHash = 6,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"WindowsNoPassword")]
-        WindowsNoPassword = 7,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AzureCredentials")]
-        AzureCredentials = 8,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"DnsName")]
-        DnsName = 9,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"X509CertificateFederation")]
-        X509CertificateFederation = 10,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"WindowsGroup")]
-        WindowsGroup = 11,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Claim")]
-        Claim = 12,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"X509CertificateThumbprint")]
-        X509CertificateThumbprint = 13,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"OAuthClientCredentials")]
-        OAuthClientCredentials = 14,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"OAuthServiceCredentials")]
-        OAuthServiceCredentials = 15,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public enum IdentitySearchQueryKind
-    {
-
-        [System.Runtime.Serialization.EnumMember(Value = @"X509Certificate")]
-        X509Certificate = 0,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Windows")]
-        Windows = 1,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"UserNamePassword")]
-        UserNamePassword = 2,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"UserPrincipalName")]
-        UserPrincipalName = 3,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"ServicePrincipalName")]
-        ServicePrincipalName = 4,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Digest")]
-        Digest = 5,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"UserNamePasswordHash")]
-        UserNamePasswordHash = 6,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"WindowsNoPassword")]
-        WindowsNoPassword = 7,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"AzureCredentials")]
-        AzureCredentials = 8,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"DnsName")]
-        DnsName = 9,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"X509CertificateFederation")]
-        X509CertificateFederation = 10,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"WindowsGroup")]
-        WindowsGroup = 11,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"Claim")]
-        Claim = 12,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"X509CertificateThumbprint")]
-        X509CertificateThumbprint = 13,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"OAuthClientCredentials")]
-        OAuthClientCredentials = 14,
-
-        [System.Runtime.Serialization.EnumMember(Value = @"OAuthServiceCredentials")]
-        OAuthServiceCredentials = 15,
 
     }
 

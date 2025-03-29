@@ -213,10 +213,72 @@ class Fixer {
     }
 
     /**
+     * Ensure the source spec doesn't repeat enums
+     * @returns this
+     */
+    normaliseEnums() {
+        const enumNodes = jp.nodes(this.openApiSpec, "$..*[?(@.enum)]");
+        const result = enumNodes.reduce((agg, n) =>
+        {
+            const group = n.value.enum.reduce((v1, v2) => `${v1}:${v2}`)
+            const value = agg[group] ?? (agg[group] = { items: [] });
+            value.items.push(n);
+
+            return agg;
+        },
+        {});
+        
+        const toEnumName = name => `${name.substring(0, 1).toUpperCase()}${name.substring(1)}`;
+        const componentSchemas = jp.query(this.openApiSpec, "$.components.schemas")[0];
+        const generateComponentName = name => {
+            let generatedName = name;
+            let index = 2;
+            
+            while (componentSchemas[generatedName]) {
+                generatedName = `${name}${index++}`;
+            }
+
+            return generatedName;
+        };
+
+        Object.getOwnPropertyNames(result).forEach(n =>
+        {
+            const setName = (name) => result[n].name = toEnumName(name);
+            const value = result[n];
+
+            if (value.items.length < 2) { 
+                delete result[n];
+                return;
+            }
+            
+            const firstOne = value.items[0];
+            if (typeof firstOne.path[firstOne.path.length - 2] === "number") {
+                setName(jp.parent(this.openApiSpec, jp.stringify(firstOne.path)).name);
+            }
+            else {
+                setName(firstOne.path[firstOne.path.length - 1]);
+            }
+            const name = generateComponentName(value.name);
+            const schemaName = `#/components/schemas/${name}`;
+
+            componentSchemas[name] = JSON.parse(JSON.stringify(firstOne.value));
+
+            value.items.map(i => i.value).forEach(i =>
+            {
+                Object.getOwnPropertyNames(i).forEach(n => delete i[n]);
+                i["$ref"] = schemaName;
+            });
+        });
+
+        writeFileSync("c:\\temp\\enums.json", JSON.stringify(result, null, 2));
+        return this;
+    }
+    /**
      * Fixes the `openApi` specification  using the `fixes` that were passed into the constructor
      */
     fix() {
         this.executeIf(this.fixes.components, () => this.fixComponents())
+            .executeIf(this.fixes.normaliseEnums, () => this.normaliseEnums())
             .executeIf(this.fixes.responses, () => this.fixResponses())
             .executeIf(this.fixes.parameters, () => this.fixParameters())
             .executeIf(this.fixes.ensureRequestBodiesAreRequired, () => this.fixUpRequestBodies())
@@ -237,6 +299,7 @@ class Fixer {
         if (condition) toExecute()
         return this;
     }
+
 
     /**
      * Saves out the `swagger.json` file that `NSwag` 

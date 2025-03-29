@@ -17,13 +17,9 @@ namespace LSL.Sentinet.ApiClient.DependencyInjection.Facades
 
         public ISentinetApiClient Client => _sentinetApiClient;
 
-        public async Task<FacadeFolderSubTree> GetFolderAsync(string fullPath, CancellationToken cancellationToken = default)
+        public async Task<GetFolderResult> GetFolderAsync(string fullPath, CancellationToken cancellationToken = default)
         {
-            Client.CreateOrUpdateFolderAsync(new Folder
-            {
-                
-            })
-            return (await fullPath.Split('/')
+            var result = (await fullPath.Split('/')
                 .ToAsyncEnumerable()
                 .AggregateAwaitAsync(
                     new 
@@ -31,7 +27,8 @@ namespace LSL.Sentinet.ApiClient.DependencyInjection.Facades
                         CurrentFolder = await GetFolderFromApi(null, string.Empty),
                         CurrentPath = string.Empty
                     }, 
-                    async (folder, path) => {     
+                    async (folder, path) =>
+                    {     
                         var currentPath = folder.CurrentPath + (folder.CurrentPath.Length == 0 ? path : $"/{path}");
 
                         return new 
@@ -46,6 +43,8 @@ namespace LSL.Sentinet.ApiClient.DependencyInjection.Facades
                         };
                     }))
                     .CurrentFolder;
+
+            return new GetFolderResult(result, await Client.GetFolderAsync(result.SubTree.Id));
 
             int GetSubFolderId(FacadeFolderSubTree folder, string subPath) => 
                 folder.SubTree.Folders.FirstOrDefault(f => f.Name == subPath)?.Id

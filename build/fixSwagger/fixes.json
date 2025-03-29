@@ -1,9 +1,10 @@
 {
     "$schema": "./fixes-schema.json",
     "setAdditionalPropertiesToFalse": true,
-    "fixNonRequiredProperties": true,
+    "fixNonRequiredProperties": false,
     "fixOperationIds": true,
     "fixBrokenPatterns": true,
     "removeInvalidStringConstraints": true,
-    "ensureRequestBodiesAreRequired": true
+    "ensureRequestBodiesAreRequired": true,
+    "normaliseEnums": true
 }

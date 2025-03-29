@@ -41,7 +41,7 @@
   </ItemGroup>
 
   <Target Name="NSwag" BeforeTargets="BeforeBuild">
-    <!-- <Exec
+    <Exec
       ConsoleToMSBuild="true"
       ContinueOnError="false"
       WorkingDirectory="../../build/fixSwagger"
@@ -63,9 +63,9 @@
     </Exec>
     
     <Message Text="$(NpmOutput)" Condition="'$(NpmExitCode)' == '0'" Importance="high" />
-    <Error Text="$(NpmOutput)" Condition="'$(NpmExitCode)' != '0'" /> -->
+    <Error Text="$(NpmOutput)" Condition="'$(NpmExitCode)' != '0'" />
 
-    <!-- <Exec
+    <Exec
       ConsoleToMSBuild="true"
       ContinueOnError="true"
       Command="$(NSwagExe_Net60) run nswag.json /variables:Configuration=$(Configuration)">
@@ -74,7 +74,7 @@
     </Exec>
 
     <Message Text="$(NSwagOutput)" Condition="'$(NSwagExitCode)' == '0'" Importance="low" />
-    <Error Text="$(NSwagOutput)" Condition="'$(NSwagExitCode)' != '0'" />   -->
+    <Error Text="$(NSwagOutput)" Condition="'$(NSwagExitCode)' != '0'" />  
   </Target>
 
   <ItemGroup>
