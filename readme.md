@@ -14,7 +14,7 @@ services.AddSentinetApiClient(c =>
     c.BaseUrl = "https://mysentinet/Sentinet";
 
     // NEVER have your credentials in code or in a configuration file
-    // Always elect to use a secure mehanism to retrieve those credentials
+    // Always elect to use a secure mechanism to retrieve those credentials
     c.Username = "my-user";
     c.Password = "my-password";
 }); 

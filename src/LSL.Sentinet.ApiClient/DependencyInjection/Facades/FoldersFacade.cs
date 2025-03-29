@@ -17,9 +17,9 @@ namespace LSL.Sentinet.ApiClient.DependencyInjection.Facades
 
         public ISentinetApiClient Client => _sentinetApiClient;
 
-        public async Task<GetFolderResult> GetFolderAsync(string fullPath, CancellationToken cancellationToken = default)
+        public async Task<FacadeFolderSubTree> GetFolderAsync(string fullPath, CancellationToken cancellationToken = default)
         {
-            var result = (await fullPath.Split('/')
+            return (await fullPath.Split('/')
                 .ToAsyncEnumerable()
                 .AggregateAwaitAsync(
                     new 
@@ -44,10 +44,8 @@ namespace LSL.Sentinet.ApiClient.DependencyInjection.Facades
                     }))
                     .CurrentFolder;
 
-            return new GetFolderResult(result, await Client.GetFolderAsync(result.SubTree.Id));
-
             int GetSubFolderId(FacadeFolderSubTree folder, string subPath) => 
-                folder.SubTree.Folders.FirstOrDefault(f => f.Name == subPath)?.Id
+                folder.SubTree.Folders.FirstOrDefault(f => f.Name.Equals(subPath, StringComparison.InvariantCultureIgnoreCase))?.Id
                     ?? throw new ArgumentException($"Unknown folder '{subPath}' for full path of '{fullPath}'");
 
             async Task<FacadeFolderSubTree> GetFolderFromApi(FacadeFolderSubTree currentFolder, string path, string currentFullPath = "", int? id = null) => 

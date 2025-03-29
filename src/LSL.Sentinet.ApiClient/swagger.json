@@ -8731,10 +8731,12 @@
         ],
         "properties": {
           "FriendlyName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Description": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Expiration": {
             "type": "string",
@@ -8779,25 +8781,29 @@
         ],
         "properties": {
           "TimeZoneOffset": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Metrics": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/ServiceAgreementMetric"
-            }
+            },
+            "nullable": true
           },
           "Rules": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/AuthorizationRuleAssignment"
-            }
+            },
+            "nullable": true
           },
           "Properties": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Property"
-            }
+            },
+            "nullable": true
           },
           "Id": {
             "type": "integer",
@@ -8877,14 +8883,16 @@
             "format": "int32"
           },
           "RuleName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "GroupId": {
             "type": "integer",
             "format": "int32"
           },
           "GroupName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "RuleExpression": {
             "$ref": "#/components/schemas/AuthorizationExpressionBase"
@@ -8894,7 +8902,8 @@
             "format": "int32"
           },
           "ServiceName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Kind": {
             "$ref": "#/components/schemas/Kind"
@@ -8904,35 +8913,40 @@
             "format": "int32"
           },
           "ServiceVersionName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "VersionNumber": {
             "type": "integer",
             "format": "int32"
           },
           "Version": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "EndpointId": {
             "type": "integer",
             "format": "int32"
           },
           "EndpointName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ContractId": {
             "type": "integer",
             "format": "int32"
           },
           "ContractName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "OperationId": {
             "type": "integer",
             "format": "int32"
           },
           "OperationName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Priority": {
             "type": "integer",
@@ -8946,7 +8960,8 @@
             "format": "int32"
           },
           "ServiceAgreementName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -8955,7 +8970,8 @@
         "type": "object",
         "properties": {
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "PropertyType": {
             "enum": [
@@ -8967,7 +8983,8 @@
             "type": "string"
           },
           "Value": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "FileId": {
             "type": "integer",
@@ -9002,7 +9019,8 @@
         "type": "object",
         "properties": {
           "Title": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -9020,10 +9038,12 @@
             "format": "int32"
           },
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Description": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Status": {
             "$ref": "#/components/schemas/Status3"
@@ -9037,7 +9057,8 @@
             "format": "date-time"
           },
           "TimeZoneId": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -9073,7 +9094,8 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/TimeZoneInfo"
-            }
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -9082,13 +9104,16 @@
         "type": "object",
         "properties": {
           "Id": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "UtcOffset": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "References": {
             "type": "integer",
@@ -9134,14 +9159,16 @@
             "items": {
               "type": "integer",
               "format": "int32"
-            }
+            },
+            "nullable": true
           },
           "FolderId": {
             "type": "integer",
             "format": "int32"
           },
           "TimeZoneId": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "TimeUnit": {
             "$ref": "#/components/schemas/TimeUnit"
@@ -9172,7 +9199,8 @@
             "format": "int32"
           },
           "SlaName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Time": {
             "type": "string",
@@ -9213,14 +9241,16 @@
             "items": {
               "type": "integer",
               "format": "int32"
-            }
+            },
+            "nullable": true
           },
           "FolderId": {
             "type": "integer",
             "format": "int32"
           },
           "TimeZoneId": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "SortField": {
             "enum": [
@@ -9301,10 +9331,12 @@
         "type": "object",
         "properties": {
           "FolderName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "FolderRoute": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Id": {
             "type": "integer",
@@ -9316,7 +9348,8 @@
             "example": "00000000-0000-0000-0000-000000000000"
           },
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -9333,14 +9366,16 @@
             "$ref": "#/components/schemas/Status3"
           },
           "ServiceVersionName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ServiceVersionId": {
             "type": "integer",
             "format": "int32"
           },
           "Keywords": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -9362,7 +9397,8 @@
             "format": "int32"
           },
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -9379,13 +9415,15 @@
             "items": {
               "type": "integer",
               "format": "int32"
-            }
+            },
+            "nullable": true
           },
           "Responses": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/MessageSample"
-            }
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -9394,7 +9432,8 @@
         "type": "object",
         "properties": {
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "OperationId": {
             "type": "integer",
@@ -9420,7 +9459,8 @@
             "$ref": "#/components/schemas/MessageVersion"
           },
           "ContentType": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "StatusCode": {
             "type": "integer",
@@ -9430,7 +9470,8 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/TransportHeader"
-            }
+            },
+            "nullable": true
           },
           "FileId": {
             "type": "integer",
@@ -9460,13 +9501,16 @@
         "type": "object",
         "properties": {
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Value": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "VariableName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -9496,7 +9540,8 @@
             "type": "string"
           },
           "FileName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Expired": {
             "type": "string",
@@ -9509,7 +9554,8 @@
         "type": "object",
         "properties": {
           "Content": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "FileId": {
             "type": "integer",
@@ -9549,7 +9595,8 @@
                 "type": "object",
                 "additionalProperties": false
               }
-            }
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -9558,10 +9605,12 @@
         "type": "object",
         "properties": {
           "name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ns": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -9595,7 +9644,8 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Dependency"
-            }
+            },
+            "nullable": true
           },
           "Repository": {
             "$ref": "#/components/schemas/FolderSubtree"
@@ -9604,19 +9654,22 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Subtree"
-            }
+            },
+            "nullable": true
           },
           "Products": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Subtree"
-            }
+            },
+            "nullable": true
           },
           "CustomAttributeTypes": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Subtree"
-            }
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -9641,7 +9694,8 @@
             "$ref": "#/components/schemas/ReferenceType"
           },
           "Description": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -9658,67 +9712,78 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/FolderSubtree"
-            }
+            },
+            "nullable": true
           },
           "Services": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/ServiceSubtree"
-            }
+            },
+            "nullable": true
           },
           "Nodes": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/NodeSubtree"
-            }
+            },
+            "nullable": true
           },
           "Bindings": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/BindingSubtree"
-            }
+            },
+            "nullable": true
           },
           "Rules": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Subtree"
-            }
+            },
+            "nullable": true
           },
           "AuthorizationGroups": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Subtree"
-            }
+            },
+            "nullable": true
           },
           "Users": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Subtree"
-            }
+            },
+            "nullable": true
           },
           "ServiceAgreements": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Subtree"
-            }
+            },
+            "nullable": true
           },
           "Behaviors": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/BehaviorSubtree"
-            }
+            },
+            "nullable": true
           },
           "CustomEntities": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Subtree"
-            }
+            },
+            "nullable": true
           },
           "Identities": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/IdentitySubtree"
-            }
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -9731,7 +9796,8 @@
             "format": "int32"
           },
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -9767,7 +9833,8 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/ServiceVersionSubtree"
-            }
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -9782,20 +9849,23 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Subtree"
-            }
+            },
+            "nullable": true
           },
           "Identities": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/IdentitySubtree"
-            }
+            },
+            "nullable": true
           },
           "Id": {
             "type": "integer",
             "format": "int32"
           },
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -9804,14 +9874,16 @@
         "type": "object",
         "properties": {
           "Capabilities": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Id": {
             "type": "integer",
             "format": "int32"
           },
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -9827,7 +9899,8 @@
             "format": "int32"
           },
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -9843,7 +9916,8 @@
             "format": "int32"
           },
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -9857,7 +9931,8 @@
         ],
         "properties": {
           "Version": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "VersionNumber": {
             "type": "integer",
@@ -9873,13 +9948,15 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/ContractSubtree"
-            }
+            },
+            "nullable": true
           },
           "EndpointGroups": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/EndpointGroupSubtree"
-            }
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -9891,20 +9968,23 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/OperationSubtree"
-            }
+            },
+            "nullable": true
           },
           "Endpoints": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/EndpointSubtree"
-            }
+            },
+            "nullable": true
           },
           "Id": {
             "type": "integer",
             "format": "int32"
           },
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -9916,14 +9996,16 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/EndpointSubtree"
-            }
+            },
+            "nullable": true
           },
           "Id": {
             "type": "integer",
             "format": "int32"
           },
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -9935,7 +10017,8 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/MessageSubtree"
-            }
+            },
+            "nullable": true
           },
           "ExchangePattern": {
             "$ref": "#/components/schemas/ExchangePattern"
@@ -9951,7 +10034,8 @@
             "format": "int32"
           },
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -9963,17 +10047,20 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/IdentitySubtree"
-            }
+            },
+            "nullable": true
           },
           "PhysicalAddress": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Id": {
             "type": "integer",
             "format": "int32"
           },
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -9985,20 +10072,23 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Subtree"
-            }
+            },
+            "nullable": true
           },
           "Direction": {
             "$ref": "#/components/schemas/Direction"
           },
           "HttpMethod": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Id": {
             "type": "integer",
             "format": "int32"
           },
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -10017,7 +10107,8 @@
         "properties": {
           "__identity": {
             "type": "object",
-            "additionalProperties": false
+            "additionalProperties": false,
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -10030,7 +10121,8 @@
             "format": "int32"
           },
           "Version": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Created": {
             "type": "string",
@@ -10040,13 +10132,15 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/EntityInfo"
-            }
+            },
+            "nullable": true
           },
           "UnresolvedKeys": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/GlobalIdentifier"
-            }
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -10067,7 +10161,8 @@
             "$ref": "#/components/schemas/EntityType"
           },
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "FolderId": {
             "type": "integer",
@@ -10085,7 +10180,8 @@
             "example": "00000000-0000-0000-0000-000000000000"
           },
           "Requirements": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Id": {
             "type": "integer",
@@ -10108,13 +10204,15 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/LocalIdentifier"
-            }
+            },
+            "nullable": true
           },
           "Mappings": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/KeyMapping"
-            }
+            },
+            "nullable": true
           },
           "VerifyOnly": {
             "type": "boolean"
@@ -10161,7 +10259,8 @@
             "format": "int32"
           },
           "FullName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "FolderId": {
             "type": "integer",
@@ -10171,7 +10270,8 @@
             "$ref": "#/components/schemas/Permission"
           },
           "RepositoryPermissions": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "IdentityKind": {
             "$ref": "#/components/schemas/Kind3"
@@ -10187,25 +10287,32 @@
         "type": "object",
         "properties": {
           "ReportingTimeZoneId": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ReportingTimeZoneName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ReportingTimeZoneOffset": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "DatabaseVersion": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "RepositoryVersion": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "UserClaimType": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "UserClaimIssuer": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "IsFullTextEnabled": {
             "type": "boolean"
@@ -10214,10 +10321,12 @@
             "$ref": "#/components/schemas/LicenseInfo"
           },
           "SwaggerViewerUrl": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "DocumentationUrl": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "DeveloperPortal": {
             "$ref": "#/components/schemas/PortalSettings"
@@ -10249,7 +10358,8 @@
             "type": "string"
           },
           "Description": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -10276,19 +10386,24 @@
             "format": "byte"
           },
           "Subject": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Issuer": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Thumbprint": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "SerialNumber": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "PublicData": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "HasPrivateKey": {
             "type": "boolean"
@@ -10320,10 +10435,12 @@
           },
           "BoundVariables": {
             "type": "object",
-            "additionalProperties": false
+            "additionalProperties": false,
+            "nullable": true
           },
           "BoundUri": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -10332,10 +10449,12 @@
         "type": "object",
         "properties": {
           "Template": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Content": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ContentType": {
             "enum": [
@@ -10354,13 +10473,16 @@
         "type": "object",
         "properties": {
           "References": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Imports": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Function": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -10369,10 +10491,12 @@
         "type": "object",
         "properties": {
           "UserName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Password": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -10389,19 +10513,22 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/ProductServiceVersion"
-            }
+            },
+            "nullable": true
           },
           "Properties": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Property"
-            }
+            },
+            "nullable": true
           },
           "References": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/EntityReference"
-            }
+            },
+            "nullable": true
           },
           "Id": {
             "type": "integer",
@@ -10435,14 +10562,16 @@
             "format": "int32"
           },
           "Version": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "VersionNumber": {
             "type": "integer",
             "format": "int32"
           },
           "FriendlyName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Status": {
             "$ref": "#/components/schemas/Status2"
@@ -10452,7 +10581,8 @@
             "format": "int32"
           },
           "ServiceName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Kind": {
             "$ref": "#/components/schemas/Kind"
@@ -10488,7 +10618,8 @@
             "$ref": "#/components/schemas/EntityType"
           },
           "PrimaryEntityName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ForeignEntityId": {
             "type": "integer",
@@ -10498,13 +10629,15 @@
             "$ref": "#/components/schemas/EntityType"
           },
           "ForeignEntityName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ReferenceType": {
             "$ref": "#/components/schemas/ReferenceType"
           },
           "Description": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Id": {
             "type": "integer",
@@ -10535,10 +10668,12 @@
         ],
         "properties": {
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Description": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Status": {
             "$ref": "#/components/schemas/Status2"
@@ -10566,7 +10701,8 @@
           },
           "CustomAttributes": {
             "type": "object",
-            "additionalProperties": false
+            "additionalProperties": false,
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -10580,7 +10716,8 @@
             "example": "00000000-0000-0000-0000-000000000000"
           },
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Status": {
             "$ref": "#/components/schemas/Status2"
@@ -10595,7 +10732,8 @@
             "type": "boolean"
           },
           "Keywords": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "SortField": {
             "enum": [
@@ -10627,17 +10765,20 @@
         ],
         "properties": {
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Description": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "IsEnabled": {
             "type": "boolean"
           },
           "CustomAttributes": {
             "type": "object",
-            "additionalProperties": false
+            "additionalProperties": false,
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -10651,7 +10792,8 @@
             "example": "00000000-0000-0000-0000-000000000000"
           },
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "IsEnabled": {
             "type": "boolean"
@@ -10682,7 +10824,8 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Application"
-            }
+            },
+            "nullable": true
           },
           "Id": {
             "type": "integer",
@@ -10713,21 +10856,24 @@
         ],
         "properties": {
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "SubscriptionId": {
             "type": "integer",
             "format": "int32"
           },
           "AccessKey1": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "AccessKey1Expiration": {
             "type": "string",
             "format": "date-time"
           },
           "AccessKey2": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "AccessKey2Expiration": {
             "type": "string",
@@ -10745,21 +10891,24 @@
         ],
         "properties": {
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ProductId": {
             "type": "integer",
             "format": "int32"
           },
           "ProductName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ConsumerId": {
             "type": "integer",
             "format": "int32"
           },
           "ConsumerName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Status": {
             "$ref": "#/components/schemas/Status"
@@ -10774,7 +10923,8 @@
           },
           "CustomAttributes": {
             "type": "object",
-            "additionalProperties": false
+            "additionalProperties": false,
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -10788,21 +10938,24 @@
             "example": "00000000-0000-0000-0000-000000000000"
           },
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ProductId": {
             "type": "integer",
             "format": "int32"
           },
           "ProductName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ConsumerId": {
             "type": "integer",
             "format": "int32"
           },
           "ConsumerName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Status": {
             "$ref": "#/components/schemas/Status"
@@ -10849,31 +11002,36 @@
             "example": "00000000-0000-0000-0000-000000000000"
           },
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "AccessKey": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "SubscriptionId": {
             "type": "integer",
             "format": "int32"
           },
           "SubscriptionName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ProductId": {
             "type": "integer",
             "format": "int32"
           },
           "ProductName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ConsumerId": {
             "type": "integer",
             "format": "int32"
           },
           "ConsumerName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "AccessKeyExpirationFrom": {
             "type": "string",
@@ -11061,10 +11219,12 @@
         "type": "object",
         "properties": {
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Namespace": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Kind": {
             "enum": [
@@ -11082,7 +11242,8 @@
             "$ref": "#/components/schemas/SoapDescription"
           },
           "PreviousConfiguration": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -11151,13 +11312,16 @@
         ],
         "properties": {
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Description": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Permissions": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -11171,7 +11335,8 @@
         ],
         "properties": {
           "DisplayName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "EntityType": {
             "$ref": "#/components/schemas/EntityType"
@@ -11218,10 +11383,12 @@
         ],
         "properties": {
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Description": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ServiceKind": {
             "$ref": "#/components/schemas/Kind"
@@ -11242,10 +11409,12 @@
             "type": "boolean"
           },
           "ServiceNamePrefix": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ServiceNameSuffix": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "MonitoringProfile": {
             "enum": [
@@ -11263,13 +11432,15 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/DefaultNodeAddress"
-            }
+            },
+            "nullable": true
           },
           "Rules": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/DefaultAuthorizationRule"
-            }
+            },
+            "nullable": true
           },
           "ServiceVersionSettings": {
             "$ref": "#/components/schemas/ServiceVersionSettings"
@@ -11279,7 +11450,8 @@
             "format": "int32"
           },
           "BehaviorName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -11315,17 +11487,20 @@
             "format": "int32"
           },
           "Address": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "NodeName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "NodeFolderId": {
             "type": "integer",
             "format": "int32"
           },
           "PolicyName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "PolicyFolderId": {
             "type": "integer",
@@ -11354,7 +11529,8 @@
             "$ref": "#/components/schemas/Action"
           },
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "FolderId": {
             "type": "integer",
@@ -11402,10 +11578,12 @@
             "$ref": "#/components/schemas/SecurityTokenServiceSettings"
           },
           "TransitRequestHeaders": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "TransitResponseHeaders": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ErrorsHandling": {
             "$ref": "#/components/schemas/WebErrorsHandling"
@@ -11420,19 +11598,22 @@
             "type": "array",
             "items": {
               "type": "string"
-            }
+            },
+            "nullable": true
           },
           "ResponseMimeTypes": {
             "type": "array",
             "items": {
               "type": "string"
-            }
+            },
+            "nullable": true
           },
           "MonitoringFilters": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/MonitoringFilterBase"
-            }
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -11448,10 +11629,12 @@
             "type": "string"
           },
           "TokenLifetime": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "SigningSecret": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -11464,14 +11647,16 @@
             "format": "int32"
           },
           "AccessDeniedMessage": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "InvalidRequestStatusCode": {
             "type": "integer",
             "format": "int32"
           },
           "InvalidRequestMessage": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "InternalErrorStatusCode": {
             "type": "integer",
@@ -11487,13 +11672,15 @@
             "type": "string"
           },
           "FaultStatusCodes": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "FaultExpression": {
             "$ref": "#/components/schemas/AuthorizationExpressionBase"
           },
           "ErrorHandlerFullyQualifiedTypeName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -11502,16 +11689,20 @@
         "type": "object",
         "properties": {
           "AllowedOrigins": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "AllowedMethods": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "AllowedHeaders": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ExposedHeaders": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "AllowCredentials": {
             "type": "boolean"
@@ -11565,7 +11756,8 @@
         ],
         "properties": {
           "Configuration": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Kind": {
             "$ref": "#/components/schemas/Kind2"
@@ -11588,25 +11780,29 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/NodeAddress"
-            }
+            },
+            "nullable": true
           },
           "Identities": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/IdentityDefinitionBase"
-            }
+            },
+            "nullable": true
           },
           "TrustedIssuers": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Issuer"
-            }
+            },
+            "nullable": true
           },
           "Instances": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/NodeInstance"
-            }
+            },
+            "nullable": true
           },
           "Id": {
             "type": "integer",
@@ -11636,7 +11832,8 @@
             "format": "int32"
           },
           "Address": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Kind": {
             "$ref": "#/components/schemas/Kind4"
@@ -11680,10 +11877,12 @@
             "$ref": "#/components/schemas/Kind3"
           },
           "FriendlyName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Description": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "IsPublic": {
             "type": "boolean"
@@ -11711,13 +11910,16 @@
         "type": "object",
         "properties": {
           "FriendlyName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "IssuerName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Thumbprint": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Certificate": {
             "type": "string",
@@ -11755,7 +11957,8 @@
             "format": "int32"
           },
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "LastHeartbeat": {
             "type": "string",
@@ -11768,16 +11971,20 @@
             "$ref": "#/components/schemas/LastReportedStatus"
           },
           "MachineName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ClientAddress": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "RuntimeVersion": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Information": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Id": {
             "type": "integer",
@@ -11803,7 +12010,8 @@
         "type": "object",
         "properties": {
           "ClientAddressHeaderName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ClientAddressOptions": {
             "enum": [
@@ -11847,7 +12055,8 @@
             "$ref": "#/components/schemas/AzureNetworkCredential"
           },
           "StsUri": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -11856,10 +12065,12 @@
         "type": "object",
         "properties": {
           "IssuerName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "IssuerSecret": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -11868,10 +12079,12 @@
         "type": "object",
         "properties": {
           "KeyName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "SharedAccessKey": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -11880,13 +12093,16 @@
         "type": "object",
         "properties": {
           "UserName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Password": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Domain": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -11904,7 +12120,8 @@
             "format": "int32"
           },
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "IsEnabled": {
             "type": "boolean"
@@ -11913,7 +12130,8 @@
             "$ref": "#/components/schemas/NodeType"
           },
           "HeartbeatInterval": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "LastUpdate": {
             "type": "string",
@@ -11964,7 +12182,8 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/SchemeSummary"
-            }
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -11973,7 +12192,8 @@
         "type": "object",
         "properties": {
           "Scheme": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Kind": {
             "$ref": "#/components/schemas/Kind4"
@@ -12001,7 +12221,8 @@
             "$ref": "#/components/schemas/LastReportedStatus"
           },
           "BaseAddress": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -12015,13 +12236,16 @@
         ],
         "properties": {
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "FullyQualifiedTypeName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Configuration": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -12035,16 +12259,19 @@
         ],
         "properties": {
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "FullyQualifiedTypeName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "IsSingleCall": {
             "type": "boolean"
           },
           "Configuration": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -12058,16 +12285,19 @@
         ],
         "properties": {
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "FullyQualifiedTypeName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "IsSingleCall": {
             "type": "boolean"
           },
           "Configuration": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "AllowedPositions": {
             "enum": [
@@ -12094,19 +12324,22 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/ContractInfo"
-            }
+            },
+            "nullable": true
           },
           "Services": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/ServiceInfo"
-            }
+            },
+            "nullable": true
           },
           "Errors": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/ErrorInfo"
-            }
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -12121,7 +12354,8 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/OperationInfo"
-            }
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -12136,7 +12370,8 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/EndpointInfo"
-            }
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -12148,7 +12383,8 @@
             "type": "boolean"
           },
           "Message": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -12157,7 +12393,8 @@
         "type": "object",
         "properties": {
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ExchangePattern": {
             "$ref": "#/components/schemas/ExchangePattern"
@@ -12169,10 +12406,12 @@
         "type": "object",
         "properties": {
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Address": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ContractQName": {
             "$ref": "#/components/schemas/XmlQualifiedName"
@@ -12184,16 +12423,19 @@
         "type": "object",
         "properties": {
           "Address": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "BindingConfiguration": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ClientIdentities": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/IdentityDefinitionBase"
-            }
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -12206,25 +12448,29 @@
             "format": "int32"
           },
           "ServiceName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Operations": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/RestOperationInfo"
-            }
+            },
+            "nullable": true
           },
           "Endpoints": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/RestEndpointInfo"
-            }
+            },
+            "nullable": true
           },
           "Errors": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/ErrorInfo"
-            }
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -12233,10 +12479,12 @@
         "type": "object",
         "properties": {
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "HttpMethod": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -12245,10 +12493,12 @@
         "type": "object",
         "properties": {
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Address": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -12265,7 +12515,8 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Property"
-            }
+            },
+            "nullable": true
           },
           "Id": {
             "type": "integer",
@@ -12300,10 +12551,12 @@
             "format": "int32"
           },
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Description": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Expression": {
             "$ref": "#/components/schemas/AuthorizationExpressionBase"
@@ -12320,10 +12573,12 @@
         ],
         "properties": {
           "ClaimType": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Description": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -12372,10 +12627,12 @@
         ],
         "properties": {
           "Expression": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Keywords": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -12392,13 +12649,15 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/AuthorizationGroupMember"
-            }
+            },
+            "nullable": true
           },
           "Properties": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Property"
-            }
+            },
+            "nullable": true
           },
           "Id": {
             "type": "integer",
@@ -12432,7 +12691,8 @@
             "format": "int32"
           },
           "MemberRuleName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "MemberRuleExpression": {
             "$ref": "#/components/schemas/AuthorizationExpressionBase"
@@ -12442,7 +12702,8 @@
             "format": "int32"
           },
           "MemberGroupName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Priority": {
             "type": "integer",
@@ -12481,10 +12742,12 @@
             "format": "int32"
           },
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Description": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -12533,7 +12796,8 @@
         ],
         "properties": {
           "Keywords": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -12550,13 +12814,15 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Property"
-            }
+            },
+            "nullable": true
           },
           "References": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/EntityReference"
-            }
+            },
+            "nullable": true
           },
           "Id": {
             "type": "integer",
@@ -12591,10 +12857,12 @@
             "format": "int32"
           },
           "FriendlyName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Description": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -12618,7 +12886,8 @@
         ],
         "properties": {
           "Keywords": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -12630,25 +12899,29 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/ExpressionType"
-            }
+            },
+            "nullable": true
           },
           "RouterTypes": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/RouterType"
-            }
+            },
+            "nullable": true
           },
           "ComponentTypes": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/ComponentType"
-            }
+            },
+            "nullable": true
           },
           "AlertHandlerTypes": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/AlertHandlerType"
-            }
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -12662,13 +12935,16 @@
         ],
         "properties": {
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "FullyQualifiedTypeName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Configuration": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -12797,17 +13073,20 @@
             "format": "date-time"
           },
           "OpName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "InEpId": {
             "type": "integer",
             "format": "int32"
           },
           "InEpName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "InEpAdd": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "InSvcId": {
             "type": "integer",
@@ -12818,23 +13097,28 @@
             "format": "int32"
           },
           "InSvcVerName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "InSvcName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "InIp": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "OutEpId": {
             "type": "integer",
             "format": "int32"
           },
           "OutEpName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "OutEpAdd": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "OutSvcId": {
             "type": "integer",
@@ -12845,10 +13129,12 @@
             "format": "int32"
           },
           "OutSvcVerName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "OutSvcName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Duration": {
             "type": "integer",
@@ -12858,7 +13144,8 @@
             "$ref": "#/components/schemas/Status4"
           },
           "Error": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "HttpStatusCode": {
             "type": "integer",
@@ -12922,22 +13209,28 @@
             "format": "int32"
           },
           "Action": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ClientAddress": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "RequestContent": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ResponseContent": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "PropertyName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "PropertyValue": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Status": {
             "$ref": "#/components/schemas/Status4"
@@ -12997,7 +13290,8 @@
             "example": "00000000-0000-0000-0000-000000000000"
           },
           "ExchangeId": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "TransactionType": {
             "$ref": "#/components/schemas/Type"
@@ -13011,30 +13305,36 @@
             "format": "int32"
           },
           "NodeName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "NodeInstanceId": {
             "type": "integer",
             "format": "int32"
           },
           "NodeInstanceName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "NodeInstanceMachineName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "NodeInstanceClientAddress": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "RequestAction": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "OperationId": {
             "type": "integer",
             "format": "int32"
           },
           "OperationName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ContractId": {
             "type": "integer",
@@ -13048,13 +13348,16 @@
             "format": "int32"
           },
           "InboundEndpointName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "InboundPhysicalAddress": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "InboundLogicalAddress": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "InboundServiceVersionId": {
             "type": "integer",
@@ -13065,27 +13368,32 @@
             "format": "int32"
           },
           "InboundServiceVersionVersion": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "InboundServiceVersionName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "InboundServiceId": {
             "type": "integer",
             "format": "int32"
           },
           "InboundServiceName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "OutboundEndpointId": {
             "type": "integer",
             "format": "int32"
           },
           "OutboundEndpointName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "OutboundPhysicalAddress": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "OutboundServiceVersionId": {
             "type": "integer",
@@ -13096,17 +13404,20 @@
             "format": "int32"
           },
           "OutboundServiceVersionVersion": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "OutboundServiceVersionName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "OutboundServiceId": {
             "type": "integer",
             "format": "int32"
           },
           "OutboundServiceName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Duration": {
             "type": "integer",
@@ -13121,10 +13432,12 @@
             "format": "int64"
           },
           "IdentityClaims": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ClientAddress": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "HttpStatusCode": {
             "type": "integer",
@@ -13134,17 +13447,20 @@
             "$ref": "#/components/schemas/Status4"
           },
           "FaultReason": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "FaultDetail": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "AuthId": {
             "type": "integer",
             "format": "int32"
           },
           "AuthName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "IsDenied": {
             "type": "boolean"
@@ -13157,40 +13473,46 @@
             "format": "int32"
           },
           "ApplicationName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "SubscriptionId": {
             "type": "integer",
             "format": "int32"
           },
           "SubscriptionName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ProductId": {
             "type": "integer",
             "format": "int32"
           },
           "ProductName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ConsumerId": {
             "type": "integer",
             "format": "int32"
           },
           "ConsumerName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Records": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/MonitoringRecord"
-            }
+            },
+            "nullable": true
           },
           "Properties": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/MonitoringTransactionProperty"
-            }
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -13211,7 +13533,8 @@
             "format": "date-time"
           },
           "ExchId": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Time": {
             "type": "string",
@@ -13236,10 +13559,12 @@
             "format": "int64"
           },
           "Message": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "TransportData": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "IsOutbound": {
             "type": "boolean"
@@ -13260,17 +13585,20 @@
             "example": "00000000-0000-0000-0000-000000000000"
           },
           "ExchId": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "EpId": {
             "type": "integer",
             "format": "int32"
           },
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Value": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Time": {
             "type": "string",
@@ -13299,14 +13627,16 @@
             "format": "int32"
           },
           "NodeName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "InId": {
             "type": "integer",
             "format": "int32"
           },
           "NodeInstanceName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "TranId": {
             "type": "string",
@@ -13314,21 +13644,24 @@
             "example": "00000000-0000-0000-0000-000000000000"
           },
           "ExchId": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "SvcId": {
             "type": "integer",
             "format": "int32"
           },
           "ServiceVersionName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "EpId": {
             "type": "integer",
             "format": "int32"
           },
           "EndpointName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Time": {
             "type": "string",
@@ -13338,10 +13671,12 @@
             "$ref": "#/components/schemas/Severity"
           },
           "Message": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Details": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -13394,7 +13729,8 @@
             "$ref": "#/components/schemas/SortOrder"
           },
           "ActivityMessage": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "IgnoreTransactionActivities": {
             "type": "boolean"
@@ -13406,13 +13742,16 @@
         "type": "object",
         "properties": {
           "AuthorizationTrace": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "MessageProcessingTrace": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "OAuthTrace": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -13425,17 +13764,20 @@
             "format": "int32"
           },
           "FriendlyName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Version": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "VersionNumber": {
             "type": "integer",
             "format": "int32"
           },
           "ServiceName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Kind": {
             "$ref": "#/components/schemas/Kind"
@@ -13558,10 +13900,12 @@
             "format": "int32"
           },
           "OperationName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ContractName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "IsDeleted": {
             "type": "boolean"
@@ -13606,7 +13950,8 @@
             "format": "int32"
           },
           "ProductName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "IsDeleted": {
             "type": "boolean"
@@ -13642,7 +13987,8 @@
             "format": "int32"
           },
           "ConsumerName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "IsDeleted": {
             "type": "boolean"
@@ -13678,21 +14024,24 @@
             "format": "int32"
           },
           "SubscriptionName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ProductId": {
             "type": "integer",
             "format": "int32"
           },
           "ProductName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ConsumerId": {
             "type": "integer",
             "format": "int32"
           },
           "ConsumerName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "IsDeleted": {
             "type": "boolean"
@@ -13732,17 +14081,20 @@
             "format": "int32"
           },
           "UserName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Description": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Created": {
             "type": "string",
             "format": "date-time"
           },
           "IdentityName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -13759,7 +14111,8 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/ChangeRecord"
-            }
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -13776,7 +14129,8 @@
             "format": "int32"
           },
           "EntityName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "EntityId": {
             "type": "integer",
@@ -13793,7 +14147,8 @@
             "$ref": "#/components/schemas/EntityType"
           },
           "MajorEntityName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ChangeType": {
             "$ref": "#/components/schemas/ChangeTypes"
@@ -13807,10 +14162,12 @@
             "format": "int32"
           },
           "UserName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "IdentityName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -13827,7 +14184,8 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/ChangeField"
-            }
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -13844,13 +14202,16 @@
             "format": "int32"
           },
           "FieldName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "PreviousValue": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "NewValue": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -13867,7 +14228,8 @@
             "format": "int32"
           },
           "UserFullName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "StartDateTime": {
             "type": "string",
@@ -13878,13 +14240,16 @@
             "format": "date-time"
           },
           "Duration": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "IdentityName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ClientAddress": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -13909,10 +14274,12 @@
             "format": "int32"
           },
           "IdentityName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ClientAddress": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "SortField": {
             "enum": [
@@ -13943,7 +14310,8 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/IdentityDefinitionBase"
-            }
+            },
+            "nullable": true
           },
           "Id": {
             "type": "integer",
@@ -13982,23 +14350,28 @@
             "format": "int32"
           },
           "ConsumerName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "FullName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Description": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Email": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "SecurityRoleId": {
             "type": "integer",
             "format": "int32"
           },
           "SecurityRoleName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Permission": {
             "$ref": "#/components/schemas/Permission"
@@ -14017,7 +14390,8 @@
             "format": "int32"
           },
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "TotalUsers": {
             "type": "integer",
@@ -14043,7 +14417,8 @@
             "format": "int32"
           },
           "SecurityRoleName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "IsEnabled": {
             "type": "boolean"
@@ -14064,7 +14439,8 @@
             "format": "int32"
           },
           "Identity": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -14078,20 +14454,23 @@
             "example": "00000000-0000-0000-0000-000000000000"
           },
           "FullName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ConsumerId": {
             "type": "integer",
             "format": "int32"
           },
           "ConsumerName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Permission": {
             "$ref": "#/components/schemas/Permission"
           },
           "Identity": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "IsEnabled": {
             "type": "boolean"
@@ -14123,7 +14502,8 @@
         ],
         "properties": {
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -14137,7 +14517,8 @@
         ],
         "properties": {
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -14151,7 +14532,8 @@
         ],
         "properties": {
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "SourceId": {
             "type": "integer",
@@ -14168,7 +14550,8 @@
             "type": "boolean"
           },
           "Configuration": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "HandlersCount": {
             "type": "integer",
@@ -14221,25 +14604,29 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/ServiceAgreementAlertType"
-            }
+            },
+            "nullable": true
           },
           "AlertHandlers": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/AlertHandler"
-            }
+            },
+            "nullable": true
           },
           "ChangeEntities": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/ChangeEntityAlertType"
-            }
+            },
+            "nullable": true
           },
           "ChangeFolders": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/ChangeFolderAlertType"
-            }
+            },
+            "nullable": true
           },
           "Id": {
             "type": "integer",
@@ -14269,7 +14656,8 @@
             "format": "int32"
           },
           "AlertSubtype": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ServiceAgreementId": {
             "type": "integer",
@@ -14311,14 +14699,16 @@
             "format": "int32"
           },
           "AlertSubtype": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "AlertHandlerTypeId": {
             "type": "integer",
             "format": "int32"
           },
           "Configuration": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "IsEnabled": {
             "type": "boolean"
@@ -14403,7 +14793,8 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/EntityType"
-            }
+            },
+            "nullable": true
           },
           "ChangeTypes": {
             "$ref": "#/components/schemas/ChangeTypes"
@@ -14440,13 +14831,15 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/AlertType"
-            }
+            },
+            "nullable": true
           },
           "AlertHandlers": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/AlertHandler"
-            }
+            },
+            "nullable": true
           },
           "Id": {
             "type": "integer",
@@ -14536,29 +14929,34 @@
             "format": "int32"
           },
           "Subtype": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Text": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Data": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/DataProperty"
-            }
+            },
+            "nullable": true
           },
           "Observed": {
             "type": "boolean"
           },
           "AlertTypeName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "AlertSourceTypeId": {
             "type": "integer",
             "format": "int32"
           },
           "AlertSourceTypeName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -14567,10 +14965,12 @@
         "type": "object",
         "properties": {
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Value": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -14595,7 +14995,8 @@
             "format": "int32"
           },
           "Description": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "AlertGroupId": {
             "type": "integer",
@@ -14629,17 +15030,20 @@
               "type": "string",
               "format": "uuid",
               "example": "00000000-0000-0000-0000-000000000000"
-            }
+            },
+            "nullable": true
           },
           "ToAddresses": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "SecurityRoles": {
             "type": "array",
             "items": {
               "type": "integer",
               "format": "int32"
-            }
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -14653,10 +15057,12 @@
         ],
         "properties": {
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Description": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "FolderId": {
             "type": "integer",
@@ -14696,7 +15102,8 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/SecurityRoleSummary"
-            }
+            },
+            "nullable": true
           },
           "CustomEntities": {
             "$ref": "#/components/schemas/CustomEntitiesSummary"
@@ -14838,7 +15245,8 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/SchemeSummary"
-            }
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -14874,7 +15282,8 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/IdentityKindSummary"
-            }
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -14904,19 +15313,22 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Property"
-            }
+            },
+            "nullable": true
           },
           "ServiceVersions": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/ServiceVersionSummary"
-            }
+            },
+            "nullable": true
           },
           "References": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/EntityReference"
-            }
+            },
+            "nullable": true
           },
           "Id": {
             "type": "integer",
@@ -14946,10 +15358,12 @@
             "format": "int32"
           },
           "FriendlyName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Version": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "VersionNumber": {
             "type": "integer",
@@ -15002,10 +15416,12 @@
         ],
         "properties": {
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Description": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "IsVirtual": {
             "type": "boolean"
@@ -15052,7 +15468,8 @@
             "$ref": "#/components/schemas/Kind"
           },
           "Keywords": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -15075,31 +15492,36 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/ContractDefinition"
-            }
+            },
+            "nullable": true
           },
           "EndpointGroups": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/EndpointGroupDefinition"
-            }
+            },
+            "nullable": true
           },
           "Nodes": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/NodeDefinition"
-            }
+            },
+            "nullable": true
           },
           "Properties": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Property"
-            }
+            },
+            "nullable": true
           },
           "References": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/EntityReference"
-            }
+            },
+            "nullable": true
           },
           "Id": {
             "type": "integer",
@@ -15134,10 +15556,12 @@
             "format": "int32"
           },
           "FriendlyName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Description": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "IsPrivate": {
             "type": "boolean"
@@ -15146,7 +15570,8 @@
             "$ref": "#/components/schemas/Kind2"
           },
           "Configuration": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Xml": {
             "type": "array",
@@ -15156,7 +15581,8 @@
                 "type": "object",
                 "additionalProperties": false
               }
-            }
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -15171,26 +15597,31 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/OperationDefinition"
-            }
+            },
+            "nullable": true
           },
           "Endpoints": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/EndpointDefinition"
-            }
+            },
+            "nullable": true
           },
           "ServiceVersionId": {
             "type": "integer",
             "format": "int32"
           },
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Namespace": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Description": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "IsEnabled": {
             "type": "boolean"
@@ -15239,7 +15670,8 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/EndpointDefinition"
-            }
+            },
+            "nullable": true
           },
           "Router": {
             "$ref": "#/components/schemas/RouterType"
@@ -15257,7 +15689,8 @@
             "format": "int32"
           },
           "RouterConfiguration": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Id": {
             "type": "integer",
@@ -15294,13 +15727,15 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/MessageDefinition"
-            }
+            },
+            "nullable": true
           },
           "Properties": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Property"
-            }
+            },
+            "nullable": true
           },
           "Kind": {
             "$ref": "#/components/schemas/Kind"
@@ -15337,7 +15772,8 @@
             "type": "boolean"
           },
           "NodeName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Binding": {
             "$ref": "#/components/schemas/Binding"
@@ -15349,19 +15785,22 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/IdentityDefinitionBase"
-            }
+            },
+            "nullable": true
           },
           "DownstreamEndpointIdentities": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/IdentityDefinitionBase"
-            }
+            },
+            "nullable": true
           },
           "Properties": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Property"
-            }
+            },
+            "nullable": true
           },
           "Id": {
             "type": "integer",
@@ -15393,7 +15832,8 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/MessageHeaderDefinition"
-            }
+            },
+            "nullable": true
           },
           "OperationId": {
             "type": "integer",
@@ -15403,13 +15843,16 @@
             "$ref": "#/components/schemas/Direction"
           },
           "Action": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Namespace": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Settings": {
             "$ref": "#/components/schemas/MessageSettings"
@@ -15461,25 +15904,31 @@
             "format": "int32"
           },
           "FriendlyName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Description": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Namespace": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "IsPrivate": {
             "type": "boolean"
           },
           "Configuration": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Capabilities": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Xml": {
             "type": "array",
@@ -15489,7 +15938,8 @@
                 "type": "object",
                 "additionalProperties": false
               }
-            }
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -15505,10 +15955,12 @@
             "format": "int32"
           },
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Namespace": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ProtectionLevel": {
             "$ref": "#/components/schemas/ProtectionLevel"
@@ -15541,10 +15993,12 @@
         "type": "object",
         "properties": {
           "HttpMethod": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "UriTemplate": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "PreserveTrailingSlash": {
             "type": "boolean"
@@ -15561,25 +16015,29 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/MessageParameter"
-            }
+            },
+            "nullable": true
           },
           "RequestMimeTypes": {
             "type": "array",
             "items": {
               "type": "string"
-            }
+            },
+            "nullable": true
           },
           "ResponseMimeTypes": {
             "type": "array",
             "items": {
               "type": "string"
-            }
+            },
+            "nullable": true
           },
           "Responses": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/ResponseMessage"
-            }
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -15588,10 +16046,12 @@
         "type": "object",
         "properties": {
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "VariableName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Location": {
             "enum": [
@@ -15605,7 +16065,8 @@
             "type": "string"
           },
           "Description": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "DataType": {
             "$ref": "#/components/schemas/DataType"
@@ -15617,10 +16078,12 @@
             "$ref": "#/components/schemas/Parameter"
           },
           "DataFormat": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Schema": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "IsRequired": {
             "type": "boolean"
@@ -15629,13 +16092,15 @@
             "type": "boolean"
           },
           "DefaultValue": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Values": {
             "type": "array",
             "items": {
               "type": "string"
-            }
+            },
+            "nullable": true
           },
           "MaximumValue": {
             "type": "number",
@@ -15660,7 +16125,8 @@
             "format": "int32"
           },
           "Pattern": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ArrayMaximumItems": {
             "type": "integer",
@@ -15684,19 +16150,23 @@
         "type": "object",
         "properties": {
           "StatusCode": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Schema": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Description": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Headers": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/ResponseMessageHeader"
-            }
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -15714,10 +16184,12 @@
             "$ref": "#/components/schemas/Parameter"
           },
           "DataFormat": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Schema": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "IsRequired": {
             "type": "boolean"
@@ -15726,13 +16198,15 @@
             "type": "boolean"
           },
           "DefaultValue": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Values": {
             "type": "array",
             "items": {
               "type": "string"
-            }
+            },
+            "nullable": true
           },
           "MaximumValue": {
             "type": "number",
@@ -15757,7 +16231,8 @@
             "format": "int32"
           },
           "Pattern": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ArrayMaximumItems": {
             "type": "integer",
@@ -15781,10 +16256,12 @@
         "type": "object",
         "properties": {
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Description": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "DataType": {
             "$ref": "#/components/schemas/DataType"
@@ -15796,10 +16273,12 @@
             "$ref": "#/components/schemas/Parameter"
           },
           "DataFormat": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Schema": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "IsRequired": {
             "type": "boolean"
@@ -15808,13 +16287,15 @@
             "type": "boolean"
           },
           "DefaultValue": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Values": {
             "type": "array",
             "items": {
               "type": "string"
-            }
+            },
+            "nullable": true
           },
           "MaximumValue": {
             "type": "number",
@@ -15839,7 +16320,8 @@
             "format": "int32"
           },
           "Pattern": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ArrayMaximumItems": {
             "type": "integer",
@@ -15872,23 +16354,28 @@
             "format": "int32"
           },
           "Version": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "VersionNumber": {
             "type": "integer",
             "format": "int32"
           },
           "FriendlyName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Description": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Namespace": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Status": {
             "$ref": "#/components/schemas/Status2"
@@ -15901,7 +16388,8 @@
             "format": "date-time"
           },
           "BaseAddress": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "BehaviorId": {
             "type": "integer",
@@ -15933,7 +16421,8 @@
             "$ref": "#/components/schemas/XmlQualifiedName"
           },
           "Description": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Status": {
             "$ref": "#/components/schemas/Status2"
@@ -15942,13 +16431,15 @@
             "type": "array",
             "items": {
               "type": "string"
-            }
+            },
+            "nullable": true
           },
           "Contracts": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/XmlQualifiedName"
-            }
+            },
+            "nullable": true
           },
           "IsSchemaFirst": {
             "type": "boolean"
@@ -15970,13 +16461,15 @@
             "type": "array",
             "items": {
               "type": "string"
-            }
+            },
+            "nullable": true
           },
           "Contracts": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/XmlQualifiedName"
-            }
+            },
+            "nullable": true
           },
           "Options": {
             "$ref": "#/components/schemas/Options"
@@ -15997,7 +16490,8 @@
             "format": "int32"
           },
           "ServiceName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "IsVirtual": {
             "type": "boolean"
@@ -16027,10 +16521,12 @@
             "$ref": "#/components/schemas/Kind"
           },
           "Keywords": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ServiceName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "IsVirtual": {
             "type": "boolean"
@@ -16078,10 +16574,12 @@
             "format": "int32"
           },
           "Namespace": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Json": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Xsd": {
             "type": "array",
@@ -16091,7 +16589,8 @@
                 "type": "object",
                 "additionalProperties": false
               }
-            }
+            },
+            "nullable": true
           },
           "IsPopulated": {
             "type": "boolean"
@@ -16103,10 +16602,12 @@
         "type": "object",
         "properties": {
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Namespace": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -16124,10 +16625,12 @@
             "format": "int32"
           },
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Description": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ExchangePattern": {
             "$ref": "#/components/schemas/ExchangePattern"
@@ -16196,16 +16699,20 @@
             "format": "int32"
           },
           "Name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Description": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "LogicalAddress": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "PhysicalAddress": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "NodeId": {
             "type": "integer",
@@ -16257,10 +16764,12 @@
             "format": "int32"
           },
           "EndpointName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "PhysicalAddress": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "IsEnabled": {
             "type": "boolean"
@@ -16270,7 +16779,8 @@
             "format": "int32"
           },
           "ServiceName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ServiceVersionId": {
             "type": "integer",
@@ -16281,10 +16791,12 @@
             "format": "int32"
           },
           "ServiceVersionVersion": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ServiceVersionName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Kind": {
             "$ref": "#/components/schemas/Kind"
@@ -16294,7 +16806,8 @@
             "format": "int32"
           },
           "BindingName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "AddressKind": {
             "$ref": "#/components/schemas/Kind4"
@@ -16330,7 +16843,8 @@
             "example": "00000000-0000-0000-0000-000000000000"
           },
           "ServicePathAndName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "IsVirtual": {
             "type": "boolean"
@@ -16364,7 +16878,8 @@
             "example": "00000000-0000-0000-0000-000000000000"
           },
           "NodePathAndName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "EndpointKey": {
             "type": "string",
@@ -16372,13 +16887,16 @@
             "example": "00000000-0000-0000-0000-000000000000"
           },
           "EndpointName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "LogicalAddress": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "PhysicalAddress": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "BindingKey": {
             "type": "string",
@@ -16386,7 +16904,8 @@
             "example": "00000000-0000-0000-0000-000000000000"
           },
           "BindingPathAndName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "IsHosted": {
             "type": "boolean"
@@ -16406,7 +16925,8 @@
         ],
         "properties": {
           "Keywords": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -16420,7 +16940,8 @@
         ],
         "properties": {
           "Capabilities": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -16434,7 +16955,8 @@
         ],
         "properties": {
           "Configuration": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

@@ -20,6 +20,6 @@ namespace LSL.Sentinet.ApiClient.DependencyInjection
         /// <param name="folderPath">The path to the folders</param>
         /// <param name="cancellationToken"></param>
         /// <returns></returns>
-        Task<GetFolderResult> GetFolderAsync(string folderPath, CancellationToken cancellationToken = default);
+        Task<FacadeFolderSubTree> GetFolderAsync(string folderPath, CancellationToken cancellationToken = default);
     }
 }

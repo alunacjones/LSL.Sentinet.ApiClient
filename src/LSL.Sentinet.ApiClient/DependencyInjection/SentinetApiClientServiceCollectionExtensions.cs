@@ -20,14 +20,19 @@ namespace Microsoft.Extensions.DependencyInjection
         /// <param name="source"></param>
         /// <param name="optionsConfigurator"></param>
         /// <returns></returns>
-        public static IServiceCollection AddSentinetApiClient(this IServiceCollection source, Action<SentineApiOptions> optionsConfigurator)
+        public static IServiceCollection AddSentinetApiClient(
+            this IServiceCollection source,
+            Action<SentineApiOptions> optionsConfigurator,
+            Action<IHttpClientBuilder> httpClientBuilderConfigurator = null)
         {
-            source.Configure(optionsConfigurator)
+            var httpClientBuilder = source.Configure(optionsConfigurator)
                 .FluentTryAddTransient<SentinetApiMessageHandler>()
                 .FluentTryAddSingleton<IFoldersFacade, FoldersFacade>()
                 .AddHttpClient<ISentinetApiClient, SentinetApiClient>()
                 .ConfigureHttpClient();
 
+            httpClientBuilderConfigurator?.Invoke(httpClientBuilder);
+            
             return source;
         }
 

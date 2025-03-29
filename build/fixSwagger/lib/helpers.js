@@ -113,7 +113,12 @@ class Fixer {
 
                 for (const [key, value] of Object.entries(c.value.properties)) {
                     var isNotRequired = requiredFields.indexOf(key) === -1;
-                    if ((isNotRequired && value.type === "string" && !value.format) || (isNotRequired && value.type !== "string")) {
+                    
+                    const avoid = ["string", "number", "integer", "boolean"];
+                    if (
+                        (isNotRequired && value.type === "string" && !value.format && !value.enum) || 
+                        (isNotRequired && !avoid.includes(value.type) && !value.$ref)
+                    ) {
                         value.nullable = true;
                     }
                 }
