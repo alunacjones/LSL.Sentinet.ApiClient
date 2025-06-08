@@ -1,3 +1,7 @@
+[![Build status](https://img.shields.io/appveyor/ci/alunacjones/lsl-sentinet-apiclient.svg)](https://ci.appveyor.com/project/alunacjones/lsl-sentinet-apiclient)
+[![Coveralls branch](https://img.shields.io/coverallsCoverage/github/alunacjones/LSL.Sentinet.ApiClient)](https://coveralls.io/github/alunacjones/LSL.Sentinet.ApiClient)
+[![NuGet](https://img.shields.io/nuget/v/LSL.Sentinet.ApiClient.svg)](https://www.nuget.org/packages/LSL.Sentinet.ApiClient/)
+
 # LSL.Sentinet.ApiClient
 
 Provide documentation here
