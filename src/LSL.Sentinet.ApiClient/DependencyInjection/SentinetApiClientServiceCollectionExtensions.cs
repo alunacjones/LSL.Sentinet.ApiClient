@@ -18,11 +18,16 @@ namespace Microsoft.Extensions.DependencyInjection
         /// Registers everything needed to use <c>LSL.Sentinet.ApiClient</c> services
         /// </summary>
         /// <param name="source"></param>
-        /// <param name="optionsConfigurator"></param>
+        /// <param name="optionsConfigurator">
+        /// A delegate to configure the Sentinet API options
+        /// </param>
+        /// <param name="httpClientBuilderConfigurator">
+        /// A delegate to configure the Sentinet API <see cref="IHttpClientBuilder"><c>IHttpClientBuilder</c></see>
+        /// </param>
         /// <returns></returns>
         public static IServiceCollection AddSentinetApiClient(
             this IServiceCollection source,
-            Action<SentineApiOptions> optionsConfigurator,
+            Action<SentinetApiOptions> optionsConfigurator,
             Action<IHttpClientBuilder> httpClientBuilderConfigurator = null)
         {
             var httpClientBuilder = source.Configure(optionsConfigurator)
@@ -40,7 +45,7 @@ namespace Microsoft.Extensions.DependencyInjection
         {
             return source.ConfigureHttpClient((services, client) =>
             {
-                client.BaseAddress = new Uri(services.GetRequiredService<IOptions<SentineApiOptions>>().Value.BaseUrl);
+                client.BaseAddress = new Uri(services.GetRequiredService<IOptions<SentinetApiOptions>>().Value.BaseUrl);
             })
             .AddHttpMessageHandler<SentinetApiMessageHandler>();            
         }

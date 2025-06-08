@@ -11,13 +11,13 @@ namespace LSL.Sentinet.ApiClient.DependencyInjection
     /// </summary>
     internal class SentinetApiMessageHandler : DelegatingHandler
     {
-        private readonly IOptionsMonitor<SentineApiOptions> _optionsMonitor;
+        private readonly IOptionsMonitor<SentinetApiOptions> _optionsMonitor;
 
         /// <summary>
         /// Default constructor
         /// </summary>
         /// <param name="optionsMonitor"></param>
-        public SentinetApiMessageHandler(IOptionsMonitor<SentineApiOptions> optionsMonitor) => _optionsMonitor = optionsMonitor;
+        public SentinetApiMessageHandler(IOptionsMonitor<SentinetApiOptions> optionsMonitor) => _optionsMonitor = optionsMonitor;
 
         /// <inheritdoc/>
         protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)

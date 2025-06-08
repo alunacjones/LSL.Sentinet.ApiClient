@@ -7,7 +7,7 @@ using System.Web;
 
 namespace LSL.Sentinet.ApiClient
 {
-    internal static class SentinetAuthServceExtensions
+    internal static class SentinetAuthServiceExtensions
     {        
         private static readonly Regex _baseUrlMatcher = new Regex(@".*/RepositoryService.svc/", RegexOptions.Compiled);
         

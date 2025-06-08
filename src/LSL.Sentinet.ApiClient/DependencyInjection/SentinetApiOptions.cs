@@ -1,9 +1,9 @@
 namespace LSL.Sentinet.ApiClient.DependencyInjection
 {
     /// <summary>
-    /// LSLSentinetApiClient configurable settings
+    /// SentinetApiClient configurable settings
     /// </summary>
-    public class SentineApiOptions
+    public class SentinetApiOptions
     {
         /// <summary>
         /// The base url of the API

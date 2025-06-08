@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace LSL.Sentinet.ApiClient
 {
     /// <summary>
-    /// A message handler to be used in non netstandard2.0
+    /// A message handler to be used in .NET 451 consumers
     /// consumers
     /// </summary>
     public class LegacySentinetApiMessageHandler : DelegatingHandler

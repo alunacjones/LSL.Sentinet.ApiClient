@@ -12,7 +12,7 @@ public class SentinetApiMessageHandlerTests
     [Test]
     public async Task SentinetApiMessageHandler_GivenInvalidAuthOptions_ItShouldThrowTheExpectedException()
     {
-        var client = CreateClient(authFails: true, isAlreadAuthorised: false);
+        var client = CreateClient(authFails: true, isAlreadyAuthorised: false);
 
         var act = async () => await client.GetFolderAsync(0);
         await act.Should().ThrowAsync<HttpRequestException>();
@@ -21,7 +21,7 @@ public class SentinetApiMessageHandlerTests
     [Test]
     public async Task SentinetApiMessageHandler_GivenValidAuthOptions_ItShouldReturnTheData()
     {
-        var client = CreateClient(authFails: false, isAlreadAuthorised: false);
+        var client = CreateClient(authFails: false, isAlreadyAuthorised: false);
 
         var response = await client.GetFolderAsync(0);
 
@@ -31,7 +31,7 @@ public class SentinetApiMessageHandlerTests
     [Test]
     public async Task SentinetApiMessageHandler_GivenValidAuthOptionsAndWeAreAlreadyAuthorised_ItShouldReturnTheData()
     {
-        var client = CreateClient(authFails: false, isAlreadAuthorised: true);
+        var client = CreateClient(authFails: false, isAlreadyAuthorised: true);
 
         var response = await client.GetFolderAsync(0);
         response.Should().BeOfType<Folder>();
@@ -59,7 +59,7 @@ public class SentinetApiMessageHandlerTests
         }
     }
 
-    private static ISentinetApiClient CreateClient(bool authFails, bool isAlreadAuthorised)
+    private static ISentinetApiClient CreateClient(bool authFails, bool isAlreadyAuthorised)
     {
         InitialiseEnv();
         var mockHttpHandler = CreateMockHttpMessageHandler();
@@ -74,7 +74,7 @@ public class SentinetApiMessageHandlerTests
             })
             .BuildServiceProvider();
 
-        mockHttpHandler.StubEndPointsAndAuth(authFails, isAlreadAuthorised);
+        mockHttpHandler.StubEndPointsAndAuth(authFails, isAlreadyAuthorised);
 
         mockHttpHandler.When(HttpMethod.Get, "http://nowhere.com/RepositoryService.svc/LogOn?userName=username&password=password")
             .Respond(new StringContent(authFails ? "false" : "true"));

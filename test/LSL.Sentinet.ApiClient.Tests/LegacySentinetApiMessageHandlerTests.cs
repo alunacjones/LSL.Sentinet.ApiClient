@@ -8,7 +8,7 @@ public class LegacySentinetApiMessageHandlerTests
     [Test]
     public async Task GivenAnInvalidMessageHandler_ItShouldThrowTheExpectedException()
     {
-        var client = CreateClient(authFails: true, isAlreadAuthorised: false);
+        var client = CreateClient(authFails: true, isAlreadyAuthorised: false);
 
         var act = async () => await client.GetFolderAsync(0);
         await act.Should().ThrowAsync<HttpRequestException>();
@@ -17,7 +17,7 @@ public class LegacySentinetApiMessageHandlerTests
     [Test]
     public async Task GivenAValidMessageHandler_ItShouldAccessTheApi()
     {
-        var client = CreateClient(authFails: false, isAlreadAuthorised: false);
+        var client = CreateClient(authFails: false, isAlreadyAuthorised: false);
 
         var response = await client.GetFolderAsync(0);
         response.Should().BeOfType<Folder>();
@@ -26,13 +26,13 @@ public class LegacySentinetApiMessageHandlerTests
     [Test]
     public async Task GivenAValidMessageHandlerAndWeAreAlreadyAuthorised_ItShouldAccessTheApi()
     {
-        var client = CreateClient(authFails: false, isAlreadAuthorised: true);
+        var client = CreateClient(authFails: false, isAlreadyAuthorised: true);
 
         var response = await client.GetFolderAsync(0);
         response.Should().BeOfType<Folder>();
     }    
 
-    private static ISentinetApiClient CreateClient(bool authFails, bool isAlreadAuthorised)
+    private static ISentinetApiClient CreateClient(bool authFails, bool isAlreadyAuthorised)
     {
         var mockHttpHandler = CreateMockHttpMessageHandler();
 
@@ -44,7 +44,7 @@ public class LegacySentinetApiMessageHandlerTests
             BaseAddress = new Uri("http://nowhere.com/RepositoryService.svc/")
         };
 
-        mockHttpHandler.StubEndPointsAndAuth(authFails, isAlreadAuthorised);
+        mockHttpHandler.StubEndPointsAndAuth(authFails, isAlreadyAuthorised);
 
         mockHttpHandler.When(HttpMethod.Get, "http://nowhere.com/RepositoryService.svc/LogOn?userName=username&password=password")
             .Respond(new StringContent(authFails ? "false" : "true"));
