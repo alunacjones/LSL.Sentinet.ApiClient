@@ -40,8 +40,9 @@ public class SentinetApiMessageHandlerTests
     [Test]
     public async Task Connect()
     {
+        Env.TraversePath().Load();
         var sut = CreateServiceProvider().GetRequiredService<IFoldersFacade>();
-        var result = await sut.GetFolderAsync("Microservices/Payments");
+        var result = await sut.GetFolderAsync(Environment.GetEnvironmentVariable("SENTINET_TEST_PATH"));
 
         foreach (var service in result.SubTree.Services)
         {
