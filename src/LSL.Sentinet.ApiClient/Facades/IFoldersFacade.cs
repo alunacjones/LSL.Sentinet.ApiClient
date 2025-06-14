@@ -6,7 +6,7 @@ namespace LSL.Sentinet.ApiClient.Facades
 {
     /// <summary>
     /// A facade to the Sentinet API that provides
-    /// easier to use methods work with folders
+    /// easier to use methods for working with folders
     /// </summary>
     public interface IFoldersFacade : IFacade
     {
@@ -14,7 +14,7 @@ namespace LSL.Sentinet.ApiClient.Facades
         /// Fetches a folder by its path
         /// </summary>
         /// <remarks>
-        /// Paths should be separated by a <c>/</c>
+        /// Path sections should be separated by a <c>/</c>
         /// e.g. <c>Consumers/MyService</c>
         /// </remarks>
         /// <param name="folderPath">The path to the folders</param>
