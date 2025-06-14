@@ -24,17 +24,17 @@ namespace LSL.Sentinet.ApiClient
             _username = username;
             _password = password;
         }
-        
+
         /// <inheritdoc/>
         protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
         {
-            var response =  await base.SendAsync(request, cancellationToken).ConfigureAwait(false);
+            var response = await base.SendAsync(request, cancellationToken).ConfigureAwait(false);
 
             if (response.StatusCode != HttpStatusCode.Unauthorized)
             {
                 return response;
             }
-            
+
             return await request.AuthoriseAndResend(base.SendAsync, _username, _password, cancellationToken);
         }
     }

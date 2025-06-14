@@ -4,7 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "node index.js"
+        "dev": "node index.js",
+        "enum-fix": "node enum-fix.js"
     },
     "author": "",
     "license": "ISC",

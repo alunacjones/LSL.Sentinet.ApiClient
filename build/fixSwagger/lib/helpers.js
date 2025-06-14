@@ -290,6 +290,7 @@ class Fixer {
             .executeIf(this.fixes.setAdditionalPropertiesToFalse, () => this.setAdditionalPropertiesToFalse())
             .executeIf(this.fixes.fixNonRequiredProperties, () => this.fixNonRequiredProperties())
             .executeIf(this.fixes.fixOperationIds, () => this.fixOperationIds())
+            .executeIf(this.fixes.fixUpWithJsonPath, () => this.fixUpWithJsonPath())
 
         this.save();
     }
@@ -305,6 +306,40 @@ class Fixer {
         return this;
     }
 
+    fixUpWithJsonPath() {
+        this.fixes.fixUpWithJsonPath.forEach(j =>
+        {
+            var toFix = jp.nodes(this.openApiSpec, j.path);
+            toFix.forEach(f =>
+            {
+                if (j.clear) {
+                    Object.getOwnPropertyNames(f.value).forEach(p => delete f.value[p]);
+                }
+                
+                if (j.remove) {
+                    j.remove.forEach(r =>
+                    {
+                        delete f.value[r];
+                    })
+                }
+
+                if (j.merge) {
+                    Object.assign(f.value, j.merge);
+                    return;
+                }
+
+                if (j.rename) {                    
+                    const { parent, oldName } = this.getParentAndOldName(f)
+
+                    parent[j.rename] = parent[oldName];
+                    delete parent[oldName]
+                    return;
+                }
+            });
+        });
+
+        return this;
+    }
 
     /**
      * Saves out the `swagger.json` file that `NSwag` 

@@ -2,40 +2,33 @@ using System;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using LSL.Sentinet.ApiClient.DependencyInjection.Facades.Models;
+using LSL.Sentinet.ApiClient.Facades.Models;
 
-namespace LSL.Sentinet.ApiClient.DependencyInjection.Facades
+namespace LSL.Sentinet.ApiClient.Facades
 {
-    internal class FoldersFacade : IFoldersFacade
+    internal class FoldersFacade : Facade, IFoldersFacade
     {
-        private readonly ISentinetApiClient _sentinetApiClient;
-
-        public FoldersFacade(ISentinetApiClient sentinetApiClient)
-        {
-            _sentinetApiClient = sentinetApiClient;
-        }
-
-        public ISentinetApiClient Client => _sentinetApiClient;
+        public FoldersFacade(ISentinetApiClient sentinetApiClient) : base(sentinetApiClient) { }
 
         public async Task<FacadeFolderSubTree> GetFolderAsync(string fullPath, CancellationToken cancellationToken = default)
         {
             return (await fullPath.Split('/')
                 .ToAsyncEnumerable()
                 .AggregateAwaitAsync(
-                    new 
-                    { 
+                    new
+                    {
                         CurrentFolder = await GetFolderFromApi(null, string.Empty),
                         CurrentPath = string.Empty
-                    }, 
+                    },
                     async (folder, path) =>
-                    {     
+                    {
                         var currentPath = folder.CurrentPath + (folder.CurrentPath.Length == 0 ? path : $"/{path}");
 
-                        return new 
+                        return new
                         {
                             CurrentFolder = await GetFolderFromApi(
-                                folder.CurrentFolder, 
-                                path, 
+                                folder.CurrentFolder,
+                                path,
                                 currentPath,
                                 GetSubFolderId(folder.CurrentFolder, path)
                             ),
@@ -44,11 +37,11 @@ namespace LSL.Sentinet.ApiClient.DependencyInjection.Facades
                     }))
                     .CurrentFolder;
 
-            int GetSubFolderId(FacadeFolderSubTree folder, string subPath) => 
+            int GetSubFolderId(FacadeFolderSubTree folder, string subPath) =>
                 folder.SubTree.Folders.FirstOrDefault(f => f.Name.Equals(subPath, StringComparison.InvariantCultureIgnoreCase))?.Id
                     ?? throw new ArgumentException($"Unknown folder '{subPath}' for full path of '{fullPath}'");
 
-            async Task<FacadeFolderSubTree> GetFolderFromApi(FacadeFolderSubTree currentFolder, string path, string currentFullPath = "", int? id = null) => 
+            async Task<FacadeFolderSubTree> GetFolderFromApi(FacadeFolderSubTree currentFolder, string path, string currentFullPath = "", int? id = null) =>
                 (await Client.GetFolderSubtreeAsync(false, Entities.All, id, cancellationToken)
                     .ConfigureAwait(false))
                     .ToFacadeFolder(currentFullPath, currentFolder);

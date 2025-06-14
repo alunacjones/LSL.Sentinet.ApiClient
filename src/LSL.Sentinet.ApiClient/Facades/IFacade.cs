@@ -1,4 +1,4 @@
-namespace LSL.Sentinet.ApiClient.DependencyInjection
+namespace LSL.Sentinet.ApiClient.Facades
 {
     /// <summary>
     /// Base interface for all facades

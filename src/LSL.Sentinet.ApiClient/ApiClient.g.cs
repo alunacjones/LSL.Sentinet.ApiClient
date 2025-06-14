@@ -96,7 +96,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<MetricReadingSummary>> GetServiceAgreementReadingsSummaryAsync(System.Collections.Generic.IEnumerable<int> metricIds, System.DateTimeOffset startDateTime, TimeUnit timeUnit, int timeResolution, System.DateTimeOffset? endDateTime = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<MetricReadingSummary>> GetServiceAgreementReadingsSummaryAsync(System.Collections.Generic.IEnumerable<int> metricIds, System.DateTimeOffset? startDateTime, TimeUnit? timeUnit, int timeResolution, System.DateTimeOffset? endDateTime = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -104,7 +104,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<MetricReading>> GetServiceAgreementReadingsAsync(System.Collections.Generic.IEnumerable<int> metricIds, System.DateTimeOffset startDateTime, SortField sortField, SortOrder sortOrder, System.DateTimeOffset? endDateTime = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<MetricReading>> GetServiceAgreementReadingsAsync(System.Collections.Generic.IEnumerable<int> metricIds, System.DateTimeOffset? startDateTime, SortField? sortField, SortOrder? sortOrder, System.DateTimeOffset? endDateTime = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -144,7 +144,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<object> CreateMessageContentAsync(int messageId, MessageVersion messageVersion, object body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<object> CreateMessageContentAsync(int messageId, MessageVersion? messageVersion, object body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -152,7 +152,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<File> CreateMessageContentWithResultAsync(int messageId, MessageVersion messageVersion, object body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<File> CreateMessageContentWithResultAsync(int messageId, MessageVersion? messageVersion, object body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -248,7 +248,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<SearchResult> FindEntityAsync(int entityId, EntityType entityType, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<SearchResult> FindEntityAsync(int entityId, EntityType? entityType, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -328,7 +328,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<object> GenerateSecretAsync(Type2 type, int length, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<object> GenerateSecretAsync(Type2? type, int length, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -600,7 +600,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<CustomAttributeType>> GetCustomAttributeTypesAsync(EntityType entityType, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<CustomAttributeType>> GetCustomAttributeTypesAsync(EntityType? entityType, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -608,7 +608,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task CreateOrUpdateOrDeleteCustomAttributeTypesAsync(EntityType entityType, System.Collections.Generic.IEnumerable<CustomAttributeType> body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task CreateOrUpdateOrDeleteCustomAttributeTypesAsync(EntityType? entityType, System.Collections.Generic.IEnumerable<CustomAttributeType> body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -616,7 +616,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<CustomAttributeType>> CreateOrUpdateOrDeleteCustomAttributeTypesWithResultAsync(EntityType entityType, System.Collections.Generic.IEnumerable<CustomAttributeType> body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<CustomAttributeType>> CreateOrUpdateOrDeleteCustomAttributeTypesWithResultAsync(EntityType? entityType, System.Collections.Generic.IEnumerable<CustomAttributeType> body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -744,7 +744,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<NodeDefinition> GetNodeByKeyAsync(System.Guid nodeKey, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<NodeDefinition> GetNodeByKeyAsync(System.Guid? nodeKey, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -896,7 +896,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<MetadataInfo> ImportMetadataAsync(string address, string userName, string password, string domain, Serializer serializer, bool transformToDocumentStyle, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<MetadataInfo> ImportMetadataAsync(string address, string userName, string password, string domain, Serializer? serializer, bool transformToDocumentStyle, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -904,7 +904,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<MetadataInfo> ImportMetadataFromMexEndpointAsync(Serializer serializer, bool transformToDocumentStyle, ClientEndpointConfiguration body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<MetadataInfo> ImportMetadataFromMexEndpointAsync(Serializer? serializer, bool transformToDocumentStyle, ClientEndpointConfiguration body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -912,7 +912,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<MetadataInfo> ImportMetadataFromStringAsync(Serializer serializer, bool transformToDocumentStyle, object body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<MetadataInfo> ImportMetadataFromStringAsync(Serializer? serializer, bool transformToDocumentStyle, object body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -920,7 +920,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<MetadataInfo> ImportMetadataFromFilesAsync(Serializer serializer, bool transformToDocumentStyle, object body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<MetadataInfo> ImportMetadataFromFilesAsync(Serializer? serializer, bool transformToDocumentStyle, object body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -1208,7 +1208,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<MonitoringTransactionTrace> GetTransactionTraceAsync(System.Guid transactionId, int serviceVersionId, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<MonitoringTransactionTrace> GetTransactionTraceAsync(System.Guid? transactionId, int serviceVersionId, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -1272,7 +1272,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ChangeSet>> GetChangeSetsAsync(System.DateTimeOffset startTime, System.DateTimeOffset? endTime = null, int? userId = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ChangeSet>> GetChangeSetsAsync(System.DateTimeOffset? startTime, System.DateTimeOffset? endTime = null, int? userId = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -1296,7 +1296,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ChangeRecord>> GetChangeRecordsByFolderIdAsync(System.DateTimeOffset startTime, System.Collections.Generic.IEnumerable<EntityType> entityTypes, ChangeTypes changeTypes, string searchTerm, System.DateTimeOffset? endTime = null, int? folderId = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ChangeRecord>> GetChangeRecordsByFolderIdAsync(System.DateTimeOffset? startTime, System.Collections.Generic.IEnumerable<EntityType?> entityTypes, ChangeTypes? changeTypes, string searchTerm, System.DateTimeOffset? endTime = null, int? folderId = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -1304,7 +1304,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ChangeRecord>> GetChangeRecordsByEntityIdAsync(int entityId, EntityType entityType, System.DateTimeOffset startTime, ChangeTypes changeTypes, string searchTerm, System.DateTimeOffset? endTime = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ChangeRecord>> GetChangeRecordsByEntityIdAsync(int entityId, EntityType? entityType, System.DateTimeOffset? startTime, ChangeTypes? changeTypes, string searchTerm, System.DateTimeOffset? endTime = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -1480,7 +1480,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<AlertTypeDefinition> GetAlertTypeByKeyAsync(System.Guid alertTypeKey, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<AlertTypeDefinition> GetAlertTypeByKeyAsync(System.Guid? alertTypeKey, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -1560,7 +1560,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<FolderSubtree> GetFolderSubtreeAsync(bool expandSubfolders, Entities entities, int? folderId = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<FolderSubtree> GetFolderSubtreeAsync(bool expandSubfolders, Entities? entities, int? folderId = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -1608,7 +1608,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task MoveFolderEntityAsync(int entityId, Entities entityType, int? targetFolderId = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task MoveFolderEntityAsync(int entityId, Entities? entityType, int? targetFolderId = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -1616,7 +1616,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task MoveFolderEntitiesAsync(Entities entities, int? sourceFolderId = null, int? targetFolderId = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task MoveFolderEntitiesAsync(Entities? entities, int? sourceFolderId = null, int? targetFolderId = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -1744,7 +1744,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<object> CreateOrUpdateServiceVersionAsync(bool replaceDuplicateActions, BaseAddressCollisionAction baseAddressCollisionAction, ServiceVersionDefinition body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<object> CreateOrUpdateServiceVersionAsync(bool replaceDuplicateActions, BaseAddressCollisionAction? baseAddressCollisionAction, ServiceVersionDefinition body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -1752,7 +1752,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<ServiceVersionDefinition> CreateOrUpdateServiceVersionWithResultAsync(bool replaceDuplicateActions, BaseAddressCollisionAction baseAddressCollisionAction, ServiceVersionDefinition body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ServiceVersionDefinition> CreateOrUpdateServiceVersionWithResultAsync(bool replaceDuplicateActions, BaseAddressCollisionAction? baseAddressCollisionAction, ServiceVersionDefinition body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -1760,7 +1760,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<object> CreateServiceVersionFromMetadataAsync(int fileId, ErrorTolerance errorTolerance, Serializer serializer, bool wrappedParameters, ServiceVersionImportDetails body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<object> CreateServiceVersionFromMetadataAsync(int fileId, ErrorTolerance? errorTolerance, Serializer? serializer, bool wrappedParameters, ServiceVersionImportDetails body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -1768,7 +1768,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<ServiceVersionDefinition> CreateServiceVersionFromMetadataWithResultAsync(int fileId, ErrorTolerance errorTolerance, Serializer serializer, bool wrappedParameters, ServiceVersionImportDetails body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ServiceVersionDefinition> CreateServiceVersionFromMetadataWithResultAsync(int fileId, ErrorTolerance? errorTolerance, Serializer? serializer, bool wrappedParameters, ServiceVersionImportDetails body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -1776,7 +1776,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<ServiceVersionDefinition> UpdateServiceVersionFromMetadataWithResultAsync(int fileId, ErrorTolerance errorTolerance, Serializer serializer, bool wrappedParameters, ServiceVersionUpdateDetails body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ServiceVersionDefinition> UpdateServiceVersionFromMetadataWithResultAsync(int fileId, ErrorTolerance? errorTolerance, Serializer? serializer, bool wrappedParameters, ServiceVersionUpdateDetails body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -1784,7 +1784,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<object> CreateServiceVersionFromSwaggerAsync(int fileId, int serviceId, Status2 status, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<object> CreateServiceVersionFromSwaggerAsync(int fileId, int serviceId, Status2? status, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -1792,7 +1792,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<ServiceVersionDefinition> CreateServiceVersionFromSwaggerWithResultAsync(int fileId, int serviceId, Status2 status, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ServiceVersionDefinition> CreateServiceVersionFromSwaggerWithResultAsync(int fileId, int serviceId, Status2? status, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -1800,7 +1800,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<ServiceVersionDefinition> UpdateServiceVersionFromSwaggerWithResultAsync(int fileId, int serviceVersionId, Options options, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ServiceVersionDefinition> UpdateServiceVersionFromSwaggerWithResultAsync(int fileId, int serviceVersionId, Options? options, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -1912,7 +1912,7 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<EndpointDefinition> GetEndpointByKeyAsync(System.Guid endpointKey, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<EndpointDefinition> GetEndpointByKeyAsync(System.Guid? endpointKey, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
@@ -2758,16 +2758,10 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<MetricReadingSummary>> GetServiceAgreementReadingsSummaryAsync(System.Collections.Generic.IEnumerable<int> metricIds, System.DateTimeOffset startDateTime, TimeUnit timeUnit, int timeResolution, System.DateTimeOffset? endDateTime = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<MetricReadingSummary>> GetServiceAgreementReadingsSummaryAsync(System.Collections.Generic.IEnumerable<int> metricIds, System.DateTimeOffset? startDateTime, TimeUnit? timeUnit, int timeResolution, System.DateTimeOffset? endDateTime = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             if (metricIds == null)
                 throw new System.ArgumentNullException("metricIds");
-
-            if (startDateTime == null)
-                throw new System.ArgumentNullException("startDateTime");
-
-            if (timeUnit == null)
-                throw new System.ArgumentNullException("timeUnit");
 
             if (timeResolution == null)
                 throw new System.ArgumentNullException("timeResolution");
@@ -2787,8 +2781,8 @@ namespace LSL.Sentinet.ApiClient
                     urlBuilder_.Append("GetServiceAgreementReadingsSummary");
                     urlBuilder_.Append('?');
                     foreach (var item_ in metricIds) { urlBuilder_.Append(System.Uri.EscapeDataString("metricIds")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(item_, System.Globalization.CultureInfo.InvariantCulture))).Append('&'); }
-                    urlBuilder_.Append(System.Uri.EscapeDataString("startDateTime")).Append('=').Append(System.Uri.EscapeDataString(startDateTime.ToString("s", System.Globalization.CultureInfo.InvariantCulture))).Append('&');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("timeUnit")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(timeUnit, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("startDateTime")).Append('=').Append(System.Uri.EscapeDataString(startDateTime != null ? startDateTime.Value.ToString("s", System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("timeUnit")).Append('=').Append(System.Uri.EscapeDataString(timeUnit != null ? ConvertToString(timeUnit, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     urlBuilder_.Append(System.Uri.EscapeDataString("timeResolution")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(timeResolution, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
                     if (endDateTime != null)
                     {
@@ -2854,19 +2848,10 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<MetricReading>> GetServiceAgreementReadingsAsync(System.Collections.Generic.IEnumerable<int> metricIds, System.DateTimeOffset startDateTime, SortField sortField, SortOrder sortOrder, System.DateTimeOffset? endDateTime = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<MetricReading>> GetServiceAgreementReadingsAsync(System.Collections.Generic.IEnumerable<int> metricIds, System.DateTimeOffset? startDateTime, SortField? sortField, SortOrder? sortOrder, System.DateTimeOffset? endDateTime = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             if (metricIds == null)
                 throw new System.ArgumentNullException("metricIds");
-
-            if (startDateTime == null)
-                throw new System.ArgumentNullException("startDateTime");
-
-            if (sortField == null)
-                throw new System.ArgumentNullException("sortField");
-
-            if (sortOrder == null)
-                throw new System.ArgumentNullException("sortOrder");
 
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -2883,9 +2868,9 @@ namespace LSL.Sentinet.ApiClient
                     urlBuilder_.Append("GetServiceAgreementReadings");
                     urlBuilder_.Append('?');
                     foreach (var item_ in metricIds) { urlBuilder_.Append(System.Uri.EscapeDataString("metricIds")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(item_, System.Globalization.CultureInfo.InvariantCulture))).Append('&'); }
-                    urlBuilder_.Append(System.Uri.EscapeDataString("startDateTime")).Append('=').Append(System.Uri.EscapeDataString(startDateTime.ToString("s", System.Globalization.CultureInfo.InvariantCulture))).Append('&');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("sortField")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(sortField, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("sortOrder")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(sortOrder, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("startDateTime")).Append('=').Append(System.Uri.EscapeDataString(startDateTime != null ? startDateTime.Value.ToString("s", System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("sortField")).Append('=').Append(System.Uri.EscapeDataString(sortField != null ? ConvertToString(sortField, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("sortOrder")).Append('=').Append(System.Uri.EscapeDataString(sortOrder != null ? ConvertToString(sortOrder, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     if (endDateTime != null)
                     {
                         urlBuilder_.Append(System.Uri.EscapeDataString("endDateTime")).Append('=').Append(System.Uri.EscapeDataString(endDateTime.Value.ToString("s", System.Globalization.CultureInfo.InvariantCulture))).Append('&');
@@ -3267,13 +3252,10 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<object> CreateMessageContentAsync(int messageId, MessageVersion messageVersion, object body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<object> CreateMessageContentAsync(int messageId, MessageVersion? messageVersion, object body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             if (messageId == null)
                 throw new System.ArgumentNullException("messageId");
-
-            if (messageVersion == null)
-                throw new System.ArgumentNullException("messageVersion");
 
             if (body == null)
                 throw new System.ArgumentNullException("body");
@@ -3297,7 +3279,7 @@ namespace LSL.Sentinet.ApiClient
                     urlBuilder_.Append("CreateMessageContent");
                     urlBuilder_.Append('?');
                     urlBuilder_.Append(System.Uri.EscapeDataString("messageId")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(messageId, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("messageVersion")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(messageVersion, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("messageVersion")).Append('=').Append(System.Uri.EscapeDataString(messageVersion != null ? ConvertToString(messageVersion, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     urlBuilder_.Length--;
 
                     PrepareRequest(client_, request_, urlBuilder_);
@@ -3358,13 +3340,10 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<File> CreateMessageContentWithResultAsync(int messageId, MessageVersion messageVersion, object body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<File> CreateMessageContentWithResultAsync(int messageId, MessageVersion? messageVersion, object body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             if (messageId == null)
                 throw new System.ArgumentNullException("messageId");
-
-            if (messageVersion == null)
-                throw new System.ArgumentNullException("messageVersion");
 
             if (body == null)
                 throw new System.ArgumentNullException("body");
@@ -3388,7 +3367,7 @@ namespace LSL.Sentinet.ApiClient
                     urlBuilder_.Append("CreateMessageContentWithResult");
                     urlBuilder_.Append('?');
                     urlBuilder_.Append(System.Uri.EscapeDataString("messageId")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(messageId, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("messageVersion")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(messageVersion, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("messageVersion")).Append('=').Append(System.Uri.EscapeDataString(messageVersion != null ? ConvertToString(messageVersion, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     urlBuilder_.Length--;
 
                     PrepareRequest(client_, request_, urlBuilder_);
@@ -4357,13 +4336,10 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<SearchResult> FindEntityAsync(int entityId, EntityType entityType, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<SearchResult> FindEntityAsync(int entityId, EntityType? entityType, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             if (entityId == null)
                 throw new System.ArgumentNullException("entityId");
-
-            if (entityType == null)
-                throw new System.ArgumentNullException("entityType");
 
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -4380,7 +4356,7 @@ namespace LSL.Sentinet.ApiClient
                     urlBuilder_.Append("FindEntity");
                     urlBuilder_.Append('?');
                     urlBuilder_.Append(System.Uri.EscapeDataString("entityId")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(entityId, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("entityType")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(entityType, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("entityType")).Append('=').Append(System.Uri.EscapeDataString(entityType != null ? ConvertToString(entityType, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     urlBuilder_.Length--;
 
                     PrepareRequest(client_, request_, urlBuilder_);
@@ -4598,9 +4574,6 @@ namespace LSL.Sentinet.ApiClient
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<CertificateInfo> GetCertificateInfoAsync(string password, object body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            if (password == null)
-                throw new System.ArgumentNullException("password");
-
             if (body == null)
                 throw new System.ArgumentNullException("body");
 
@@ -4622,7 +4595,7 @@ namespace LSL.Sentinet.ApiClient
                     // Operation Path: "GetCertificateInfo"
                     urlBuilder_.Append("GetCertificateInfo");
                     urlBuilder_.Append('?');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("password")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(password, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("password")).Append('=').Append(System.Uri.EscapeDataString(password != null ? ConvertToString(password, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     urlBuilder_.Length--;
 
                     PrepareRequest(client_, request_, urlBuilder_);
@@ -4759,9 +4732,6 @@ namespace LSL.Sentinet.ApiClient
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<CertificateInfo> CreateCertificateAsync(string subjectName, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            if (subjectName == null)
-                throw new System.ArgumentNullException("subjectName");
-
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -4776,7 +4746,7 @@ namespace LSL.Sentinet.ApiClient
                     // Operation Path: "CreateCertificate"
                     urlBuilder_.Append("CreateCertificate");
                     urlBuilder_.Append('?');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("subjectName")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(subjectName, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("subjectName")).Append('=').Append(System.Uri.EscapeDataString(subjectName != null ? ConvertToString(subjectName, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     urlBuilder_.Length--;
 
                     PrepareRequest(client_, request_, urlBuilder_);
@@ -4839,14 +4809,8 @@ namespace LSL.Sentinet.ApiClient
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<CertificateInfo> CreatePfxCertificateAsync(string subjectName, int validDays, string password, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            if (subjectName == null)
-                throw new System.ArgumentNullException("subjectName");
-
             if (validDays == null)
                 throw new System.ArgumentNullException("validDays");
-
-            if (password == null)
-                throw new System.ArgumentNullException("password");
 
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -4862,9 +4826,9 @@ namespace LSL.Sentinet.ApiClient
                     // Operation Path: "CreatePfxCertificate"
                     urlBuilder_.Append("CreatePfxCertificate");
                     urlBuilder_.Append('?');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("subjectName")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(subjectName, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("subjectName")).Append('=').Append(System.Uri.EscapeDataString(subjectName != null ? ConvertToString(subjectName, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     urlBuilder_.Append(System.Uri.EscapeDataString("validDays")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(validDays, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("password")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(password, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("password")).Append('=').Append(System.Uri.EscapeDataString(password != null ? ConvertToString(password, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     urlBuilder_.Length--;
 
                     PrepareRequest(client_, request_, urlBuilder_);
@@ -5154,11 +5118,8 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<object> GenerateSecretAsync(Type2 type, int length, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<object> GenerateSecretAsync(Type2? type, int length, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            if (type == null)
-                throw new System.ArgumentNullException("type");
-
             if (length == null)
                 throw new System.ArgumentNullException("length");
 
@@ -5176,7 +5137,7 @@ namespace LSL.Sentinet.ApiClient
                     // Operation Path: "GenerateSecret"
                     urlBuilder_.Append("GenerateSecret");
                     urlBuilder_.Append('?');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("type")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(type, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("type")).Append('=').Append(System.Uri.EscapeDataString(type != null ? ConvertToString(type, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     urlBuilder_.Append(System.Uri.EscapeDataString("length")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(length, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
                     urlBuilder_.Length--;
 
@@ -5240,15 +5201,6 @@ namespace LSL.Sentinet.ApiClient
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<MatchRelativeUriResult> MatchRelativeUriAsync(string uri, string match, string bind, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            if (uri == null)
-                throw new System.ArgumentNullException("uri");
-
-            if (match == null)
-                throw new System.ArgumentNullException("match");
-
-            if (bind == null)
-                throw new System.ArgumentNullException("bind");
-
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -5263,9 +5215,9 @@ namespace LSL.Sentinet.ApiClient
                     // Operation Path: "MatchRelativeUri"
                     urlBuilder_.Append("MatchRelativeUri");
                     urlBuilder_.Append('?');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("uri")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(uri, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("match")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(match, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("bind")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(bind, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("uri")).Append('=').Append(System.Uri.EscapeDataString(uri != null ? ConvertToString(uri, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("match")).Append('=').Append(System.Uri.EscapeDataString(match != null ? ConvertToString(match, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("bind")).Append('=').Append(System.Uri.EscapeDataString(bind != null ? ConvertToString(bind, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     urlBuilder_.Length--;
 
                     PrepareRequest(client_, request_, urlBuilder_);
@@ -7882,11 +7834,8 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<CustomAttributeType>> GetCustomAttributeTypesAsync(EntityType entityType, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<CustomAttributeType>> GetCustomAttributeTypesAsync(EntityType? entityType, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            if (entityType == null)
-                throw new System.ArgumentNullException("entityType");
-
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -7901,7 +7850,7 @@ namespace LSL.Sentinet.ApiClient
                     // Operation Path: "GetCustomAttributeTypes"
                     urlBuilder_.Append("GetCustomAttributeTypes");
                     urlBuilder_.Append('?');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("entityType")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(entityType, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("entityType")).Append('=').Append(System.Uri.EscapeDataString(entityType != null ? ConvertToString(entityType, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     urlBuilder_.Length--;
 
                     PrepareRequest(client_, request_, urlBuilder_);
@@ -7962,11 +7911,8 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task CreateOrUpdateOrDeleteCustomAttributeTypesAsync(EntityType entityType, System.Collections.Generic.IEnumerable<CustomAttributeType> body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task CreateOrUpdateOrDeleteCustomAttributeTypesAsync(EntityType? entityType, System.Collections.Generic.IEnumerable<CustomAttributeType> body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            if (entityType == null)
-                throw new System.ArgumentNullException("entityType");
-
             if (body == null)
                 throw new System.ArgumentNullException("body");
 
@@ -7987,7 +7933,7 @@ namespace LSL.Sentinet.ApiClient
                     // Operation Path: "CreateOrUpdateOrDeleteCustomAttributeTypes"
                     urlBuilder_.Append("CreateOrUpdateOrDeleteCustomAttributeTypes");
                     urlBuilder_.Append('?');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("entityType")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(entityType, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("entityType")).Append('=').Append(System.Uri.EscapeDataString(entityType != null ? ConvertToString(entityType, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     urlBuilder_.Length--;
 
                     PrepareRequest(client_, request_, urlBuilder_);
@@ -8043,11 +7989,8 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<CustomAttributeType>> CreateOrUpdateOrDeleteCustomAttributeTypesWithResultAsync(EntityType entityType, System.Collections.Generic.IEnumerable<CustomAttributeType> body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<CustomAttributeType>> CreateOrUpdateOrDeleteCustomAttributeTypesWithResultAsync(EntityType? entityType, System.Collections.Generic.IEnumerable<CustomAttributeType> body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            if (entityType == null)
-                throw new System.ArgumentNullException("entityType");
-
             if (body == null)
                 throw new System.ArgumentNullException("body");
 
@@ -8069,7 +8012,7 @@ namespace LSL.Sentinet.ApiClient
                     // Operation Path: "CreateOrUpdateOrDeleteCustomAttributeTypesWithResult"
                     urlBuilder_.Append("CreateOrUpdateOrDeleteCustomAttributeTypesWithResult");
                     urlBuilder_.Append('?');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("entityType")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(entityType, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("entityType")).Append('=').Append(System.Uri.EscapeDataString(entityType != null ? ConvertToString(entityType, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     urlBuilder_.Length--;
 
                     PrepareRequest(client_, request_, urlBuilder_);
@@ -9308,11 +9251,8 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<NodeDefinition> GetNodeByKeyAsync(System.Guid nodeKey, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<NodeDefinition> GetNodeByKeyAsync(System.Guid? nodeKey, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            if (nodeKey == null)
-                throw new System.ArgumentNullException("nodeKey");
-
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -9327,7 +9267,7 @@ namespace LSL.Sentinet.ApiClient
                     // Operation Path: "GetNodeByKey"
                     urlBuilder_.Append("GetNodeByKey");
                     urlBuilder_.Append('?');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("nodeKey")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(nodeKey, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("nodeKey")).Append('=').Append(System.Uri.EscapeDataString(nodeKey != null ? ConvertToString(nodeKey, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     urlBuilder_.Length--;
 
                     PrepareRequest(client_, request_, urlBuilder_);
@@ -10797,23 +10737,8 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<MetadataInfo> ImportMetadataAsync(string address, string userName, string password, string domain, Serializer serializer, bool transformToDocumentStyle, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<MetadataInfo> ImportMetadataAsync(string address, string userName, string password, string domain, Serializer? serializer, bool transformToDocumentStyle, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            if (address == null)
-                throw new System.ArgumentNullException("address");
-
-            if (userName == null)
-                throw new System.ArgumentNullException("userName");
-
-            if (password == null)
-                throw new System.ArgumentNullException("password");
-
-            if (domain == null)
-                throw new System.ArgumentNullException("domain");
-
-            if (serializer == null)
-                throw new System.ArgumentNullException("serializer");
-
             if (transformToDocumentStyle == null)
                 throw new System.ArgumentNullException("transformToDocumentStyle");
 
@@ -10831,11 +10756,11 @@ namespace LSL.Sentinet.ApiClient
                     // Operation Path: "ImportMetadata"
                     urlBuilder_.Append("ImportMetadata");
                     urlBuilder_.Append('?');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("address")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(address, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("userName")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(userName, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("password")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(password, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("domain")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(domain, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("serializer")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(serializer, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("address")).Append('=').Append(System.Uri.EscapeDataString(address != null ? ConvertToString(address, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("userName")).Append('=').Append(System.Uri.EscapeDataString(userName != null ? ConvertToString(userName, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("password")).Append('=').Append(System.Uri.EscapeDataString(password != null ? ConvertToString(password, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("domain")).Append('=').Append(System.Uri.EscapeDataString(domain != null ? ConvertToString(domain, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("serializer")).Append('=').Append(System.Uri.EscapeDataString(serializer != null ? ConvertToString(serializer, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     urlBuilder_.Append(System.Uri.EscapeDataString("transformToDocumentStyle")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(transformToDocumentStyle, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
                     urlBuilder_.Length--;
 
@@ -10897,11 +10822,8 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<MetadataInfo> ImportMetadataFromMexEndpointAsync(Serializer serializer, bool transformToDocumentStyle, ClientEndpointConfiguration body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<MetadataInfo> ImportMetadataFromMexEndpointAsync(Serializer? serializer, bool transformToDocumentStyle, ClientEndpointConfiguration body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            if (serializer == null)
-                throw new System.ArgumentNullException("serializer");
-
             if (transformToDocumentStyle == null)
                 throw new System.ArgumentNullException("transformToDocumentStyle");
 
@@ -10926,7 +10848,7 @@ namespace LSL.Sentinet.ApiClient
                     // Operation Path: "ImportMetadataFromMexEndpoint"
                     urlBuilder_.Append("ImportMetadataFromMexEndpoint");
                     urlBuilder_.Append('?');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("serializer")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(serializer, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("serializer")).Append('=').Append(System.Uri.EscapeDataString(serializer != null ? ConvertToString(serializer, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     urlBuilder_.Append(System.Uri.EscapeDataString("transformToDocumentStyle")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(transformToDocumentStyle, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
                     urlBuilder_.Length--;
 
@@ -10988,11 +10910,8 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<MetadataInfo> ImportMetadataFromStringAsync(Serializer serializer, bool transformToDocumentStyle, object body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<MetadataInfo> ImportMetadataFromStringAsync(Serializer? serializer, bool transformToDocumentStyle, object body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            if (serializer == null)
-                throw new System.ArgumentNullException("serializer");
-
             if (transformToDocumentStyle == null)
                 throw new System.ArgumentNullException("transformToDocumentStyle");
 
@@ -11017,7 +10936,7 @@ namespace LSL.Sentinet.ApiClient
                     // Operation Path: "ImportMetadataFromString"
                     urlBuilder_.Append("ImportMetadataFromString");
                     urlBuilder_.Append('?');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("serializer")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(serializer, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("serializer")).Append('=').Append(System.Uri.EscapeDataString(serializer != null ? ConvertToString(serializer, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     urlBuilder_.Append(System.Uri.EscapeDataString("transformToDocumentStyle")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(transformToDocumentStyle, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
                     urlBuilder_.Length--;
 
@@ -11079,11 +10998,8 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<MetadataInfo> ImportMetadataFromFilesAsync(Serializer serializer, bool transformToDocumentStyle, object body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<MetadataInfo> ImportMetadataFromFilesAsync(Serializer? serializer, bool transformToDocumentStyle, object body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            if (serializer == null)
-                throw new System.ArgumentNullException("serializer");
-
             if (transformToDocumentStyle == null)
                 throw new System.ArgumentNullException("transformToDocumentStyle");
 
@@ -11108,7 +11024,7 @@ namespace LSL.Sentinet.ApiClient
                     // Operation Path: "ImportMetadataFromFiles"
                     urlBuilder_.Append("ImportMetadataFromFiles");
                     urlBuilder_.Append('?');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("serializer")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(serializer, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("serializer")).Append('=').Append(System.Uri.EscapeDataString(serializer != null ? ConvertToString(serializer, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     urlBuilder_.Append(System.Uri.EscapeDataString("transformToDocumentStyle")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(transformToDocumentStyle, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
                     urlBuilder_.Length--;
 
@@ -11172,18 +11088,6 @@ namespace LSL.Sentinet.ApiClient
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<RestMetadataInfo> ImportSwaggerAsync(string address, string userName, string password, string domain, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            if (address == null)
-                throw new System.ArgumentNullException("address");
-
-            if (userName == null)
-                throw new System.ArgumentNullException("userName");
-
-            if (password == null)
-                throw new System.ArgumentNullException("password");
-
-            if (domain == null)
-                throw new System.ArgumentNullException("domain");
-
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -11198,10 +11102,10 @@ namespace LSL.Sentinet.ApiClient
                     // Operation Path: "ImportSwagger"
                     urlBuilder_.Append("ImportSwagger");
                     urlBuilder_.Append('?');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("address")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(address, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("userName")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(userName, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("password")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(password, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("domain")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(domain, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("address")).Append('=').Append(System.Uri.EscapeDataString(address != null ? ConvertToString(address, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("userName")).Append('=').Append(System.Uri.EscapeDataString(userName != null ? ConvertToString(userName, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("password")).Append('=').Append(System.Uri.EscapeDataString(password != null ? ConvertToString(password, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("domain")).Append('=').Append(System.Uri.EscapeDataString(domain != null ? ConvertToString(domain, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     urlBuilder_.Length--;
 
                     PrepareRequest(client_, request_, urlBuilder_);
@@ -13983,11 +13887,8 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<MonitoringTransactionTrace> GetTransactionTraceAsync(System.Guid transactionId, int serviceVersionId, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<MonitoringTransactionTrace> GetTransactionTraceAsync(System.Guid? transactionId, int serviceVersionId, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            if (transactionId == null)
-                throw new System.ArgumentNullException("transactionId");
-
             if (serviceVersionId == null)
                 throw new System.ArgumentNullException("serviceVersionId");
 
@@ -14005,7 +13906,7 @@ namespace LSL.Sentinet.ApiClient
                     // Operation Path: "GetTransactionTrace"
                     urlBuilder_.Append("GetTransactionTrace");
                     urlBuilder_.Append('?');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("transactionId")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(transactionId, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("transactionId")).Append('=').Append(System.Uri.EscapeDataString(transactionId != null ? ConvertToString(transactionId, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     urlBuilder_.Append(System.Uri.EscapeDataString("serviceVersionId")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(serviceVersionId, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
                     urlBuilder_.Length--;
 
@@ -14634,11 +14535,8 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ChangeSet>> GetChangeSetsAsync(System.DateTimeOffset startTime, System.DateTimeOffset? endTime = null, int? userId = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ChangeSet>> GetChangeSetsAsync(System.DateTimeOffset? startTime, System.DateTimeOffset? endTime = null, int? userId = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            if (startTime == null)
-                throw new System.ArgumentNullException("startTime");
-
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -14653,7 +14551,7 @@ namespace LSL.Sentinet.ApiClient
                     // Operation Path: "GetChangeSets"
                     urlBuilder_.Append("GetChangeSets");
                     urlBuilder_.Append('?');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("startTime")).Append('=').Append(System.Uri.EscapeDataString(startTime.ToString("s", System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("startTime")).Append('=').Append(System.Uri.EscapeDataString(startTime != null ? startTime.Value.ToString("s", System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     if (endTime != null)
                     {
                         urlBuilder_.Append(System.Uri.EscapeDataString("endTime")).Append('=').Append(System.Uri.EscapeDataString(endTime.Value.ToString("s", System.Globalization.CultureInfo.InvariantCulture))).Append('&');
@@ -14882,19 +14780,10 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ChangeRecord>> GetChangeRecordsByFolderIdAsync(System.DateTimeOffset startTime, System.Collections.Generic.IEnumerable<EntityType> entityTypes, ChangeTypes changeTypes, string searchTerm, System.DateTimeOffset? endTime = null, int? folderId = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ChangeRecord>> GetChangeRecordsByFolderIdAsync(System.DateTimeOffset? startTime, System.Collections.Generic.IEnumerable<EntityType?> entityTypes, ChangeTypes? changeTypes, string searchTerm, System.DateTimeOffset? endTime = null, int? folderId = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            if (startTime == null)
-                throw new System.ArgumentNullException("startTime");
-
             if (entityTypes == null)
                 throw new System.ArgumentNullException("entityTypes");
-
-            if (changeTypes == null)
-                throw new System.ArgumentNullException("changeTypes");
-
-            if (searchTerm == null)
-                throw new System.ArgumentNullException("searchTerm");
 
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -14910,10 +14799,10 @@ namespace LSL.Sentinet.ApiClient
                     // Operation Path: "GetChangeRecordsByFolderId"
                     urlBuilder_.Append("GetChangeRecordsByFolderId");
                     urlBuilder_.Append('?');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("startTime")).Append('=').Append(System.Uri.EscapeDataString(startTime.ToString("s", System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("startTime")).Append('=').Append(System.Uri.EscapeDataString(startTime != null ? startTime.Value.ToString("s", System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     foreach (var item_ in entityTypes) { urlBuilder_.Append(System.Uri.EscapeDataString("entityTypes")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(item_, System.Globalization.CultureInfo.InvariantCulture))).Append('&'); }
-                    urlBuilder_.Append(System.Uri.EscapeDataString("changeTypes")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(changeTypes, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("searchTerm")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(searchTerm, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("changeTypes")).Append('=').Append(System.Uri.EscapeDataString(changeTypes != null ? ConvertToString(changeTypes, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("searchTerm")).Append('=').Append(System.Uri.EscapeDataString(searchTerm != null ? ConvertToString(searchTerm, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     if (endTime != null)
                     {
                         urlBuilder_.Append(System.Uri.EscapeDataString("endTime")).Append('=').Append(System.Uri.EscapeDataString(endTime.Value.ToString("s", System.Globalization.CultureInfo.InvariantCulture))).Append('&');
@@ -14982,22 +14871,10 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ChangeRecord>> GetChangeRecordsByEntityIdAsync(int entityId, EntityType entityType, System.DateTimeOffset startTime, ChangeTypes changeTypes, string searchTerm, System.DateTimeOffset? endTime = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ChangeRecord>> GetChangeRecordsByEntityIdAsync(int entityId, EntityType? entityType, System.DateTimeOffset? startTime, ChangeTypes? changeTypes, string searchTerm, System.DateTimeOffset? endTime = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             if (entityId == null)
                 throw new System.ArgumentNullException("entityId");
-
-            if (entityType == null)
-                throw new System.ArgumentNullException("entityType");
-
-            if (startTime == null)
-                throw new System.ArgumentNullException("startTime");
-
-            if (changeTypes == null)
-                throw new System.ArgumentNullException("changeTypes");
-
-            if (searchTerm == null)
-                throw new System.ArgumentNullException("searchTerm");
 
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -15014,10 +14891,10 @@ namespace LSL.Sentinet.ApiClient
                     urlBuilder_.Append("GetChangeRecordsByEntityId");
                     urlBuilder_.Append('?');
                     urlBuilder_.Append(System.Uri.EscapeDataString("entityId")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(entityId, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("entityType")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(entityType, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("startTime")).Append('=').Append(System.Uri.EscapeDataString(startTime.ToString("s", System.Globalization.CultureInfo.InvariantCulture))).Append('&');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("changeTypes")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(changeTypes, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("searchTerm")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(searchTerm, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("entityType")).Append('=').Append(System.Uri.EscapeDataString(entityType != null ? ConvertToString(entityType, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("startTime")).Append('=').Append(System.Uri.EscapeDataString(startTime != null ? startTime.Value.ToString("s", System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("changeTypes")).Append('=').Append(System.Uri.EscapeDataString(changeTypes != null ? ConvertToString(changeTypes, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("searchTerm")).Append('=').Append(System.Uri.EscapeDataString(searchTerm != null ? ConvertToString(searchTerm, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     if (endTime != null)
                     {
                         urlBuilder_.Append(System.Uri.EscapeDataString("endTime")).Append('=').Append(System.Uri.EscapeDataString(endTime.Value.ToString("s", System.Globalization.CultureInfo.InvariantCulture))).Append('&');
@@ -16743,11 +16620,8 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<AlertTypeDefinition> GetAlertTypeByKeyAsync(System.Guid alertTypeKey, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<AlertTypeDefinition> GetAlertTypeByKeyAsync(System.Guid? alertTypeKey, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            if (alertTypeKey == null)
-                throw new System.ArgumentNullException("alertTypeKey");
-
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -16762,7 +16636,7 @@ namespace LSL.Sentinet.ApiClient
                     // Operation Path: "GetAlertTypeByKey"
                     urlBuilder_.Append("GetAlertTypeByKey");
                     urlBuilder_.Append('?');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("alertTypeKey")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(alertTypeKey, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("alertTypeKey")).Append('=').Append(System.Uri.EscapeDataString(alertTypeKey != null ? ConvertToString(alertTypeKey, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     urlBuilder_.Length--;
 
                     PrepareRequest(client_, request_, urlBuilder_);
@@ -17524,13 +17398,10 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<FolderSubtree> GetFolderSubtreeAsync(bool expandSubfolders, Entities entities, int? folderId = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<FolderSubtree> GetFolderSubtreeAsync(bool expandSubfolders, Entities? entities, int? folderId = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             if (expandSubfolders == null)
                 throw new System.ArgumentNullException("expandSubfolders");
-
-            if (entities == null)
-                throw new System.ArgumentNullException("entities");
 
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -17547,7 +17418,7 @@ namespace LSL.Sentinet.ApiClient
                     urlBuilder_.Append("GetFolderSubtree");
                     urlBuilder_.Append('?');
                     urlBuilder_.Append(System.Uri.EscapeDataString("expandSubfolders")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(expandSubfolders, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("entities")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(entities, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("entities")).Append('=').Append(System.Uri.EscapeDataString(entities != null ? ConvertToString(entities, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     if (folderId != null)
                     {
                         urlBuilder_.Append(System.Uri.EscapeDataString("folderId")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(folderId, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
@@ -18008,13 +17879,10 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task MoveFolderEntityAsync(int entityId, Entities entityType, int? targetFolderId = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task MoveFolderEntityAsync(int entityId, Entities? entityType, int? targetFolderId = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             if (entityId == null)
                 throw new System.ArgumentNullException("entityId");
-
-            if (entityType == null)
-                throw new System.ArgumentNullException("entityType");
 
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -18031,7 +17899,7 @@ namespace LSL.Sentinet.ApiClient
                     urlBuilder_.Append("MoveFolderEntity");
                     urlBuilder_.Append('?');
                     urlBuilder_.Append(System.Uri.EscapeDataString("entityId")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(entityId, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("entityType")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(entityType, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("entityType")).Append('=').Append(System.Uri.EscapeDataString(entityType != null ? ConvertToString(entityType, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     if (targetFolderId != null)
                     {
                         urlBuilder_.Append(System.Uri.EscapeDataString("targetFolderId")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(targetFolderId, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
@@ -18091,11 +17959,8 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task MoveFolderEntitiesAsync(Entities entities, int? sourceFolderId = null, int? targetFolderId = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task MoveFolderEntitiesAsync(Entities? entities, int? sourceFolderId = null, int? targetFolderId = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            if (entities == null)
-                throw new System.ArgumentNullException("entities");
-
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -18110,7 +17975,7 @@ namespace LSL.Sentinet.ApiClient
                     // Operation Path: "MoveFolderEntities"
                     urlBuilder_.Append("MoveFolderEntities");
                     urlBuilder_.Append('?');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("entities")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(entities, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("entities")).Append('=').Append(System.Uri.EscapeDataString(entities != null ? ConvertToString(entities, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     if (sourceFolderId != null)
                     {
                         urlBuilder_.Append(System.Uri.EscapeDataString("sourceFolderId")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(sourceFolderId, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
@@ -19376,13 +19241,10 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<object> CreateOrUpdateServiceVersionAsync(bool replaceDuplicateActions, BaseAddressCollisionAction baseAddressCollisionAction, ServiceVersionDefinition body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<object> CreateOrUpdateServiceVersionAsync(bool replaceDuplicateActions, BaseAddressCollisionAction? baseAddressCollisionAction, ServiceVersionDefinition body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             if (replaceDuplicateActions == null)
                 throw new System.ArgumentNullException("replaceDuplicateActions");
-
-            if (baseAddressCollisionAction == null)
-                throw new System.ArgumentNullException("baseAddressCollisionAction");
 
             if (body == null)
                 throw new System.ArgumentNullException("body");
@@ -19406,7 +19268,7 @@ namespace LSL.Sentinet.ApiClient
                     urlBuilder_.Append("CreateOrUpdateServiceVersion");
                     urlBuilder_.Append('?');
                     urlBuilder_.Append(System.Uri.EscapeDataString("replaceDuplicateActions")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(replaceDuplicateActions, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("baseAddressCollisionAction")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(baseAddressCollisionAction, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("baseAddressCollisionAction")).Append('=').Append(System.Uri.EscapeDataString(baseAddressCollisionAction != null ? ConvertToString(baseAddressCollisionAction, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     urlBuilder_.Length--;
 
                     PrepareRequest(client_, request_, urlBuilder_);
@@ -19467,13 +19329,10 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<ServiceVersionDefinition> CreateOrUpdateServiceVersionWithResultAsync(bool replaceDuplicateActions, BaseAddressCollisionAction baseAddressCollisionAction, ServiceVersionDefinition body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<ServiceVersionDefinition> CreateOrUpdateServiceVersionWithResultAsync(bool replaceDuplicateActions, BaseAddressCollisionAction? baseAddressCollisionAction, ServiceVersionDefinition body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             if (replaceDuplicateActions == null)
                 throw new System.ArgumentNullException("replaceDuplicateActions");
-
-            if (baseAddressCollisionAction == null)
-                throw new System.ArgumentNullException("baseAddressCollisionAction");
 
             if (body == null)
                 throw new System.ArgumentNullException("body");
@@ -19497,7 +19356,7 @@ namespace LSL.Sentinet.ApiClient
                     urlBuilder_.Append("CreateOrUpdateServiceVersionWithResult");
                     urlBuilder_.Append('?');
                     urlBuilder_.Append(System.Uri.EscapeDataString("replaceDuplicateActions")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(replaceDuplicateActions, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("baseAddressCollisionAction")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(baseAddressCollisionAction, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("baseAddressCollisionAction")).Append('=').Append(System.Uri.EscapeDataString(baseAddressCollisionAction != null ? ConvertToString(baseAddressCollisionAction, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     urlBuilder_.Length--;
 
                     PrepareRequest(client_, request_, urlBuilder_);
@@ -19558,16 +19417,10 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<object> CreateServiceVersionFromMetadataAsync(int fileId, ErrorTolerance errorTolerance, Serializer serializer, bool wrappedParameters, ServiceVersionImportDetails body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<object> CreateServiceVersionFromMetadataAsync(int fileId, ErrorTolerance? errorTolerance, Serializer? serializer, bool wrappedParameters, ServiceVersionImportDetails body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             if (fileId == null)
                 throw new System.ArgumentNullException("fileId");
-
-            if (errorTolerance == null)
-                throw new System.ArgumentNullException("errorTolerance");
-
-            if (serializer == null)
-                throw new System.ArgumentNullException("serializer");
 
             if (wrappedParameters == null)
                 throw new System.ArgumentNullException("wrappedParameters");
@@ -19594,8 +19447,8 @@ namespace LSL.Sentinet.ApiClient
                     urlBuilder_.Append("CreateServiceVersionFromMetadata");
                     urlBuilder_.Append('?');
                     urlBuilder_.Append(System.Uri.EscapeDataString("fileId")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(fileId, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("errorTolerance")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(errorTolerance, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("serializer")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(serializer, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("errorTolerance")).Append('=').Append(System.Uri.EscapeDataString(errorTolerance != null ? ConvertToString(errorTolerance, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("serializer")).Append('=').Append(System.Uri.EscapeDataString(serializer != null ? ConvertToString(serializer, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     urlBuilder_.Append(System.Uri.EscapeDataString("wrappedParameters")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(wrappedParameters, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
                     urlBuilder_.Length--;
 
@@ -19657,16 +19510,10 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<ServiceVersionDefinition> CreateServiceVersionFromMetadataWithResultAsync(int fileId, ErrorTolerance errorTolerance, Serializer serializer, bool wrappedParameters, ServiceVersionImportDetails body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<ServiceVersionDefinition> CreateServiceVersionFromMetadataWithResultAsync(int fileId, ErrorTolerance? errorTolerance, Serializer? serializer, bool wrappedParameters, ServiceVersionImportDetails body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             if (fileId == null)
                 throw new System.ArgumentNullException("fileId");
-
-            if (errorTolerance == null)
-                throw new System.ArgumentNullException("errorTolerance");
-
-            if (serializer == null)
-                throw new System.ArgumentNullException("serializer");
 
             if (wrappedParameters == null)
                 throw new System.ArgumentNullException("wrappedParameters");
@@ -19693,8 +19540,8 @@ namespace LSL.Sentinet.ApiClient
                     urlBuilder_.Append("CreateServiceVersionFromMetadataWithResult");
                     urlBuilder_.Append('?');
                     urlBuilder_.Append(System.Uri.EscapeDataString("fileId")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(fileId, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("errorTolerance")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(errorTolerance, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("serializer")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(serializer, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("errorTolerance")).Append('=').Append(System.Uri.EscapeDataString(errorTolerance != null ? ConvertToString(errorTolerance, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("serializer")).Append('=').Append(System.Uri.EscapeDataString(serializer != null ? ConvertToString(serializer, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     urlBuilder_.Append(System.Uri.EscapeDataString("wrappedParameters")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(wrappedParameters, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
                     urlBuilder_.Length--;
 
@@ -19756,16 +19603,10 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<ServiceVersionDefinition> UpdateServiceVersionFromMetadataWithResultAsync(int fileId, ErrorTolerance errorTolerance, Serializer serializer, bool wrappedParameters, ServiceVersionUpdateDetails body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<ServiceVersionDefinition> UpdateServiceVersionFromMetadataWithResultAsync(int fileId, ErrorTolerance? errorTolerance, Serializer? serializer, bool wrappedParameters, ServiceVersionUpdateDetails body, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             if (fileId == null)
                 throw new System.ArgumentNullException("fileId");
-
-            if (errorTolerance == null)
-                throw new System.ArgumentNullException("errorTolerance");
-
-            if (serializer == null)
-                throw new System.ArgumentNullException("serializer");
 
             if (wrappedParameters == null)
                 throw new System.ArgumentNullException("wrappedParameters");
@@ -19792,8 +19633,8 @@ namespace LSL.Sentinet.ApiClient
                     urlBuilder_.Append("UpdateServiceVersionFromMetadataWithResult");
                     urlBuilder_.Append('?');
                     urlBuilder_.Append(System.Uri.EscapeDataString("fileId")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(fileId, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("errorTolerance")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(errorTolerance, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("serializer")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(serializer, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("errorTolerance")).Append('=').Append(System.Uri.EscapeDataString(errorTolerance != null ? ConvertToString(errorTolerance, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("serializer")).Append('=').Append(System.Uri.EscapeDataString(serializer != null ? ConvertToString(serializer, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     urlBuilder_.Append(System.Uri.EscapeDataString("wrappedParameters")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(wrappedParameters, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
                     urlBuilder_.Length--;
 
@@ -19855,16 +19696,13 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<object> CreateServiceVersionFromSwaggerAsync(int fileId, int serviceId, Status2 status, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<object> CreateServiceVersionFromSwaggerAsync(int fileId, int serviceId, Status2? status, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             if (fileId == null)
                 throw new System.ArgumentNullException("fileId");
 
             if (serviceId == null)
                 throw new System.ArgumentNullException("serviceId");
-
-            if (status == null)
-                throw new System.ArgumentNullException("status");
 
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -19883,7 +19721,7 @@ namespace LSL.Sentinet.ApiClient
                     urlBuilder_.Append('?');
                     urlBuilder_.Append(System.Uri.EscapeDataString("fileId")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(fileId, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
                     urlBuilder_.Append(System.Uri.EscapeDataString("serviceId")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(serviceId, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("status")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(status, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("status")).Append('=').Append(System.Uri.EscapeDataString(status != null ? ConvertToString(status, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     urlBuilder_.Length--;
 
                     PrepareRequest(client_, request_, urlBuilder_);
@@ -19944,16 +19782,13 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<ServiceVersionDefinition> CreateServiceVersionFromSwaggerWithResultAsync(int fileId, int serviceId, Status2 status, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<ServiceVersionDefinition> CreateServiceVersionFromSwaggerWithResultAsync(int fileId, int serviceId, Status2? status, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             if (fileId == null)
                 throw new System.ArgumentNullException("fileId");
 
             if (serviceId == null)
                 throw new System.ArgumentNullException("serviceId");
-
-            if (status == null)
-                throw new System.ArgumentNullException("status");
 
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -19972,7 +19807,7 @@ namespace LSL.Sentinet.ApiClient
                     urlBuilder_.Append('?');
                     urlBuilder_.Append(System.Uri.EscapeDataString("fileId")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(fileId, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
                     urlBuilder_.Append(System.Uri.EscapeDataString("serviceId")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(serviceId, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("status")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(status, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("status")).Append('=').Append(System.Uri.EscapeDataString(status != null ? ConvertToString(status, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     urlBuilder_.Length--;
 
                     PrepareRequest(client_, request_, urlBuilder_);
@@ -20033,16 +19868,13 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<ServiceVersionDefinition> UpdateServiceVersionFromSwaggerWithResultAsync(int fileId, int serviceVersionId, Options options, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<ServiceVersionDefinition> UpdateServiceVersionFromSwaggerWithResultAsync(int fileId, int serviceVersionId, Options? options, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             if (fileId == null)
                 throw new System.ArgumentNullException("fileId");
 
             if (serviceVersionId == null)
                 throw new System.ArgumentNullException("serviceVersionId");
-
-            if (options == null)
-                throw new System.ArgumentNullException("options");
 
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -20061,7 +19893,7 @@ namespace LSL.Sentinet.ApiClient
                     urlBuilder_.Append('?');
                     urlBuilder_.Append(System.Uri.EscapeDataString("fileId")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(fileId, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
                     urlBuilder_.Append(System.Uri.EscapeDataString("serviceVersionId")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(serviceVersionId, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("options")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(options, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("options")).Append('=').Append(System.Uri.EscapeDataString(options != null ? ConvertToString(options, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     urlBuilder_.Length--;
 
                     PrepareRequest(client_, request_, urlBuilder_);
@@ -21170,11 +21002,8 @@ namespace LSL.Sentinet.ApiClient
         /// </remarks>
         /// <returns>OK</returns>
         /// <exception cref="LSL.NSwag.CommonTypes.Client.SwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<EndpointDefinition> GetEndpointByKeyAsync(System.Guid endpointKey, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<EndpointDefinition> GetEndpointByKeyAsync(System.Guid? endpointKey, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            if (endpointKey == null)
-                throw new System.ArgumentNullException("endpointKey");
-
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -21189,7 +21018,7 @@ namespace LSL.Sentinet.ApiClient
                     // Operation Path: "GetEndpointByKey"
                     urlBuilder_.Append("GetEndpointByKey");
                     urlBuilder_.Append('?');
-                    urlBuilder_.Append(System.Uri.EscapeDataString("endpointKey")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(endpointKey, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    urlBuilder_.Append(System.Uri.EscapeDataString("endpointKey")).Append('=').Append(System.Uri.EscapeDataString(endpointKey != null ? ConvertToString(endpointKey, System.Globalization.CultureInfo.InvariantCulture) : "")).Append('&');
                     urlBuilder_.Length--;
 
                     PrepareRequest(client_, request_, urlBuilder_);
@@ -22876,10 +22705,10 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Expiration", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Expiration { get; set; }
+        [Newtonsoft.Json.JsonProperty("Expiration", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Expiration { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Data", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Data", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public byte[] Data { get; set; }
 
     }
@@ -22890,14 +22719,14 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
     }
 
@@ -22919,14 +22748,14 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
     }
 
@@ -22936,9 +22765,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("ServiceAgreementId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int ServiceAgreementId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Metric", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Metric Metric { get; set; }
+        [Newtonsoft.Json.JsonProperty("Metric", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Metric? Metric { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Min", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double Min { get; set; }
@@ -22946,9 +22775,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Max", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double Max { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TimeUnit", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public TimeUnit TimeUnit { get; set; }
+        [Newtonsoft.Json.JsonProperty("TimeUnit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public TimeUnit? TimeUnit { get; set; }
 
         [Newtonsoft.Json.JsonProperty("TimeValue", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int TimeValue { get; set; }
@@ -22956,14 +22785,14 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
     }
 
@@ -22991,9 +22820,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("ServiceName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ServiceName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Kind Kind { get; set; }
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Kind? Kind { get; set; }
 
         [Newtonsoft.Json.JsonProperty("ServiceVersionId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int ServiceVersionId { get; set; }
@@ -23028,9 +22857,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Priority", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Priority { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Action", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Action Action { get; set; }
+        [Newtonsoft.Json.JsonProperty("Action", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Action? Action { get; set; }
 
         [Newtonsoft.Json.JsonProperty("ServiceAgreementId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int ServiceAgreementId { get; set; }
@@ -23046,9 +22875,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("PropertyType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public PropertyType PropertyType { get; set; }
+        [Newtonsoft.Json.JsonProperty("PropertyType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public PropertyType? PropertyType { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Value", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Value { get; set; }
@@ -23056,20 +22885,20 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("FileId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int FileId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FileKey", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid FileKey { get; set; }
+        [Newtonsoft.Json.JsonProperty("FileKey", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? FileKey { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
     }
 
@@ -23093,15 +22922,15 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Status3 Status { get; set; }
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Status3? Status { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("StartDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset StartDateTime { get; set; }
+        [Newtonsoft.Json.JsonProperty("StartDateTime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? StartDateTime { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EndDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset EndDateTime { get; set; }
+        [Newtonsoft.Json.JsonProperty("EndDateTime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? EndDateTime { get; set; }
 
         [Newtonsoft.Json.JsonProperty("TimeZoneId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string TimeZoneId { get; set; }
@@ -23154,15 +22983,15 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ServiceAgreementViolationSummary
     {
-        [Newtonsoft.Json.JsonProperty("T", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset T { get; set; }
+        [Newtonsoft.Json.JsonProperty("T", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? T { get; set; }
 
         [Newtonsoft.Json.JsonProperty("C", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int C { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Unit", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public TimeUnit Unit { get; set; }
+        [Newtonsoft.Json.JsonProperty("Unit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public TimeUnit? Unit { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Time", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Time { get; set; }
@@ -23172,11 +23001,11 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ServiceAgreementViolationSummaryRequest
     {
-        [Newtonsoft.Json.JsonProperty("StartDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset StartDateTime { get; set; }
+        [Newtonsoft.Json.JsonProperty("StartDateTime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? StartDateTime { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EndDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset EndDateTime { get; set; }
+        [Newtonsoft.Json.JsonProperty("EndDateTime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? EndDateTime { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Metrics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<int> Metrics { get; set; }
@@ -23187,9 +23016,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("TimeZoneId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string TimeZoneId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TimeUnit", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public TimeUnit TimeUnit { get; set; }
+        [Newtonsoft.Json.JsonProperty("TimeUnit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public TimeUnit? TimeUnit { get; set; }
 
         [Newtonsoft.Json.JsonProperty("TimeResolution", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int TimeResolution { get; set; }
@@ -23205,9 +23034,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("MetricId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int MetricId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MetricType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Metric MetricType { get; set; }
+        [Newtonsoft.Json.JsonProperty("MetricType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Metric? MetricType { get; set; }
 
         [Newtonsoft.Json.JsonProperty("SlaId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int SlaId { get; set; }
@@ -23215,8 +23044,8 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("SlaName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string SlaName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Time", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Time { get; set; }
+        [Newtonsoft.Json.JsonProperty("Time", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Time { get; set; }
 
         [Newtonsoft.Json.JsonProperty("InitVal", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double InitVal { get; set; }
@@ -23224,22 +23053,22 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("CurVal", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double CurVal { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ServiceAgreementViolationsRequest
     {
-        [Newtonsoft.Json.JsonProperty("StartDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset StartDateTime { get; set; }
+        [Newtonsoft.Json.JsonProperty("StartDateTime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? StartDateTime { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EndDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset EndDateTime { get; set; }
+        [Newtonsoft.Json.JsonProperty("EndDateTime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? EndDateTime { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Metrics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<int> Metrics { get; set; }
@@ -23250,13 +23079,13 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("TimeZoneId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string TimeZoneId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ServiceAgreementViolationsRequestSortField SortField { get; set; }
+        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public ServiceAgreementViolationsRequestSortField? SortField { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public SortOrder SortOrder { get; set; }
+        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public SortOrder? SortOrder { get; set; }
 
     }
 
@@ -23266,8 +23095,8 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("MetricId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int MetricId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("T", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset T { get; set; }
+        [Newtonsoft.Json.JsonProperty("T", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? T { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Min", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double Min { get; set; }
@@ -23286,8 +23115,8 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("MetricId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int MetricId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("T", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset T { get; set; }
+        [Newtonsoft.Json.JsonProperty("T", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? T { get; set; }
 
         [Newtonsoft.Json.JsonProperty("V", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double V { get; set; }
@@ -23297,9 +23126,9 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ServiceAgreementSearchResult : SearchResult
     {
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Status3 Status { get; set; }
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Status3? Status { get; set; }
 
     }
 
@@ -23315,8 +23144,8 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
@@ -23326,9 +23155,9 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ServiceAgreementSearchQuery : SearchQuery
     {
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Status3 Status { get; set; }
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Status3? Status { get; set; }
 
         [Newtonsoft.Json.JsonProperty("ServiceVersionName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ServiceVersionName { get; set; }
@@ -23347,8 +23176,8 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
         [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int FolderId { get; set; }
@@ -23393,9 +23222,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Priority", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Priority { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Version", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public MessageVersion Version { get; set; }
+        [Newtonsoft.Json.JsonProperty("Version", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public MessageVersion? Version { get; set; }
 
         [Newtonsoft.Json.JsonProperty("ContentType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ContentType { get; set; }
@@ -23412,14 +23241,14 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
     }
 
@@ -23440,18 +23269,18 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class File : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("Content", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Content", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public byte[] Content { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ContentType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public FileContentType ContentType { get; set; }
+        [Newtonsoft.Json.JsonProperty("ContentType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public FileContentType? ContentType { get; set; }
 
         [Newtonsoft.Json.JsonProperty("FileName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FileName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Expired", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Expired { get; set; }
+        [Newtonsoft.Json.JsonProperty("Expired", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Expired { get; set; }
 
     }
 
@@ -23469,9 +23298,9 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class MessageGenerationSettings
     {
-        [Newtonsoft.Json.JsonProperty("EnvelopeVersion", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public MessageVersion EnvelopeVersion { get; set; }
+        [Newtonsoft.Json.JsonProperty("EnvelopeVersion", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public MessageVersion? EnvelopeVersion { get; set; }
 
         [Newtonsoft.Json.JsonProperty("ArraySize", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int ArraySize { get; set; }
@@ -23555,13 +23384,13 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("ForeignEntity", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public LocalIdentifier ForeignEntity { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("DependencyType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public DependencyType DependencyType { get; set; }
+        [Newtonsoft.Json.JsonProperty("DependencyType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public DependencyType? DependencyType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ReferenceType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ReferenceType ReferenceType { get; set; }
+        [Newtonsoft.Json.JsonProperty("ReferenceType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public ReferenceType? ReferenceType { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
@@ -23623,9 +23452,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EntityType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public EntityType EntityType { get; set; }
+        [Newtonsoft.Json.JsonProperty("EntityType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public EntityType? EntityType { get; set; }
 
     }
 
@@ -23635,9 +23464,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("IsVirtual", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool IsVirtual { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Kind Kind { get; set; }
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Kind? Kind { get; set; }
 
         [Newtonsoft.Json.JsonProperty("ServiceVersions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<ServiceVersionSubtree> ServiceVersions { get; set; }
@@ -23647,9 +23476,9 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class NodeSubtree
     {
-        [Newtonsoft.Json.JsonProperty("NodeType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public NodeType NodeType { get; set; }
+        [Newtonsoft.Json.JsonProperty("NodeType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public NodeType? NodeType { get; set; }
 
         [Newtonsoft.Json.JsonProperty("BaseAddresses", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<Subtree> BaseAddresses { get; set; }
@@ -23682,9 +23511,9 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class BehaviorSubtree
     {
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Kind2 Kind { get; set; }
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Kind2? Kind { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
@@ -23697,9 +23526,9 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class IdentitySubtree
     {
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Kind3 Kind { get; set; }
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Kind3? Kind { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
@@ -23718,13 +23547,13 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("VersionNumber", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int VersionNumber { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Status2 Status { get; set; }
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Status2? Status { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Kind Kind { get; set; }
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Kind? Kind { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Contracts", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<ContractSubtree> Contracts { get; set; }
@@ -23771,9 +23600,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Messages", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<MessageSubtree> Messages { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ExchangePattern", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ExchangePattern ExchangePattern { get; set; }
+        [Newtonsoft.Json.JsonProperty("ExchangePattern", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public ExchangePattern? ExchangePattern { get; set; }
 
         [Newtonsoft.Json.JsonProperty("IsDeprecated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool IsDeprecated { get; set; }
@@ -23812,9 +23641,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Headers", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<Subtree> Headers { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Direction", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Direction Direction { get; set; }
+        [Newtonsoft.Json.JsonProperty("Direction", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Direction? Direction { get; set; }
 
         [Newtonsoft.Json.JsonProperty("HttpMethod", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string HttpMethod { get; set; }
@@ -23850,8 +23679,8 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Version", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Version { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Entities", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<EntityInfo> Entities { get; set; }
@@ -23867,12 +23696,12 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EntityType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public EntityType EntityType { get; set; }
+        [Newtonsoft.Json.JsonProperty("EntityType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public EntityType? EntityType { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
@@ -23885,8 +23714,8 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class GlobalIdentifier
     {
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Requirements", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Requirements { get; set; }
@@ -23894,9 +23723,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EntityType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public EntityType EntityType { get; set; }
+        [Newtonsoft.Json.JsonProperty("EntityType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public EntityType? EntityType { get; set; }
 
     }
 
@@ -23920,15 +23749,15 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class KeyMapping
     {
-        [Newtonsoft.Json.JsonProperty("EntityType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public EntityType EntityType { get; set; }
+        [Newtonsoft.Json.JsonProperty("EntityType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public EntityType? EntityType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FromKey", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid FromKey { get; set; }
+        [Newtonsoft.Json.JsonProperty("FromKey", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? FromKey { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ToKey", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid ToKey { get; set; }
+        [Newtonsoft.Json.JsonProperty("ToKey", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? ToKey { get; set; }
 
     }
 
@@ -23955,16 +23784,16 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int FolderId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Permission", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Permission Permission { get; set; }
+        [Newtonsoft.Json.JsonProperty("Permission", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Permission? Permission { get; set; }
 
         [Newtonsoft.Json.JsonProperty("RepositoryPermissions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string RepositoryPermissions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IdentityKind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Kind3 IdentityKind { get; set; }
+        [Newtonsoft.Json.JsonProperty("IdentityKind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Kind3? IdentityKind { get; set; }
 
         [Newtonsoft.Json.JsonProperty("ConsumerId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int ConsumerId { get; set; }
@@ -24015,16 +23844,16 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class LicenseInfo
     {
-        [Newtonsoft.Json.JsonProperty("Expiration", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Expiration { get; set; }
+        [Newtonsoft.Json.JsonProperty("Expiration", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Expiration { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Type", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public LicenseInfoType Type { get; set; }
+        [Newtonsoft.Json.JsonProperty("Type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public LicenseInfoType? Type { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Features", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public LicenseInfoFeatures Features { get; set; }
+        [Newtonsoft.Json.JsonProperty("Features", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public LicenseInfoFeatures? Features { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
@@ -24045,7 +23874,7 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class CertificateInfo
     {
-        [Newtonsoft.Json.JsonProperty("RawData", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("RawData", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public byte[] RawData { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Subject", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
@@ -24066,15 +23895,15 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("HasPrivateKey", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool HasPrivateKey { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ValidFrom", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset ValidFrom { get; set; }
+        [Newtonsoft.Json.JsonProperty("ValidFrom", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? ValidFrom { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ValidTo", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset ValidTo { get; set; }
+        [Newtonsoft.Json.JsonProperty("ValidTo", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? ValidTo { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ContentType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public CertificateInfoContentType ContentType { get; set; }
+        [Newtonsoft.Json.JsonProperty("ContentType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public CertificateInfoContentType? ContentType { get; set; }
 
     }
 
@@ -24101,9 +23930,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Content", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Content { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ContentType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public LiquidTemplateParametersContentType ContentType { get; set; }
+        [Newtonsoft.Json.JsonProperty("ContentType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public LiquidTemplateParametersContentType? ContentType { get; set; }
 
     }
 
@@ -24147,14 +23976,14 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
     }
 
@@ -24176,9 +24005,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("FriendlyName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FriendlyName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Status2 Status { get; set; }
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Status2? Status { get; set; }
 
         [Newtonsoft.Json.JsonProperty("ServiceId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int ServiceId { get; set; }
@@ -24186,21 +24015,21 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("ServiceName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ServiceName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Kind Kind { get; set; }
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Kind? Kind { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
     }
 
@@ -24210,9 +24039,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("PrimaryEntityId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int PrimaryEntityId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("PrimaryEntityType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public EntityType PrimaryEntityType { get; set; }
+        [Newtonsoft.Json.JsonProperty("PrimaryEntityType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public EntityType? PrimaryEntityType { get; set; }
 
         [Newtonsoft.Json.JsonProperty("PrimaryEntityName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string PrimaryEntityName { get; set; }
@@ -24220,16 +24049,16 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("ForeignEntityId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int ForeignEntityId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ForeignEntityType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public EntityType ForeignEntityType { get; set; }
+        [Newtonsoft.Json.JsonProperty("ForeignEntityType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public EntityType? ForeignEntityType { get; set; }
 
         [Newtonsoft.Json.JsonProperty("ForeignEntityName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ForeignEntityName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ReferenceType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ReferenceType ReferenceType { get; set; }
+        [Newtonsoft.Json.JsonProperty("ReferenceType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public ReferenceType? ReferenceType { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
@@ -24237,14 +24066,14 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
     }
 
@@ -24257,9 +24086,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Status2 Status { get; set; }
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Status2? Status { get; set; }
 
         [Newtonsoft.Json.JsonProperty("IsPrivate", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool IsPrivate { get; set; }
@@ -24273,8 +24102,8 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("SubscriptionLifetime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int SubscriptionLifetime { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("LastUpdate", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset LastUpdate { get; set; }
+        [Newtonsoft.Json.JsonProperty("LastUpdate", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? LastUpdate { get; set; }
 
         [Newtonsoft.Json.JsonProperty("ServiceVersionCount", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int ServiceVersionCount { get; set; }
@@ -24287,15 +24116,15 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ProductSearchQuery
     {
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Status2 Status { get; set; }
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Status2? Status { get; set; }
 
         [Newtonsoft.Json.JsonProperty("IsPrivate", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool IsPrivate { get; set; }
@@ -24309,13 +24138,13 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Keywords { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ProductSearchQuerySortField SortField { get; set; }
+        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public ProductSearchQuerySortField? SortField { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public SortOrder SortOrder { get; set; }
+        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public SortOrder? SortOrder { get; set; }
 
         [Newtonsoft.Json.JsonProperty("IncludeDescription", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool IncludeDescription { get; set; }
@@ -24342,8 +24171,8 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ConsumerSearchQuery
     {
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
@@ -24351,13 +24180,13 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool IsEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ConsumerSearchQuerySortField SortField { get; set; }
+        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public ConsumerSearchQuerySortField? SortField { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public SortOrder SortOrder { get; set; }
+        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public SortOrder? SortOrder { get; set; }
 
     }
 
@@ -24370,14 +24199,14 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
     }
 
@@ -24393,14 +24222,14 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("AccessKey1", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string AccessKey1 { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AccessKey1Expiration", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset AccessKey1Expiration { get; set; }
+        [Newtonsoft.Json.JsonProperty("AccessKey1Expiration", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? AccessKey1Expiration { get; set; }
 
         [Newtonsoft.Json.JsonProperty("AccessKey2", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string AccessKey2 { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AccessKey2Expiration", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset AccessKey2Expiration { get; set; }
+        [Newtonsoft.Json.JsonProperty("AccessKey2Expiration", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? AccessKey2Expiration { get; set; }
 
     }
 
@@ -24422,12 +24251,12 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("ConsumerName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ConsumerName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Status Status { get; set; }
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Status? Status { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Expiration", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Expiration { get; set; }
+        [Newtonsoft.Json.JsonProperty("Expiration", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Expiration { get; set; }
 
         [Newtonsoft.Json.JsonProperty("ApplicationCount", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int ApplicationCount { get; set; }
@@ -24440,8 +24269,8 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class SubscriptionSearchQuery
     {
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
@@ -24458,37 +24287,37 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("ConsumerName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ConsumerName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Status Status { get; set; }
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Status? Status { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ExpirationFrom", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset ExpirationFrom { get; set; }
+        [Newtonsoft.Json.JsonProperty("ExpirationFrom", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? ExpirationFrom { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ExpirationTo", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset ExpirationTo { get; set; }
+        [Newtonsoft.Json.JsonProperty("ExpirationTo", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? ExpirationTo { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("CreatedFrom", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset CreatedFrom { get; set; }
+        [Newtonsoft.Json.JsonProperty("CreatedFrom", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? CreatedFrom { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("CreatedTo", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset CreatedTo { get; set; }
+        [Newtonsoft.Json.JsonProperty("CreatedTo", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? CreatedTo { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public SubscriptionSearchQuerySortField SortField { get; set; }
+        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public SubscriptionSearchQuerySortField? SortField { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public SortOrder SortOrder { get; set; }
+        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public SortOrder? SortOrder { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ApplicationSearchQuery
     {
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
@@ -24514,19 +24343,19 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("ConsumerName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ConsumerName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AccessKeyExpirationFrom", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset AccessKeyExpirationFrom { get; set; }
+        [Newtonsoft.Json.JsonProperty("AccessKeyExpirationFrom", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? AccessKeyExpirationFrom { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AccessKeyExpirationTo", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset AccessKeyExpirationTo { get; set; }
+        [Newtonsoft.Json.JsonProperty("AccessKeyExpirationTo", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? AccessKeyExpirationTo { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ApplicationSearchQuerySortField SortField { get; set; }
+        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public ApplicationSearchQuerySortField? SortField { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public SortOrder SortOrder { get; set; }
+        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public SortOrder? SortOrder { get; set; }
 
     }
 
@@ -24665,9 +24494,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Namespace", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Namespace { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public PolicyDescriptionKind Kind { get; set; }
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public PolicyDescriptionKind? Kind { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Transport", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public TransportDescriptionBase Transport { get; set; }
@@ -24689,17 +24518,17 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class SoapDescription
     {
-        [Newtonsoft.Json.JsonProperty("Version", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public SoapDescriptionVersion Version { get; set; }
+        [Newtonsoft.Json.JsonProperty("Version", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public SoapDescriptionVersion? Version { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SecurityMode", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public SoapDescriptionSecurityMode SecurityMode { get; set; }
+        [Newtonsoft.Json.JsonProperty("SecurityMode", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public SoapDescriptionSecurityMode? SecurityMode { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MessageSecurity", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public SoapDescriptionMessageSecurity MessageSecurity { get; set; }
+        [Newtonsoft.Json.JsonProperty("MessageSecurity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public SoapDescriptionMessageSecurity? MessageSecurity { get; set; }
 
         [Newtonsoft.Json.JsonProperty("UseContext", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool UseContext { get; set; }
@@ -24707,9 +24536,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("EstablishSecurityContext", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool EstablishSecurityContext { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ReliableSession", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public SoapDescriptionReliableSession ReliableSession { get; set; }
+        [Newtonsoft.Json.JsonProperty("ReliableSession", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public SoapDescriptionReliableSession? ReliableSession { get; set; }
 
         [Newtonsoft.Json.JsonProperty("UseTransactions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool UseTransactions { get; set; }
@@ -24739,13 +24568,13 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("DisplayName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string DisplayName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EntityType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public EntityType EntityType { get; set; }
+        [Newtonsoft.Json.JsonProperty("EntityType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public EntityType? EntityType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("DataType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public CustomAttributeTypeDataType DataType { get; set; }
+        [Newtonsoft.Json.JsonProperty("DataType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public CustomAttributeTypeDataType? DataType { get; set; }
 
         [Newtonsoft.Json.JsonProperty("MaxLength", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int MaxLength { get; set; }
@@ -24753,9 +24582,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("IsRequired", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool IsRequired { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("PortalVisibility", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public CustomAttributeTypePortalVisibility PortalVisibility { get; set; }
+        [Newtonsoft.Json.JsonProperty("PortalVisibility", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public CustomAttributeTypePortalVisibility? PortalVisibility { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Position", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Position { get; set; }
@@ -24771,9 +24600,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceKind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Kind ServiceKind { get; set; }
+        [Newtonsoft.Json.JsonProperty("ServiceKind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Kind? ServiceKind { get; set; }
 
         [Newtonsoft.Json.JsonProperty("IsDefault", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool IsDefault { get; set; }
@@ -24795,9 +24624,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("ServiceNameSuffix", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ServiceNameSuffix { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MonitoringProfile", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public VirtualizationSettingsMonitoringProfile MonitoringProfile { get; set; }
+        [Newtonsoft.Json.JsonProperty("MonitoringProfile", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public VirtualizationSettingsMonitoringProfile? MonitoringProfile { get; set; }
 
         [Newtonsoft.Json.JsonProperty("MessageProcessing", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public MessagePipeline MessageProcessing { get; set; }
@@ -24822,14 +24651,14 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class DefaultNodeAddress
     {
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("NodeKey", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid NodeKey { get; set; }
+        [Newtonsoft.Json.JsonProperty("NodeKey", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? NodeKey { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("PolicyKey", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid PolicyKey { get; set; }
+        [Newtonsoft.Json.JsonProperty("PolicyKey", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? PolicyKey { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
@@ -24860,8 +24689,8 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class DefaultAuthorizationRule
     {
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
@@ -24869,9 +24698,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Priority", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Priority { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Action", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Action Action { get; set; }
+        [Newtonsoft.Json.JsonProperty("Action", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Action? Action { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
@@ -24893,9 +24722,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("TransitUserName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool TransitUserName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("UserNameAuth", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ServiceVersionSettingsUserNameAuth UserNameAuth { get; set; }
+        [Newtonsoft.Json.JsonProperty("UserNameAuth", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public ServiceVersionSettingsUserNameAuth? UserNameAuth { get; set; }
 
         [Newtonsoft.Json.JsonProperty("MapX509", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool MapX509 { get; set; }
@@ -24944,9 +24773,9 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class SecurityTokenServiceSettings
     {
-        [Newtonsoft.Json.JsonProperty("JwtSigningAlgorithm", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public SecurityTokenServiceSettingsJwtSigningAlgorithm JwtSigningAlgorithm { get; set; }
+        [Newtonsoft.Json.JsonProperty("JwtSigningAlgorithm", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public SecurityTokenServiceSettingsJwtSigningAlgorithm? JwtSigningAlgorithm { get; set; }
 
         [Newtonsoft.Json.JsonProperty("TokenLifetime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string TokenLifetime { get; set; }
@@ -24974,9 +24803,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("InternalErrorStatusCode", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int InternalErrorStatusCode { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MessageContentFormat", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public WebErrorsHandlingMessageContentFormat MessageContentFormat { get; set; }
+        [Newtonsoft.Json.JsonProperty("MessageContentFormat", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public WebErrorsHandlingMessageContentFormat? MessageContentFormat { get; set; }
 
         [Newtonsoft.Json.JsonProperty("FaultStatusCodes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FaultStatusCodes { get; set; }
@@ -25035,9 +24864,9 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class BehaviorSearchResult : SearchResult
     {
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Kind2 Kind { get; set; }
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Kind2? Kind { get; set; }
 
     }
 
@@ -25047,9 +24876,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Configuration", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Configuration { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Kind2 Kind { get; set; }
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Kind2? Kind { get; set; }
 
     }
 
@@ -25074,14 +24903,14 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
     }
 
@@ -25094,9 +24923,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Address", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Address { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Kind4 Kind { get; set; }
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Kind4? Kind { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Configuration", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AzureSecurityConfiguration Configuration { get; set; }
@@ -25104,14 +24933,14 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
     }
 
@@ -25121,12 +24950,12 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Kind3 Kind { get; set; }
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Kind3? Kind { get; set; }
 
         [Newtonsoft.Json.JsonProperty("FriendlyName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FriendlyName { get; set; }
@@ -25140,14 +24969,14 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int FolderId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Expired", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Expired { get; set; }
+        [Newtonsoft.Json.JsonProperty("Expired", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Expired { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
     }
 
@@ -25163,7 +24992,7 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Thumbprint", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Thumbprint { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Certificate", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("Certificate", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public byte[] Certificate { get; set; }
 
         [Newtonsoft.Json.JsonProperty("NodeId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
@@ -25172,14 +25001,14 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
     }
 
@@ -25192,16 +25021,16 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("LastHeartbeat", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset LastHeartbeat { get; set; }
+        [Newtonsoft.Json.JsonProperty("LastHeartbeat", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? LastHeartbeat { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("LastReportedStatus", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public LastReportedStatus LastReportedStatus { get; set; }
+        [Newtonsoft.Json.JsonProperty("LastReportedStatus", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public LastReportedStatus? LastReportedStatus { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public LastReportedStatus Status { get; set; }
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public LastReportedStatus? Status { get; set; }
 
         [Newtonsoft.Json.JsonProperty("MachineName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string MachineName { get; set; }
@@ -25218,14 +25047,14 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
     }
 
@@ -25235,22 +25064,22 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("ClientAddressHeaderName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ClientAddressHeaderName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ClientAddressOptions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public NodeSettingsClientAddressOptions ClientAddressOptions { get; set; }
+        [Newtonsoft.Json.JsonProperty("ClientAddressOptions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public NodeSettingsClientAddressOptions? ClientAddressOptions { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ChangeMode", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public NodeSettingsChangeMode ChangeMode { get; set; }
+        [Newtonsoft.Json.JsonProperty("ChangeMode", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public NodeSettingsChangeMode? ChangeMode { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AzureSecurityConfiguration
     {
-        [Newtonsoft.Json.JsonProperty("CredentialType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public AzureSecurityConfigurationCredentialType CredentialType { get; set; }
+        [Newtonsoft.Json.JsonProperty("CredentialType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public AzureSecurityConfigurationCredentialType? CredentialType { get; set; }
 
         [Newtonsoft.Json.JsonProperty("SharedSecret", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AzureSharedSecret SharedSecret { get; set; }
@@ -25314,15 +25143,15 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool IsEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("NodeType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public NodeType NodeType { get; set; }
+        [Newtonsoft.Json.JsonProperty("NodeType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public NodeType? NodeType { get; set; }
 
         [Newtonsoft.Json.JsonProperty("HeartbeatInterval", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string HeartbeatInterval { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("LastUpdate", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset LastUpdate { get; set; }
+        [Newtonsoft.Json.JsonProperty("LastUpdate", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? LastUpdate { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Settings", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public NodeSettings Settings { get; set; }
@@ -25367,9 +25196,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Scheme", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Scheme { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Kind4 Kind { get; set; }
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Kind4? Kind { get; set; }
 
         [Newtonsoft.Json.JsonProperty("TotalEndpoints", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int TotalEndpoints { get; set; }
@@ -25382,9 +25211,9 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class NodeSearchQuery : SearchQuery
     {
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public LastReportedStatus Status { get; set; }
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public LastReportedStatus? Status { get; set; }
 
         [Newtonsoft.Json.JsonProperty("BaseAddress", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string BaseAddress { get; set; }
@@ -25437,9 +25266,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Configuration", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Configuration { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AllowedPositions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ComponentTypeAllowedPositions AllowedPositions { get; set; }
+        [Newtonsoft.Json.JsonProperty("AllowedPositions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public ComponentTypeAllowedPositions? AllowedPositions { get; set; }
 
     }
 
@@ -25499,9 +25328,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ExchangePattern", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ExchangePattern ExchangePattern { get; set; }
+        [Newtonsoft.Json.JsonProperty("ExchangePattern", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public ExchangePattern? ExchangePattern { get; set; }
 
     }
 
@@ -25584,14 +25413,14 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
     }
 
@@ -25672,14 +25501,14 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
     }
 
@@ -25710,14 +25539,14 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
     }
 
@@ -25781,14 +25610,14 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
     }
 
@@ -25856,8 +25685,8 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class MonitoringTransactionSummary
     {
-        [Newtonsoft.Json.JsonProperty("Time", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Time { get; set; }
+        [Newtonsoft.Json.JsonProperty("Time", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Time { get; set; }
 
         [Newtonsoft.Json.JsonProperty("CntS", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public long CntS { get; set; }
@@ -25891,22 +25720,22 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class TransactionSummaryRequest
     {
-        [Newtonsoft.Json.JsonProperty("Type", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Type Type { get; set; }
+        [Newtonsoft.Json.JsonProperty("Type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Type? Type { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Start", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Start { get; set; }
+        [Newtonsoft.Json.JsonProperty("Start", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Start { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("End", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset End { get; set; }
+        [Newtonsoft.Json.JsonProperty("End", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? End { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Res", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Res { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Unit", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public TimeUnit Unit { get; set; }
+        [Newtonsoft.Json.JsonProperty("Unit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public TimeUnit? Unit { get; set; }
 
         [Newtonsoft.Json.JsonProperty("NodeId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int NodeId { get; set; }
@@ -25946,12 +25775,12 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public long Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Type", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Type Type { get; set; }
+        [Newtonsoft.Json.JsonProperty("Type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Type? Type { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Time", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Time { get; set; }
+        [Newtonsoft.Json.JsonProperty("Time", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Time { get; set; }
 
         [Newtonsoft.Json.JsonProperty("OpName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string OpName { get; set; }
@@ -26004,9 +25833,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Duration", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Duration { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Status4 Status { get; set; }
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Status4? Status { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Error", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Error { get; set; }
@@ -26019,18 +25848,18 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class TransactionHeadersRequest
     {
-        [Newtonsoft.Json.JsonProperty("TransactionType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Type TransactionType { get; set; }
+        [Newtonsoft.Json.JsonProperty("TransactionType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Type? TransactionType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TransactionId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid TransactionId { get; set; }
+        [Newtonsoft.Json.JsonProperty("TransactionId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? TransactionId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("StartTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset StartTime { get; set; }
+        [Newtonsoft.Json.JsonProperty("StartTime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? StartTime { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EndTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset EndTime { get; set; }
+        [Newtonsoft.Json.JsonProperty("EndTime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? EndTime { get; set; }
 
         [Newtonsoft.Json.JsonProperty("NodeId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int NodeId { get; set; }
@@ -26077,9 +25906,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("PropertyValue", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string PropertyValue { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Status4 Status { get; set; }
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Status4? Status { get; set; }
 
         [Newtonsoft.Json.JsonProperty("AppId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int AppId { get; set; }
@@ -26093,13 +25922,13 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("ConsumerId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int ConsumerId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public TransactionHeadersRequestSortField SortField { get; set; }
+        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public TransactionHeadersRequestSortField? SortField { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public SortOrder SortOrder { get; set; }
+        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public SortOrder? SortOrder { get; set; }
 
     }
 
@@ -26109,18 +25938,18 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public long Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TransactionId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid TransactionId { get; set; }
+        [Newtonsoft.Json.JsonProperty("TransactionId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? TransactionId { get; set; }
 
         [Newtonsoft.Json.JsonProperty("ExchangeId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ExchangeId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TransactionType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Type TransactionType { get; set; }
+        [Newtonsoft.Json.JsonProperty("TransactionType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Type? TransactionType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("StartDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset StartDateTime { get; set; }
+        [Newtonsoft.Json.JsonProperty("StartDateTime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? StartDateTime { get; set; }
 
         [Newtonsoft.Json.JsonProperty("NodeId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int NodeId { get; set; }
@@ -26230,9 +26059,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("HttpStatusCode", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int HttpStatusCode { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Status4 Status { get; set; }
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Status4? Status { get; set; }
 
         [Newtonsoft.Json.JsonProperty("FaultReason", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FaultReason { get; set; }
@@ -26249,9 +26078,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("IsDenied", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool IsDenied { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Kind Kind { get; set; }
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Kind? Kind { get; set; }
 
         [Newtonsoft.Json.JsonProperty("ApplicationId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int ApplicationId { get; set; }
@@ -26291,21 +26120,21 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public long Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
         [Newtonsoft.Json.JsonProperty("ExchId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ExchId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Time", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Time { get; set; }
+        [Newtonsoft.Json.JsonProperty("Time", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Time { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Point", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Point Point { get; set; }
+        [Newtonsoft.Json.JsonProperty("Point", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Point? Point { get; set; }
 
         [Newtonsoft.Json.JsonProperty("NodeId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int NodeId { get; set; }
@@ -26336,8 +26165,8 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public long Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TranId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid TranId { get; set; }
+        [Newtonsoft.Json.JsonProperty("TranId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? TranId { get; set; }
 
         [Newtonsoft.Json.JsonProperty("ExchId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ExchId { get; set; }
@@ -26351,8 +26180,8 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Value", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Value { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Time", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Time { get; set; }
+        [Newtonsoft.Json.JsonProperty("Time", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Time { get; set; }
 
     }
 
@@ -26362,11 +26191,11 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public long Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
         [Newtonsoft.Json.JsonProperty("NodeId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int NodeId { get; set; }
@@ -26380,8 +26209,8 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("NodeInstanceName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string NodeInstanceName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TranId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid TranId { get; set; }
+        [Newtonsoft.Json.JsonProperty("TranId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? TranId { get; set; }
 
         [Newtonsoft.Json.JsonProperty("ExchId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ExchId { get; set; }
@@ -26398,12 +26227,12 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("EndpointName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string EndpointName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Time", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Time { get; set; }
+        [Newtonsoft.Json.JsonProperty("Time", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Time { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Severity", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Severity Severity { get; set; }
+        [Newtonsoft.Json.JsonProperty("Severity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Severity? Severity { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Message", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Message { get; set; }
@@ -26416,18 +26245,18 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class MonitoringActivitiesRequest
     {
-        [Newtonsoft.Json.JsonProperty("StartDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset StartDateTime { get; set; }
+        [Newtonsoft.Json.JsonProperty("StartDateTime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? StartDateTime { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EndDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset EndDateTime { get; set; }
+        [Newtonsoft.Json.JsonProperty("EndDateTime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? EndDateTime { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TransactionId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid TransactionId { get; set; }
+        [Newtonsoft.Json.JsonProperty("TransactionId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? TransactionId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MinimumSeverity", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Severity MinimumSeverity { get; set; }
+        [Newtonsoft.Json.JsonProperty("MinimumSeverity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Severity? MinimumSeverity { get; set; }
 
         [Newtonsoft.Json.JsonProperty("NodeId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int NodeId { get; set; }
@@ -26438,13 +26267,13 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("ServiceVersionId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int ServiceVersionId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public MonitoringActivitiesRequestSortField SortField { get; set; }
+        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public MonitoringActivitiesRequestSortField? SortField { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public SortOrder SortOrder { get; set; }
+        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public SortOrder? SortOrder { get; set; }
 
         [Newtonsoft.Json.JsonProperty("ActivityMessage", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ActivityMessage { get; set; }
@@ -26486,9 +26315,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("ServiceName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ServiceName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Kind Kind { get; set; }
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Kind? Kind { get; set; }
 
         [Newtonsoft.Json.JsonProperty("IsDeleted", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool IsDeleted { get; set; }
@@ -26521,15 +26350,15 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class UsageSummaryRequest
     {
-        [Newtonsoft.Json.JsonProperty("ReportType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public UsageSummaryRequestReportType ReportType { get; set; }
+        [Newtonsoft.Json.JsonProperty("ReportType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public UsageSummaryRequestReportType? ReportType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("StartDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset StartDateTime { get; set; }
+        [Newtonsoft.Json.JsonProperty("StartDateTime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? StartDateTime { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EndDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset EndDateTime { get; set; }
+        [Newtonsoft.Json.JsonProperty("EndDateTime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? EndDateTime { get; set; }
 
         [Newtonsoft.Json.JsonProperty("ServiceVersionId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int ServiceVersionId { get; set; }
@@ -26552,9 +26381,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("TopCount", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int TopCount { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Options", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public UsageSummaryRequestOptions Options { get; set; }
+        [Newtonsoft.Json.JsonProperty("Options", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public UsageSummaryRequestOptions? Options { get; set; }
 
     }
 
@@ -26710,8 +26539,8 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
         [Newtonsoft.Json.JsonProperty("IdentityName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string IdentityName { get; set; }
@@ -26741,26 +26570,26 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("EntityId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int EntityId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EntityType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public EntityType EntityType { get; set; }
+        [Newtonsoft.Json.JsonProperty("EntityType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public EntityType? EntityType { get; set; }
 
         [Newtonsoft.Json.JsonProperty("MajorEntityId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int MajorEntityId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MajorEntityType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public EntityType MajorEntityType { get; set; }
+        [Newtonsoft.Json.JsonProperty("MajorEntityType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public EntityType? MajorEntityType { get; set; }
 
         [Newtonsoft.Json.JsonProperty("MajorEntityName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string MajorEntityName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ChangeType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ChangeTypes ChangeType { get; set; }
+        [Newtonsoft.Json.JsonProperty("ChangeType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public ChangeTypes? ChangeType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
         [Newtonsoft.Json.JsonProperty("UserId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int UserId { get; set; }
@@ -26813,11 +26642,11 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("UserFullName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string UserFullName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("StartDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset StartDateTime { get; set; }
+        [Newtonsoft.Json.JsonProperty("StartDateTime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? StartDateTime { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EndDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset EndDateTime { get; set; }
+        [Newtonsoft.Json.JsonProperty("EndDateTime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? EndDateTime { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Duration", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Duration { get; set; }
@@ -26833,11 +26662,11 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class UserSessionsRequest
     {
-        [Newtonsoft.Json.JsonProperty("StartDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset StartDateTime { get; set; }
+        [Newtonsoft.Json.JsonProperty("StartDateTime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? StartDateTime { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EndDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset EndDateTime { get; set; }
+        [Newtonsoft.Json.JsonProperty("EndDateTime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? EndDateTime { get; set; }
 
         [Newtonsoft.Json.JsonProperty("UserId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int UserId { get; set; }
@@ -26851,13 +26680,13 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("ClientAddress", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ClientAddress { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public UserSessionsRequestSortField SortField { get; set; }
+        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public UserSessionsRequestSortField? SortField { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public SortOrder SortOrder { get; set; }
+        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public SortOrder? SortOrder { get; set; }
 
     }
 
@@ -26870,14 +26699,14 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
     }
 
@@ -26908,9 +26737,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("SecurityRoleName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string SecurityRoleName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Permission", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Permission Permission { get; set; }
+        [Newtonsoft.Json.JsonProperty("Permission", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Permission? Permission { get; set; }
 
         [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool IsEnabled { get; set; }
@@ -26962,8 +26791,8 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ConsumerUserSearchQuery
     {
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
         [Newtonsoft.Json.JsonProperty("FullName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FullName { get; set; }
@@ -26974,9 +26803,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("ConsumerName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ConsumerName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Permission", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Permission Permission { get; set; }
+        [Newtonsoft.Json.JsonProperty("Permission", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Permission? Permission { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Identity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Identity { get; set; }
@@ -26984,13 +26813,13 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool IsEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ConsumerUserSearchQuerySortField SortField { get; set; }
+        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public ConsumerUserSearchQuerySortField? SortField { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public SortOrder SortOrder { get; set; }
+        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public SortOrder? SortOrder { get; set; }
 
     }
 
@@ -27019,9 +26848,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("SourceId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int SourceId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IntervalUnit", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public TimeUnit IntervalUnit { get; set; }
+        [Newtonsoft.Json.JsonProperty("IntervalUnit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public TimeUnit? IntervalUnit { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Interval", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Interval { get; set; }
@@ -27058,9 +26887,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("EntityId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int EntityId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EntityType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public EntityType EntityType { get; set; }
+        [Newtonsoft.Json.JsonProperty("EntityType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public EntityType? EntityType { get; set; }
 
     }
 
@@ -27082,14 +26911,14 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
     }
 
@@ -27111,14 +26940,14 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
     }
 
@@ -27143,27 +26972,27 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool IsEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("IntervalUnit", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public TimeUnit IntervalUnit { get; set; }
+        [Newtonsoft.Json.JsonProperty("IntervalUnit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public TimeUnit? IntervalUnit { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Interval", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Interval { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("LastExecutionTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset LastExecutionTime { get; set; }
+        [Newtonsoft.Json.JsonProperty("LastExecutionTime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? LastExecutionTime { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
     }
 
@@ -27176,21 +27005,21 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("EntityId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int EntityId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EntityType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public EntityType EntityType { get; set; }
+        [Newtonsoft.Json.JsonProperty("EntityType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public EntityType? EntityType { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
     }
 
@@ -27204,23 +27033,23 @@ namespace LSL.Sentinet.ApiClient
         public int FolderId { get; set; }
 
         [Newtonsoft.Json.JsonProperty("EntityTypes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore, ItemConverterType = typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public System.Collections.Generic.ICollection<EntityType> EntityTypes { get; set; }
+        public System.Collections.Generic.ICollection<EntityType?> EntityTypes { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ChangeTypes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ChangeTypes ChangeTypes { get; set; }
+        [Newtonsoft.Json.JsonProperty("ChangeTypes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public ChangeTypes? ChangeTypes { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
     }
 
@@ -27236,22 +27065,22 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AlertSummary
     {
-        [Newtonsoft.Json.JsonProperty("Time", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Time { get; set; }
+        [Newtonsoft.Json.JsonProperty("Time", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Time { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Total", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public long Total { get; set; }
@@ -27264,18 +27093,18 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AlertSummaryRequest
     {
-        [Newtonsoft.Json.JsonProperty("Start", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Start { get; set; }
+        [Newtonsoft.Json.JsonProperty("Start", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Start { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("End", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset End { get; set; }
+        [Newtonsoft.Json.JsonProperty("End", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? End { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Res", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Res { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Unit", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public TimeUnit Unit { get; set; }
+        [Newtonsoft.Json.JsonProperty("Unit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public TimeUnit? Unit { get; set; }
 
         [Newtonsoft.Json.JsonProperty("AlertTypeId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int AlertTypeId { get; set; }
@@ -27291,8 +27120,8 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class Alert : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("Time", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Time { get; set; }
+        [Newtonsoft.Json.JsonProperty("Time", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Time { get; set; }
 
         [Newtonsoft.Json.JsonProperty("TypeId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int TypeId { get; set; }
@@ -27334,11 +27163,11 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AlertRequest
     {
-        [Newtonsoft.Json.JsonProperty("StartTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset StartTime { get; set; }
+        [Newtonsoft.Json.JsonProperty("StartTime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? StartTime { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EndTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset EndTime { get; set; }
+        [Newtonsoft.Json.JsonProperty("EndTime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? EndTime { get; set; }
 
         [Newtonsoft.Json.JsonProperty("AlertTypeId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int AlertTypeId { get; set; }
@@ -27355,13 +27184,13 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("IsObserved", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool IsObserved { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public AlertRequestSortField SortField { get; set; }
+        [Newtonsoft.Json.JsonProperty("SortField", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public AlertRequestSortField? SortField { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public SortOrder SortOrder { get; set; }
+        [Newtonsoft.Json.JsonProperty("SortOrder", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public SortOrder? SortOrder { get; set; }
 
     }
 
@@ -27369,7 +27198,7 @@ namespace LSL.Sentinet.ApiClient
     public partial class PortalNotificationConfiguration
     {
         [Newtonsoft.Json.JsonProperty("EnabledAlertHandlers", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<System.Guid> EnabledAlertHandlers { get; set; }
+        public System.Collections.Generic.ICollection<System.Guid?> EnabledAlertHandlers { get; set; }
 
         [Newtonsoft.Json.JsonProperty("ToAddresses", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ToAddresses { get; set; }
@@ -27562,9 +27391,9 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class IdentityKindSummary
     {
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Kind3 Kind { get; set; }
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Kind3? Kind { get; set; }
 
         [Newtonsoft.Json.JsonProperty("TotalIdentities", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int TotalIdentities { get; set; }
@@ -27586,14 +27415,14 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
     }
 
@@ -27612,12 +27441,12 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("VersionNumber", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int VersionNumber { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Status2 Status { get; set; }
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Status2? Status { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("LastUpdate", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset LastUpdate { get; set; }
+        [Newtonsoft.Json.JsonProperty("LastUpdate", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? LastUpdate { get; set; }
 
         [Newtonsoft.Json.JsonProperty("TotalOperations", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int TotalOperations { get; set; }
@@ -27654,9 +27483,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("IsVirtual", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool IsVirtual { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Kind Kind { get; set; }
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Kind? Kind { get; set; }
 
         [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int FolderId { get; set; }
@@ -27669,9 +27498,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("IsVirtual", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool IsVirtual { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Kind Kind { get; set; }
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Kind? Kind { get; set; }
 
     }
 
@@ -27681,9 +27510,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("IsVirtual", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool IsVirtual { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Kind Kind { get; set; }
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Kind? Kind { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Keywords { get; set; }
@@ -27717,14 +27546,14 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
     }
 
@@ -27743,9 +27572,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("IsPrivate", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool IsPrivate { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Kind2 Kind { get; set; }
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Kind2? Kind { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Configuration", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Configuration { get; set; }
@@ -27785,25 +27614,25 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("IsPublished", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool IsPublished { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ProtectionLevel", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ProtectionLevel ProtectionLevel { get; set; }
+        [Newtonsoft.Json.JsonProperty("ProtectionLevel", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public ProtectionLevel? ProtectionLevel { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("SessionMode", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ContractDefinitionSessionMode SessionMode { get; set; }
+        [Newtonsoft.Json.JsonProperty("SessionMode", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public ContractDefinitionSessionMode? SessionMode { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
     }
 
@@ -27834,14 +27663,14 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
     }
 
@@ -27857,21 +27686,21 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Properties", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<Property> Properties { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Kind Kind { get; set; }
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Kind? Kind { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
     }
 
@@ -27902,14 +27731,14 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
     }
 
@@ -27925,9 +27754,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("OperationId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int OperationId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Direction", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Direction Direction { get; set; }
+        [Newtonsoft.Json.JsonProperty("Direction", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Direction? Direction { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Action", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Action { get; set; }
@@ -27941,9 +27770,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Settings", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public MessageSettings Settings { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("BodyProtectionLevel", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ProtectionLevel BodyProtectionLevel { get; set; }
+        [Newtonsoft.Json.JsonProperty("BodyProtectionLevel", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public ProtectionLevel? BodyProtectionLevel { get; set; }
 
         [Newtonsoft.Json.JsonProperty("DownstreamMessageId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int DownstreamMessageId { get; set; }
@@ -27951,21 +27780,21 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("TemplateFileId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int TemplateFileId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TemplateMessageVersion", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public MessageVersion TemplateMessageVersion { get; set; }
+        [Newtonsoft.Json.JsonProperty("TemplateMessageVersion", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public MessageVersion? TemplateMessageVersion { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
     }
 
@@ -28016,9 +27845,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Namespace", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Namespace { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ProtectionLevel", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ProtectionLevel ProtectionLevel { get; set; }
+        [Newtonsoft.Json.JsonProperty("ProtectionLevel", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public ProtectionLevel? ProtectionLevel { get; set; }
 
         [Newtonsoft.Json.JsonProperty("DownstreamHeaderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int DownstreamHeaderId { get; set; }
@@ -28026,14 +27855,14 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid Key { get; set; }
+        [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Created { get; set; }
+        [Newtonsoft.Json.JsonProperty("Created", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Created { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset Updated { get; set; }
+        [Newtonsoft.Json.JsonProperty("Updated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Updated { get; set; }
 
     }
 
@@ -28049,9 +27878,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("PreserveTrailingSlash", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool PreserveTrailingSlash { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("UnknownQueryParameterAction", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public MessageSettingsUnknownQueryParameterAction UnknownQueryParameterAction { get; set; }
+        [Newtonsoft.Json.JsonProperty("UnknownQueryParameterAction", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public MessageSettingsUnknownQueryParameterAction? UnknownQueryParameterAction { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Parameters", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<MessageParameter> Parameters { get; set; }
@@ -28076,20 +27905,20 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("VariableName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string VariableName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Location", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public MessageParameterLocation Location { get; set; }
+        [Newtonsoft.Json.JsonProperty("Location", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public MessageParameterLocation? Location { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("DataType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public DataType DataType { get; set; }
+        [Newtonsoft.Json.JsonProperty("DataType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public DataType? DataType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ArrayFormat", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ArrayFormat ArrayFormat { get; set; }
+        [Newtonsoft.Json.JsonProperty("ArrayFormat", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public ArrayFormat? ArrayFormat { get; set; }
 
         [Newtonsoft.Json.JsonProperty("ArrayItem", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public Parameter ArrayItem { get; set; }
@@ -28167,13 +27996,13 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class Parameter
     {
-        [Newtonsoft.Json.JsonProperty("DataType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public DataType DataType { get; set; }
+        [Newtonsoft.Json.JsonProperty("DataType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public DataType? DataType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ArrayFormat", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ArrayFormat ArrayFormat { get; set; }
+        [Newtonsoft.Json.JsonProperty("ArrayFormat", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public ArrayFormat? ArrayFormat { get; set; }
 
         [Newtonsoft.Json.JsonProperty("ArrayItem", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public Parameter ArrayItem { get; set; }
@@ -28240,13 +28069,13 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("DataType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public DataType DataType { get; set; }
+        [Newtonsoft.Json.JsonProperty("DataType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public DataType? DataType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ArrayFormat", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ArrayFormat ArrayFormat { get; set; }
+        [Newtonsoft.Json.JsonProperty("ArrayFormat", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public ArrayFormat? ArrayFormat { get; set; }
 
         [Newtonsoft.Json.JsonProperty("ArrayItem", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public Parameter ArrayItem { get; set; }
@@ -28328,15 +28157,15 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Namespace", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Namespace { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Status2 Status { get; set; }
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Status2? Status { get; set; }
 
         [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool IsEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("LastUpdate", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset LastUpdate { get; set; }
+        [Newtonsoft.Json.JsonProperty("LastUpdate", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? LastUpdate { get; set; }
 
         [Newtonsoft.Json.JsonProperty("BaseAddress", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string BaseAddress { get; set; }
@@ -28370,9 +28199,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Status2 Status { get; set; }
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Status2? Status { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Endpoints", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> Endpoints { get; set; }
@@ -28400,9 +28229,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Contracts", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<XmlQualifiedName> Contracts { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Options", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Options Options { get; set; }
+        [Newtonsoft.Json.JsonProperty("Options", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Options? Options { get; set; }
 
     }
 
@@ -28418,25 +28247,25 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("IsVirtual", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool IsVirtual { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Kind Kind { get; set; }
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Kind? Kind { get; set; }
 
         [Newtonsoft.Json.JsonProperty("VersionNumber", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int VersionNumber { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Status2 Status { get; set; }
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Status2? Status { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ServiceVersionSearchQuery : SearchQuery
     {
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Kind Kind { get; set; }
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Kind? Kind { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Keywords { get; set; }
@@ -28450,9 +28279,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("VersionNumber", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int VersionNumber { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Status2 Status { get; set; }
+        [Newtonsoft.Json.JsonProperty("Status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Status2? Status { get; set; }
 
     }
 
@@ -28470,9 +28299,9 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class DataSchema : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("SchemaType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public DataSchemaSchemaType SchemaType { get; set; }
+        [Newtonsoft.Json.JsonProperty("SchemaType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public DataSchemaSchemaType? SchemaType { get; set; }
 
         [Newtonsoft.Json.JsonProperty("ServiceVersionId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int ServiceVersionId { get; set; }
@@ -28514,13 +28343,13 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ExchangePattern", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ExchangePattern ExchangePattern { get; set; }
+        [Newtonsoft.Json.JsonProperty("ExchangePattern", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public ExchangePattern? ExchangePattern { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ProtectionLevel", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public ProtectionLevel ProtectionLevel { get; set; }
+        [Newtonsoft.Json.JsonProperty("ProtectionLevel", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public ProtectionLevel? ProtectionLevel { get; set; }
 
         [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool IsEnabled { get; set; }
@@ -28540,9 +28369,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("IsSessionInitiating", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool IsSessionInitiating { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("TransactionFlow", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public OperationTransactionFlow TransactionFlow { get; set; }
+        [Newtonsoft.Json.JsonProperty("TransactionFlow", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public OperationTransactionFlow? TransactionFlow { get; set; }
 
         [Newtonsoft.Json.JsonProperty("DownstreamOperationId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int DownstreamOperationId { get; set; }
@@ -28603,13 +28432,13 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("IsSync", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool IsSync { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("MonType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public EndpointMonType MonType { get; set; }
+        [Newtonsoft.Json.JsonProperty("MonType", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public EndpointMonType? MonType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("RecPoints", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Point RecPoints { get; set; }
+        [Newtonsoft.Json.JsonProperty("RecPoints", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Point? RecPoints { get; set; }
 
     }
 
@@ -28646,9 +28475,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("ServiceVersionName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ServiceVersionName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Kind Kind { get; set; }
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Kind? Kind { get; set; }
 
         [Newtonsoft.Json.JsonProperty("BindingId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int BindingId { get; set; }
@@ -28656,9 +28485,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("BindingName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string BindingName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("AddressKind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Kind4 AddressKind { get; set; }
+        [Newtonsoft.Json.JsonProperty("AddressKind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Kind4? AddressKind { get; set; }
 
     }
 
@@ -28668,16 +28497,16 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("EndpointId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int EndpointId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceVersionLastUpdate", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset ServiceVersionLastUpdate { get; set; }
+        [Newtonsoft.Json.JsonProperty("ServiceVersionLastUpdate", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset? ServiceVersionLastUpdate { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class EndpointSearchBase
     {
-        [Newtonsoft.Json.JsonProperty("ServiceKey", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid ServiceKey { get; set; }
+        [Newtonsoft.Json.JsonProperty("ServiceKey", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? ServiceKey { get; set; }
 
         [Newtonsoft.Json.JsonProperty("ServicePathAndName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ServicePathAndName { get; set; }
@@ -28688,30 +28517,30 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("VersionNumber", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int VersionNumber { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceVersionStatus", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Status2 ServiceVersionStatus { get; set; }
+        [Newtonsoft.Json.JsonProperty("ServiceVersionStatus", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Status2? ServiceVersionStatus { get; set; }
 
         [Newtonsoft.Json.JsonProperty("ServiceVersionQName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public XmlQualifiedName ServiceVersionQName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ServiceVersionKey", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid ServiceVersionKey { get; set; }
+        [Newtonsoft.Json.JsonProperty("ServiceVersionKey", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? ServiceVersionKey { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ContractKey", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid ContractKey { get; set; }
+        [Newtonsoft.Json.JsonProperty("ContractKey", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? ContractKey { get; set; }
 
         [Newtonsoft.Json.JsonProperty("ContractQName", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public XmlQualifiedName ContractQName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("NodeKey", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid NodeKey { get; set; }
+        [Newtonsoft.Json.JsonProperty("NodeKey", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? NodeKey { get; set; }
 
         [Newtonsoft.Json.JsonProperty("NodePathAndName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string NodePathAndName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("EndpointKey", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid EndpointKey { get; set; }
+        [Newtonsoft.Json.JsonProperty("EndpointKey", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? EndpointKey { get; set; }
 
         [Newtonsoft.Json.JsonProperty("EndpointName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string EndpointName { get; set; }
@@ -28722,8 +28551,8 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("PhysicalAddress", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string PhysicalAddress { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("BindingKey", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Guid BindingKey { get; set; }
+        [Newtonsoft.Json.JsonProperty("BindingKey", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Guid? BindingKey { get; set; }
 
         [Newtonsoft.Json.JsonProperty("BindingPathAndName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string BindingPathAndName { get; set; }
@@ -28731,9 +28560,9 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("IsHosted", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool IsHosted { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Kind Kind { get; set; }
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Kind? Kind { get; set; }
 
     }
 
@@ -28764,18 +28593,18 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class IdentitySearchResult : SearchResult
     {
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Kind3 Kind { get; set; }
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Kind3? Kind { get; set; }
 
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class IdentitySearchQuery : SearchQuery
     {
-        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
-        public Kind3 Kind { get; set; }
+        [Newtonsoft.Json.JsonProperty("Kind", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        
+        public Kind3? Kind { get; set; }
 
     }
 

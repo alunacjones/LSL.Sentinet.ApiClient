@@ -7,7 +7,7 @@
     <PackageVersion>1.0.0</PackageVersion>
     <PackageTags>api;client;sentinet;api-client</PackageTags>
     <PackageReadmeFile>readme.md</PackageReadmeFile>
-    <PackageDescription>DESCRIPTION HERE.</PackageDescription>
+    <PackageDescription>An api client for using the Sentinet API</PackageDescription>
     <RepositoryUrl>https://github.com/alunacjones/LSL.SentinetApiClient</RepositoryUrl>
     <Authors>alunacjones</Authors>
   </PropertyGroup>
@@ -19,6 +19,7 @@
   <ItemGroup Condition="'$(TargetFramework)' != 'net451'">
     <PackageReference Include="Microsoft.Extensions.Options" Version="7.0.0" />
     <PackageReference Include="System.Linq.Async" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'net451'">
@@ -26,6 +27,8 @@
     <Reference Include="System.Web" />
     <Compile Remove="DependencyInjection/**" />
     <None Include="DependencyInjection/**" />
+    <Compile Remove="Facades/**" />
+    <None Include="Facades/**" />    
   </ItemGroup>
 
   <ItemGroup>
@@ -40,7 +43,7 @@
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
   </ItemGroup>
 
-  <Target Name="NSwag" BeforeTargets="BeforeBuild" Condition="'1' == '2'">
+  <Target Name="NSwag" BeforeTargets="BeforeBuild" Condition="'2' == '2'">
     <Exec
       ConsoleToMSBuild="true"
       ContinueOnError="false"
@@ -75,6 +78,15 @@
 
     <Message Text="$(NSwagOutput)" Condition="'$(NSwagExitCode)' == '0'" Importance="low" />
     <Error Text="$(NSwagOutput)" Condition="'$(NSwagExitCode)' != '0'" />  
+
+    <Exec
+      ConsoleToMSBuild="true"
+      ContinueOnError="false"
+      WorkingDirectory="../../build/fixSwagger"
+      Command="npm run enum-fix">
+      <Output TaskParameter="ExitCode" PropertyName="NpmExitCode" />
+      <Output TaskParameter="ConsoleOutput" PropertyName="NpmOutput" />
+    </Exec>
   </Target>
 
   <ItemGroup>

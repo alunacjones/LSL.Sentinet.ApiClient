@@ -1,4 +1,4 @@
-namespace LSL.Sentinet.ApiClient.DependencyInjection.Facades.Models
+namespace LSL.Sentinet.ApiClient.Facades.Models
 {
     /// <summary>
     /// A Sentinet folder sub tree composite

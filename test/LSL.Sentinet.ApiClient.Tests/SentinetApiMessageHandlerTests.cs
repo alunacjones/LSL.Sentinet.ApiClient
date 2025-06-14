@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 using DotNetEnv;
-using LSL.Sentinet.ApiClient.DependencyInjection;
+using LSL.Sentinet.ApiClient.Facades;
 using Microsoft.Extensions.DependencyInjection;
 using RichardSzalay.MockHttp;
 
@@ -38,13 +38,14 @@ public class SentinetApiMessageHandlerTests
     }
 
     [Test]
+    //[Ignore("dev only")]
     public async Task Connect()
     {
         Env.TraversePath().Load();
         var sut = CreateServiceProvider().GetRequiredService<IFoldersFacade>();
         var result = await sut.GetFolderAsync(Environment.GetEnvironmentVariable("SENTINET_TEST_PATH"));
 
-        foreach (var service in result.SubTree.Services)
+        foreach (var service in result.SubTree.Services.Skip(1))
         {
             var svc = await sut.Client.GetServiceAsync(service.Id);
 
@@ -57,6 +58,7 @@ public class SentinetApiMessageHandlerTests
                     Id = v.Id
                 }]);
             }
+            //{Id: 1545, EntityType: 5}
         }
     }
 

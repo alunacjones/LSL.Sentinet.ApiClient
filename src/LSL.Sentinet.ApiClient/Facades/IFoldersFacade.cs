@@ -1,8 +1,8 @@
 using System.Threading;
 using System.Threading.Tasks;
-using LSL.Sentinet.ApiClient.DependencyInjection.Facades.Models;
+using LSL.Sentinet.ApiClient.Facades.Models;
 
-namespace LSL.Sentinet.ApiClient.DependencyInjection
+namespace LSL.Sentinet.ApiClient.Facades
 {
     /// <summary>
     /// A facade to the Sentinet API that provides

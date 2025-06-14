@@ -316,7 +316,8 @@
             "required": true,
             "schema": {
               "type": "string",
-              "format": "date-time"
+              "format": "date-time",
+              "nullable": true
             }
           },
           {
@@ -324,7 +325,8 @@
             "in": "query",
             "schema": {
               "type": "string",
-              "format": "date-time"
+              "format": "date-time",
+              "nullable": true
             }
           },
           {
@@ -388,7 +390,8 @@
             "required": true,
             "schema": {
               "type": "string",
-              "format": "date-time"
+              "format": "date-time",
+              "nullable": true
             }
           },
           {
@@ -396,7 +399,8 @@
             "in": "query",
             "schema": {
               "type": "string",
-              "format": "date-time"
+              "format": "date-time",
+              "nullable": true
             }
           },
           {
@@ -408,7 +412,8 @@
                 "StartDateTime",
                 "Value"
               ],
-              "type": "string"
+              "type": "string",
+              "nullable": true
             }
           },
           {
@@ -1172,7 +1177,8 @@
             "in": "query",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "nullable": true
             }
           }
         ],
@@ -1238,7 +1244,8 @@
             "in": "query",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "nullable": true
             }
           }
         ],
@@ -1269,7 +1276,8 @@
             "in": "query",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "nullable": true
             }
           },
           {
@@ -1286,7 +1294,8 @@
             "in": "query",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "nullable": true
             }
           }
         ],
@@ -1402,7 +1411,8 @@
                 "Token",
                 "Captcha"
               ],
-              "type": "string"
+              "type": "string",
+              "nullable": true
             }
           },
           {
@@ -1443,7 +1453,8 @@
             "in": "query",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "nullable": true
             }
           },
           {
@@ -1451,7 +1462,8 @@
             "in": "query",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "nullable": true
             }
           },
           {
@@ -1459,7 +1471,8 @@
             "in": "query",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "nullable": true
             }
           }
         ],
@@ -3065,7 +3078,8 @@
             "required": true,
             "schema": {
               "type": "string",
-              "format": "uuid"
+              "format": "uuid",
+              "nullable": true
             }
           }
         ],
@@ -3626,7 +3640,8 @@
             "in": "query",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "nullable": true
             }
           },
           {
@@ -3634,7 +3649,8 @@
             "in": "query",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "nullable": true
             }
           },
           {
@@ -3642,7 +3658,8 @@
             "in": "query",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "nullable": true
             }
           },
           {
@@ -3650,7 +3667,8 @@
             "in": "query",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "nullable": true
             }
           },
           {
@@ -3846,7 +3864,8 @@
             "in": "query",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "nullable": true
             }
           },
           {
@@ -3854,7 +3873,8 @@
             "in": "query",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "nullable": true
             }
           },
           {
@@ -3862,7 +3882,8 @@
             "in": "query",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "nullable": true
             }
           },
           {
@@ -3870,7 +3891,8 @@
             "in": "query",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "nullable": true
             }
           }
         ],
@@ -4996,7 +5018,8 @@
             "required": true,
             "schema": {
               "type": "string",
-              "format": "uuid"
+              "format": "uuid",
+              "nullable": true
             }
           },
           {
@@ -5256,7 +5279,8 @@
             "required": true,
             "schema": {
               "type": "string",
-              "format": "date-time"
+              "format": "date-time",
+              "nullable": true
             }
           },
           {
@@ -5264,7 +5288,8 @@
             "in": "query",
             "schema": {
               "type": "string",
-              "format": "date-time"
+              "format": "date-time",
+              "nullable": true
             }
           },
           {
@@ -5371,7 +5396,8 @@
             "required": true,
             "schema": {
               "type": "string",
-              "format": "date-time"
+              "format": "date-time",
+              "nullable": true
             }
           },
           {
@@ -5379,7 +5405,8 @@
             "in": "query",
             "schema": {
               "type": "string",
-              "format": "date-time"
+              "format": "date-time",
+              "nullable": true
             }
           },
           {
@@ -5414,7 +5441,8 @@
             "in": "query",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "nullable": true
             }
           }
         ],
@@ -5466,7 +5494,8 @@
             "required": true,
             "schema": {
               "type": "string",
-              "format": "date-time"
+              "format": "date-time",
+              "nullable": true
             }
           },
           {
@@ -5474,7 +5503,8 @@
             "in": "query",
             "schema": {
               "type": "string",
-              "format": "date-time"
+              "format": "date-time",
+              "nullable": true
             }
           },
           {
@@ -5490,7 +5520,8 @@
             "in": "query",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "nullable": true
             }
           }
         ],
@@ -6166,7 +6197,8 @@
             "required": true,
             "schema": {
               "type": "string",
-              "format": "uuid"
+              "format": "uuid",
+              "nullable": true
             }
           }
         ],
@@ -8111,7 +8143,8 @@
             "required": true,
             "schema": {
               "type": "string",
-              "format": "uuid"
+              "format": "uuid",
+              "nullable": true
             }
           }
         ],
@@ -8740,11 +8773,13 @@
           },
           "Expiration": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Data": {
             "type": "string",
-            "format": "byte"
+            "format": "byte",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -8759,15 +8794,18 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -8812,15 +8850,18 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -8857,15 +8898,18 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -8980,7 +9024,8 @@
               "File",
               "Keyword"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Value": {
             "type": "string",
@@ -8993,7 +9038,8 @@
           "FileKey": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Id": {
             "type": "integer",
@@ -9002,15 +9048,18 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -9050,11 +9099,13 @@
           },
           "StartDateTime": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "EndDateTime": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "TimeZoneId": {
             "type": "string",
@@ -9127,7 +9178,8 @@
         "properties": {
           "T": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "C": {
             "type": "integer",
@@ -9148,11 +9200,13 @@
         "properties": {
           "StartDateTime": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "EndDateTime": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Metrics": {
             "type": "array",
@@ -9204,7 +9258,8 @@
           },
           "Time": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "InitVal": {
             "type": "number",
@@ -9216,11 +9271,13 @@
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -9230,11 +9287,13 @@
         "properties": {
           "StartDateTime": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "EndDateTime": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Metrics": {
             "type": "array",
@@ -9261,7 +9320,8 @@
               "CurrentValue",
               "Created"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "SortOrder": {
             "$ref": "#/components/schemas/SortOrder"
@@ -9278,7 +9338,8 @@
           },
           "T": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Min": {
             "type": "number",
@@ -9304,7 +9365,8 @@
           },
           "T": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "V": {
             "type": "number",
@@ -9345,7 +9407,8 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Name": {
             "type": "string",
@@ -9390,7 +9453,8 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "FolderId": {
             "type": "integer",
@@ -9484,15 +9548,18 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -9525,7 +9592,8 @@
         "properties": {
           "Content": {
             "type": "string",
-            "format": "byte"
+            "format": "byte",
+            "nullable": true
           },
           "ContentType": {
             "enum": [
@@ -9537,7 +9605,8 @@
               "Swagger",
               "OpenApiV3"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "FileName": {
             "type": "string",
@@ -9545,7 +9614,8 @@
           },
           "Expired": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -9688,7 +9758,8 @@
               "Natural",
               "Declarative"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ReferenceType": {
             "$ref": "#/components/schemas/ReferenceType"
@@ -10126,7 +10197,8 @@
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Entities": {
             "type": "array",
@@ -10155,7 +10227,8 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "EntityType": {
             "$ref": "#/components/schemas/EntityType"
@@ -10177,7 +10250,8 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Requirements": {
             "type": "string",
@@ -10229,12 +10303,14 @@
           "FromKey": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "ToKey": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -10339,7 +10415,8 @@
         "properties": {
           "Expiration": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Type": {
             "enum": [
@@ -10348,14 +10425,16 @@
               "NonProduction",
               "Production"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Features": {
             "enum": [
               "None",
               "DeveloperPortal"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Description": {
             "type": "string",
@@ -10383,7 +10462,8 @@
         "properties": {
           "RawData": {
             "type": "string",
-            "format": "byte"
+            "format": "byte",
+            "nullable": true
           },
           "Subject": {
             "type": "string",
@@ -10410,11 +10490,13 @@
           },
           "ValidFrom": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "ValidTo": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "ContentType": {
             "enum": [
@@ -10422,7 +10504,8 @@
               "Serialized",
               "Pfx"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -10464,7 +10547,8 @@
               "Raw",
               "None"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -10537,15 +10621,18 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -10594,15 +10681,18 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -10646,15 +10736,18 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -10693,7 +10786,8 @@
           },
           "LastUpdate": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "ServiceVersionCount": {
             "type": "integer",
@@ -10713,7 +10807,8 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Name": {
             "type": "string",
@@ -10745,7 +10840,8 @@
               "IsSubscriptionRequired",
               "ServiceVersionCount"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "SortOrder": {
             "$ref": "#/components/schemas/SortOrder"
@@ -10789,7 +10885,8 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Name": {
             "type": "string",
@@ -10804,7 +10901,8 @@
               "IsEnabled",
               "Created"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "SortOrder": {
             "$ref": "#/components/schemas/SortOrder"
@@ -10834,15 +10932,18 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -10869,7 +10970,8 @@
           },
           "AccessKey1Expiration": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "AccessKey2": {
             "type": "string",
@@ -10877,7 +10979,8 @@
           },
           "AccessKey2Expiration": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -10915,7 +11018,8 @@
           },
           "Expiration": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "ApplicationCount": {
             "type": "integer",
@@ -10935,7 +11039,8 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Name": {
             "type": "string",
@@ -10962,19 +11067,23 @@
           },
           "ExpirationFrom": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "ExpirationTo": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "CreatedFrom": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "CreatedTo": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "SortField": {
             "enum": [
@@ -10985,7 +11094,8 @@
               "Expiration",
               "Created"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "SortOrder": {
             "$ref": "#/components/schemas/SortOrder"
@@ -10999,7 +11109,8 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Name": {
             "type": "string",
@@ -11035,11 +11146,13 @@
           },
           "AccessKeyExpirationFrom": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "AccessKeyExpirationTo": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "SortField": {
             "enum": [
@@ -11048,7 +11161,8 @@
               "AccessKey2Expiration",
               "Created"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "SortOrder": {
             "$ref": "#/components/schemas/SortOrder"
@@ -11233,7 +11347,8 @@
               "WebRelay",
               "SoapRelay"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Transport": {
             "$ref": "#/components/schemas/TransportDescriptionBase"
@@ -11260,7 +11375,8 @@
               "Soap11",
               "Soap12"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "SecurityMode": {
             "enum": [
@@ -11268,7 +11384,8 @@
               "Transport",
               "Message"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "MessageSecurity": {
             "enum": [
@@ -11278,7 +11395,8 @@
               "Certificate",
               "IssuedToken"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "UseContext": {
             "type": "boolean"
@@ -11292,7 +11410,8 @@
               "NotOrdered",
               "InOrder"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "UseTransactions": {
             "type": "boolean"
@@ -11350,7 +11469,8 @@
               "DateTime",
               "Boolean"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "MaxLength": {
             "type": "integer",
@@ -11365,7 +11485,8 @@
               "View",
               "Edit"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Position": {
             "type": "integer",
@@ -11423,7 +11544,8 @@
               "Extended",
               "Full"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "MessageProcessing": {
             "$ref": "#/components/schemas/MessagePipeline"
@@ -11462,17 +11584,20 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "NodeKey": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "PolicyKey": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Id": {
             "type": "integer",
@@ -11515,7 +11640,8 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Id": {
             "type": "integer",
@@ -11557,7 +11683,8 @@
               "None",
               "Custom"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "MapX509": {
             "type": "boolean"
@@ -11597,14 +11724,16 @@
           "RequestMimeTypes": {
             "type": "array",
             "items": {
-              "type": "string"
+              "type": "string",
+              "nullable": true
             },
             "nullable": true
           },
           "ResponseMimeTypes": {
             "type": "array",
             "items": {
-              "type": "string"
+              "type": "string",
+              "nullable": true
             },
             "nullable": true
           },
@@ -11626,7 +11755,8 @@
               "RS256",
               "HS256"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "TokenLifetime": {
             "type": "string",
@@ -11669,7 +11799,8 @@
               "Json",
               "Text"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "FaultStatusCodes": {
             "type": "string",
@@ -11811,15 +11942,18 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -11848,15 +11982,18 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -11871,7 +12008,8 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Kind": {
             "$ref": "#/components/schemas/Kind3"
@@ -11893,15 +12031,18 @@
           },
           "Expired": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -11923,7 +12064,8 @@
           },
           "Certificate": {
             "type": "string",
-            "format": "byte"
+            "format": "byte",
+            "nullable": true
           },
           "NodeId": {
             "type": "integer",
@@ -11936,15 +12078,18 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -11962,7 +12107,8 @@
           },
           "LastHeartbeat": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "LastReportedStatus": {
             "$ref": "#/components/schemas/LastReportedStatus"
@@ -11993,15 +12139,18 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -12018,14 +12167,16 @@
               "None",
               "TakeLast"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ChangeMode": {
             "enum": [
               "ServiceRestart",
               "NodeRecycle"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -12043,7 +12194,8 @@
               "OAuth",
               "Windows"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "SharedSecret": {
             "$ref": "#/components/schemas/AzureSharedSecret"
@@ -12135,7 +12287,8 @@
           },
           "LastUpdate": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Settings": {
             "$ref": "#/components/schemas/NodeSettings"
@@ -12308,7 +12461,8 @@
               "OutboundResponse",
               "All"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -12525,15 +12679,18 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -12666,15 +12823,18 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -12716,15 +12876,18 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -12831,15 +12994,18 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -12954,7 +13120,8 @@
         "properties": {
           "Time": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "CntS": {
             "type": "integer",
@@ -13003,11 +13170,13 @@
           },
           "Start": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "End": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Res": {
             "type": "integer",
@@ -13070,7 +13239,8 @@
           },
           "Time": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "OpName": {
             "type": "string",
@@ -13163,15 +13333,18 @@
           "TransactionId": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "StartTime": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "EndTime": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "NodeId": {
             "type": "integer",
@@ -13269,7 +13442,8 @@
               "TransactionError",
               "HttpStatusCode"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "SortOrder": {
             "$ref": "#/components/schemas/SortOrder"
@@ -13287,7 +13461,8 @@
           "TransactionId": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "ExchangeId": {
             "type": "string",
@@ -13298,7 +13473,8 @@
           },
           "StartDateTime": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "NodeId": {
             "type": "integer",
@@ -13526,11 +13702,13 @@
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "ExchId": {
             "type": "string",
@@ -13538,7 +13716,8 @@
           },
           "Time": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Point": {
             "$ref": "#/components/schemas/Point"
@@ -13582,7 +13761,8 @@
           "TranId": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "ExchId": {
             "type": "string",
@@ -13602,7 +13782,8 @@
           },
           "Time": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -13616,11 +13797,13 @@
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "NodeId": {
             "type": "integer",
@@ -13641,7 +13824,8 @@
           "TranId": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "ExchId": {
             "type": "string",
@@ -13665,7 +13849,8 @@
           },
           "Time": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Severity": {
             "$ref": "#/components/schemas/Severity"
@@ -13686,16 +13871,19 @@
         "properties": {
           "StartDateTime": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "EndDateTime": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "TransactionId": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "MinimumSeverity": {
             "$ref": "#/components/schemas/Severity"
@@ -13723,7 +13911,8 @@
               "Severity",
               "ActivityMessage"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "SortOrder": {
             "$ref": "#/components/schemas/SortOrder"
@@ -13835,15 +14024,18 @@
               "MostErrored",
               "MostPercentageErrored"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "StartDateTime": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "EndDateTime": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "ServiceVersionId": {
             "type": "integer",
@@ -13887,7 +14079,8 @@
               "IncludeDeletedConsumers",
               "All"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -14090,7 +14283,8 @@
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "IdentityName": {
             "type": "string",
@@ -14155,7 +14349,8 @@
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "UserId": {
             "type": "integer",
@@ -14233,11 +14428,13 @@
           },
           "StartDateTime": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "EndDateTime": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Duration": {
             "type": "string",
@@ -14259,11 +14456,13 @@
         "properties": {
           "StartDateTime": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "EndDateTime": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "UserId": {
             "type": "integer",
@@ -14290,7 +14489,8 @@
               "IdentityName",
               "ClientAddress"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "SortOrder": {
             "$ref": "#/components/schemas/SortOrder"
@@ -14320,15 +14520,18 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -14451,7 +14654,8 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "FullName": {
             "type": "string",
@@ -14485,7 +14689,8 @@
               "IsEnabled",
               "Created"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "SortOrder": {
             "$ref": "#/components/schemas/SortOrder"
@@ -14635,15 +14840,18 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -14674,15 +14882,18 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -14722,7 +14933,8 @@
           },
           "LastExecutionTime": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Id": {
             "type": "integer",
@@ -14731,15 +14943,18 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -14765,15 +14980,18 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -14806,15 +15024,18 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -14848,15 +15069,18 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -14866,7 +15090,8 @@
         "properties": {
           "Time": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Total": {
             "type": "integer",
@@ -14884,11 +15109,13 @@
         "properties": {
           "Start": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "End": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Res": {
             "type": "integer",
@@ -14922,7 +15149,8 @@
         "properties": {
           "Time": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "TypeId": {
             "type": "integer",
@@ -14980,11 +15208,13 @@
         "properties": {
           "StartTime": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "EndTime": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "AlertTypeId": {
             "type": "integer",
@@ -15013,7 +15243,8 @@
               "IsObserved",
               "Description"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "SortOrder": {
             "$ref": "#/components/schemas/SortOrder"
@@ -15029,7 +15260,8 @@
             "items": {
               "type": "string",
               "format": "uuid",
-              "example": "00000000-0000-0000-0000-000000000000"
+              "example": "00000000-0000-0000-0000-000000000000",
+              "nullable": true
             },
             "nullable": true
           },
@@ -15337,15 +15569,18 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -15374,7 +15609,8 @@
           },
           "LastUpdate": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "TotalOperations": {
             "type": "integer",
@@ -15530,15 +15766,18 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -15638,7 +15877,8 @@
               "Required",
               "NotAllowed"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Id": {
             "type": "integer",
@@ -15647,15 +15887,18 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -15699,15 +15942,18 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -15747,15 +15993,18 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -15809,15 +16058,18 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -15878,15 +16130,18 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -15976,15 +16231,18 @@
           "Key": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "Created": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "Updated": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -16009,7 +16267,8 @@
               "Ignore",
               "Reject"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Parameters": {
             "type": "array",
@@ -16021,14 +16280,16 @@
           "RequestMimeTypes": {
             "type": "array",
             "items": {
-              "type": "string"
+              "type": "string",
+              "nullable": true
             },
             "nullable": true
           },
           "ResponseMimeTypes": {
             "type": "array",
             "items": {
-              "type": "string"
+              "type": "string",
+              "nullable": true
             },
             "nullable": true
           },
@@ -16062,7 +16323,8 @@
               "Header",
               "Cookie"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "Description": {
             "type": "string",
@@ -16098,7 +16360,8 @@
           "Values": {
             "type": "array",
             "items": {
-              "type": "string"
+              "type": "string",
+              "nullable": true
             },
             "nullable": true
           },
@@ -16204,7 +16467,8 @@
           "Values": {
             "type": "array",
             "items": {
-              "type": "string"
+              "type": "string",
+              "nullable": true
             },
             "nullable": true
           },
@@ -16293,7 +16557,8 @@
           "Values": {
             "type": "array",
             "items": {
-              "type": "string"
+              "type": "string",
+              "nullable": true
             },
             "nullable": true
           },
@@ -16385,7 +16650,8 @@
           },
           "LastUpdate": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "BaseAddress": {
             "type": "string",
@@ -16430,7 +16696,8 @@
           "Endpoints": {
             "type": "array",
             "items": {
-              "type": "string"
+              "type": "string",
+              "nullable": true
             },
             "nullable": true
           },
@@ -16460,7 +16727,8 @@
           "Endpoints": {
             "type": "array",
             "items": {
-              "type": "string"
+              "type": "string",
+              "nullable": true
             },
             "nullable": true
           },
@@ -16567,7 +16835,8 @@
               "XmlSchema",
               "JsonSchema"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ServiceVersionId": {
             "type": "integer",
@@ -16662,7 +16931,8 @@
               "Allowed",
               "Mandatory"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "DownstreamOperationId": {
             "type": "integer",
@@ -16748,7 +17018,8 @@
               "B",
               "A"
             ],
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "RecPoints": {
             "$ref": "#/components/schemas/Point"
@@ -16829,7 +17100,8 @@
           },
           "ServiceVersionLastUpdate": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -16840,7 +17112,8 @@
           "ServiceKey": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "ServicePathAndName": {
             "type": "string",
@@ -16862,12 +17135,14 @@
           "ServiceVersionKey": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "ContractKey": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "ContractQName": {
             "$ref": "#/components/schemas/XmlQualifiedName"
@@ -16875,7 +17150,8 @@
           "NodeKey": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "NodePathAndName": {
             "type": "string",
@@ -16884,7 +17160,8 @@
           "EndpointKey": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "EndpointName": {
             "type": "string",
@@ -16901,7 +17178,8 @@
           "BindingKey": {
             "type": "string",
             "format": "uuid",
-            "example": "00000000-0000-0000-0000-000000000000"
+            "example": "00000000-0000-0000-0000-000000000000",
+            "nullable": true
           },
           "BindingPathAndName": {
             "type": "string",
@@ -16998,7 +17276,8 @@
           "Month",
           "Year"
         ],
-        "type": "string"
+        "type": "string",
+        "nullable": true
       },
       "SortOrder": {
         "enum": [
@@ -17006,7 +17285,8 @@
           "Ascending",
           "Descending"
         ],
-        "type": "string"
+        "type": "string",
+        "nullable": true
       },
       "MessageVersion": {
         "enum": [
@@ -17014,7 +17294,8 @@
           "Soap11",
           "Soap12"
         ],
-        "type": "string"
+        "type": "string",
+        "nullable": true
       },
       "EntityType": {
         "enum": [
@@ -17076,7 +17357,8 @@
           "MonitoringFilterType",
           "Certificate"
         ],
-        "type": "string"
+        "type": "string",
+        "nullable": true
       },
       "Status": {
         "enum": [
@@ -17084,7 +17366,8 @@
           "Activated",
           "Deactivated"
         ],
-        "type": "string"
+        "type": "string",
+        "nullable": true
       },
       "Serializer": {
         "enum": [
@@ -17093,7 +17376,8 @@
           "XmlSerializer",
           "SoapSerializer"
         ],
-        "type": "string"
+        "type": "string",
+        "nullable": true
       },
       "ChangeTypes": {
         "enum": [
@@ -17103,7 +17387,8 @@
           "Deleted",
           "All"
         ],
-        "type": "string"
+        "type": "string",
+        "nullable": true
       },
       "Entities": {
         "enum": [
@@ -17125,7 +17410,8 @@
           "AuthorizationGroup",
           "All"
         ],
-        "type": "string"
+        "type": "string",
+        "nullable": true
       },
       "BaseAddressCollisionAction": {
         "enum": [
@@ -17133,7 +17419,8 @@
           "Disable",
           "Retire"
         ],
-        "type": "string"
+        "type": "string",
+        "nullable": true
       },
       "ErrorTolerance": {
         "enum": [
@@ -17141,7 +17428,8 @@
           "IgnoreWarnings",
           "IgnoreNone"
         ],
-        "type": "string"
+        "type": "string",
+        "nullable": true
       },
       "Status2": {
         "enum": [
@@ -17150,14 +17438,16 @@
           "Obsolete",
           "Retired"
         ],
-        "type": "string"
+        "type": "string",
+        "nullable": true
       },
       "Options": {
         "enum": [
           "None",
           "ProtectExistingEndpoints"
         ],
-        "type": "string"
+        "type": "string",
+        "nullable": true
       },
       "Metric": {
         "enum": [
@@ -17176,7 +17466,8 @@
           "ExceptionCount",
           "ExceptionPercent"
         ],
-        "type": "string"
+        "type": "string",
+        "nullable": true
       },
       "Kind": {
         "enum": [
@@ -17184,7 +17475,8 @@
           "Rest",
           "OpenData"
         ],
-        "type": "string"
+        "type": "string",
+        "nullable": true
       },
       "Action": {
         "enum": [
@@ -17192,7 +17484,8 @@
           "Permit",
           "Deny"
         ],
-        "type": "string"
+        "type": "string",
+        "nullable": true
       },
       "Status3": {
         "enum": [
@@ -17200,14 +17493,16 @@
           "Active",
           "Retired"
         ],
-        "type": "string"
+        "type": "string",
+        "nullable": true
       },
       "ReferenceType": {
         "enum": [
           "DependsOn",
           "Contains"
         ],
-        "type": "string"
+        "type": "string",
+        "nullable": true
       },
       "NodeType": {
         "enum": [
@@ -17215,14 +17510,16 @@
           "IisAspNetCompatibilityMode",
           "SelfHosted"
         ],
-        "type": "string"
+        "type": "string",
+        "nullable": true
       },
       "Kind2": {
         "enum": [
           "Endpoint",
           "Service"
         ],
-        "type": "string"
+        "type": "string",
+        "nullable": true
       },
       "Kind3": {
         "enum": [
@@ -17243,7 +17540,8 @@
           "OAuthClientCredentials",
           "OAuthServiceCredentials"
         ],
-        "type": "string"
+        "type": "string",
+        "nullable": true
       },
       "ExchangePattern": {
         "enum": [
@@ -17252,7 +17550,8 @@
           "SolicitResponse",
           "Receive"
         ],
-        "type": "string"
+        "type": "string",
+        "nullable": true
       },
       "Direction": {
         "enum": [
@@ -17261,7 +17560,8 @@
           "Fault",
           "GenericFault"
         ],
-        "type": "string"
+        "type": "string",
+        "nullable": true
       },
       "Permission": {
         "enum": [
@@ -17270,14 +17570,16 @@
           "ReadWrite",
           "Administrator"
         ],
-        "type": "string"
+        "type": "string",
+        "nullable": true
       },
       "Kind4": {
         "enum": [
           "Physical",
           "AzureServiceBus"
         ],
-        "type": "string"
+        "type": "string",
+        "nullable": true
       },
       "LastReportedStatus": {
         "enum": [
@@ -17286,14 +17588,16 @@
           "Warnings",
           "Errors"
         ],
-        "type": "string"
+        "type": "string",
+        "nullable": true
       },
       "Type": {
         "enum": [
           "I",
           "O"
         ],
-        "type": "string"
+        "type": "string",
+        "nullable": true
       },
       "Status4": {
         "enum": [
@@ -17302,7 +17606,8 @@
           "F",
           "E"
         ],
-        "type": "string"
+        "type": "string",
+        "nullable": true
       },
       "Point": {
         "enum": [
@@ -17314,7 +17619,8 @@
           "Claims",
           "All"
         ],
-        "type": "string"
+        "type": "string",
+        "nullable": true
       },
       "Severity": {
         "enum": [
@@ -17323,7 +17629,8 @@
           "I",
           "T"
         ],
-        "type": "string"
+        "type": "string",
+        "nullable": true
       },
       "ProtectionLevel": {
         "enum": [
@@ -17331,7 +17638,8 @@
           "Sign",
           "EncryptAndSign"
         ],
-        "type": "string"
+        "type": "string",
+        "nullable": true
       },
       "DataType": {
         "enum": [
@@ -17343,7 +17651,8 @@
           "File",
           "Complex"
         ],
-        "type": "string"
+        "type": "string",
+        "nullable": true
       },
       "ArrayFormat": {
         "enum": [
@@ -17353,7 +17662,8 @@
           "PipeSeparated",
           "Multiple"
         ],
-        "type": "string"
+        "type": "string",
+        "nullable": true
       }
     }
   }

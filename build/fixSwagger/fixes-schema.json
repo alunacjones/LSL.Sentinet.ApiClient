@@ -1,57 +1,94 @@
 {
-    "$schema": "https://json-schema.org/draft-07/schema#",
-    "$ref": "#/definitions/Root",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "$schema": {
+            "type": "string"
+        },
+        "normaliseEnums": {
+            "title": "Ensures enums don't get created multiple times",
+            "type": "boolean"
+        },
+        "removeInvalidStringConstraints": {
+            "title": "Remove invalid string constraints",
+            "type": "boolean",
+            "description": "Removes string constraints on properties that would result in `ComponentModel` annotation issues"
+        },
+        "fixBrokenPatterns": {
+            "title": "Fix Broken Patterns",
+            "description": "Fixes any regex patterns that look to only be being applied to a single character",
+            "type": "boolean"
+        },
+        "setAdditionalPropertiesToFalse": {
+            "title": "Set Additional Properties To False",
+            "description": "Ensures that all object definitions have no additional properties",
+            "type": "boolean"
+        },
+        "fixNonRequiredProperties": {
+            "title": "Fix Non-Required Properties",
+            "description": "Sets a property's `nullable` field to `true` if it is not required",
+            "type": "boolean"
+        },
+        "fixOperationIds": {
+            "title": "Fix Operation Ids",
+            "description": "Remove's invalid characters from `operationId`'s",
+            "type": "boolean"
+        },
+        "ensureRequestBodiesAreRequired": {
+            "title": "Ensure request bodies are required",
+            "type": "boolean"
+        },
+        "components": {
+            "$ref": "#/definitions/Components"
+        },
+        "responses": {
+            "$ref": "#/definitions/Responses"
+        },
+        "parameters": {
+            "$ref": "#/definitions/Parameters"
+        },
+        "fixUpWithJsonPath": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/FixUpWithJsonPath"
+            }
+        }
+    },
+    "additionalProperties": false,
     "definitions": {
-        "Root": {
+        "FixUpWithJsonPath": {
             "type": "object",
             "properties": {
-                "$schema": {
+                "path": {
+                    "description": "The JSON path to match nodes with",
+                    "type": "string",
+                    "examples": [
+                        "$.components.schemas.*"
+                    ]
+                },
+                "clear": {
+                    "description": "Deletes all the properties of the matched nodes if `true`",
+                    "type": "boolean"
+                },
+                "merge": {
+                    "description": "Merges the given object into the matched nodes",
+                    "type": "object"
+                },
+                "remove": {
+                    "description": "Deletes the properties of the matched nodes",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "rename": {
+                    "description": "Renames the matched nodes (should only really be used for matching a single node)",
                     "type": "string"
-                },
-                "normaliseEnums": {
-                    "title": "Use $ref for repeated enums",
-                    "type": "boolean"
-                },
-                "removeInvalidStringConstraints": {
-                    "title": "Remove invalid string constraints",
-                    "type": "boolean",
-                    "description": "Removes string constraints on properties that would result in `ComponentModel` annotation issues"
-                },
-                "fixBrokenPatterns": {
-                    "title": "Fix Broken Patterns",
-                    "description": "Fixes any regex patterns that look to only be being applied to a single character",
-                    "type": "boolean"
-                },
-                "setAdditionalPropertiesToFalse": {
-                    "title": "Set Additional Properties To False",
-                    "description": "Ensures that all object definitions have no additional properties",
-                    "type": "boolean"
-                },
-                "fixNonRequiredProperties": {
-                    "title": "Fix Non-Required Properties",
-                    "description": "Sets a property's `nullable` field to `true` if it is not required",
-                    "type": "boolean"
-                },
-                "fixOperationIds": {
-                    "title": "Fix Operation Ids",
-                    "description": "Remove's invalid characters from `operationId`'s",
-                    "type": "boolean"
-                },
-                "ensureRequestBodiesAreRequired": {
-                    "title": "Ensure request bodies are required",
-                    "type": "boolean"
-                },
-                "components": {
-                    "$ref": "#/definitions/Components"
-                },
-                "responses": {
-                    "$ref": "#/definitions/Responses"
-                },
-                "parameters": {
-                    "$ref": "#/definitions/Parameters"
                 }
             },
-            "additionalProperties": false
+            "required": [
+                "path"
+            ]
         },
         "Parameters": {
             "type": "object",
@@ -78,7 +115,11 @@
                     "$ref": "https://schemas.sourcemeta.com/openapi/v3.0/schema.json#/definitions/Parameter"
                 }
             },
-            "required": ["path", "method", "create"]
+            "required": [
+                "path",
+                "method",
+                "create"
+            ]
         },
         "NonEmptyStringProperty": {
             "type": "string",
@@ -97,14 +138,25 @@
                 },
                 "merge": {
                     "type": "object"
-                }                
+                }
             },
-            "required": ["path", "name", "method", "merge"]
+            "required": [
+                "path",
+                "name",
+                "method",
+                "merge"
+            ]
         },
         "Parameter": {
             "oneOf": [
-                { "$ref": "#/definitions/CreateParameter", "additionalProperties": false },
-                { "$ref": "#/definitions/MergeParameter", "additionalProperties": false }
+                {
+                    "$ref": "#/definitions/CreateParameter",
+                    "additionalProperties": false
+                },
+                {
+                    "$ref": "#/definitions/MergeParameter",
+                    "additionalProperties": false
+                }
             ]
         },
         "Responses": {

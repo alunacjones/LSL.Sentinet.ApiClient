@@ -6,5 +6,19 @@
     "fixBrokenPatterns": true,
     "removeInvalidStringConstraints": true,
     "ensureRequestBodiesAreRequired": true,
-    "normaliseEnums": true
+    "normaliseEnums": true,
+    "fixUpWithJsonPath": [
+        {
+            "path": "$..*[?(@.type === 'string')]",
+            "merge": {
+                "nullable": true
+            }
+        },
+        {
+            "path": "$.components.schemas.*[?(@.enum)]",
+            "merge": {
+                "nullable": true
+            }
+        }
+    ]
 }
