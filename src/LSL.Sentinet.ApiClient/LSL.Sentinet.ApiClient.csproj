@@ -43,7 +43,7 @@
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
   </ItemGroup>
 
-  <Target Name="NSwag" BeforeTargets="BeforeBuild" Condition="'1' == '2'">
+  <Target Name="NSwag" BeforeTargets="BeforeBuild" Condition="'2' == '2'">
     <Exec
       ConsoleToMSBuild="true"
       ContinueOnError="false"

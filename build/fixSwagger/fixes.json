@@ -15,7 +15,7 @@
             }
         },
         {
-            "path": "$.components.schemas.*[?(@.enum)]",
+            "path": "$..FolderId",
             "merge": {
                 "nullable": true
             }

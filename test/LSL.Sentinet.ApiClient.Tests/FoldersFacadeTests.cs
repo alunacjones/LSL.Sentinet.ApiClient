@@ -31,7 +31,7 @@ public class FoldersFacadeTests : BaseTest
     }
 
     [Test]
-    public async Task GivenAnInvalidRequestForAFolder_ItShouldReturnTheExpectedResult()
+    public async Task GivenAnInvalidRequestForAFolder_ItShouldThrowTheExpectedException()
     {
         // Arrange
         var provider = CreateServiceProvider(fakeService: true, builder: c => { });

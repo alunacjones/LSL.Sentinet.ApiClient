@@ -9084,7 +9084,8 @@
         "properties": {
           "FolderId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "Name": {
             "type": "string",
@@ -9218,7 +9219,8 @@
           },
           "FolderId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "TimeZoneId": {
             "type": "string",
@@ -9305,7 +9307,8 @@
           },
           "FolderId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "TimeZoneId": {
             "type": "string",
@@ -9458,7 +9461,8 @@
           },
           "FolderId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "Name": {
             "type": "string",
@@ -10239,7 +10243,8 @@
           },
           "FolderId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -10340,7 +10345,8 @@
           },
           "FolderId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "Permission": {
             "$ref": "#/components/schemas/Permission"
@@ -11660,7 +11666,8 @@
           },
           "FolderId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "IsGroup": {
             "type": "boolean"
@@ -12027,7 +12034,8 @@
           },
           "FolderId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "Expired": {
             "type": "string",
@@ -12269,7 +12277,8 @@
         "properties": {
           "FolderId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "Name": {
             "type": "string",
@@ -12705,7 +12714,8 @@
         "properties": {
           "FolderId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "Name": {
             "type": "string",
@@ -12902,7 +12912,8 @@
         "properties": {
           "FolderId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "Name": {
             "type": "string",
@@ -13020,7 +13031,8 @@
         "properties": {
           "FolderId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "FriendlyName": {
             "type": "string",
@@ -13203,7 +13215,8 @@
           },
           "FolderId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "IsVirtual": {
             "type": "boolean"
@@ -13368,7 +13381,8 @@
           },
           "FolderId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "IsVirtual": {
             "type": "boolean"
@@ -14007,7 +14021,8 @@
         "properties": {
           "FolderId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -14470,7 +14485,8 @@
           },
           "FolderId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "IdentityName": {
             "type": "string",
@@ -14546,7 +14562,8 @@
         "properties": {
           "FolderId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "ConsumerId": {
             "type": "integer",
@@ -14785,7 +14802,8 @@
           },
           "FolderId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "EntityId": {
             "type": "integer",
@@ -15005,7 +15023,8 @@
           },
           "FolderId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "EntityTypes": {
             "type": "array",
@@ -15298,7 +15317,8 @@
           },
           "FolderId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -15667,7 +15687,8 @@
           },
           "FolderId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -15792,7 +15813,8 @@
         "properties": {
           "FolderId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "FriendlyName": {
             "type": "string",
@@ -16156,7 +16178,8 @@
         "properties": {
           "FolderId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "FriendlyName": {
             "type": "string",

@@ -22913,8 +22913,8 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ServiceAgreement : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? FolderId { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
@@ -23010,8 +23010,8 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Metrics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<int> Metrics { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? FolderId { get; set; }
 
         [Newtonsoft.Json.JsonProperty("TimeZoneId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string TimeZoneId { get; set; }
@@ -23073,8 +23073,8 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Metrics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<int> Metrics { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? FolderId { get; set; }
 
         [Newtonsoft.Json.JsonProperty("TimeZoneId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string TimeZoneId { get; set; }
@@ -23179,8 +23179,8 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Key", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid? Key { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? FolderId { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
@@ -23706,8 +23706,8 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? FolderId { get; set; }
 
     }
 
@@ -23781,8 +23781,8 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("FullName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FullName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? FolderId { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Permission", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         
@@ -24705,8 +24705,8 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? FolderId { get; set; }
 
         [Newtonsoft.Json.JsonProperty("IsGroup", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool IsGroup { get; set; }
@@ -24966,8 +24966,8 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("IsPublic", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool IsPublic { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? FolderId { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Expired", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset? Expired { get; set; }
@@ -25134,8 +25134,8 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class Node : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? FolderId { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
@@ -25427,8 +25427,8 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AuthorizationRule : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? FolderId { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
@@ -25553,8 +25553,8 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AuthorizationGroup : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? FolderId { get; set; }
 
         [Newtonsoft.Json.JsonProperty("Name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
@@ -25624,8 +25624,8 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class CustomEntity : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? FolderId { get; set; }
 
         [Newtonsoft.Json.JsonProperty("FriendlyName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FriendlyName { get; set; }
@@ -25749,8 +25749,8 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("OpId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int OpId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? FolderId { get; set; }
 
         [Newtonsoft.Json.JsonProperty("IsVirtual", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool IsVirtual { get; set; }
@@ -25876,8 +25876,8 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("OperationId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int OperationId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? FolderId { get; set; }
 
         [Newtonsoft.Json.JsonProperty("IsVirtual", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool IsVirtual { get; set; }
@@ -26342,8 +26342,8 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ServiceVersionUsageSummaryRequest : UsageSummaryRequest
     {
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? FolderId { get; set; }
 
     }
 
@@ -26671,8 +26671,8 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("UserId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int UserId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? FolderId { get; set; }
 
         [Newtonsoft.Json.JsonProperty("IdentityName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string IdentityName { get; set; }
@@ -26713,8 +26713,8 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class User : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? FolderId { get; set; }
 
         [Newtonsoft.Json.JsonProperty("ConsumerId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int ConsumerId { get; set; }
@@ -26881,8 +26881,8 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("IsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool IsEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? FolderId { get; set; }
 
         [Newtonsoft.Json.JsonProperty("EntityId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int EntityId { get; set; }
@@ -27029,8 +27029,8 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("AlertTypeId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int AlertTypeId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? FolderId { get; set; }
 
         [Newtonsoft.Json.JsonProperty("EntityTypes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore, ItemConverterType = typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
         public System.Collections.Generic.ICollection<EntityType?> EntityTypes { get; set; }
@@ -27217,8 +27217,8 @@ namespace LSL.Sentinet.ApiClient
         [Newtonsoft.Json.JsonProperty("Description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? FolderId { get; set; }
 
     }
 
@@ -27487,8 +27487,8 @@ namespace LSL.Sentinet.ApiClient
         
         public Kind? Kind { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? FolderId { get; set; }
 
     }
 
@@ -27560,8 +27560,8 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class Behavior : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? FolderId { get; set; }
 
         [Newtonsoft.Json.JsonProperty("FriendlyName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FriendlyName { get; set; }
@@ -27801,8 +27801,8 @@ namespace LSL.Sentinet.ApiClient
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class Binding : DomainObjectBase
     {
-        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int FolderId { get; set; }
+        [Newtonsoft.Json.JsonProperty("FolderId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? FolderId { get; set; }
 
         [Newtonsoft.Json.JsonProperty("FriendlyName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FriendlyName { get; set; }
