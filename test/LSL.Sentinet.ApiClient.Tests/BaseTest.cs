@@ -10,7 +10,11 @@ public abstract class BaseTest
 {
     public static void InitialiseEnv() => Env.TraversePath().Load();
 
-    public static IServiceProvider CreateServiceProvider(bool authFails = false, bool isAlreadyAuthorised = false, bool fakeService = false)
+    public static IServiceProvider CreateServiceProvider(
+        bool authFails = false,
+        bool isAlreadyAuthorised = false,
+        bool fakeService = false,
+        Action<IHttpClientBuilder> builder = null)
     {
         InitialiseEnv();
         var mockHttpHandler = CreateMockHttpMessageHandler();
@@ -22,7 +26,8 @@ public abstract class BaseTest
                 c.BaseUrl = "http://nowhere.com/RepositoryService.svc/";
                 c.Username = "username";
                 c.Password = "password";
-            })
+            },
+            builder)
             .With(s =>
             {
                 if (fakeService)

@@ -38,4 +38,27 @@ public class FoldersFacadeTests : BaseTest
             throw new ArgumentException("ad", ex);
         }
     }
+
+    [Test]
+    public async Task GivenAnInvalidRequestForAFolder_ItShouldReturnTheExpectedResult()
+    {
+        try
+        {
+            // Arrange
+            var provider = CreateServiceProvider(fakeService: true, builder: c => { });
+            var sut = provider.GetRequiredService<IFoldersFacade>();
+            var folder = "Test/Folder";
+            var folderResults = provider.StubFolderCalls(folder);
+            folderResults.ElementAt(0).Folders.ElementAt(0).Name = "Wrong";
+
+            // Act & Assert
+            var action = async() => await sut.GetFolderAsync(folder);
+            await action.Should().ThrowExactlyAsync<ArgumentException>()
+                .WithMessage("Unknown folder 'Test' for full path of 'Test/Folder'");
+        }
+        catch (Exception ex)
+        {
+            throw new ArgumentException("ad", ex);
+        }
+    }    
 }
