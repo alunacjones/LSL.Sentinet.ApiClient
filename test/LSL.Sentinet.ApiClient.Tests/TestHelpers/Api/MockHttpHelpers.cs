@@ -1,8 +1,5 @@
 using System;
-using System.ComponentModel;
 using System.Net.Http.Json;
-using System.Runtime.CompilerServices;
-using System.Threading;
 using RichardSzalay.MockHttp;
 
 namespace LSL.Sentinet.ApiClient.Tests.TestHelpers.Api;

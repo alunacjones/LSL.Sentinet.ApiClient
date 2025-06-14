@@ -3,11 +3,10 @@ using System.Linq;
 using DotNetEnv;
 using LSL.Sentinet.ApiClient.Facades;
 using Microsoft.Extensions.DependencyInjection;
-using RichardSzalay.MockHttp;
 
 namespace LSL.Sentinet.ApiClient.Tests;
 
-public class SentinetApiMessageHandlerTests
+public class SentinetApiMessageHandlerTests : BaseTest
 {
     [Test]
     public async Task SentinetApiMessageHandler_GivenInvalidAuthOptions_ItShouldThrowTheExpectedException()
@@ -38,7 +37,7 @@ public class SentinetApiMessageHandlerTests
     }
 
     [Test]
-    //[Ignore("dev only")]
+    [Ignore("dev only")]
     public async Task Connect()
     {
         Env.TraversePath().Load();
@@ -62,35 +61,15 @@ public class SentinetApiMessageHandlerTests
         }
     }
 
-    private static ISentinetApiClient CreateClient(bool authFails, bool isAlreadyAuthorised)
-    {
-        InitialiseEnv();
-        var mockHttpHandler = CreateMockHttpMessageHandler();
-
-        var services = new ServiceCollection()
-            .AddFakeHttpMessageHandler(mockHttpHandler)
-            .AddSentinetApiClient(c => 
-            {
-                c.BaseUrl = "http://nowhere.com/RepositoryService.svc/";
-                c.Username = "username";
-                c.Password = "password";
-            })
-            .BuildServiceProvider();
-
-        mockHttpHandler.StubEndPointsAndAuth(authFails, isAlreadyAuthorised);
-
-        mockHttpHandler.When(HttpMethod.Get, "http://nowhere.com/RepositoryService.svc/LogOn?userName=username&password=password")
-            .Respond(new StringContent(authFails ? "false" : "true"));
-
-        return services.GetRequiredService<ISentinetApiClient>();
-    }
+    private static ISentinetApiClient CreateClient(bool authFails, bool isAlreadyAuthorised) =>
+        CreateServiceProvider(authFails, isAlreadyAuthorised).GetRequiredService<ISentinetApiClient>();
 
     private static ServiceProvider CreateServiceProvider()
     {
         InitialiseEnv();
 
         return new ServiceCollection()
-            .AddSentinetApiClient(c => 
+            .AddSentinetApiClient(c =>
             {
                 c.BaseUrl = "https://alstest/Sentinet/RepositoryService.svc/";
                 c.Username = GetUsername();
@@ -102,8 +81,6 @@ public class SentinetApiMessageHandlerTests
             }))
             .BuildServiceProvider();
     }
-
-    private static void InitialiseEnv() => Env.TraversePath().Load();
 
     internal static string GetUsername() => Environment.GetEnvironmentVariable("SENTINET_USERNAME");
     internal static string GetPassword() => Environment.GetEnvironmentVariable("SENTINET_PASSWORD");

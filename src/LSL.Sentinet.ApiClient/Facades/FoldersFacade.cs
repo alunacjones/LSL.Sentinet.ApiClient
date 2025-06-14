@@ -17,7 +17,7 @@ namespace LSL.Sentinet.ApiClient.Facades
                 .AggregateAwaitAsync(
                     new
                     {
-                        CurrentFolder = await GetFolderFromApi(null, string.Empty),
+                        CurrentFolder = await GetFolderFromApi(null, string.Empty).ConfigureAwait(false),
                         CurrentPath = string.Empty
                     },
                     async (folder, path) =>
@@ -31,10 +31,10 @@ namespace LSL.Sentinet.ApiClient.Facades
                                 path,
                                 currentPath,
                                 GetSubFolderId(folder.CurrentFolder, path)
-                            ),
+                            ).ConfigureAwait(false),
                             CurrentPath = currentPath
                         };
-                    }))
+                    }).ConfigureAwait(false))
                     .CurrentFolder;
 
             int GetSubFolderId(FacadeFolderSubTree folder, string subPath) =>
