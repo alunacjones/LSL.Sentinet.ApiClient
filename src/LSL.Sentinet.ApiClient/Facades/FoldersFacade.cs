@@ -39,18 +39,30 @@ namespace LSL.Sentinet.ApiClient.Facades
 
             int GetSubFolderId(FacadeFolderSubTree folder, string subPath) =>
                 folder.SubTree.Folders.FirstOrDefault(f => f.Name.Equals(subPath, StringComparison.InvariantCultureIgnoreCase))?.Id
-                    ?? throw new ArgumentException($"Unknown folder '{subPath}' for full path of '{fullPath}'");
+                    ?? throw new FolderNotFoundException(subPath, fullPath);
 
             async Task<FacadeFolderSubTree> GetFolderFromApi(FacadeFolderSubTree currentFolder, string path, string currentFullPath = "", int? id = null) =>
                 (await Client.GetFolderSubtreeAsync(false, Entities.All, id, cancellationToken)
                     .ConfigureAwait(false))
                     .ToFacadeFolder(currentFullPath, currentFolder);
         }
+
+        public async Task<FacadeFolderSubTree> TryGetFolderAsync(string folderPath, CancellationToken cancellationToken = default)
+        {
+            try
+            {
+                return await GetFolderAsync(folderPath, cancellationToken);
+            }
+            catch (FolderNotFoundException)
+            {
+                return null;
+            }
+        }
     }
 
     internal static class FolderExtensions
     {
-        internal static FacadeFolderSubTree ToFacadeFolder(this FolderSubtree source, string fullPath, FacadeFolderSubTree currentFolder) => 
-            new FacadeFolderSubTree(currentFolder, fullPath, source);        
+        internal static FacadeFolderSubTree ToFacadeFolder(this FolderSubtree source, string fullPath, FacadeFolderSubTree currentFolder) =>
+            new FacadeFolderSubTree(currentFolder, fullPath, source);
     }
 }

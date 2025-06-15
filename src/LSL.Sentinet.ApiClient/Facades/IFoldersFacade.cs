@@ -21,5 +21,18 @@ namespace LSL.Sentinet.ApiClient.Facades
         /// <param name="cancellationToken"></param>
         /// <returns></returns>
         Task<FacadeFolderSubTree> GetFolderAsync(string folderPath, CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Tries to fetches a folder by its path
+        /// </summary>
+        /// <remarks>
+        /// Path sections should be separated by a <c>/</c>
+        /// e.g. <c>Consumers/MyService</c>.
+        /// Returns <see langword="null" /> if not found
+        /// </remarks>
+        /// <param name="folderPath"></param>
+        /// <param name="cancellationToken"></param>
+        /// <returns></returns>
+        Task<FacadeFolderSubTree> TryGetFolderAsync(string folderPath, CancellationToken cancellationToken = default);
     }
 }
