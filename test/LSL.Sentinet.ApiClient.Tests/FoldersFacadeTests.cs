@@ -88,27 +88,30 @@ public class FoldersFacadeTests : BaseTest
             Id = 999,
             FolderId = 12           
         };
-        client.CreateOrUpdateFolderWithResultAsync(Arg.Is<Folder>(m => m.Id == 0 && m.FolderId == 12 && m.Name == "Test"))
+
+        client.CreateOrUpdateFolderWithResultAsync(
+            Arg.Is<Folder>(m =>
+                m.Id == 0 && m.FolderId == newFolder.FolderId && m.Name == newFolder.Name)
+            )
             .Returns(newFolder);
 
+        var expectedSubTree = new FolderSubtree
+        {
+            Name = newFolder.Name,
+            Id = newFolder.Id,
+        };
+
         client.GetFolderSubtreeAsync(false, Entities.All, newFolder.Id)
-            .Returns(new FolderSubtree
-            {
-                Name = newFolder.Name,
-                Id = newFolder.Id,                
-            });
+            .Returns(expectedSubTree);
+            
         // Act
         var response = await sut.CreateFolderAsync(folder);
 
         // Assert
         using var assertionScope = new AssertionScope();
         
-        //response.SubTree.Should().Be(folderResults.ElementAt(2));
+        response.SubTree.Should().Be(expectedSubTree);
         response.FullPath.Should().Be("Test");
-        // response.Parent.SubTree.Should().Be(folderResults.ElementAt(1));
-        // response.Parent.FullPath.Should().Be("Test");
-        // response.Parent.Parent.SubTree.Should().Be(folderResults.ElementAt(0));
-        // response.Parent.Parent.FullPath.Should().Be("");
     }    
 
     [Test]
