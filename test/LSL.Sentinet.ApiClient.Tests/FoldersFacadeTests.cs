@@ -1,6 +1,7 @@
 using System.Linq;
 using LSL.Sentinet.ApiClient.Facades;
 using Microsoft.Extensions.DependencyInjection;
+using NSubstitute;
 
 namespace LSL.Sentinet.ApiClient.Tests;
 
@@ -68,6 +69,47 @@ public class FoldersFacadeTests : BaseTest
         response.Parent.Parent.SubTree.Should().Be(folderResults.ElementAt(0));
         response.Parent.Parent.FullPath.Should().Be("");
     }
+
+    [Test]
+    public async Task CreateFolderAsync_GivenAValidRequestForAFolder_ItShouldReturnTheExpectedResult()
+    {
+        // Arrange
+        var provider = CreateServiceProvider(fakeService: true);
+        var sut = provider.GetRequiredService<IFoldersFacade>();
+        var folder = "Test";
+        var folderResults = provider.StubFolderCalls(folder);
+        folderResults.ElementAt(0).Folders.ElementAt(0).Name = "Wrong";
+        folderResults.ElementAt(0).Id = 12;
+
+        var client = provider.GetRequiredService<ISentinetApiClient>();
+        var newFolder = new Folder
+        {
+            Name = "Test",
+            Id = 999,
+            FolderId = 12           
+        };
+        client.CreateOrUpdateFolderWithResultAsync(Arg.Is<Folder>(m => m.Id == 0 && m.FolderId == 12 && m.Name == "Test"))
+            .Returns(newFolder);
+
+        client.GetFolderSubtreeAsync(false, Entities.All, newFolder.Id)
+            .Returns(new FolderSubtree
+            {
+                Name = newFolder.Name,
+                Id = newFolder.Id,                
+            });
+        // Act
+        var response = await sut.CreateFolderAsync(folder);
+
+        // Assert
+        using var assertionScope = new AssertionScope();
+        
+        //response.SubTree.Should().Be(folderResults.ElementAt(2));
+        response.FullPath.Should().Be("Test");
+        // response.Parent.SubTree.Should().Be(folderResults.ElementAt(1));
+        // response.Parent.FullPath.Should().Be("Test");
+        // response.Parent.Parent.SubTree.Should().Be(folderResults.ElementAt(0));
+        // response.Parent.Parent.FullPath.Should().Be("");
+    }    
 
     [Test]
     public async Task TryGetFolderAsync_GivenAnInvalidRequestForAFolder_ItShouldThrowTheExpectedException()
