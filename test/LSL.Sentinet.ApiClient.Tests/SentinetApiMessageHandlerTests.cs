@@ -42,8 +42,12 @@ public class SentinetApiMessageHandlerTests : BaseTest
     {
         Env.TraversePath().Load();
         var sut = CreateServiceProvider().GetRequiredService<IFoldersFacade>();
-        var result = await sut.GetFolderAsync(Environment.GetEnvironmentVariable("SENTINET_TEST_PATH"));
+        
+        //var f = await sut.Client.GetFolderSubtreeAsync(false, Entities.All, 0);
+        var x = await sut.CreateFolderAsync("Consumers/Temp/New1/New2");
 
+        var result = await sut.GetFolderAsync(Environment.GetEnvironmentVariable("SENTINET_TEST_PATH"));
+        
         foreach (var service in result.SubTree.Services.Skip(1))
         {
             var svc = await sut.Client.GetServiceAsync(service.Id);
@@ -57,7 +61,6 @@ public class SentinetApiMessageHandlerTests : BaseTest
                     Id = v.Id
                 }]);
             }
-            //{Id: 1545, EntityType: 5}
         }
     }
 

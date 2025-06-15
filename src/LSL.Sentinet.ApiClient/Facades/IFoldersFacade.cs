@@ -34,5 +34,17 @@ namespace LSL.Sentinet.ApiClient.Facades
         /// <param name="cancellationToken"></param>
         /// <returns></returns>
         Task<FacadeFolderSubTree> TryGetFolderAsync(string folderPath, CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Creates a folder
+        /// </summary>
+        /// <remarks>
+        /// Attempts to create all the required folders in the given folder path.
+        /// If a folder already exists then nothing is done
+        /// </remarks>
+        /// <param name="folderPath"></param>
+        /// <param name="cancellationToken"></param>
+        /// <returns></returns>
+        Task<FacadeFolderSubTree> CreateFolderAsync(string folderPath, CancellationToken cancellationToken = default); 
     }
 }

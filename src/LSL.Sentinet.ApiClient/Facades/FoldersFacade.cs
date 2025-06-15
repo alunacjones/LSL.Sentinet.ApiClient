@@ -6,11 +6,49 @@ using LSL.Sentinet.ApiClient.Facades.Models;
 
 namespace LSL.Sentinet.ApiClient.Facades
 {
-    internal class FoldersFacade : Facade, IFoldersFacade
+    /// <inheritdoc/>
+    public class FoldersFacade : Facade, IFoldersFacade
     {
+        /// <summary>
+        /// The default constructor
+        /// </summary>
+        /// <param name="sentinetApiClient"></param>
         public FoldersFacade(ISentinetApiClient sentinetApiClient) : base(sentinetApiClient) { }
 
-        public async Task<FacadeFolderSubTree> GetFolderAsync(string fullPath, CancellationToken cancellationToken = default)
+        /// <inheritdoc/>
+        public async Task<FacadeFolderSubTree> CreateFolderAsync(string folderPath, CancellationToken cancellationToken = default) =>
+            await IterateFolder(
+                folderPath,
+                async (folder, path) =>
+                {
+                    var newFolder = await Client.CreateOrUpdateFolderWithResultAsync(new Folder
+                    {
+                        FolderId = folder.SubTree.Id,
+                        Key = Guid.NewGuid(),
+                        Name = path
+                    }).ConfigureAwait(false);
+
+                    return newFolder.Id;
+                });
+
+        /// <inheritdoc/>
+        public async Task<FacadeFolderSubTree> GetFolderAsync(string fullPath, CancellationToken cancellationToken = default) =>
+            await IterateFolder(fullPath, (folder, path) => throw new FolderNotFoundException(path, fullPath, folder));
+
+        /// <inheritdoc/>
+        public async Task<FacadeFolderSubTree> TryGetFolderAsync(string folderPath, CancellationToken cancellationToken = default)
+        {
+            try
+            {
+                return await GetFolderAsync(folderPath, cancellationToken);
+            }
+            catch (FolderNotFoundException)
+            {
+                return null;
+            }
+        }
+
+        internal async Task<FacadeFolderSubTree> IterateFolder(string fullPath, Func<FacadeFolderSubTree, string, Task<int>> action, CancellationToken cancellationToken = default)
         {
             return (await fullPath.Split('/')
                 .ToAsyncEnumerable()
@@ -31,15 +69,15 @@ namespace LSL.Sentinet.ApiClient.Facades
                                 path,
                                 currentPath,
                                 GetSubFolderId(folder.CurrentFolder, path)
+                                    ?? await action(folder.CurrentFolder, path).ConfigureAwait(false)
                             ).ConfigureAwait(false),
                             CurrentPath = currentPath
                         };
                     }).ConfigureAwait(false))
                     .CurrentFolder;
 
-            int GetSubFolderId(FacadeFolderSubTree folder, string subPath) =>
-                folder.SubTree.Folders.FirstOrDefault(f => f.Name.Equals(subPath, StringComparison.InvariantCultureIgnoreCase))?.Id
-                    ?? throw new FolderNotFoundException(subPath, fullPath);
+            int? GetSubFolderId(FacadeFolderSubTree folder, string subPath) =>
+                folder.SubTree.Folders.FirstOrDefault(f => f.Name.Equals(subPath, StringComparison.InvariantCultureIgnoreCase))?.Id;
 
             async Task<FacadeFolderSubTree> GetFolderFromApi(FacadeFolderSubTree currentFolder, string path, string currentFullPath = "", int? id = null) =>
                 (await Client.GetFolderSubtreeAsync(false, Entities.All, id, cancellationToken)
@@ -47,17 +85,6 @@ namespace LSL.Sentinet.ApiClient.Facades
                     .ToFacadeFolder(currentFullPath, currentFolder);
         }
 
-        public async Task<FacadeFolderSubTree> TryGetFolderAsync(string folderPath, CancellationToken cancellationToken = default)
-        {
-            try
-            {
-                return await GetFolderAsync(folderPath, cancellationToken);
-            }
-            catch (FolderNotFoundException)
-            {
-                return null;
-            }
-        }
     }
 
     internal static class FolderExtensions

@@ -1,14 +1,19 @@
 namespace LSL.Sentinet.ApiClient.Facades
 {
-    internal abstract class Facade : IFacade
+    /// <inheritdoc/>
+    public abstract class Facade : IFacade
     {
         private readonly ISentinetApiClient _sentinetApiClient;
 
-        internal Facade(ISentinetApiClient sentinetApiClient)
-        {
-            _sentinetApiClient = sentinetApiClient;
-        }
+        /// <summary>
+        /// Default constructor
+        /// </summary>
+        /// <param name="sentinetApiClient"></param>
+        protected internal Facade(ISentinetApiClient sentinetApiClient) => _sentinetApiClient = sentinetApiClient;
 
+        /// <summary>
+        /// The Sentinet API Client
+        /// </summary>
         public ISentinetApiClient Client => _sentinetApiClient;
     }
 }

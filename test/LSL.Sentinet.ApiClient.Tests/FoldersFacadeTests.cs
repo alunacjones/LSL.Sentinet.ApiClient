@@ -1,5 +1,3 @@
-using System;
-using System.IO;
 using System.Linq;
 using LSL.Sentinet.ApiClient.Facades;
 using Microsoft.Extensions.DependencyInjection;
@@ -45,7 +43,7 @@ public class FoldersFacadeTests : BaseTest
         var action = async () => await sut.GetFolderAsync(folder);
         await action.Should().ThrowExactlyAsync<FolderNotFoundException>()
             .WithMessage("Unknown folder 'Test' for full path of 'Test/Folder'")
-            .Where(x => x.SubPath == "Test" && x.FullPath == "Test/Folder");
+            .Where(x => x.SubPath == "Test" && x.FullPath == "Test/Folder" && x.Folder != null);
     }    
     
     [Test]

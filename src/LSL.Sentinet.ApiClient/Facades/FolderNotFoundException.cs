@@ -1,4 +1,5 @@
 using System;
+using LSL.Sentinet.ApiClient.Facades.Models;
 
 namespace LSL.Sentinet.ApiClient.Facades
 {
@@ -13,10 +14,12 @@ namespace LSL.Sentinet.ApiClient.Facades
         /// </summary>
         /// <param name="subPath"></param>
         /// <param name="fullPath"></param>
-        public FolderNotFoundException(string subPath, string fullPath) : base($"Unknown folder '{subPath}' for full path of '{fullPath}'")
+        /// <param name="folder"></param>
+        public FolderNotFoundException(string subPath, string fullPath, FacadeFolderSubTree folder) : base($"Unknown folder '{subPath}' for full path of '{fullPath}'")
         {
             SubPath = subPath;
             FullPath = fullPath;
+            Folder = folder;
         }
 
         /// <summary>
@@ -28,5 +31,10 @@ namespace LSL.Sentinet.ApiClient.Facades
         /// The full path
         /// </summary>
         public string FullPath { get; }
+
+        /// <summary>
+        /// The folder that we managed to match up to
+        /// </summary>
+        public FacadeFolderSubTree Folder { get; }
     }
 }

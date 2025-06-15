@@ -16,7 +16,7 @@ public static class MockHttpHelpers
         return result;
     }
 
-    public static void StubEndPointsAndAuth(this MockHttpMessageHandler source, bool authFails, bool isAlreadAuthorised)
+    public static void StubEndPointsAndAuth(this MockHttpMessageHandler source, bool authFails, bool isAlreadyAuthorised)
     {
         var mockedRequest = new MockedRequest();
 
@@ -31,7 +31,7 @@ public static class MockHttpHelpers
                 return new StringContent(authFails ? "false" : "true").ToHttpResponseMessage();
             }
 
-            if (isAuthorised || isAlreadAuthorised)
+            if (isAuthorised || isAlreadyAuthorised)
             {
                 return JsonContent.Create(new {}).ToHttpResponseMessage();
             }

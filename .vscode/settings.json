@@ -11,7 +11,8 @@
         ".git/{index,*refs,*HEAD}",
         ".vscode",
         ".vscode-insiders",
-        "swagger*.json",
-        "package.json"
+        "*swagger.json",
+        "package.json",
+        "**/Temp/**"
     ]    
 }
