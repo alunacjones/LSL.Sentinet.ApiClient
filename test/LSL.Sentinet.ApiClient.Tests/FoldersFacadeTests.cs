@@ -21,7 +21,7 @@ public class FoldersFacadeTests : BaseTest
 
         // Assert
         using var assertionScope = new AssertionScope();
-
+        
         response.SubTree.Should().Be(folderResults.ElementAt(2));
         response.FullPath.Should().Be("Test/Folder");
         response.Parent.SubTree.Should().Be(folderResults.ElementAt(1));
